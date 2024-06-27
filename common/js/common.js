@@ -1,17 +1,17 @@
 // JavaScript Document
 $(window).on('load resize', function() {
-  $('.globalnav__block__arrow').off();
-  $('.globalnav__list--parent').off();
-  $('#footer_global_nav .footer_global_nav.parent .arrow').off();
-  $('#footer_global_nav .footer_global_nav.parent').off();
+  $('.js-globalnavlinkArrow').off();
+  $('.l-globalnav__list--parent').off();
+  $('.js-linkArrow').off();
+  $('.js-footerNav').off();
 if (window.matchMedia('(max-width:1023px)').matches) {
   // SPの処理
-      $('.globalnav__block__arrow').on('click', function(){
-          $(this).parent().next('.globalnav__child').toggleClass('open').slideToggle(300);
+      $('.js-globalnavlinkArrow').on('click', function(){
+          $(this).parent().next('.l-globalnav__child').toggleClass('open').slideToggle(300);
           $(this).toggleClass('open');
-          if ($(this).next('.globalnav__child').hasClass('open')) {
+          if ($(this).next('.l-globalnav__child').hasClass('open')) {
             //open表示中の場合
-            $(this).next('.globalnav__child').css('display', '');
+            $(this).next('.l-globalnav__child').css('display', '');
           } else {
             //open非表示の場合
 
@@ -19,27 +19,17 @@ if (window.matchMedia('(max-width:1023px)').matches) {
        });
       if ($('.js-navSwitch').hasClass("is-open")) {
         //open表示中の場合
-        $(".globalnav__list").removeClass('open');
+        $(".l-globalnav__list").removeClass('open');
       } else {
         //open非表示の場合
 
-      }
-      if ($('#search').hasClass("open")) {
-        //open表示中の場合
-        $('body').addClass('fixed');
-      } else {
-        //open非表示の場合
-        $('#search').removeClass('open');
-        $('#search_off').fadeOut();
-      }
-
-      
-      $('#footer_global_nav .footer_global_nav.parent .arrow').on('click', function(){
-          $(this).parent().next('.footer_child').toggleClass('open').slideToggle(300);
+      }   
+      $('.js-linkArrow').on('click', function(){
+          $(this).parent().next('.l-footernav__child').toggleClass('open').slideToggle(300);
           $(this).toggleClass('open');
-          if ($(this).next('.footer_child').hasClass('open')) {
+          if ($(this).next('.l-footernav__child').hasClass('open')) {
             //open表示中の場合
-            $(this).next('.footer_child').css('display', '');
+            $(this).next('.l-footernav__child').css('display', '');
           } else {
             //open非表示の場合
             
@@ -51,12 +41,12 @@ if (window.matchMedia('(max-width:1023px)').matches) {
       var ua = navigator.userAgent;
       if (ua.indexOf('iPhone') > 0 || ua.indexOf('Android') > 0 && ua.indexOf('Mobile') > 0) {
         // スマートフォン用コード
-          $('.globalnav__block__arrow').on('click', function(){
-          $(this).parent().next('.globalnav__child').toggleClass('open').slideToggle(300);
+          $('.js-globalnavlinkArrow').on('click', function(){
+          $(this).parent().next('.l-globalnav__child').toggleClass('open').slideToggle(300);
           $(this).toggleClass('open');
-          if ($(this).next('.globalnav__child').hasClass('open')) {
+          if ($(this).next('.l-globalnav__child').hasClass('open')) {
             //open表示中の場合
-            $(this).next('.globalnav__child').css('display', '');
+            $(this).next('.l-globalnav__child').css('display', '');
           } else {
             //open非表示の場合
 
@@ -64,39 +54,19 @@ if (window.matchMedia('(max-width:1023px)').matches) {
           });
           if ($('.js-navSwitch').hasClass("is-open")) {
             //open表示中の場合
-            $(".globalnav__list").removeClass('open');
+            $(".l-globalnav__list").removeClass('open');
           } else {
             //open非表示の場合
-          }
-          
-          if ($('#search').hasClass("open")) {
-            //open表示中の場合
-            $('body').addClass('fixed');
-          } else {
-            //open非表示の場合
-            $('#search').removeClass('open');
-            $('#search_off').fadeOut();
           }
 
-        $('#footer-sitemap .footer-sitemap li.parent .arrow').on('click', function(){
-          $(this).parent().next('.child').toggleClass('open').slideToggle(300);
-          $(this).toggleClass('open');
-          if ($(this).next('.child').hasClass('open')) {
-            //open表示中の場合
-            $(this).next('.child').css('display', '');
-          } else {
-            //open非表示の場合
-            
-          }
-        });
       } else if (ua.indexOf('iPad') > 0 || ua.indexOf('Android') > 0) {
         // タブレット用コード
-          $('.globalnav__block__arrow').on('click', function(){
-          $(this).parent().next('.globalnav__child').toggleClass('open').slideToggle(300);
+          $('.js-globalnavlinkArrow').on('click', function(){
+          $(this).parent().next('.l-globalnav__child').toggleClass('open').slideToggle(300);
           $(this).toggleClass('open');
-          if ($(this).next('.globalnav__child').hasClass('open')) {
+          if ($(this).next('.l-globalnav__child').hasClass('open')) {
             //open表示中の場合
-            $(this).next('.globalnav__child').css('display', '');
+            $(this).next('.l-globalnav__child').css('display', '');
           } else {
             //open非表示の場合
 
@@ -104,42 +74,21 @@ if (window.matchMedia('(max-width:1023px)').matches) {
           });
           if ($('.js-navSwitch').hasClass("is-open")) {
             //open表示中の場合
-            $(".globalnav__list").removeClass('open');
+            $(".l-globalnav__list").removeClass('open');
           } else {
             //open非表示の場合
             $('body').removeClass('fixed').css('top',0 + 'px');
           }
           
-          if ($('#search').hasClass("open")) {
-            //open表示中の場合
-            $('body').addClass('fixed');
-          } else {
-            //open非表示の場合
-            $('#search').removeClass('open');
-            $('#search_off').fadeOut();
-          }
-          
-          $('.footer-sitemap li.main-navi.parent .arrow').on('click', function(){
-          $(this).parent().next('.child').toggleClass('open').slideToggle(300);
-          $(this).toggleClass('open');
-          if ($(this).next('.child').hasClass('open')) {
-            //open表示中の場合
-            $(this).next('.child').css('display', '');
-          } else {
-            //open非表示の場合
-            
-          }
-          });
-          
       } else {
         // PC用コード
-          $('.globalnav__block__arrow').removeClass('open');
-          $('.globalnav__child').css('display', 'none');
-          $('.globalnav__list--parent').hover(function(){
+          $('.js-globalnavlinkArrow').removeClass('open');
+          $('.l-globalnav__child').css('display', 'none');
+          $('.l-globalnav__list--parent').hover(function(){
               $("ul:not(:animated)", this).fadeIn("fast").css('display','flex');
               $(".globalnav__block__link",this).addClass('hover');
           }, function(){
-              $(".globalnav__child",this).fadeOut("fast").css('display','');
+              $(".l-globalnav__child",this).fadeOut("fast").css('display','');
               $(".globalnav__block__link",this).removeClass('hover');
           });
          
@@ -151,15 +100,6 @@ if (window.matchMedia('(max-width:1023px)').matches) {
           } else {
             //open非表示の場合
           }
-          if ($('#search').hasClass("open")) {
-            //open表示中の場合
-            $('body').addClass('fixed');
-          } else {
-            //open非表示の場合
-            $('#search').removeClass('open');
-            $('#search_off').fadeOut();
-          }
-          $('.footer-sitemap li.main-navi.parent .child').css('display','block');
       }
 }
 });

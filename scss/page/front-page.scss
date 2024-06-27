@@ -1,6 +1,5 @@
 @use "../global" as *;
-@use "../object" as * ;
-
+@use "../object" as *;
 #first_view {
     height: calc(var(--vh, 1vh) * 100);
     min-height: 100vh;
@@ -83,7 +82,7 @@
                     }
                     
                 }
-                @include mq (md) {
+                @media only screen and (min-width: 768px) {
                     time{
                         font-size: 1.6rem;
                     }

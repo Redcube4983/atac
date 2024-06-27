@@ -6,7 +6,7 @@
     display: block;
     width: 100%;
     position: fixed;
-    z-index: 9999;
+    z-index: var(--header);
     padding: 10px 15px;
     background-color: #fff;
     top: 0;
@@ -25,7 +25,7 @@
         width: auto;
         height: 40px;
         position: relative;
-        z-index: 10000;
+        z-index: var(--logo);
         display: inline-block;
         .l-header__title__sitelogo {
             width: auto;
@@ -39,7 +39,7 @@
         top: 0;
         width: 100%;
         left: 0;
-        z-index: 9999;
+        z-index: var(--header);
         height: 60px;
     }
     @include mq(lg) {
@@ -115,18 +115,18 @@
         height: auto;
         padding-bottom: 60px;
         margin-bottom: 60px;
-        .globalnav__list{
+        .l-globalnav__list{
             margin: 0 20px;
             text-align: left;
             border-bottom: 1px solid #fff;
-            .globalnav__block {
+            .l-globalnav__block {
                 position: relative;
                 display: flex;
                 flex-flow: row nowrap;
                 justify-content: space-between;
                 align-items: center;
                 padding: 0;
-                .globalnav__block__link{
+                .l-globalnav__block__link{
                     font-size: 1.8rem;
                     color: #fff;
                     text-decoration: none;
@@ -148,11 +148,11 @@
                         transform-origin: center;
                     }
                 }
-                .globalnav__block__arrow {
+                .l-globalnav__link--arrow {
                     display: block;
                     width: 20px;
                     height: 20px;
-                    z-index: 2;
+                    z-index: var(--arrow);
                     background-color: transparent;
                     position: relative;
                     transform: rotateX(0deg);
@@ -178,16 +178,16 @@
                 }
             }
             &--parent{
-                .globalnav__child {
+                .l-globalnav__child {
                     display: none;
                     border-top: 1px dotted #fff;
-                    padding: 0 10px;
-                    .globalnav__granchild {
+                    padding: 0;
+                    .l-globalnav__granchild {
                         border-bottom: 1px dashed #fff;
                         &:last-child{
                             border-bottom: 0px dashed #fff;      
                         }
-                        .globalnav__granchild__link{
+                        .l-globalnav__granchild__link{
                             color: #fff;
                             text-decoration: none;
                             font-size: 1.6rem;
@@ -284,7 +284,7 @@
             background-color: #fff;
             padding: 0;
             margin-bottom: 0;
-            .globalnav__list{
+            .l-globalnav__list{
                 margin: 0 ;
                 padding: 0;
                 border: 0;
@@ -294,20 +294,20 @@
                     display: none;
                 }
                 &.last{
-                    .globalnav__block {
+                    .l-globalnav__block {
                         border-right: 1px solid #000;
                     }
                     a{
                         border-right: 1px solid #000;
                     }
                 }
-                .globalnav__block {
+                .l-globalnav__block {
                     position: relative;
                     padding: 8px 0;
                     margin: 12px 0;
                     border-left: 1px solid #000;
                     justify-content: center;
-                    .globalnav__block__link{
+                    .l-globalnav__block__link{
                         font-size: 1.4rem;
                         color: #1a1311;
                         text-decoration: none;
@@ -325,7 +325,7 @@
                             content: none;
                         }
                     }
-                    .globalnav__block__arrow{
+                    .l-globalnav__link--arrow{
                         display: none;
                         &::after {
                             content: none;
@@ -333,7 +333,7 @@
                     }
                 }
                 &--parent{
-                    .globalnav__child {
+                    .l-globalnav__child {
                         display: none;
                         padding: 0;
                         background-color: $blue;
@@ -346,10 +346,9 @@
                         height: auto;
                         top: 100%;
                         border: 0px;
-                        z-index: 1000;
                         transform: translateX(-50%);
                         border: 1px solid $blue;
-                        &.globalnav__child2 {
+                        &.l-globalnav__child2 {
                             width: 200px;
                         }
                         &.child_last{
@@ -367,7 +366,7 @@
                             transform: translateY(-50%);
                             content: "";
                         }
-                        .globalnav__granchild {
+                        .l-globalnav__granchild {
                             width: auto;
                             height: 40px;
                             border-bottom: 1px solid #fff;
@@ -401,7 +400,7 @@
                                     transform-origin: left;
                                 }
                             }
-                            .globalnav__granchild__link{
+                            .l-globalnav__granchild__link{
                                 color: #fff;
                                 padding: 0;
                                 position: relative;
@@ -500,7 +499,7 @@
                     }
                 }
             }
-            .globalnav__child {
+            .l-globalnav__child {
                 display: block;
                 position: absolute;
             }
@@ -508,10 +507,10 @@
     }
     @include mq(xl) {
         .l-globalnav__inner{
-            .globalnav__list{
+            .l-globalnav__list{
                 &--parent{
-                    .globalnav__child {
-                        .globalnav__granchild {
+                    .l-globalnav__child {
+                        .l-globalnav__granchild {
                         }
                     }
                 }
@@ -520,9 +519,9 @@
     }
     @include mq(xxl) {
         .l-globalnav__inner{
-            .globalnav__list{
-                .globalnav__block {
-                    .globalnav__block__link{
+            l-.globalnav__list{
+                .l-globalnav__block {
+                    .l-globalnav__block__link{
                         font-size: 1.6rem;
                     }
                 }
@@ -601,7 +600,7 @@
     height: 60px;
     display: flex;
     cursor: pointer;
-    z-index: 9999;
+    z-index: var(--header);
     transition: all 1s;
     background-color: $blue;
     color: #fff;
