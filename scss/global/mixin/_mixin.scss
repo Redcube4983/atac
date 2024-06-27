@@ -1,0 +1,61 @@
+@use "../setting/color" as *;
+@use "../setting/breakpoint" as *;
+
+// メディアクエリー -------------------------------------------------------------------
+@mixin mq($mediaquery: md) {
+  @media #{map-get($mediaquerys, $mediaquery)} {
+    @content;
+  }
+}
+
+@mixin mq-min($width) {
+  @media only screen and (min-width: #{$width}px) {
+    @content;
+  }
+}
+
+@mixin mq-max($width) {
+  @media only screen and (max-width: #{$width}px) {
+    @content;
+  }
+}
+
+// position -------------------------------------------------------------------
+@mixin absolute($top: auto, $right: auto, $bottom: auto, $left: auto) {
+  position: absolute;
+  top: $top;
+  right: $right;
+  bottom: $bottom;
+  left: $left;
+}
+
+// font -------------------------------------------------------------------
+@mixin font($color: false, $family: false, $style: false, $size: false, $weight: false, $line-height: false, $letter-spacing: false) {
+  @if $color {
+    color: $color;
+  }
+
+  @if $family {
+    font-family: $family;
+  }
+
+  @if $style {
+    font-style: $style;
+  }
+
+  @if $size {
+    font-size: $size;
+  }
+
+  @if $weight {
+    font-weight: $weight;
+  }
+
+  @if $line-height {
+    line-height: $line-height;
+  }
+
+  @if $letter-spacing {
+    letter-spacing: $letter-spacing;
+  }
+}

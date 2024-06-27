@@ -1,0 +1,486 @@
+/*******************************
+		グローバル設定
+*******************************/
+html{
+	font-size: 62.5%;
+	margin: 0!important;
+	height: 100%;
+	box-sizing: border-box; 
+	height: calc( var(--vh) * 100 );
+  	height: -webkit-fill-available;
+}
+body{
+	width: 100%;
+	height: 100%;
+    margin: 0;
+    padding: 0;
+	font-family: -apple-system, BlinkMacSystemFont, "Helvetica Neue", YuGothic, "ヒラギノ角ゴ ProN W3", Hiragino Kaku Gothic ProN, Arial, "メイリオ", Meiryo, sans-serif;
+	line-height: 1;
+	font-weight: normal;
+	position:relative;
+	overflow-x: hidden;
+	background-color: #fff;
+	min-height: calc(var(--vh, 1vh) * 100);
+	&.search{
+		&::before {
+			content: "";
+			z-index: 10000;
+			position: fixed;
+			width: 100%;
+			height: 100vh;
+			background-color: #000;
+			left: 0;
+			top: 0;
+			opacity: 0.8;
+			cursor: pointer;
+		}
+	}
+	&.fixed {
+		position: fixed !important;
+		bottom: 0;
+		left: 0;
+		width: 100%;
+		min-height: calc( var(--vh) * 100 );
+		min-height: -webkit-fill-available;
+		height: calc( var(--vh) * 100 );
+	}
+	p{
+		font-size:16px;
+		font-size:1.6rem;	
+	}
+}
+a[href^="tel"]{
+    color:inherit;
+}
+a {
+ -webkit-tap-highlight-color:rgba(0,0,0,0);
+ color: #000;
+}
+.wrapper{
+	overflow-x: hidden;
+	width: 100%;
+	height: auto;
+}
+#video {
+	position: relative;
+	width: 100%;
+	padding-top: 56.25%;
+	video{
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 100%;
+		height: 100%;
+	}
+}
+.sp{
+	display: block;
+}
+.tab{
+	display: none;
+}
+.pc{
+	display: none;
+}
+@media only screen and (min-width: 768px) {
+	.sp{
+		display: none;
+	}
+	.tab{
+		display: block;
+	}
+	.pc{
+		display: none;
+	}	
+}
+@media only screen and (min-width: 1024px) {
+	.wrapper{
+		padding-top: 0;
+	}
+	.sp{
+		display: none;
+	}
+	.tab{
+		display: none;
+	}
+	.pc{
+		display: block;
+	}	
+}
+/*******************************
+			 main
+*******************************/
+main {
+	text-align: center;
+	height: auto;
+	position: relative;
+	h2{
+		font-size: 30px;
+	}
+	p{
+		line-height: 2; 
+	}
+}
+.image{
+    width: 100%;
+    height: auto;
+    margin: 0 auto;
+    text-align: center;
+}
+#contents{
+	display: block;
+    position: relative;
+    height: auto;
+	#contact{
+        #contact_title{
+            margin-bottom: 60px;
+            .title_en{
+                font-family: 'Big Shoulders Text', sans-serif;
+                margin: 0;
+                font-size: 4rem;
+                display: flex;
+                flex-flow: column;
+                align-items: center;
+                font-weight: 100;
+                letter-spacing: 5px;
+                line-height: 1.2;
+            }
+            .title{
+                font-family: "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "メイリオ", Meiryo, Osaka, "ＭＳ Ｐゴシック", "MS PGothic", sans-serif;
+                font-size: 1.8rem;
+                font-weight: bold;
+                letter-spacing: 3px;
+            }
+        }
+        #contact_mail{
+            p{
+                font-family: "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "メイリオ", Meiryo, Osaka, "ＭＳ Ｐゴシック", "MS PGothic", sans-serif;
+                font-size: 1.8rem;
+                font-weight: bold; 
+                margin-bottom: 15px;
+            }
+            .contact_mail_link{
+                background-color: rgb(226, 0, 18);
+                background-image: linear-gradient(135deg, rgb(226, 0, 18), rgb(141, 0, 0));
+                width: 320px;
+                height: 60px;
+                display: flex;
+                flex-flow: column;
+                justify-content: center;
+                margin: 0 auto 60px;
+                color: #fff;
+                text-decoration: none;
+                position: relative;
+                font-size: 2.1rem;
+                font-weight: bold;
+                align-items: center;
+                &::after{
+                    position: absolute;
+                    display: block;
+                    content: "";
+                    width: 14px;
+                    height: 14px;
+                    border-right: 2px solid #fff;
+                    border-bottom: 2px solid #fff;
+                    transform: translateY(-50%) rotate(-45deg);
+                    top: 50%;
+                    right: 20px;
+                    transform-origin: center;
+                }
+                span{
+                    position: relative;
+                    padding-left: 2.8rem;
+                    &::before{
+                        content: "";
+                        display: block;
+                        position: absolute;
+                        width: 24px;
+                        height: 20px;
+                        background-image: url(common/images/mail_ico.png);
+                        background-repeat: no-repeat;
+                        top: 50%;
+                        transform: translateY(-50%);
+                        background-size: contain;
+                        left: 0;
+                        border: none;
+                    }
+                }
+            }
+        }
+        #contact_telephone{
+			display: flex;
+			flex-flow: column;
+            p{
+                 font-family: "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "メイリオ", Meiryo, Osaka, "ＭＳ Ｐゴシック", "MS PGothic", sans-serif;
+                 font-size: 1.8rem;
+                 font-weight: bold; 
+                 margin-bottom: 15px;
+             }
+			h3{
+				font-family: "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "メイリオ", Meiryo, Osaka, "ＭＳ Ｐゴシック", "MS PGothic", sans-serif;
+				font-size: 1.8rem;
+				font-weight: bold; 
+				margin-bottom: 15px;
+			}
+			.contact_telephone{
+				font-family: 'Big Shoulders Text', sans-serif;
+                margin: 0 0 30px;
+                font-size: 5rem;
+                font-weight: 300;
+				text-decoration: none;
+			}
+			.contact_telephone_link{
+                background-color: rgb(226, 0, 18);
+                background-image: linear-gradient(135deg, rgb(226, 0, 18), rgb(141, 0, 0));
+                width: 320px;
+                height: 60px;
+                display: flex;
+                flex-flow: column;
+                justify-content: center;
+                margin: 0 auto 40px;
+                color: #fff;
+                text-decoration: none;
+                position: relative;
+                font-size: 1.8em;
+                font-weight: bold;
+                align-items: center;
+                &::after{
+                    position: absolute;
+                    display: block;
+                    content: "";
+                    width: 14px;
+                    height: 14px;
+                    border-right: 2px solid #fff;
+                    border-bottom: 2px solid #fff;
+                    transform: translateY(-50%) rotate(-45deg);
+                    top: 50%;
+                    right: 20px;
+                    transform-origin: center;
+                }
+                span{
+                    position: relative;
+                    padding-left: 2.8rem;
+                    &::before{
+                        content: "";
+                        display: block;
+                        position: absolute;
+                        width: 22px;
+                        height: 18px;
+                        background-image: url(common/images/tel_ico.png);
+                        background-repeat: no-repeat;
+                        top: 50%;
+                        transform: translateY(-50%);
+                        background-size: contain;
+                        left: 0;
+                        border: none;
+                    }
+                }
+            }
+         }
+    }
+	@media only screen and (min-width: 768px) {
+        #contact{
+            #contact_title{
+                .title_en{
+                    font-size: 8rem;
+                }
+                .title{
+                    font-size: 1.8rem;
+                }
+            }
+			#contact_mail{
+				p{
+					font-family: "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "メイリオ", Meiryo, Osaka, "ＭＳ Ｐゴシック", "MS PGothic", sans-serif;
+					font-size: 2.1rem;
+					font-weight: bold; 
+					margin-bottom: 15px;
+				}
+				.contact_mail_link{
+					background-color: rgb(226, 0, 18);
+					background-image: linear-gradient(135deg, rgb(226, 0, 18), rgb(141, 0, 0));
+					width: 400px;
+					height: 70px;
+					display: flex;
+					flex-flow: column;
+					justify-content: center;
+					margin: 0 auto 60px;
+					color: #fff;
+					text-decoration: none;
+					position: relative;
+					font-size: 2.4rem;
+					font-weight: bold;
+					align-items: center;
+					&::after{
+						position: absolute;
+						display: block;
+						content: "";
+						width: 16px;
+						height: 16px;
+						border-right: 2px solid #fff;
+						border-bottom: 2px solid #fff;
+						transform: translateY(-50%) rotate(-45deg);
+						top: 50%;
+						right: 20px;
+						transform-origin: center;
+					}
+					span{
+						position: relative;
+						padding-left: 2.8rem;
+						&::before{
+							content: "";
+							display: block;
+							position: absolute;
+							width: 24px;
+							height: 20px;
+							background-image: url(common/images/mail_ico.png);
+							background-repeat: no-repeat;
+							top: 50%;
+							transform: translateY(-50%);
+							background-size: contain;
+							left: 0;
+							border: none;
+						}
+					}
+				}
+			}
+			#contact_telephone{
+				display: flex;
+				flex-flow: column;
+				p{
+					 font-family: "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "メイリオ", Meiryo, Osaka, "ＭＳ Ｐゴシック", "MS PGothic", sans-serif;
+					 font-size: 2.1rem;
+					 font-weight: bold; 
+					 margin-bottom: 15px;
+				 }
+				h3{
+					font-family: "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "メイリオ", Meiryo, Osaka, "ＭＳ Ｐゴシック", "MS PGothic", sans-serif;
+					font-size: 2.1rem;
+					font-weight: bold; 
+					margin-bottom: 15px;
+				}
+				.contact_telephone{
+					font-family: 'Big Shoulders Text', sans-serif;
+					margin: 0 0 30px;
+					font-size: 7rem;
+					font-weight: 300;
+					text-decoration: none;
+				}
+				.contact_telephone_link{
+					background-color: rgb(226, 0, 18);
+					background-image: linear-gradient(135deg, rgb(226, 0, 18), rgb(141, 0, 0));
+					width: 400px;
+					height: 70px;
+					display: flex;
+					flex-flow: column;
+					justify-content: center;
+					margin: 0 auto 40px;
+					color: #fff;
+					text-decoration: none;
+					position: relative;
+					font-size: 2.4rem;
+					font-weight: bold;
+					align-items: center;
+					&::after{
+						position: absolute;
+						display: block;
+						content: "";
+						width: 16px;
+						height: 16px;
+						border-right: 2px solid #fff;
+						border-bottom: 2px solid #fff;
+						transform: translateY(-50%) rotate(-45deg);
+						top: 50%;
+						right: 20px;
+						transform-origin: center;
+					}
+					span{
+						position: relative;
+						padding-left: 2.8rem;
+						&::before{
+							content: "";
+							display: block;
+							position: absolute;
+							width: 24px;
+							height: 20px;
+							background-image: url(common/images/tel_ico.png);
+							background-repeat: no-repeat;
+							top: 50%;
+							transform: translateY(-50%);
+							background-size: contain;
+							left: 0;
+							border: none;
+						}
+					}
+				}
+			 }
+        }
+    }
+	@media only screen and (min-width: 1024px) {
+        #contact{
+            #contact_title{
+                .title_en{
+                    font-size: 8rem;
+                }
+                .title{
+                    font-size: 1.8rem;
+                }
+            }
+        }
+    }
+    @media only screen and (min-width: 1281px) {
+        #contact{
+            #contact_title{
+                .title_en{
+                    font-size: 8rem;
+                }
+                .title{
+                    font-size: 1.8rem;
+                }
+            }
+        }
+    }
+}
+#tagetTop {
+	position: fixed;
+	right: 15px;
+	bottom: 20px;
+	width: 60px;
+	height: 60px;
+	background-color: #fff;
+	z-index: 100;
+	border-radius: 30px;
+	border: 2px solid #004080;
+	a{
+		position: relative;
+		display: block;
+		width: 100%;
+		height: 100%;
+		::after{
+			position: absolute;
+			display: block;
+			content: "";
+			width: 16px;
+			height: 16px;
+			border-right: 2px solid #004080;
+			border-bottom: 2px solid #004080;
+			transform: translate(-50%, -50%) rotate(-135deg);
+			top: 55%;
+			left: 50%;
+			transform-origin: center;
+		}
+	}
+}
+@media only screen and (max-width: 1023px) {
+
+}
+@media only screen and (min-width: 600px) {
+
+}
+@media only screen and (min-width: 1024px) {
+.image{
+    max-width: 800px;
+}   
+}
+@media only screen and (min-width: 1281px) {
+
+}

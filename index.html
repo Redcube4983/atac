@@ -1,0 +1,1152 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta content="IE=edge" http-equiv="X-UA-Compatible">
+<meta content="width=device-width,initial-scale=1" name="viewport">
+<title>攻玉社</title>
+<meta name="format-detection" content="telephone=no,address=no,email=no">
+
+<!--404ページ-->
+<!--<meta http-equiv="refresh" content="10 ; URL=/">-->
+
+<!--ファビコン-->
+<link rel="shortcut icon" href="common/images/favicon.ico">
+
+<!--スタイルシート-->
+<link href="css/style.css" rel="stylesheet">
+
+<!--front-page-->
+<link href="css/front-page.css" rel="stylesheet">
+
+<!--jquery-->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+<!--fontawesome-->
+<!--<script src="https://kit.fontawesome.com/f01c716632.js"></script>-->
+
+<!--googlefont-->
+
+
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-xxxxxxxxxx-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-xxxxxxxxxx-1');
+</script>
+
+</head>
+
+<body>
+<div class="wrapper">
+<header class="l-header">
+<h1 class="l-header__title">
+  <a href="/" class="l-header__title__link">
+    <img class="l-header__title__sitelogo" src="common/images/kogyokusha_logo.svg" alt="攻玉社 中学校・高等学校">
+  </a>
+</h1>
+<!--下層ページ
+<div class="l-header__title">
+  <a href="/" class="l-header__title__link">
+    <img class="l-header__title__sitelogo" src="common/images/kogyokusha_logo.svg" alt="攻玉社 中学校・高等学校">
+  </a>
+</div>
+-->
+<div class="l-header__right">
+<nav class="l-subnav">
+  <ul class="l-subnav__inner">
+    <li class="l-subnav__list"><a class="l-subnav__link" href="#">News一覧</a></li>
+    <li class="l-subnav__list"><a class="l-subnav__link" href="#">OBインタビュー</a></li>
+    <li class="l-subnav__list"><a class="l-subnav__link" href="#>">アクセス</a></li>
+    <li class="l-subnav__list"><a class="l-subnav__link" href="#">お問い合わせ</a></li>
+  </ul>
+</nav>
+<div class="l-header__toggle js-navSwitch">
+  <div class="l-header__toggle__inner">
+    <span class="l-header__toggle__inner--bar1"></span>
+    <span class="l-header__toggle__inner--bar2"></span>
+    <span class="l-header__toggle__inner--bar3"></span>
+  </div>
+  <p class="l-header__toggle__text js-navText">MENU</p>
+</div>
+<nav class="l-globalnav js-globalNav">
+    <ul class="l-globalnav__inner">
+      <li class="globalnav__list globalnav__list--parent">
+        <div class="globalnav__block"><a class="globalnav__block__link" href="#">学校紹介</a><span class="globalnav__block__arrow"></span></div>
+        <ul class="globalnav__child">
+          <li class="globalnav__granchild">
+            <a class="globalnav__granchild__link" href="#">攻玉社の魅力</a>
+          </li>
+          <li class="globalnav__granchild">
+            <a class="globalnav__granchild__link" href="#">学校長挨拶</a>
+          </li>
+          <li class="globalnav__granchild">
+            <a class="globalnav__granchild__link" href="#">教育理念</a>
+          </li>
+          <li class="globalnav__granchild">
+            <a class="globalnav__granchild__link" href="#">歴史</a>
+          </li>
+          <li class="globalnav__granchild">
+            <a class="globalnav__granchild__link" href="#">校章・校旗・校歌・制服</a>
+          </li>
+          <li class="globalnav__granchild">
+            <a class="globalnav__granchild__link" href="#">施設</a>
+          </li>
+          <li class="globalnav__granchild">
+            <a class="globalnav__granchild__link" href="#">アクセス</a>
+          </li>
+          <li class="globalnav__granchild">
+            <a class="globalnav__granchild__link" href="#">各種ダウンロード</a>
+          </li>
+        </ul>
+      </li>
+      <li class="globalnav__list globalnav__list--single globalnav__list--pc"><a href="#">News一覧</a></li>
+      <li class="globalnav__list globalnav__list--parent">
+        <div class="globalnav__block"><a class="globalnav__block__link" href="#">教育内容</a><span class="globalnav__block__arrow"></span></div>
+        <ul class="globalnav__child globalnav__child2">
+          <li class="globalnav__granchild">
+            <a class="globalnav__granchild__link" href="#">3ステージプログラム</a>
+          </li>
+          <li class="globalnav__granchild">
+            <a class="globalnav__granchild__link" href="#">カリキュラム</a>
+          </li>
+          <li class="globalnav__granchild">
+            <a class="globalnav__granchild__link" href="#">国際学級</a>
+          </li>
+          <li class="globalnav__granchild">
+            <a class="globalnav__granchild__link" href="#">進学実績</a>
+          </li>
+        </ul>
+      </li>
+      <li class="globalnav__list globalnav__list--parent">
+        <div class="globalnav__block"><a class="globalnav__block__link" href="#">スクールライフ</a><span class="globalnav__block__arrow"></span></div>
+        <ul class="globalnav__child globalnav__child2">
+          <li class="globalnav__granchild">
+            <a class="globalnav__granchild__link" href="#">学校行事</a>
+          </li>
+          <li class="globalnav__granchild">
+            <a class="globalnav__granchild__link" href="#">クラブ活動</a>
+          </li>
+          <li class="globalnav__granchild">
+            <a class="globalnav__granchild__link" href="#">１日の流れ</a>
+          </li>
+          <li class="globalnav__granchild">
+            <a class="globalnav__granchild__link" target="_blank" href="#">輝玉祭</a>
+          </li>
+        </ul>
+      </li>
+      <li class="globalnav__list globalnav__list--parent">
+        <div class="globalnav__block"><a class="globalnav__block__link" href="#">受験生の方へ</a><span class="globalnav__block__arrow"></span></div>
+        <ul class="globalnav__child">
+          <li class="globalnav__granchild">
+            <a class="globalnav__granchild__link" href="#">学校説明会一覧</a>
+          </li>
+          <li class="globalnav__granchild">
+            <a class="globalnav__granchild__link" href="#">中学入試要項</a>
+          </li>
+          <li class="globalnav__granchild">
+            <a class="globalnav__granchild__link" href="#">過去三カ年入試データ</a>
+          </li>
+          <li class="globalnav__granchild">
+            <a class="globalnav__granchild__link" href="#">FAQ</a>
+          </li>
+          <li class="globalnav__granchild">
+            <a class="globalnav__granchild__link" href="#">「受験について」のNEWS</a>
+          </li>
+          <li class="globalnav__granchild">
+            <a class="globalnav__granchild__link" target="_blank" href="#">イベント予約</a>
+          </li>
+        </ul>
+      </li>
+      <li class="globalnav__list globalnav__list--parent">
+        <div class="globalnav__block"><a class="globalnav__block__link" href="#">在校生・保護者の方へ</a><span class="globalnav__block__arrow"></span></div>
+        <ul class="globalnav__child">
+          <li class="globalnav__granchild">
+            <a class="globalnav__granchild__link" href="#">学年別お知らせ（1年生）</a>
+          </li>
+          <li class="globalnav__granchild">
+            <a class="globalnav__granchild__link" href="#">学年別お知らせ（2年生）</a>
+          </li>
+          <li class="globalnav__granchild">
+            <a class="globalnav__granchild__link" href="#">学年別お知らせ（3年生）</a>
+          </li>
+          <li class="globalnav__granchild">
+            <a class="globalnav__granchild__link" href="#">学年別お知らせ（4年生）</a>
+          </li>
+          <li class="globalnav__granchild">
+            <a class="globalnav__granchild__link" href="#">学年別お知らせ（5年生）</a>
+          </li>
+          <li class="globalnav__granchild">
+            <a class="globalnav__granchild__link" href="#">学年別お知らせ（6年生）</a>
+          </li>
+        </ul>
+      </li>
+      <li class="globalnav__list globalnav__list--single last"><a href="#">卒業生の方へ</a></li>
+      <li class="globalnav__list globalnav__list--single globalnav__list--pc"><a href="#">OBインタビュー</a></li>
+      <li class="globalnav__list globalnav__list--parent globalnav__list--pc">
+        <div class="globalnav__block"><a class="globalnav__block__link" href="#">お問い合わせ</a><span class="globalnav__block__arrow"></span></div>
+        <ul class="globalnav__child">
+          <li class="globalnav__granchild">
+            <a class="globalnav__granchild__link" href="#">入試・説明会について</a>
+          </li>
+          <li class="globalnav__granchild">
+            <a class="globalnav__granchild__link" href="#">国際学級｢受験資格｣有無のご確認</a>
+          </li>
+          <li class="globalnav__granchild">
+            <a class="globalnav__granchild__link" href="#">証明書発行について</a>
+          </li>
+          <li class="globalnav__granchild">
+            <a class="globalnav__granchild__link" href="#">ご意見・ご質問</a>
+          </li>
+        </ul>
+      </li>
+      <li class="globalnav__list globalnav__list--single globalnav__list--pc"><a href="#">サイトマップ</a></li>
+    </ul>
+</nav>
+</div>
+</header>
+<main>
+  <section id="first_view">
+    <div id="first_view_text_area">
+        <img class="top_fv_title" src="images/front-page/top_fv_title.svg" alt="KOGYOKUSHA 新たな航海へ">
+        <img class="top_fv_mark" src="images/front-page/top_fv_mark.svg" alt="">
+    </div>
+    <div id="first_view_bottom_area">
+      <ul class="first_view_news">
+      <li class="first_view_news_list">
+        <time>2024/01/0</time>
+        <div class="first_view_news_list_title">ダミーダミーダミーダミーダミー</div>
+      </li>
+      <li class="first_view_news_list">
+        <time>2024/01/01</time>
+        <div class="first_view_news_list_title">ダミーダミーダミーダミーダミーダミー</div>
+      </li>
+      </ul>
+    </div>
+    <div id="first_view_banner_area">
+      <a target="_blank" href="https://mirai-compass.net/usr/kogyokuj/event/evtIndex.jsf" class="first_view_bottom_area_banner">
+        <img class="recruit_banner" src="images/common/banner_event_blue.png" alt=""> 
+      </a>
+    </div>
+    <video src="video/header-video.mp4" poster="" autoplay loop muted playsinline></video>
+  </section>
+  <section id="contents">
+    <div id="news">
+        <div id="news_title">
+          <h2 class="title_en animate-bottom">NEWS<span class="title">最新情報</span></h2>
+          <div class="news_link"><a href="#" class="link_box animate-bottom"><span>NEWS一覧</span></a></div>
+        </div>
+        <div class="tab-wrap">
+        <input id="tab01" type="radio" name="tab" class="tab-switch" checked="checked" /><label class="tab-label news" for="tab01">最新情報</label>
+        <ul class="news_inner">
+          <li class="news_list">
+              <a href="<?php the_permalink(); ?>" class="news_list_imagearea no_image">
+                <img class="news_list_image" src="images/common/news_noimage.jpg" alt="">
+              </a>
+            <div class="news_list_textarea">
+              <div class="news_list_inner">
+                  <ul class="category-wrap">
+                    <li><a class="category" href="#">カテゴリー</a></li>
+                  </ul>
+                  <time>2024/01/01</time>
+            </div>
+            <a class="news_list_title" href="#"><h3>タイトル</h3></a>
+            <p class="news_list_content">ダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミー...</p>
+          </li>
+          <li class="news_list">
+            <a href="<?php the_permalink(); ?>" class="news_list_imagearea no_image">
+              <img class="news_list_image" src="images/common/news_noimage.jpg" alt="">
+            </a>
+            <div class="news_list_textarea">
+              <div class="news_list_inner">
+                  <ul class="category-wrap">
+                    <li><a class="category" href="#">カテゴリー</a></li>
+                  </ul>
+                  <time>2024/01/01</time>
+            </div>
+            <a class="news_list_title" href="#"><h3>タイトル</h3></a>
+            <p class="news_list_content">ダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミー...</p>
+          </li>
+          <li class="news_list">
+            <a href="<?php the_permalink(); ?>" class="news_list_imagearea no_image">
+              <img class="news_list_image" src="images/common/news_noimage.jpg" alt="">
+            </a>
+            <div class="news_list_textarea">
+              <div class="news_list_inner">
+                  <ul class="category-wrap">
+                    <li><a class="category" href="#">カテゴリー</a></li>
+                  </ul>
+                  <time>2024/01/01</time>
+            </div>
+            <a class="news_list_title" href="#"><h3>タイトル</h3></a>
+            <p class="news_list_content">ダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミー...</p>
+          </li>
+          <li class="news_list">
+            <a href="<?php the_permalink(); ?>" class="news_list_imagearea no_image">
+              <img class="news_list_image" src="images/common/news_noimage.jpg" alt="">
+            </a>
+            <div class="news_list_textarea">
+              <div class="news_list_inner">
+                  <ul class="category-wrap">
+                    <li><a class="category" href="#">カテゴリー</a></li>
+                  </ul>
+                  <time>2024/01/01</time>
+            </div>
+            <a class="news_list_title" href="#"><h3>タイトル</h3></a>
+            <p class="news_list_content">ダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミー...</p>
+          </li>
+          <li class="news_list">
+              <a href="<?php the_permalink(); ?>" class="news_list_imagearea no_image">
+                <img class="news_list_image" src="images/common/news_noimage.jpg" alt="">
+              </a>
+            <div class="news_list_textarea">
+              <div class="news_list_inner">
+                  <ul class="category-wrap">
+                    <li><a class="category" href="#">カテゴリー</a></li>
+                  </ul>
+                  <time>2024/01/01</time>
+            </div>
+            <a class="news_list_title" href="#"><h3>タイトル</h3></a>
+            <p class="news_list_content">ダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミー...</p>
+          </li>
+          <li class="news_list">
+              <a href="<?php the_permalink(); ?>" class="news_list_imagearea no_image">
+                <img class="news_list_image" src="images/common/news_noimage.jpg" alt="">
+              </a>
+            <div class="news_list_textarea">
+              <div class="news_list_inner">
+                  <ul class="category-wrap">
+                    <li><a class="category" href="#">カテゴリー</a></li>
+                  </ul>
+                  <time>2024/01/01</time>
+            </div>
+            <a class="news_list_title" href="#"><h3>タイトル</h3></a>
+            <p class="news_list_content">ダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミー...</p>
+          </li>
+          <li class="news_list">
+            <a href="<?php the_permalink(); ?>" class="news_list_imagearea no_image">
+              <img class="news_list_image" src="images/common/news_noimage.jpg" alt="">
+            </a>
+            <div class="news_list_textarea">
+              <div class="news_list_inner">
+                  <ul class="category-wrap">
+                    <li><a class="category" href="#">カテゴリー</a></li>
+                  </ul>
+                  <time>2024/01/01</time>
+            </div>
+            <a class="news_list_title" href="#"><h3>タイトル</h3></a>
+            <p class="news_list_content">ダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミー...</p>
+          </li>
+          <li class="news_list">
+            <a href="<?php the_permalink(); ?>" class="news_list_imagearea no_image">
+              <img class="news_list_image" src="images/common/news_noimage.jpg" alt="">
+            </a>
+            <div class="news_list_textarea">
+              <div class="news_list_inner">
+                  <ul class="category-wrap">
+                    <li><a class="category" href="#">カテゴリー</a></li>
+                  </ul>
+                  <time>2024/01/01</time>
+            </div>
+            <a class="news_list_title" href="#"><h3>タイトル</h3></a>
+            <p class="news_list_content">ダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミー...</p>
+          </li>
+        </ul>
+        <input id="tab03" type="radio" name="tab" class="tab-switch" /><label class="tab-label admission" for="tab03">受験について</label>
+        <ul class="news_inner">
+          <li class="news_list">
+            <a href="<?php the_permalink(); ?>" class="news_list_imagearea no_image">
+              <img class="news_list_image" src="images/common/news_noimage.jpg" alt="">
+            </a>
+            <div class="news_list_textarea">
+              <div class="news_list_inner">
+                  <ul class="category-wrap">
+                    <li><a class="category" href="#">カテゴリー</a></li>
+                  </ul>
+                  <time>2024/01/01</time>
+            </div>
+            <a class="news_list_title" href="#"><h3>タイトル</h3></a>
+            <p class="news_list_content">ダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミー...</p>
+          </li>
+          <li class="news_list">
+            <a href="<?php the_permalink(); ?>" class="news_list_imagearea no_image">
+              <img class="news_list_image" src="images/common/news_noimage.jpg" alt="">
+            </a>
+            <div class="news_list_textarea">
+              <div class="news_list_inner">
+                  <ul class="category-wrap">
+                    <li><a class="category" href="#">カテゴリー</a></li>
+                  </ul>
+                  <time>2024/01/01</time>
+            </div>
+            <a class="news_list_title" href="#"><h3>タイトル</h3></a>
+            <p class="news_list_content">ダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミー...</p>
+          </li>
+          <li class="news_list">
+            <a href="<?php the_permalink(); ?>" class="news_list_imagearea no_image">
+              <img class="news_list_image" src="images/common/news_noimage.jpg" alt="">
+            </a>
+            <div class="news_list_textarea">
+              <div class="news_list_inner">
+                  <ul class="category-wrap">
+                    <li><a class="category" href="#">カテゴリー</a></li>
+                  </ul>
+                  <time>2024/01/01</time>
+            </div>
+            <a class="news_list_title" href="#"><h3>タイトル</h3></a>
+            <p class="news_list_content">ダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミー...</p>
+          </li>
+          <li class="news_list">
+            <a href="<?php the_permalink(); ?>" class="news_list_imagearea no_image">
+              <img class="news_list_image" src="images/common/news_noimage.jpg" alt="">
+            </a>
+            <div class="news_list_textarea">
+              <div class="news_list_inner">
+                  <ul class="category-wrap">
+                    <li><a class="category" href="#">カテゴリー</a></li>
+                  </ul>
+                  <time>2024/01/01</time>
+            </div>
+            <a class="news_list_title" href="#"><h3>タイトル</h3></a>
+            <p class="news_list_content">ダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミー...</p>
+          </li>
+          <li class="news_list">
+            <a href="<?php the_permalink(); ?>" class="news_list_imagearea no_image">
+              <img class="news_list_image" src="images/common/news_noimage.jpg" alt="">
+            </a>
+            <div class="news_list_textarea">
+              <div class="news_list_inner">
+                  <ul class="category-wrap">
+                    <li><a class="category" href="#">カテゴリー</a></li>
+                  </ul>
+                  <time>2024/01/01</time>
+            </div>
+            <a class="news_list_title" href="#"><h3>タイトル</h3></a>
+            <p class="news_list_content">ダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミー...</p>
+          </li>
+          <li class="news_list">
+            <a href="<?php the_permalink(); ?>" class="news_list_imagearea no_image">
+              <img class="news_list_image" src="images/common/news_noimage.jpg" alt="">
+            </a>
+            <div class="news_list_textarea">
+              <div class="news_list_inner">
+                  <ul class="category-wrap">
+                    <li><a class="category" href="#">カテゴリー</a></li>
+                  </ul>
+                  <time>2024/01/01</time>
+            </div>
+            <a class="news_list_title" href="#"><h3>タイトル</h3></a>
+            <p class="news_list_content">ダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミー...</p>
+          </li>
+          <li class="news_list">
+            <a href="<?php the_permalink(); ?>" class="news_list_imagearea no_image">
+              <img class="news_list_image" src="images/common/news_noimage.jpg" alt="">
+            </a>
+            <div class="news_list_textarea">
+              <div class="news_list_inner">
+                  <ul class="category-wrap">
+                    <li><a class="category" href="#">カテゴリー</a></li>
+                  </ul>
+                  <time>2024/01/01</time>
+            </div>
+            <a class="news_list_title" href="#"><h3>タイトル</h3></a>
+            <p class="news_list_content">ダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミー...</p>
+          </li>
+          <li class="news_list">
+            <a href="<?php the_permalink(); ?>" class="news_list_imagearea no_image">
+              <img class="news_list_image" src="images/common/news_noimage.jpg" alt="">
+            </a>
+            <div class="news_list_textarea">
+              <div class="news_list_inner">
+                  <ul class="category-wrap">
+                    <li><a class="category" href="#">カテゴリー</a></li>
+                  </ul>
+                  <time>2024/01/01</time>
+            </div>
+            <a class="news_list_title" href="#"><h3>タイトル</h3></a>
+            <p class="news_list_content">ダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミー...</p>
+          </li>
+        </ul>
+        <input id="tab04" type="radio" name="tab" class="tab-switch" /><label class="tab-label schoollife" for="tab04">学校生活</label>
+        <ul class="news_inner">
+          <li class="news_list">
+            <a href="<?php the_permalink(); ?>" class="news_list_imagearea no_image">
+              <img class="news_list_image" src="images/common/news_noimage.jpg" alt="">
+            </a>
+            <div class="news_list_textarea">
+              <div class="news_list_inner">
+                  <ul class="category-wrap">
+                    <li><a class="category" href="#">カテゴリー</a></li>
+                  </ul>
+                  <time>2024/01/01</time>
+            </div>
+            <a class="news_list_title" href="#"><h3>タイトル</h3></a>
+            <p class="news_list_content">ダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミー...</p>
+          </li>
+          <li class="news_list">
+            <a href="<?php the_permalink(); ?>" class="news_list_imagearea no_image">
+              <img class="news_list_image" src="images/common/news_noimage.jpg" alt="">
+            </a>
+            <div class="news_list_textarea">
+              <div class="news_list_inner">
+                  <ul class="category-wrap">
+                    <li><a class="category" href="#">カテゴリー</a></li>
+                  </ul>
+                  <time>2024/01/01</time>
+            </div>
+            <a class="news_list_title" href="#"><h3>タイトル</h3></a>
+            <p class="news_list_content">ダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミー...</p>
+          </li>
+          <li class="news_list">
+            <a href="<?php the_permalink(); ?>" class="news_list_imagearea no_image">
+              <img class="news_list_image" src="images/common/news_noimage.jpg" alt="">
+            </a>
+            <div class="news_list_textarea">
+              <div class="news_list_inner">
+                  <ul class="category-wrap">
+                    <li><a class="category" href="#">カテゴリー</a></li>
+                  </ul>
+                  <time>2024/01/01</time>
+            </div>
+            <a class="news_list_title" href="#"><h3>タイトル</h3></a>
+            <p class="news_list_content">ダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミー...</p>
+          </li>
+          <li class="news_list">
+            <a href="<?php the_permalink(); ?>" class="news_list_imagearea no_image">
+              <img class="news_list_image" src="images/common/news_noimage.jpg" alt="">
+            </a>
+            <div class="news_list_textarea">
+              <div class="news_list_inner">
+                  <ul class="category-wrap">
+                    <li><a class="category" href="#">カテゴリー</a></li>
+                  </ul>
+                  <time>2024/01/01</time>
+            </div>
+            <a class="news_list_title" href="#"><h3>タイトル</h3></a>
+            <p class="news_list_content">ダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミー...</p>
+          </li>
+          <li class="news_list">
+            <a href="<?php the_permalink(); ?>" class="news_list_imagearea no_image">
+              <img class="news_list_image" src="images/common/news_noimage.jpg" alt="">
+            </a>
+            <div class="news_list_textarea">
+              <div class="news_list_inner">
+                  <ul class="category-wrap">
+                    <li><a class="category" href="#">カテゴリー</a></li>
+                  </ul>
+                  <time>2024/01/01</time>
+            </div>
+            <a class="news_list_title" href="#"><h3>タイトル</h3></a>
+            <p class="news_list_content">ダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミー...</p>
+          </li>
+          <li class="news_list">
+            <a href="<?php the_permalink(); ?>" class="news_list_imagearea no_image">
+              <img class="news_list_image" src="images/common/news_noimage.jpg" alt="">
+            </a>
+            <div class="news_list_textarea">
+              <div class="news_list_inner">
+                  <ul class="category-wrap">
+                    <li><a class="category" href="#">カテゴリー</a></li>
+                  </ul>
+                  <time>2024/01/01</time>
+            </div>
+            <a class="news_list_title" href="#"><h3>タイトル</h3></a>
+            <p class="news_list_content">ダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミー...</p>
+          </li>
+          <li class="news_list">
+            <a href="<?php the_permalink(); ?>" class="news_list_imagearea no_image">
+              <img class="news_list_image" src="images/common/news_noimage.jpg" alt="">
+            </a>
+            <div class="news_list_textarea">
+              <div class="news_list_inner">
+                  <ul class="category-wrap">
+                    <li><a class="category" href="#">カテゴリー</a></li>
+                  </ul>
+                  <time>2024/01/01</time>
+            </div>
+            <a class="news_list_title" href="#"><h3>タイトル</h3></a>
+            <p class="news_list_content">ダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミー...</p>
+          </li>
+          <li class="news_list">
+            <a href="<?php the_permalink(); ?>" class="news_list_imagearea no_image">
+              <img class="news_list_image" src="images/common/news_noimage.jpg" alt="">
+            </a>
+            <div class="news_list_textarea">
+              <div class="news_list_inner">
+                  <ul class="category-wrap">
+                    <li><a class="category" href="#">カテゴリー</a></li>
+                  </ul>
+                  <time>2024/01/01</time>
+            </div>
+            <a class="news_list_title" href="#"><h3>タイトル</h3></a>
+            <p class="news_list_content">ダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミー...</p>
+          </li>
+        </ul>
+        <input id="tab05" type="radio" name="tab" class="tab-switch" /><label class="tab-label club" for="tab05">クラブ活動</label>
+        <ul class="news_inner">
+          <li class="news_list">
+            <a href="<?php the_permalink(); ?>" class="news_list_imagearea no_image">
+              <img class="news_list_image" src="images/common/news_noimage.jpg" alt="">
+            </a>
+            <div class="news_list_textarea">
+              <div class="news_list_inner">
+                  <ul class="category-wrap">
+                    <li><a class="category" href="#">カテゴリー</a></li>
+                  </ul>
+                  <time>2024/01/01</time>
+            </div>
+            <a class="news_list_title" href="#"><h3>タイトル</h3></a>
+            <p class="news_list_content">ダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミー...</p>
+          </li>
+          <li class="news_list">
+            <a href="<?php the_permalink(); ?>" class="news_list_imagearea no_image">
+              <img class="news_list_image" src="images/common/news_noimage.jpg" alt="">
+            </a>
+            <div class="news_list_textarea">
+              <div class="news_list_inner">
+                  <ul class="category-wrap">
+                    <li><a class="category" href="#">カテゴリー</a></li>
+                  </ul>
+                  <time>2024/01/01</time>
+            </div>
+            <a class="news_list_title" href="#"><h3>タイトル</h3></a>
+            <p class="news_list_content">ダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミー...</p>
+          </li>
+          <li class="news_list">
+            <a href="<?php the_permalink(); ?>" class="news_list_imagearea no_image">
+              <img class="news_list_image" src="images/common/news_noimage.jpg" alt="">
+            </a>
+            <div class="news_list_textarea">
+              <div class="news_list_inner">
+                  <ul class="category-wrap">
+                    <li><a class="category" href="#">カテゴリー</a></li>
+                  </ul>
+                  <time>2024/01/01</time>
+            </div>
+            <a class="news_list_title" href="#"><h3>タイトル</h3></a>
+            <p class="news_list_content">ダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミー...</p>
+          </li>
+          <li class="news_list">
+            <a href="<?php the_permalink(); ?>" class="news_list_imagearea no_image">
+              <img class="news_list_image" src="images/common/news_noimage.jpg" alt="">
+            </a>
+            <div class="news_list_textarea">
+              <div class="news_list_inner">
+                  <ul class="category-wrap">
+                    <li><a class="category" href="#">カテゴリー</a></li>
+                  </ul>
+                  <time>2024/01/01</time>
+            </div>
+            <a class="news_list_title" href="#"><h3>タイトル</h3></a>
+            <p class="news_list_content">ダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミー...</p>
+          </li>
+          <li class="news_list">
+            <a href="<?php the_permalink(); ?>" class="news_list_imagearea no_image">
+              <img class="news_list_image" src="images/common/news_noimage.jpg" alt="">
+            </a>
+            <div class="news_list_textarea">
+              <div class="news_list_inner">
+                  <ul class="category-wrap">
+                    <li><a class="category" href="#">カテゴリー</a></li>
+                  </ul>
+                  <time>2024/01/01</time>
+            </div>
+            <a class="news_list_title" href="#"><h3>タイトル</h3></a>
+            <p class="news_list_content">ダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミー...</p>
+          </li>
+          <li class="news_list">
+            <a href="<?php the_permalink(); ?>" class="news_list_imagearea no_image">
+              <img class="news_list_image" src="images/common/news_noimage.jpg" alt="">
+            </a>
+            <div class="news_list_textarea">
+              <div class="news_list_inner">
+                  <ul class="category-wrap">
+                    <li><a class="category" href="#">カテゴリー</a></li>
+                  </ul>
+                  <time>2024/01/01</time>
+            </div>
+            <a class="news_list_title" href="#"><h3>タイトル</h3></a>
+            <p class="news_list_content">ダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミー...</p>
+          </li>
+          <li class="news_list">
+            <a href="<?php the_permalink(); ?>" class="news_list_imagearea no_image">
+              <img class="news_list_image" src="images/common/news_noimage.jpg" alt="">
+            </a>
+            <div class="news_list_textarea">
+              <div class="news_list_inner">
+                  <ul class="category-wrap">
+                    <li><a class="category" href="#">カテゴリー</a></li>
+                  </ul>
+                  <time>2024/01/01</time>
+            </div>
+            <a class="news_list_title" href="#"><h3>タイトル</h3></a>
+            <p class="news_list_content">ダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミー...</p>
+          </li>
+          <li class="news_list">
+            <a href="<?php the_permalink(); ?>" class="news_list_imagearea no_image">
+              <img class="news_list_image" src="images/common/news_noimage.jpg" alt="">
+            </a>
+            <div class="news_list_textarea">
+              <div class="news_list_inner">
+                  <ul class="category-wrap">
+                    <li><a class="category" href="#">カテゴリー</a></li>
+                  </ul>
+                  <time>2024/01/01</time>
+            </div>
+            <a class="news_list_title" href="#"><h3>タイトル</h3></a>
+            <p class="news_list_content">ダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミー...</p>
+          </li>
+        </ul>
+        <input id="tab02" type="radio" name="tab" class="tab-switch"/><label class="tab-label notice" for="tab02">お知らせ</label>
+        <ul class="news_inner">
+          <li class="news_list">
+            <a href="<?php the_permalink(); ?>" class="news_list_imagearea no_image">
+              <img class="news_list_image" src="images/common/news_noimage.jpg" alt="">
+            </a>
+            <div class="news_list_textarea">
+              <div class="news_list_inner">
+                  <ul class="category-wrap">
+                    <li><a class="category" href="#">カテゴリー</a></li>
+                  </ul>
+                  <time>2024/01/01</time>
+            </div>
+            <a class="news_list_title" href="#"><h3>タイトル</h3></a>
+            <p class="news_list_content">ダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミー...</p>
+          </li>
+          <li class="news_list">
+            <a href="<?php the_permalink(); ?>" class="news_list_imagearea no_image">
+              <img class="news_list_image" src="images/common/news_noimage.jpg" alt="">
+            </a>
+            <div class="news_list_textarea">
+              <div class="news_list_inner">
+                  <ul class="category-wrap">
+                    <li><a class="category" href="#">カテゴリー</a></li>
+                  </ul>
+                  <time>2024/01/01</time>
+            </div>
+            <a class="news_list_title" href="#"><h3>タイトル</h3></a>
+            <p class="news_list_content">ダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミー...</p>
+          </li>
+          <li class="news_list">
+            <a href="<?php the_permalink(); ?>" class="news_list_imagearea no_image">
+              <img class="news_list_image" src="images/common/news_noimage.jpg" alt="">
+            </a>
+            <div class="news_list_textarea">
+              <div class="news_list_inner">
+                  <ul class="category-wrap">
+                    <li><a class="category" href="#">カテゴリー</a></li>
+                  </ul>
+                  <time>2024/01/01</time>
+            </div>
+            <a class="news_list_title" href="#"><h3>タイトル</h3></a>
+            <p class="news_list_content">ダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミー...</p>
+          </li>
+          <li class="news_list">
+            <a href="<?php the_permalink(); ?>" class="news_list_imagearea no_image">
+              <img class="news_list_image" src="images/common/news_noimage.jpg" alt="">
+            </a>
+            <div class="news_list_textarea">
+              <div class="news_list_inner">
+                  <ul class="category-wrap">
+                    <li><a class="category" href="#">カテゴリー</a></li>
+                  </ul>
+                  <time>2024/01/01</time>
+            </div>
+            <a class="news_list_title" href="#"><h3>タイトル</h3></a>
+            <p class="news_list_content">ダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミー...</p>
+          </li>
+          <li class="news_list">
+            <a href="<?php the_permalink(); ?>" class="news_list_imagearea no_image">
+              <img class="news_list_image" src="images/common/news_noimage.jpg" alt="">
+            </a>
+            <div class="news_list_textarea">
+              <div class="news_list_inner">
+                  <ul class="category-wrap">
+                    <li><a class="category" href="#">カテゴリー</a></li>
+                  </ul>
+                  <time>2024/01/01</time>
+            </div>
+            <a class="news_list_title" href="#"><h3>タイトル</h3></a>
+            <p class="news_list_content">ダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミー...</p>
+          </li>
+          <li class="news_list">
+            <a href="<?php the_permalink(); ?>" class="news_list_imagearea no_image">
+              <img class="news_list_image" src="images/common/news_noimage.jpg" alt="">
+            </a>
+            <div class="news_list_textarea">
+              <div class="news_list_inner">
+                  <ul class="category-wrap">
+                    <li><a class="category" href="#">カテゴリー</a></li>
+                  </ul>
+                  <time>2024/01/01</time>
+            </div>
+            <a class="news_list_title" href="#"><h3>タイトル</h3></a>
+            <p class="news_list_content">ダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミー...</p>
+          </li>
+          <li class="news_list">
+            <a href="<?php the_permalink(); ?>" class="news_list_imagearea no_image">
+              <img class="news_list_image" src="images/common/news_noimage.jpg" alt="">
+            </a>
+            <div class="news_list_textarea">
+              <div class="news_list_inner">
+                  <ul class="category-wrap">
+                    <li><a class="category" href="#">カテゴリー</a></li>
+                  </ul>
+                  <time>2024/01/01</time>
+            </div>
+            <a class="news_list_title" href="#"><h3>タイトル</h3></a>
+            <p class="news_list_content">ダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミー...</p>
+          </li>
+          <li class="news_list">
+            <a href="<?php the_permalink(); ?>" class="news_list_imagearea no_image">
+              <img class="news_list_image" src="images/common/news_noimage.jpg" alt="">
+            </a>
+            <div class="news_list_textarea">
+              <div class="news_list_inner">
+                  <ul class="category-wrap">
+                    <li><a class="category" href="#">カテゴリー</a></li>
+                  </ul>
+                  <time>2024/01/01</time>
+            </div>
+            <a class="news_list_title" href="#"><h3>タイトル</h3></a>
+            <p class="news_list_content">ダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミー...</p>
+          </li>
+        </ul>
+        </div>
+    </div>
+    <div class="link_btn">
+        <ul class="link_btn_inner">
+            <li><a href="#" class="link_btn_inner_link"><span>お問い合わせ</span></a></li>
+            <li><a href="#" class="link_btn_inner_link"><span>学校案内パンフレット<br>ダウンロード</span></a></li>
+            <li><a href="#" class="link_btn_inner_link"><span>FAQ</span></a></li>
+        </ul>
+    </div>
+    <div id="content">
+        <div id="content_title">
+            <h2 class="title_en animate-bottom">CONTENTS</h2>
+        </div>
+        <div class="content_flex">
+        <div class="content_inner">
+            <div class="content_inner_imagearea animate-fade">
+            <img class="contents_image" src="images/front-page/contents_image01.jpg">
+            </div>
+        <div class="content_inner_textarea animate-bottom">
+          <h2>攻玉社の魅力</h2>
+          <p>攻玉社が理想とする男子像等、<br>当校の魅力をご紹介します。</p>
+          <a href="#" class="link_box animate-fade"><span>詳しく見る</span></a>
+        </div>
+        </div>
+      <div class="content_inner">
+        <div class="content_inner_imagearea animate-fade">
+          <img class="contents_image" src="images/front-page/contents_image02.jpg">
+        </div>
+        <div class="content_inner_textarea animate-bottom">
+          <h2>３ステージプログラム</h2>
+          <p>中高一貫､6年間を3ステージに分けた<br>独自のプログラムをご紹介します。</p>
+            <a href="#" class="link_box animate-fade"><span>詳しく見る</span></a>
+        </div>
+      </div>
+      <div class="content_inner">
+        <div class="content_inner_imagearea animate-fade">
+          <img class="contents_image" src="images/front-page/contents_image04.jpg">
+        </div>
+        <div class="content_inner_textarea animate-bottom">
+          <h2>学校説明会一覧</h2>
+          <p>入試説明会や見学可能な<br>学校行事などをご紹介します。</p>
+            <a href="#" class="link_box animate-fade"><span>詳しく見る</span></a>
+        </div>
+      </div>
+      <div class="content_inner">
+        <div class="content_inner_imagearea animate-fade">
+          <img class="contents_image" src="images/front-page/contents_image05.jpg">
+        </div>
+        <div class="content_inner_textarea animate-bottom">
+          <h2>OBインタビュー</h2>
+          <p>様々なシーンで活躍している<br>攻玉社OBをご紹介します。</p>
+            <a href="#" class="link_box animate-fade"><span>詳しく見る</span></a>
+        </div>
+      </div>
+      </div>
+    </div>
+  </section>
+</main>
+<footer>
+    <section id="footer_link_area">
+      <div id="footer_title">
+          <h2 class="title_en animate-bottom">Information</h2>
+      </div>
+      <div class="link_btn">
+          <ul class="link_btn_inner">
+              <li><a href="#" class="link_btn_inner_link"><span>お問い合わせ</span></a></li>
+              <li><a href="#" class="link_btn_inner_link"><span>学校案内パンフレット<br>ダウンロード</span></a></li>
+              <li><a href="#" class="link_btn_inner_link"><span>FAQ</span></a></li>
+          </ul>
+      </div>
+    </section>
+    <ul id="footer_global_nav">
+      <li class="footer_global_nav_flex">
+          <ul class="footer_global_nav_flex_list">
+              <li class="footer_global_nav single first">
+                  <div class="footer_global_nav_block"><a class="footer_global_nav_link" href="#">HOME</a></div>
+                </li>
+                <li class="footer_global_nav parent">
+                  <div class="footer_global_nav_block"><a class="footer_global_nav_link" href="#">学校紹介</a><span class="arrow"></span></div>
+                  <ul class="footer_child">
+                    <li class="footer_gran_child">
+                      <a class="footer_menu_gran_child_link" href="#">攻玉社の魅力</a>
+                    </li>
+                    <li class="footer_gran_child">
+                      <a class="footer_menu_gran_child_link" href="#">学校長挨拶</a>
+                    </li>
+                    <li class="footer_gran_child">
+                      <a class="footer_menu_gran_child_link" href="#">教育理念</a>
+                    </li>
+                    <li class="footer_gran_child">
+                      <a class="footer_menu_gran_child_link" href="#">攻玉社の歴史</a>
+                    </li>
+                    <li class="footer_gran_child">
+                      <a class="footer_menu_gran_child_link" href="#">校章・校旗・校歌・制服</a>
+                    </li>
+                    <li class="footer_gran_child">
+                      <a class="footer_menu_gran_child_link" href="#">施設</a>
+                    </li>
+                    <li class="footer_gran_child">
+                      <a class="footer_menu_gran_child_link" href="#">アクセス</a>
+                    </li>
+                    <li class="footer_gran_child two_lines">
+                      <a class="footer_menu_gran_child_link" href="#">学校案内パンフレット<br class="tab"><br class="pc">ダウンロード</a>
+                    </li>
+                  </ul>
+                </li>
+                <li class="footer_global_nav single">
+                    <div class="footer_global_nav_block"><a class="footer_global_nav_link" href="#">News一覧</a></div>
+                </li>
+          </ul>
+      </li>
+      <li class="footer_global_nav footer_global_nav_flex parent">
+        <div class="footer_global_nav_block"><a class="footer_global_nav_link" href="<?php echo esc_url( home_url( '/education/') ); ?>">教育内容</a><span class="arrow"></span></div>
+        <ul class="footer_child">
+          <li class="footer_gran_child">
+            <a class="footer_menu_gran_child_link" href="<?php echo esc_url( home_url( '/education/three-stages/') ); ?>">3ステージプログラム</a>
+          </li>
+          <li class="footer_gran_child">
+            <a class="footer_menu_gran_child_link" href="<?php echo esc_url( home_url( '/education/curriculum/') ); ?>">カリキュラム</a>
+          </li>
+          <li class="footer_gran_child">
+            <a class="footer_menu_gran_child_link" href="<?php echo esc_url( home_url( '/education/international/') ); ?>">国際学級</a>
+          </li>
+          <li class="footer_gran_child">
+              <a class="footer_menu_gran_child_link" href="<?php echo esc_url( home_url( '/education/career/') ); ?>">進学実績</a>
+          </li>
+        </ul>
+      </li>
+      <li class="footer_global_nav footer_global_nav_flex parent">
+        <div class="footer_global_nav_block"><a class="footer_global_nav_link" href="<?php echo esc_url( home_url( '/school-life/') ); ?>">スクールライフ</a><span class="arrow"></span></div>
+        <ul class="footer_child">
+          <li class="footer_gran_child">
+            <a class="footer_menu_gran_child_link" href="<?php echo esc_url( home_url( '/school-life/event/') ); ?>">学校行事</a>
+          </li>
+          <li class="footer_gran_child">
+            <a class="footer_menu_gran_child_link" href="<?php echo esc_url( home_url( '/school-life/club/') ); ?>">クラブ活動</a>
+          </li>
+          <li class="footer_gran_child">
+            <a class="footer_menu_gran_child_link" href="<?php echo esc_url( home_url( '/school-life/day/') ); ?>">１日の流れ</a>
+          </li>
+          <li class="footer_gran_child">
+            <a class="footer_menu_gran_child_link" target="_blank" href="https://kigyoku.com/">輝玉祭</a>
+          </li>
+        </ul>
+      </li>
+      <li class="footer_global_nav_flex">
+          <ul class="footer_global_nav_flex_list">
+              <li class="footer_global_nav parent">
+                  <div class="footer_global_nav_block"><a class="footer_global_nav_link" href="<?php echo esc_url( home_url( '/admission/') ); ?>">受験生の方へ</a><span class="arrow"></span></div>
+                  <ul class="footer_child">
+                      <li class="footer_gran_child">
+                          <a class="footer_menu_gran_child_link" href="<?php echo esc_url( home_url( '/admission/guidance/') ); ?>">学校説明会一覧</a>
+                      </li>
+                      <li class="footer_gran_child">
+                          <a class="footer_menu_gran_child_link" href="<?php echo esc_url( home_url( '/admission/exam-info/') ); ?>">中学入試要項</a>
+                      </li>
+                      <li class="footer_gran_child">
+                          <a class="footer_menu_gran_child_link" href="<?php echo esc_url( home_url( '/admission/exam-data/') ); ?>">過去三カ年入試データ</a>
+                      </li>
+                      <li class="footer_gran_child">
+                          <a class="footer_menu_gran_child_link" href="<?php echo esc_url( home_url( '/admission/faq/') ); ?>">FAQ</a>
+                      </li>
+                      <li class="footer_gran_child">
+                          <a class="footer_menu_gran_child_link" href="<?php echo esc_url( home_url( '/news-archive/cat_admission/') ); ?>">「受験について」のNEWS</a>
+                      </li>
+                      <li class="footer_gran_child">
+                          <a class="footer_menu_gran_child_link" target="_blank" href="https://mirai-compass.net/usr/kogyokuj/event/evtIndex.jsf">イベント予約</a>
+                      </li>
+                  </ul>
+              </li>
+              <li class="footer_global_nav parent">
+                  <div class="footer_global_nav_block"><a class="footer_global_nav_link" href="<?php echo esc_url( home_url( '/students-parents/') ); ?>">在校生・保護者の方へ</a><span class="arrow"></span></div>
+                  <ul class="footer_child">
+                      <li class="footer_gran_child">
+                          <a class="footer_menu_gran_child_link" href="<?php echo esc_url( home_url( '/students-parents/school_year1/') ); ?>">学年別お知らせ（1年生）</a>
+                      </li>
+                      <li class="footer_gran_child">
+                          <a class="footer_menu_gran_child_link" href="<?php echo esc_url( home_url( '/students-parents/school_year2/') ); ?>">学年別お知らせ（2年生）</a>
+                      </li>
+                      <li class="footer_gran_child">
+                          <a class="footer_menu_gran_child_link" href="<?php echo esc_url( home_url( '/students-parents/school_year3/') ); ?>">学年別お知らせ（3年生）</a>
+                      </li>
+                      <li class="footer_gran_child">
+                          <a class="footer_menu_gran_child_link" href="<?php echo esc_url( home_url( '/students-parents/school_year4/') ); ?>">学年別お知らせ（4年生）</a>
+                      </li>
+                      <li class="footer_gran_child">
+                          <a class="footer_menu_gran_child_link" href="<?php echo esc_url( home_url( '/students-parents/school_year5/') ); ?>">学年別お知らせ（5年生）</a>
+                      </li>
+                      <li class="footer_gran_child">
+                          <a class="footer_menu_gran_child_link" href="<?php echo esc_url( home_url( '/students-parents/school_year6/') ); ?>">学年別お知らせ（6年生）</a>
+                      </li>
+                  </ul>
+              </li>
+              <li class="footer_global_nav single">
+                  <div class="footer_global_nav_block"><a class="footer_global_nav_link" href="<?php echo esc_url( home_url( '/alumni/') ); ?>">卒業生の方へ</a></div>
+                  <div class="footer_global_nav_block"><a class="footer_global_nav_link" href="<?php echo esc_url( home_url( '/ob-interview/') ); ?>">OBインタビュー</a></div>
+                  <div class="footer_global_nav_block"><a class="footer_global_nav_link" href="<?php echo esc_url( home_url( '/recruit/') ); ?>">教職員採用情報</a></div>
+              </li>
+          </ul>
+      </li>
+      <li class="footer_global_nav_flex">
+          <ul class="footer_global_nav_flex_list">
+              <li class="footer_global_nav parent">
+                  <div class="footer_global_nav_block"><a class="footer_global_nav_link" href="<?php echo esc_url( home_url( '/contact/') ); ?>">お問い合わせ</a><span class="arrow"></span></div>
+                  <ul class="footer_child">
+                      <li class="footer_gran_child">
+                          <a class="footer_menu_gran_child_link" href="<?php echo esc_url( home_url( '/contact/exam/') ); ?>">入試・説明会について</a>
+                      </li>
+                      <li class="footer_gran_child two_lines">
+                          <a class="footer_menu_gran_child_link" href="<?php echo esc_url( home_url( '/contact/international/') ); ?>">国際学級｢受験資格｣<br class="tab"><br class="pc">有無のご確認</a>
+                      </li>
+                      <li class="footer_gran_child">
+                          <a class="footer_menu_gran_child_link" href="<?php echo esc_url( home_url( '/contact/certificate/') ); ?>">証明書発行について</a>
+                      </li>
+                      <li class="footer_gran_child">
+                          <a class="footer_menu_gran_child_link" href="<?php echo esc_url( home_url( '/contact/question/') ); ?>">ご意見・ご質問</a>
+                      </li>
+                  </ul>
+              </li>
+              <li class="footer_global_nav single">
+                  <div class="footer_global_nav_block"><a class="footer_global_nav_link" href="#">サイトマップ</a></div>
+                  <div class="footer_global_nav_block"><a class="footer_global_nav_link" href="#">サイトポリシー</a></div>
+                  <div class="footer_global_nav_block"><a class="footer_global_nav_link" href="#">プライバシーポリシー </a></div>
+              </li>
+          </ul>
+      </li>
+    </ul>
+    <div id="footer_address">
+      <a href="/" class="site_title_link">
+      <img class="kogyokusha_logo" src="ommon/images/kogyokusha_logo.svg" alt="攻玉社 中学校・高等学校">
+      <img class="kogyokusha_logo_white" src="common/images/kogyokusha_logo_white.svg" alt="攻玉社 中学校・高等学校">
+      </a>
+      <div id="footer_address_text_area">
+        <p>〒141-0031　品川区西五反田5-14-2</p>
+        <p class="footer_telephon"><a href="tel:03-3493-0331">03-3493-0331</a>(代)<br class="sp"><a class="tyokutsu" href="tel:03-3495-8160">03-3495-8160</a>(募集直通)</p>
+      </div>
+    </div>
+    <div class="search-input-wrap">
+      <form method="get" id="searchform" action="/">
+          <input type="search" placeholder="ニュース検索" name="s" value="">
+          <!-- <input type="text" placeholder="検索" name="s" id="s"> -->
+      <input type="hidden" name="post_type" value="投稿タイプ">
+          <input type="submit" id="searchsubmit" value="">
+      </form>
+    </div>
+    <p id="copyright">Copyright © KOGYOKUSHA GAKUEN, All rights reserved.</p>
+  </footer>
+  </div>
+  <!--object fit images-->
+  <script type="text/javascript" src="common/js/ofi.min.js"></script>
+  <!--scrollreveal-->
+  <script type="text/javascript" src="common/js/scrollreveal.min.js"></script>
+  <!--共通javascript-->
+  <script type="text/javascript" src="common/js/common.js"></script>
+  <!--各javascript-->
+  <script type="text/javascript" src="common/js/fresco/fresco.js"></script>
+  <!--<script type="text/javascript" src="<?php echo get_template_directory_uri();?>/common/js/user.js"></script>-->
+  <script>
+  $(function() {
+    var i = $(window).scrollTop();
+      var headH = $('header').height();
+        $('main').append('<div id="tagetTop"><a href="#" class="smooth"><span></span></a></div>');
+      $('#tagetTop').css('display', 'none' );
+      $(window).bind('scroll load',function(){
+          var i = $(window).scrollTop();
+          var headH = $('header').height();
+      var footH = $('footer').height();
+      var documentHeight = $('body').height();
+      var windowHeight = window.innerHeight;
+          var keyvisualH = $('#first_view').height();
+      var tagetTop = $('#tagetTop').height();
+      var footBottom = $('#footer-bottom').height(); 
+      var contact = $('#contact').height(); 
+      var main = $('main').height(); 
+          if ( i >= keyvisualH ) {
+              $('#tagetTop').fadeIn();
+          }else {
+              $('#tagetTop').fadeOut();
+          }
+      if ( i >= (keyvisualH - headH) ) {
+        $('header').addClass("shadow");
+          }else {
+        $('header').removeClass("shadow");
+          }
+      if ((documentHeight - (footH + tagetTop + windowHeight)) < i) {
+        $('#tagetTop').removeClass("fixed");
+      }else{
+        $('#tagetTop').addClass("fixed"); 
+      }
+      if (i >= (main - contact)) {
+        $('#float_menu').fadeOut();
+      }else{
+        $('#float_menu').fadeIn();
+      }
+      });
+      
+      var header = $('header');
+      $('.smooth').click(function(){
+        var gap = header.outerHeight();
+        var speed = 500;
+        var href = $(this).attr("href");
+        var target = $(href == "#" || href == "" ? "html" : href);
+        var position = target.offset().top - gap;
+        $("html, body").animate({ scrollTop: position }, speed, "swing");
+        return false;
+      });
+      
+  });
+      $(window).on('load resize', function() {  
+      const setFillHeight = () => {
+        const vh = window.innerHeight * 0.01;
+        document.documentElement.style.setProperty('--vh', `${vh}px`);
+      }
+      let vw = window.innerWidth; 
+      window.addEventListener('resize', () => {
+        if (vw === window.innerWidth) {
+        // 画面の横幅にサイズ変動がないので処理を終える
+          return;
+        }
+        // 画面の横幅のサイズ変動があった時のみ高さを再計算する
+        vw = window.innerWidth;
+        setFillHeight();
+      });
+      // 初期化
+      setFillHeight();
+      });
+  $(document).ready(function() {
+    var list = $('#breadcrumb ul').innerWidth();
+    var panNavi = $('#breadcrumb').innerWidth();
+    var scrollLeft = list - panNavi;
+    $('#breadcrumb ul').scrollLeft(list - scrollLeft);
+  });
+  </script>
+  </body>
+  </html>
