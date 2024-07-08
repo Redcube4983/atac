@@ -1,3 +1,4 @@
+@use "../../../scss/global" as *;
 /*******************************
 			footer
 *******************************/
@@ -591,5 +592,17 @@ footer {
     @media screen and (min-width: 1280px) {
 
         
+    }
+}
+
+.l-footer__contact {
+    h2.content--img {
+        width: 100px;
+        text-align: center;
+        font-size: revert;
+        margin-top: 8px;
+        @include mq(lg) {
+            width: 150px;
+        }
     }
 }

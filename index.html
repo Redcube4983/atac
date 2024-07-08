@@ -26,6 +26,9 @@
 <!--<script src="https://kit.fontawesome.com/f01c716632.js"></script>-->
 
 <!--googlefont-->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Zen+Maru+Gothic&display=swap" rel="stylesheet">
 
 
 <!-- Global site tag (gtag.js) - Google Analytics -->
@@ -44,7 +47,7 @@
 <div class="wrapper">
 <header class="l-header">
 <h1 class="l-header__title">
-  <a href="/" class="l-header__title__link">
+  <a href="/" class="l-header__title--link">
     <img class="l-header__title__sitelogo" src="common/images/logo.svg" alt="総合保険代理店 ATAC">
   </a>
 </h1>
@@ -80,7 +83,10 @@
     </div>
 </nav>
 <div class="l-header__toggle js-navSwitch">
-  <div class="l-header__toggle__inner">
+  <div class="l-header__toggle l-header__inner">
+  <!-- <div class="l-header__toggle--inner">
+  <div class="l-header__toggle l-header__inner"> -->
+
     <span class="l-header__toggle__inner--bar1"></span>
     <span class="l-header__toggle__inner--bar2"></span>
     <span class="l-header__toggle__inner--bar3"></span>
@@ -182,285 +188,326 @@
     </div> -->
     <section id="first_view">
       <div class="first_visual_wrap">
-        <div class="ttl_wrap">
-          <span class="subttl">
+
+          <div class="ttl_wrap">
+            <span class="subttl">
+              <picture>
+                <source srcset="images/front-page/fv_subtxt.webp" type="image/webp">
+                <img src="images/front-page/fv_subtxt.png" alt="人生の安心　保険の費用">
+              </picture>
+            </span>
+            <h1 class="ttl">
+              <picture>
+                <source srcset="images/front-page/fv_ttl.webp" type="image/webp">
+                <img src="images/front-page/fv_ttl.png" alt="あなたの目線で、あなたの安心を一緒に考えます！">
+              </picture>
+            </h1>
+          </div>
+
+          <div class="illust">
             <picture>
-              <source srcset="images/front-page/fv_subtxt.webp" type="image/webp">
-              <img src="images/front-page/fv_subtxt.png" alt="人生の安心　保険の費用">
+              <source srcset="images/front-page/illust.webp" type="image/webp">
+              <img src="images/front-page/illust.png" alt="青ちゃん">
             </picture>
-          </span>
-          <h1 class="ttl">
-            <picture>
-              <source srcset="images/front-page/fv_ttl.webp" type="image/webp">
-              <img src="images/front-page/fv_ttl.png" alt="あなたの目線で、あなたの安心を一緒に考えます！">
-            </picture>
-          </h1>
-        </div>
-        <div class="illust">
-          <picture>
-            <source srcset="images/front-page/illust.webp" type="image/webp">
-            <img src="images/front-page/illust.png" alt="青ちゃん">
-          </picture>
-        </div>
-      </div>
-      <div id="first_view_banner_area">
-        <a target="_blank" href="https://mirai-compass.net/usr/kogyokuj/event/evtIndex.jsf" class="first_view_bottom_area_banner">
-          
-        </a>
+          </div>
+
       </div>
     </section>
-    <section class="p-main__content">
+    <div id="first_view_banner_area">
+      <a target="_blank" href="https://mirai-compass.net/usr/kogyokuj/event/evtIndex.jsf" class="first_view_bottom_area_banner"></a>
+    </div>
+    <section id="p-main__content">
       <div class="content--ttl">
         <span>お選びいただける理由</span>
-        <div class="content--img">
+        <h2 class="content--img">
           <img src="images/front-page/top_ttl_01.svg" alt="お客様の声">
-        </div>
+          <div class="ornament_underline">
+            <picture>
+              <source srcset="images/front-page/ornament_subttl_or.webp" type="image/webp">
+              <img src="images/front-page/ornament_subttl_or.png" alt="">
+            </picture>
+          </div>
+        </h2>
+      </div>
         <ul class="p-main__content--voice">
-          <li>
+          <li  class="content_list">
             <div class="ornament_pin">
               <picture>
-                <source srcset="images/front-page/ornament_subttl_ye.webp" type="image/webp">
-                <img src="images/front-page/ornament_subttl_ye.png" alt="">
+                <source srcset="images/front-page/content_paper.webp" type="image/webp">
+                <img src="images/front-page/content_paper.png" alt="">
               </picture>
             </div>
-            <b class="name">管理組合法人　ＴＴＩ様</b>
-            <div class="content_inner">
-              <div class="img">
-                <picture>
-                  <source srcset="images/front-page/image1.webp" type="image/webp">
-                  <img src="images/front-page/image1.jpg" alt="">
-                </picture>
+            <div class="voice_inner">
+              <b class="name">管理組合法人　ＴＴＩ様</b>
+              <div class="content_inner">
+                <div class="img">
+                  <picture>
+                    <source srcset="images/front-page/image1.webp" type="image/webp">
+                    <img src="images/front-page/image1.jpg" alt="">
+                  </picture>
+                </div>
+                <div class="txt">
+                  <b>弊社受託保険</b>
+                  <ul>
+                    <li>●●保険</li>
+                    <li>●●保険</li>
+                    <li>●●保険</li>
+                    <li>●●保険　他</li>
+                  </ul>
+                </div>
               </div>
-              <div class="txt">
-                <b>弊社受託保険</b>
-                <ul>
-                  <li>●●保険</li>
-                  <li>●●保険</li>
-                  <li>●●保険</li>
-                  <li>●●保険　他</li>
-                </ul>
-              </div>
+              <p class="comment">「起こりえるリスク予想が的確で、何度も保険に助けられました」</p>
             </div>
-            <p class="comment">「起こりえるリスク予想が的確で、何度も保険に助けられました」</p>
           </li>
-          <li>
+          <li  class="content_list">
             <div class="ornament_pin">
               <picture>
-                <source srcset="images/front-page/ornament_subttl_ye.webp" type="image/webp">
-                <img src="images/front-page/ornament_subttl_ye.png" alt="">
+                <source srcset="images/front-page/content_paper.webp" type="image/webp">
+                <img src="images/front-page/content_paper.png" alt="">
               </picture>
             </div>
-            <b class="name">管理組合法人　ＴＴＩ様</b>
-            <div class="content_inner">
-              <div class="img">
-                <picture>
-                  <source srcset="images/front-page/image2.webp" type="image/webp">
-                  <img src="images/front-page/image2.jpg" alt="">
-                </picture>
+            <div class="voice_inner">
+              <b class="name">メガバンクG執行役員　H様</b>
+              <div class="content_inner">
+                <div class="img">
+                  <picture>
+                    <source srcset="images/front-page/image1.webp" type="image/webp">
+                    <img src="images/front-page/image1.jpg" alt="">
+                  </picture>
+                </div>
+                <div class="txt">
+                  <b>弊社受託保険</b>
+                  <ul>
+                    <li>●●保険</li>
+                    <li>●●保険</li>
+                    <li>●●保険</li>
+                    <li>●●保険　他</li>
+                  </ul>
+                </div>
               </div>
-              <div class="txt">
-                <b>弊社受託保険</b>
-                <ul>
-                  <li>●●保険</li>
-                  <li>●●保険</li>
-                  <li>●●保険</li>
-                  <li>●●保険　他</li>
-                </ul>
-              </div>
+              <p class="comment">「とにかく対応が早いのと、保険提案内容が的確で分かりやすい」</p>
             </div>
-            <p class="comment">「起こりえるリスク予想が的確で、何度も保険に助けられました」</p>
           </li>
-          <li>
+          <li  class="content_list">
             <div class="ornament_pin">
               <picture>
-                <source srcset="images/front-page/ornament_subttl_ye.webp" type="image/webp">
-                <img src="images/front-page/ornament_subttl_ye.png" alt="">
+                <source srcset="images/front-page/content_paper.webp" type="image/webp">
+                <img src="images/front-page/content_paper.png" alt="">
               </picture>
             </div>
-            <b class="name">管理組合法人　ＴＴＩ様</b>
-            <div class="content_inner">
-              <div class="img">
-                <picture>
-                  <source srcset="images/front-page/image3.webp" type="image/webp">
-                  <img src="images/front-page/image3.jpg" alt="">
-                </picture>
+            <div class="voice_inner">
+              <b class="name">イベント会社経営　N様</b>
+              <div class="content_inner">
+                <div class="img">
+                  <picture>
+                    <source srcset="images/front-page/image1.webp" type="image/webp">
+                    <img src="images/front-page/image1.jpg" alt="">
+                  </picture>
+                </div>
+                <div class="txt">
+                  <b>弊社受託保険</b>
+                  <ul>
+                    <li>●●保険</li>
+                    <li>●●保険</li>
+                    <li>●●保険</li>
+                    <li>●●保険　他</li>
+                  </ul>
+                </div>
               </div>
-              <div class="txt">
-                <b>弊社受託保険</b>
-                <ul>
-                  <li>●●保険</li>
-                  <li>●●保険</li>
-                  <li>●●保険</li>
-                  <li>●●保険　他</li>
-                </ul>
-              </div>
+              <p class="comment">「いざという時に、こちら側に立って親身に動いてくれ本当に頼りになります」</p>
             </div>
-            <p class="comment">「起こりえるリスク予想が的確で、何度も保険に助けられました」</p>
           </li>
-          <li>
+          <li  class="content_list">
             <div class="ornament_pin">
               <picture>
-                <source srcset="images/front-page/ornament_subttl_ye.webp" type="image/webp">
-                <img src="images/front-page/ornament_subttl_ye.png" alt="">
+                <source srcset="images/front-page/content_paper.webp" type="image/webp">
+                <img src="images/front-page/content_paper.png" alt="">
               </picture>
             </div>
-            <b class="name">管理組合法人　ＴＴＩ様</b>
-            <div class="content_inner">
-              <div class="img">
-                <picture>
-                  <source srcset="images/front-page/image4.webp" type="image/webp">
-                  <img src="images/front-page/image4.jpg" alt="">
-                </picture>
+            <div class="voice_inner">
+              <b class="name">子育て世代　Ｉ様</b>
+              <div class="content_inner">
+                <div class="img">
+                  <picture>
+                    <source srcset="images/front-page/image1.webp" type="image/webp">
+                    <img src="images/front-page/image1.jpg" alt="">
+                  </picture>
+                </div>
+                <div class="txt">
+                  <b>弊社受託保険</b>
+                  <ul>
+                    <li>●●保険</li>
+                    <li>●●保険</li>
+                    <li>●●保険</li>
+                    <li>●●保険　他</li>
+                  </ul>
+                </div>
               </div>
-              <div class="txt">
-                <b>弊社受託保険</b>
-                <ul>
-                  <li>●●保険</li>
-                  <li>●●保険</li>
-                  <li>●●保険</li>
-                  <li>●●保険　他</li>
-                </ul>
-              </div>
+              <p class="comment">「私たちの人生設計を一緒に考えてくれて、将来の安心を見守ってもらえます」</p>
             </div>
-            <p class="comment">「起こりえるリスク予想が的確で、何度も保険に助けられました」</p>
           </li>
-          <li>
+          <li  class="content_list">
             <div class="ornament_pin">
               <picture>
-                <source srcset="images/front-page/ornament_subttl_ye.webp" type="image/webp">
-                <img src="images/front-page/ornament_subttl_ye.png" alt="">
+                <source srcset="images/front-page/content_paper.webp" type="image/webp">
+                <img src="images/front-page/content_paper.png" alt="">
               </picture>
             </div>
-            <b class="name">管理組合法人　ＴＴＩ様</b>
-            <div class="content_inner">
-              <div class="img">
-                <picture>
-                  <source srcset="images/front-page/image5.webp" type="image/webp">
-                  <img src="images/front-page/image5.jpg" alt="">
-                </picture>
+            <div class="voice_inner">
+              <b class="name">イベント会社経営　N様</b>
+              <div class="content_inner">
+                <div class="img">
+                  <picture>
+                    <source srcset="images/front-page/image1.webp" type="image/webp">
+                    <img src="images/front-page/image1.jpg" alt="">
+                  </picture>
+                </div>
+                <div class="txt">
+                  <b>弊社受託保険</b>
+                  <ul>
+                    <li>●●保険</li>
+                    <li>●●保険</li>
+                    <li>●●保険</li>
+                    <li>●●保険　他</li>
+                  </ul>
+                </div>
               </div>
-              <div class="txt">
-                <b>弊社受託保険</b>
-                <ul>
-                  <li>●●保険</li>
-                  <li>●●保険</li>
-                  <li>●●保険</li>
-                  <li>●●保険　他</li>
-                </ul>
-              </div>
+              <p class="comment">「いざという時に、こちら側に立って親身に動いてくれ本当に頼りになります」</p>
             </div>
-            <p class="comment">「起こりえるリスク予想が的確で、何度も保険に助けられました」</p>
           </li>
-          <li>
+          <li  class="content_list">
             <div class="ornament_pin">
               <picture>
-                <source srcset="images/front-page/ornament_subttl_ye.webp" type="image/webp">
-                <img src="images/front-page/ornament_subttl_ye.png" alt="">
+                <source srcset="images/front-page/content_paper.webp" type="image/webp">
+                <img src="images/front-page/content_paper.png" alt="">
               </picture>
             </div>
-            <b class="name">管理組合法人　ＴＴＩ様</b>
-            <div class="content_inner">
-              <div class="img">
-                <picture>
-                  <source srcset="images/front-page/image6.webp" type="image/webp">
-                  <img src="images/front-page/image6.jpg" alt="">
-                </picture>
+            <div class="voice_inner">
+              <b class="name">子育て世代　Ｉ様</b>
+              <div class="content_inner">
+                <div class="img">
+                  <picture>
+                    <source srcset="images/front-page/image1.webp" type="image/webp">
+                    <img src="images/front-page/image1.jpg" alt="">
+                  </picture>
+                </div>
+                <div class="txt">
+                  <b>弊社受託保険</b>
+                  <ul>
+                    <li>●●保険</li>
+                    <li>●●保険</li>
+                    <li>●●保険</li>
+                    <li>●●保険　他</li>
+                  </ul>
+                </div>
               </div>
-              <div class="txt">
-                <b>弊社受託保険</b>
-                <ul>
-                  <li>●●保険</li>
-                  <li>●●保険</li>
-                  <li>●●保険</li>
-                  <li>●●保険　他</li>
-                </ul>
-              </div>
+              <p class="comment">「私たちの人生設計を一緒に考えてくれて、将来の安心を見守ってもらえます」</p>
             </div>
-            <p class="comment">「起こりえるリスク予想が的確で、何度も保険に助けられました」</p>
           </li>
         </ul>
-      </div>
     </section>
   </div>
 </main>
 <footer class="l-footer">
-    <section class="l-footer__linkarea">
-      <div class="l-footer__linkarea__title">
-          <h2 class="l-footer__linkarea__title--en animate-bottom">Information</h2>
+    <section class="l-footer__contact">
+      <div class="content--ttl">
+        <h2 class="content--img">
+          <img src="images/front-page/top_ttl_02.svg" alt="今すぐ相談">
+          <div class="ornament_underline">
+            <picture>
+              <source srcset="images/front-page/ornament_subttl_ye.webp" type="image/webp">
+              <img src="images/front-page/ornament_subttl_ye.png" alt="">
+            </picture>
+          </div>
+        </h2>
       </div>
-      <div class="c-linkbtn l-footer__linkbtn">
-          <ul class="link_btn_inner">
-              <li><a href="#" class="link_btn_inner_link"><span>お問い合わせ</span></a></li>
-              <li><a href="#" class="link_btn_inner_link"><span>学校案内パンフレット<br>ダウンロード</span></a></li>
-              <li><a href="#" class="link_btn_inner_link"><span>FAQ</span></a></li>
-          </ul>
-      </div>
-    </section>
-    <nav class="l-footernav">
-    <ul class="l-footernav__inner">
-      <li class="l-footernav__inner__list">
-          <ul class="l-footernav__inner__list--child">
-                <li class="l-footernav__list single first">
-                  <div class="l-footernav__block"><a class="l-footernav__link" href="#">HOME</a></div>
+      <ul class="contact--link">
+        <li>
+          <a href="/contact/">
+            <b>メールでのお問い合わせ</b>
+            <img src="/images/common/icon_mail_white.svg" alt="" class="icon">
+          </a>
+        </li>
+        <li>
+          <a href="#">
+            <b>電話でのお問い合わせ</b>
+            <img src="/images/common/icon_mail_tel.svg" alt="" class="icon">
+          </a>
+        </li>
+      </ul>
+      <div class="contact--underBox">
+        <div class="link_wrap">
+          <div class="logo_block">
+            <img class="" src="common/images/logo.svg" alt="総合保険代理店 ATAC">
+            <span class="address">〒292-0014千葉県木更津市高柳1-8-1</span>
+          </div>
+          <ul class="blog_block">
+            <li>
+              <b>Blog</b>
+              <p><span>ATAC通信</span>　保険のアフレコ配信中！</p>
+            </li>
+            <li>
+              <b>Face book</b>
+              <p><span>ATAC通信</span>　青木の日常ブログ</p>
+            </li>
+            <li>
+              <b>取扱保険会社</b>
+              <ul class="img_wrap">
+                <li>
+                  <picture>
+                    <source srcset="images/common/aioiseimei.webp" type="image/webp">
+                    <img src="images/common/aioiseimei.png" alt="">
+                  </picture>
                 </li>
+                <li>
+                  <picture>
+                    <source srcset="images/common/sumitomokaijyo.webp" type="image/webp">
+                    <img src="images/common/sumitomokaijyo.png" alt="">
+                  </picture>
+                </li>
+              </ul>
+            </li>
           </ul>
-      </li>
-      <li class="l-footernav__list l-footernav__inner__list js-footerNav parent">
-        <div class="l-footernav__block"><a class="l-footernav__link" href="#">教育内容</a><span class="js-linkArrow l-footernav__link--arrow"></span></div>
-        <ul class="l-footernav__child">
-          <li class="l-footernav__granchild">
-            <a class="l-footernav__granchild--link" href="#">攻玉社の魅力</a>
+        </div>
+      </div>
+      <nav class="l-footernav">
+        <ul class="l-footernav__inner">
+          <li class="l-footernav__inner__list">
+              <ul class="l-footernav__inner__list--child">
+                    <li class="l-footernav__list single first">
+                      <div class="l-footernav__block"><a class="l-footernav__link" href="#">HOME</a></div>
+                    </li>
+              </ul>
+          </li>
+          <li class="l-footernav__list l-footernav__inner__list js-footerNav parent">
+            <div class="l-footernav__block"><a class="l-footernav__link" href="#">当社のご案内</a><span class="js-linkArrow l-footernav__link--arrow"></span></div>
+            <ul class="l-footernav__child">
+              <li class="l-footernav__granchild">
+                <a class="l-footernav__granchild--link" href="#">Blog</a>
+              </li>
+            </ul>
+          </li>
+          <li class="l-footernav__list l-footernav__inner__list">
+            <div class="l-footernav__block"><a class="l-footernav__link" href="#">保険のご案内</a><span class="js-linkArrow l-footernav__link--arrow"></span></div>
+          </li>
+          <li class="l-footernav__list l-footernav__inner__list">
+            <div class="l-footernav__block"><a class="l-footernav__link" href="#">よくあるご質問</a><span class="js-linkArrow l-footernav__link--arrow"></span></div>
+          </li>
+          <li class="l-footernav__list l-footernav__inner__list">
+            <div class="l-footernav__block"><a class="l-footernav__link" href="#">お役立ち情報</a><span class="js-linkArrow l-footernav__link--arrow"></span></div>
+          </li>
+          <li class="l-footernav__inner__list">
+              <ul class="l-footernav__inner__list--child">
+                  <li class="l-footernav__list single">
+                      <div class="l-footernav__block"><a class="l-footernav__link" href="#">ご相談/お問い合わせ</a></div>
+                      <div class="l-footernav__block"><a class="l-footernav__link" href="#">個人情報保護法/勧誘方針</a></div>
+                      <div class="l-footernav__block"><a class="l-footernav__link" href="#">業務運営方針</a></div>
+                  </li>
+              </ul>
           </li>
         </ul>
-      </li>
-      <li class="l-footernav__list l-footernav__inner__list js-footerNav parent">
-        <div class="l-footernav__block"><a class="l-footernav__link" href="#">スクールライフ</a><span class="js-linkArrow l-footernav__link--arrow"></span></div>
-      </li>
-      <li class="l-footernav__inner__list">
-          <ul class="l-footernav__inner__list--child">
-              <li class="l-footernav__list js-footerNav parent">
-                  <div class="l-footernav__block"><a class="l-footernav__link" href="#">受験生の方へ</a><span class="js-linkArrow l-footernav__link--arrow"></span></div>
-              </li>
-          </ul>
-      </li>
-      <li class="l-footernav__inner__list">
-          <ul class="l-footernav__inner__list--child">
-              <li class="l-footernav__list js-footerNav parent">
-                  <div class="l-footernav__block"><a class="l-footernav__link" href="#">お問い合わせ</a><span class="js-linkArrow l-footernav__link--arrow"></span></div>
-                  <!-- <ul class="l-footernav__child">
-                      <li class="l-footernav__granchild">
-                          <a class="l-footernav__granchild--link" href="#">入試・説明会について</a>
-                      </li>
-                      <li class="l-footernav__granchild two_lines">
-                          <a class="l-footernav__granchild--link" href="#">国際学級｢受験資格｣<br class="tab"><br class="pc">有無のご確認</a>
-                      </li>
-                      <li class="l-footernav__granchild">
-                          <a class="l-footernav__granchild--link" href="#">証明書発行について</a>
-                      </li>
-                      <li class="l-footernav__granchild">
-                          <a class="l-footernav__granchild--link" href="#">ご意見・ご質問</a>
-                      </li>
-                  </ul> -->
-              </li>
-              <li class="l-footernav__list single">
-                  <div class="l-footernav__block"><a class="l-footernav__link" href="#">サイトマップ</a></div>
-                  <div class="l-footernav__block"><a class="l-footernav__link" href="#">サイトポリシー</a></div>
-                  <div class="l-footernav__block"><a class="l-footernav__link" href="#">プライバシーポリシー </a></div>
-              </li>
-          </ul>
-      </li>
-    </ul>
-    </nav>
-    <div class="l-footer__address">
-      <a href="/" class="site_title_link">
-      <img class="l-footer_sitelogo" src="common/images/kogyokusha_logo.svg" alt="攻玉社 中学校・高等学校">
-      <img class="l-footer_sitelogo--white" src="common/images/kogyokusha_logo_white.svg" alt="攻玉社 中学校・高等学校">
-      </a>
-      <div class="l-footer__address__textarea">
-        <p>〒141-0031　品川区西五反田5-14-2</p>
-        <p class="l-footer__telephon"><a href="tel:03-3493-0331">03-3493-0331</a>(代)<br class="sp"><a class="tyokutsu" href="tel:03-3495-8160">03-3495-8160</a>(募集直通)</p>
-      </div>
-    </div>
+      </nav>
+    </section>
     <p class="l-copyright">Copyright © KOGYOKUSHA GAKUEN, All rights reserved.</p>
   </footer>
   </div>

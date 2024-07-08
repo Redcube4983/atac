@@ -121,6 +121,9 @@ main {
 		line-height: 2; 
 	}
 }
+b {
+	letter-spacing: revert;
+}
 .image{
     width: 100%;
     height: auto;

@@ -839,7 +839,7 @@ strong {
   font-size: 1.1rem;
   margin-bottom: 4px;
 }
-.l-header__toggle.is-open .l-header__toggle__inner {
+.l-header__toggle.is-open .l-header__inner {
   top: 10px;
   width: 30px;
   height: 30px;
@@ -847,7 +847,7 @@ strong {
   -webkit-transition: all 1s;
   transition: all 1s;
 }
-.l-header__toggle.is-open .l-header__toggle__inner .l-header__toggle__inner--bar1 {
+.l-header__toggle.is-open .l-header__inner .l-header__toggle__inner--bar1 {
   border-top: 2px solid #fff;
   top: 2px;
   -webkit-transition: all 0.5s ease;
@@ -858,7 +858,7 @@ strong {
           transform: rotate(45deg);
   left: 5px;
 }
-.l-header__toggle.is-open .l-header__toggle__inner .l-header__toggle__inner--bar2 {
+.l-header__toggle.is-open .l-header__inner .l-header__toggle__inner--bar2 {
   border-top: 2px solid #fff;
   -webkit-transform: translate(-50%, -100%) scale(0, 1);
           transform: translate(-50%, -100%) scale(0, 1);
@@ -868,7 +868,7 @@ strong {
   -webkit-transform-origin: center top;
           transform-origin: center top;
 }
-.l-header__toggle.is-open .l-header__toggle__inner .l-header__toggle__inner--bar3 {
+.l-header__toggle.is-open .l-header__inner .l-header__toggle__inner--bar3 {
   border-bottom: 2px solid #fff;
   bottom: 2px;
   -webkit-transition: all 0.5s ease;
@@ -879,7 +879,7 @@ strong {
           transform: rotate(-45deg);
   left: 5px;
 }
-.l-header__toggle .l-header__toggle__inner {
+.l-header__toggle .l-header__inner {
   top: 10px;
   width: 30px;
   height: 30px;
@@ -887,7 +887,7 @@ strong {
   -webkit-transition: all 1s;
   transition: all 1s;
 }
-.l-header__toggle .l-header__toggle__inner .l-header__toggle__inner--bar1 {
+.l-header__toggle .l-header__inner .l-header__toggle__inner--bar1 {
   width: 36px;
   display: block;
   border-top: 2px solid #fff;
@@ -899,7 +899,7 @@ strong {
           transform: translate(-50%, -50%);
   left: 50%;
 }
-.l-header__toggle .l-header__toggle__inner .l-header__toggle__inner--bar2 {
+.l-header__toggle .l-header__inner .l-header__toggle__inner--bar2 {
   width: 36px;
   display: block;
   border-top: 2px solid #fff;
@@ -911,7 +911,7 @@ strong {
           transform: translate(-50%, -100%) scale(1, 1);
   left: 50%;
 }
-.l-header__toggle .l-header__toggle__inner .l-header__toggle__inner--bar3 {
+.l-header__toggle .l-header__inner .l-header__toggle__inner--bar3 {
   width: 36px;
   display: block;
   border-bottom: 2px solid #fff;

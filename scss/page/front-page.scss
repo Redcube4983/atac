@@ -1,26 +1,35 @@
 @use "../global" as *;
 @use "../object" as *;
+@use "../../common/css/layout" as *;
 #first_view {
     padding: 0 32px;
-    border-radius: 0 0 50px 50px;
     overflow: hidden;
     position: relative;
+    height: 100vh;
+    background-image: url(../images/front-page/fv_background_sp.png);
+    border-image-repeat: no-repeat;
+    background-size: cover;
     img {
         width: 100%;
     }
     .first_visual_wrap {
-        margin-top: 80px;
+        width: 90vw;
+        margin: 80px auto;
+        position: absolute;
+        left: 0;
+        right: 0;
         .subttl {
-            width: 45vw;
+            width: 40vw;
             display: flex;
             margin: 0 0 0 auto;
         }
-        h1 {
+        h1.ttl {
             margin-top: 16px;
+            width: 75vw;
         }
         .illust {
-            width: 55vw;
-            margin: 16px auto 0;
+            width: 63%;
+            margin: 32px auto;
         }
     }
     
@@ -1136,11 +1145,7 @@
 .p-main {
     position: relative;
     margin: 0;
-    background-image: url(../images/front-page/background_sp.png);
-    border-image-repeat: no-repeat;
-    background-size: cover;
     @include mq(md) {
-        background-image: url(../images/front-page/background.png);
     }
     .p-main__ornament {
         img {
@@ -1150,5 +1155,161 @@
             position: absolute;
         }
 
+    }
+}
+#p-main__content {
+    background-color: #FBD98D;
+    padding: 64px 8px;
+    background-image: url(../images/front-page/main_background_sp.png);
+    border-image-repeat: no-repeat;
+    background-size: cover;
+    img {
+        width: 100%;
+    }
+}
+.content--ttl {
+    span {
+        font-size: 1.3rem;
+        @include mq(lg) {
+            font-size: 1.8rem;
+        }
+    }
+}
+h2.content--img {
+    width: 100px;
+    text-align: center;
+    font-size: revert;
+    margin-top: 8px;
+    @include mq(lg) {
+        width: 150px;
+    }
+}
+ul.p-main__content--voice {
+    margin-top: 24px;
+    li.content_list {
+        position: relative;
+        width: 100%;
+        .voice_inner {
+            position: absolute;
+            left: 0;
+            right: 0;
+            top: 32px;
+            width: 85%;
+            margin: 0 auto;
+            b {
+                letter-spacing: revert;
+                font-size: 1.3rem;
+                @include mq(lg) {
+                    font-size: 1.6rem;
+                }
+                &::before {
+                    content: "";
+                    display: block;
+                    width: 33px;
+                    height: 33px;
+                    background-image: url(../images/front-page/top_ornament_pin_ye.webp);
+                    background-size: contain;
+                    background-repeat: no-repeat;
+                    position: absolute;
+                    top: -30px;
+                    left: 0;
+                    right: 0;
+                    margin: 0 auto;
+                }
+            }
+        }
+        
+        .name {
+            font-size: 1.4rem;
+            margin-top: 8px;
+            display: block;
+            @include mq(lg) {
+                font-size: 1.6rem;
+            }
+        }
+        .content_inner {
+            display: flex;
+            flex-flow: nowrap;
+            justify-content: space-between;
+            margin-top: 12px;
+        }
+        .img {
+            width: 49%;
+        }
+        .txt {
+            display: flex;
+            flex-flow: column;
+            justify-content: center;
+            width: 45%;
+            text-align: left;
+            b {
+                letter-spacing: revert;
+                font-size: 1.3rem;
+                @include mq(lg) {
+                    font-size: 1.6rem;
+                }
+            }
+            ul {
+                li {
+                    font-size: 1.3rem;
+                    margin-top: 8px;
+                }
+            }
+        }
+        .comment {
+            font-family: "Zen Maru Gothic", serif;
+            line-height: 1.5;
+            margin-top: 16px;
+            font-size: 1.3rem;
+            @include mq(lg) {
+                font-size: 1.6rem;
+            }
+        }
+        &:nth-child(2n) {
+            .voice_inner {
+                b {
+                    &::before {
+                        content: "";
+                        display: block;
+                        width: 33px;
+                        height: 33px;
+                        background-image: url(../images/front-page/top_ornament_pin_or.webp);
+                        background-size: contain;
+                        background-repeat: no-repeat;
+                        position: absolute;
+                        top: -30px;
+                        left: 0;
+                        right: 0;
+                        margin: 0 auto;
+                    } 
+                }
+            }
+        }
+        &:nth-child(3n) {
+            .voice_inner {
+                b {
+                    &::before {
+                        content: "";
+                        display: block;
+                        width: 33px;
+                        height: 33px;
+                        background-image: url(../images/front-page/top_ornament_pin_ma.webp);
+                        background-size: contain;
+                        background-repeat: no-repeat;
+                        position: absolute;
+                        top: -30px;
+                        left: 0;
+                        right: 0;
+                        margin: 0 auto;
+                    } 
+                }
+            }
+        }
+    }
+    
+}
+.l-footer__contact {
+    img {
+        width: 100%;
     }
 }
