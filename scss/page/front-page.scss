@@ -1,7 +1,7 @@
 @use "../global" as *;
 @use "../object" as *;
 @use "../../common/css/layout" as *;
-#first_view {
+#p-firstView {
     padding: 0 32px;
     overflow: hidden;
     position: relative;
@@ -12,107 +12,28 @@
     img {
         width: 100%;
     }
-    .first_visual_wrap {
+    .p-firstView-inner {
         width: 90vw;
         margin: 80px auto;
         position: absolute;
         left: 0;
         right: 0;
-        .subttl {
+        &--subtitle {
             width: 40vw;
             display: flex;
             margin: 0 0 0 auto;
         }
-        h1.ttl {
+        &--title {
             margin-top: 16px;
             width: 75vw;
         }
-        .illust {
+        &--illust {
             width: 63%;
             margin: 32px auto;
         }
     }
     
-    #first_view_bottom_area {
-        position: absolute;
-        bottom: 0px;
-        width: 100%;
-        display: flex;
-        flex-flow: column;
-        padding: 0 15px;
-        justify-content: center;
-        align-items: center;
-        z-index: 2;
-        background-color: rgba(0, 0, 0, 0.31);
-        .first_view_news{
-            display: flex;
-            flex-flow: column;
-            justify-content: flex-start;
-            padding: 20px 0;
-            width: 100%;
-            .first_view_news_list{
-                display: flex;
-                flex-flow: row nowrap;
-                justify-content: flex-start;
-                align-items: center;
-                padding: 10px;
-                border-bottom: 1px solid #fff;
-                &:first-child{
-                    border-top: 1px solid #fff;
-                }
-                time{
-                    color: #fff;
-                    font-size: 1.4rem;
-                    margin-right: 1.8rem;
-                }
-                .first_view_news_list_title{
-                    color: #fff;
-                    font-size: 1.4rem;
-                    p{
-                        font-size: 1.4rem;
-                        text-align: left;
-                        white-space: nowrap;
-                        text-overflow: ellipsis;
-                        overflow: hidden;
-                        a{
-                            color: #fff;
-                        }
-                    }
-                    
-                }
-                @media only screen and (min-width: 768px) {
-                    time{
-                        font-size: 1.6rem;
-                    }
-                    .first_view_news_list_title{
-                        font-size: 1.6rem;
-                        p{
-                            font-size: 1.6rem;
-                        }
-                    }
-                }
-                @media only screen and (min-width: 1024px) {
-                    padding: 20px;
-                    time{
-                        color: #fff;
-                        font-size: 1.8rem;
-                        margin-right: 2rem;
-                    }
-                    .first_view_news_list_title{
-                        color: #fff;
-                        font-size: 1.8rem;
-                        p{
-                            font-size: 1.8rem;
-                        }
-                    }
-                }
-            }
-        }
-        @media only screen and (min-width: 1024px) {
-                background-color: transparent;
-        }
-    }
-    #first_view_banner_area{
+    #p-firstView__banner {
         position: absolute;
         width: 100%;
         bottom: 160px;
@@ -125,7 +46,7 @@
         &.bottom {
             bottom: 50px;
         }
-        .first_view_bottom_area_banner{
+        &--bottomArea {
             width: 60%;
             max-width: 240px;
             display: block;
@@ -133,22 +54,10 @@
             &:first-child{
                 margin-top: 0;
             }
-            .recruit_banner{
-                width: 100%;
-                height: auto;
-            }
         }
     }
-    @media only screen and (min-width: 768px) {
-        #first_view_text_area{
-            .top_fv_title{
-                width: 70%;
-            }
-            .top_fv_mark{
-                width: 90%;
-            }
-        }
-        #first_view_banner_area{
+    @include mq(md) {
+        #p-firstView__banner {
             position: absolute;
             width: 100%;
             &.bottom {
@@ -156,17 +65,8 @@
             }
         }
     }
-    @media only screen and (min-width: 1024px) {
-        #first_view_text_area{
-            .top_fv_title{
-                width: 40%;
-            }
-            .top_fv_mark{
-                width: 40%;
-                height: auto;
-            }
-        }
-        #first_view_bottom_area {
+    @include mq(lg) {
+        #p-firstView__banner {
             position: absolute;
             bottom: 50px;
             width: auto;
@@ -175,973 +75,9 @@
             padding: 0 50px;
             justify-content: flex-start;
             align-items: center;
-            .first_view_news{
-                width: auto;
-            }
-            .top_fv_text{
-                width: calc(100% - 380px);
-                margin-right: 0;
-            }
-        }
-        #first_view_banner_area{
-            position: absolute;
-            width: 95%;
-            bottom: 6%;
-            align-items: flex-end;
-            &.bottom {
-                bottom: 6%;
-            }
-            .first_view_bottom_area_banner{
-                width: 60%;
-                max-width: 240px;
-                margin-bottom: 0;
-                .recruit_banner{
-                    width: 100%;
-                    height: auto;
-                }
-            }
         }
     }
 }
-#contents{
-    display: block;
-    position: relative;
-    height: auto;
-    margin-top: 0px;
-    z-index: 1;
-    margin-bottom: 60px;
-    #news {
-        padding: 0 15px 0;
-        margin: 60px auto;
-        line-height: 1.75;
-        #news_title{
-            position: relative;
-            margin-bottom: 30px;
-            display: flex;
-            justify-content: space-between;
-            flex-flow: row nowrap;
-            align-items: center;
-            .title_en{
-                margin: 0;
-                font-size: 3rem;
-                display: flex;
-                flex-flow: row nowrap;
-                align-items: center;
-                font-weight: 100;
-                color: #004080;
-                line-height: 1.3;
-                font-family: "Noto Sans", sans-serif;
-                font-optical-sizing: auto;
-                font-weight: 900;
-                font-style: normal;
-                font-variation-settings:"wdth" 100;
-                position: relative;
-                &::after{
-                    content: "";
-                    display: block;
-                    position: absolute;
-                    width: 90px;
-                    height: 1px;
-                    bottom: -10px;
-                    transform: translateY(-50%);
-                    left: 0;
-                    background-color: #004080;
-                }
-            }
-            .title{
-                font-family: "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "メイリオ", Meiryo, Osaka, "ＭＳ Ｐゴシック", "MS PGothic", sans-serif;
-                margin: 0 0 0 10px;
-                font-size: 1.6rem;
-                font-weight: normal;
-            }
-            .news_link {
-                display: flex;
-                justify-content: center;
-                flex-flow: row nowrap;
-                align-items: center;
-                margin: 0;
-                .link_box {
-                    background-color: transparent;
-                    width: 160px;
-                    height: 40px;
-                    display: flex;
-                    flex-flow: column;
-                    justify-content: center;
-                    margin: 0;
-                    text-decoration: none;
-                    position: relative;
-                    font-size: 1.4rem;
-                    font-weight: bold;
-                    align-items: center;
-                    padding: 0;
-                    letter-spacing: 0;
-                    color: #004080;
-                    border: 1px solid #004080;
-                    overflow: hidden;
-                    transition: color 0.3s;
-                    span {
-                        z-index: 2;
-                    }
-                    &:hover{
-                        color: #fff;
-                        transition: color 0.3s;
-                        &::after{
-                            right: 15px;
-                            border-right: 1px solid #fff;
-                            border-bottom: 1px solid #fff;
-                        }
-                        &::before {
-                            content: "";
-                            width: 105%;
-                            height: 105%;
-                            background-color: #004080;
-                            z-index: 1;
-                            left: -2.5%;
-                            transform: scaleX(1);
-                            transform-origin: left;
-                            transition: transform 0.5s;
-                            top: -2.5%;
-                            position: absolute;
-                        }
-                    }
-                    &::after {
-                        position: absolute;
-                        display: block;
-                        content: "";
-                        width: 12px;
-                        height: 12px;
-                        border-right: 1px solid #004080;
-                        border-bottom: 1px solid #004080;
-                        transform: translateY(-50%) rotate(-45deg);
-                        top: 50%;
-                        right: 15px;
-                        transform-origin: center;
-                        transition: border, right 0.3s;
-                        z-index: 2;
-                    }
-                    &::before {
-                        content: "";
-                        width: 105%;
-                        height: 105%;
-                        background-color: #004080;
-                        z-index: 1;
-                        left: -2.5%;
-                        transform: scaleX(0);
-                        transform-origin: right;
-                        transition: transform 0.5s;
-                        top: -2.5%;
-                        position: absolute;
-                    }
-                }
-              }
-        }
-        .tab-wrap {
-            background: #fff;
-            display: flex;
-            flex-wrap: wrap;
-            margin: 0 auto;
-            max-width: 1280px;
-        }
-        .tab-label {
-            color: #979797;
-            cursor: pointer;
-            font-weight: bold;
-            order: -1;
-            padding: 12px 24px;
-            position: relative;
-            text-align: center;
-            transition: cubic-bezier(0.4, 0, 0.2, 1) .2s;
-            user-select: none;
-            white-space: nowrap;
-            -webkit-tap-highlight-color: transparent;
-            height: 40px;
-            font-size: 1.4rem;
-            display: flex;
-            flex-flow: column;
-            align-items: center;
-            justify-content: center;
-            width: 33.3%;
-            border-top: 1px solid #004080;
-            border-left: 1px solid #004080;
-            &.news{
-                &::after {
-                    background: #d11c24;
-                    transition: cubic-bezier(0.4, 0, 0.2, 1) .2s 80ms;
-                }
-            }
-            &.notice{
-                border-bottom: 1px solid #004080;
-                border-right: 1px solid #004080;
-                &::after {
-                    background: #004080;
-                    transition: cubic-bezier(0.4, 0, 0.2, 1) .2s 80ms;
-                }
-            }
-            &.admission{
-                &::after {
-                    background: #802d80;
-                    transition: cubic-bezier(0.4, 0, 0.2, 1) .2s 80ms;
-                }
-            }
-            &.schoollife{
-                border-bottom: 1px solid #004080;
-                border-right: 1px solid #004080;
-                &::after {
-                    background: #008088;
-                    transition: cubic-bezier(0.4, 0, 0.2, 1) .2s 80ms;
-                }
-            }
-            &.club{
-                border-bottom: 1px solid #004080;
-                &::after {
-                    background: #ff801e;
-                    transition: cubic-bezier(0.4, 0, 0.2, 1) .2s 80ms;
-                }
-            }
-            &:hover {
-                &.news{
-                    background: #d11c2517;
-                }
-                &.admission{
-                    background: #802d8015;
-                }
-                &.notice{
-                    background: #00408018;
-                }
-                &.examination{
-                    background: #802d8010;
-                }
-                &.schoollife{
-                    background: #007f8812;
-                }
-                &.club{
-                    background: #ff801e10;
-                }
-            }
-            &::after {
-                background: #979797;
-                bottom: 0;
-                content: '';
-                display: block;
-                height: 3px;
-                left: 50%;
-                opacity: 0;
-                pointer-events: none;
-                position: absolute;
-                transform: translateX(-50%);
-                transition: cubic-bezier(0.4, 0, 0.2, 1) .2s 80ms;
-                width: 80%;
-                z-index: 1;
-            }
-        }
-        .tab-switch:checked + .tab-label {
-            &.news{
-                color: #d11c24;
-                transition: color .2s 80ms;
-            }
-            &.notice{
-                color: #004080;
-                transition: color .2s 80ms;
-            }
-            &.admission{
-                color: #802d80;
-                transition: color .2s 80ms;
-            }
-            &.schoollife{
-                color: #008088;
-                transition: color .2s 80ms;
-            }
-            &.club{
-                color: #ff801e;
-                transition: color .2s 80ms;
-            }
-            color: DeepSkyBlue;
-            transition: color .2s 80ms;
-        }
-        .tab-switch:checked ~ .tab-label::after {
-            transform: translateX(-100%);
-        }
-        .tab-switch:checked + .tab-label::after {
-            opacity: 1;
-            transform: translateX(-50%);
-        }
-        .tab-content {
-            height:0;
-            opacity:0;
-            padding: 0 20px;
-            pointer-events:none;
-            transform: translateX(-30%);
-            transition: transform .3s 80ms, opacity .3s 80ms;
-            width: 100%;
-        }
-        .tab-switch:checked ~ .tab-content {
-            transform: translateX(30%);
-        }
-        .tab-switch:checked + .tab-label + .tab-content {
-            height: auto;
-            opacity: 1;
-            order: 1;
-            pointer-events:auto;
-            transform: translateX(0);
-        }
-        .tab-switch {
-            display: none;
-        }
-          /* アクティブなタブ */
-          .tab-switch:checked+.tab-label {
-            background: transparent;
-          }
-          .tab-switch:checked+.tab-label+.news_inner {
-            height: auto;
-            overflow: hidden;
-            padding: 0;
-            opacity: 1;
-            transition: 0.5s opacity;
-            margin: 15px auto 0;
-          }
-          /* ラジオボタン非表示 */
-          .tab-switch {
-            display: none;
-        }
-        .news_inner {
-            max-width: 1100px;
-            margin: 0 auto;
-            display: flex;
-            flex-flow: row wrap;
-            justify-content: flex-start;
-            width: 100%;
-            height: 0;
-            overflow: hidden;
-            opacity: 0;
-            .news_list {
-                padding: 0;
-                display: flex;
-                flex-flow: column;
-                justify-content: flex-start;
-                align-items: flex-start;
-                font-size: 1.8rem;
-                color: #1a1a1a;
-                width: 48%;
-                margin: 0 0 4%;
-                &:nth-child(2n){
-                    margin-left: 4%;
-                }
-                .news_list_imagearea{
-                    width: 100%;
-                    height: auto;
-                    position: relative;
-                    overflow: hidden;
-                    margin-bottom: 10px;
-                    &.no_image{
-                        border: 1px solid #333333;
-                    }
-                    &::after{
-                        position: relative;
-                        content: "";
-                        display: block;
-                        padding: 68% 0 0;
-                        width: 100%;
-                    }
-                    .news_list_image{
-                        position: absolute;
-                        top: 0;
-                        left: 0;
-                        width: 100%;
-                        height: 100%;
-                        object-fit: cover; 
-                    }
-                }
-                .news_list_inner{
-                    margin-bottom: 5px;
-                    display: flex;
-                    flex-flow: column;
-                    align-items: flex-start;
-                    width: 100%;
-                    justify-content: flex-start;
-                    .category-wrap{
-                        display: flex;
-                        flex-flow: row wrap;
-                        justify-content: flex-start;
-                        li{
-                            margin-right: 5px;
-                            margin-bottom: 5px;
-                            &:last-child {
-                                margin-right: 0;
-                            }
-                            .category {
-                                padding: 5px 10px;
-                                width: auto;
-                                display: block;
-                                font-size: 1.2rem;
-                                background-color: #004080;
-                                color: #fff;
-                                text-decoration: none;
-                                line-height: 1;
-                                &.cat_admission{
-                                    background-color: #802d80;
-                                }
-                                &.cat_club{
-                                    background-color: #ff801e;
-                                }
-                                &.club_soccer{
-                                    background-color: #ff801e;
-                                }
-                                &.club_baseball{
-                                    background-color: #ff801e;
-                                }
-                                &.club_basketball{
-                                    background-color: #ff801e;
-                                }
-                                &.club_athletics{
-                                    background-color: #ff801e;
-                                }
-                                &.club_swimming{
-                                    background-color: #ff801e;
-                                }
-                                &.club_judo{
-                                    background-color: #ff801e;
-                                }
-                                &.club_kendo{
-                                    background-color: #ff801e;
-                                }
-                                &.club_jhs-baseball{
-                                    background-color: #ff801e;
-                                }
-                                &.club_badminton{
-                                    background-color: #ff801e;
-                                }
-                                &.club_skiing{
-                                    background-color: #ff801e;
-                                }
-                                &.club_volleyball{
-                                    background-color: #ff801e;
-                                }
-                                &.club_soft-tennis{
-                                    background-color: #ff801e;
-                                }
-                                &.club_tennis{
-                                    background-color: #ff801e;
-                                }
-                                &.club_table-tennis{
-                                    background-color: #ff801e;
-                                }
-                                &.club_brass-band{
-                                    background-color: #ff801e;
-                                }
-                                &.club_computer{
-                                    background-color: #ff801e;
-                                }
-                                &.club_biology{
-                                    background-color: #ff801e;
-                                }
-                                &.club_railway{
-                                    background-color: #ff801e;
-                                }
-                                &.club_shogi{
-                                    background-color: #ff801e;
-                                }
-                                &.club_art{
-                                    background-color: #ff801e;
-                                }
-                                &.club_physics{
-                                    background-color: #ff801e;
-                                }
-                                &.club_photograph{
-                                    background-color: #ff801e;
-                                }
-                                &.club_history{
-                                    background-color: #ff801e;
-                                }
-                                &.club_lego{
-                                    background-color: #ff801e;
-                                }
-                                &.club_volunteer{
-                                    background-color: #ff801e;
-                                }
-                                &.club_gundam{
-                                    background-color: #ff801e;
-                                }
-                                &.club_debate{
-                                    background-color: #ff801e;
-                                }
-                                &.club_broadcast{
-                                    background-color: #ff801e;
-                                }
-                                &.club_media{
-                                    background-color: #ff801e;
-                                }
-                                &.club_geopolitics{
-                                    background-color: #ff801e;
-                                }
-                                &.club_math{
-                                    background-color: #ff801e;
-                                }
-                                &.club_go{
-                                    background-color: #ff801e;
-                                }
-                                &.club_trekking{
-                                    background-color: #ff801e;
-                                }
-                                &.club_quiz{
-                                    background-color: #ff801e;
-                                }
-                                &.club_indica{
-                                    background-color: #ff801e;
-                                }
-                                &.club_origami{
-                                    background-color: #ff801e;
-                                }
-                                &.club_aaa{
-                                    background-color: #ff801e;
-                                }
-                                &.cat_schoollife{
-                                    background-color: #008088;
-                                }
-                              }
-                        }
-                    }
-                    time {
-                        font-size: 1.3rem;
-                    }
-                }
-                .news_list_title{
-                    color: #333333;
-                    text-align: left;
-                    line-height: 1.6;
-                    font-size: 1.4rem;
-                    font-weight: bold;
-                }
-                .news_list_content{
-                    color: #1a1a1a;
-                    text-align: justify;
-                    line-height: 1.8;
-                    font-size: 1.2rem;
-                }
-              }
-        }
-    }
-    #content{
-        margin-bottom: 0;
-        #content_title{
-            position: relative;
-            margin-bottom: 50px;
-            display: flex;
-            justify-content: center;
-            flex-flow: row nowrap;
-            align-items: center;
-            .title_en{
-                margin: 0;
-                font-size: 3rem;
-                display: flex;
-                flex-flow: row nowrap;
-                align-items: center;
-                font-weight: 100;
-                color: #004080;
-                line-height: 1.3;
-                font-family: "Noto Sans", sans-serif;
-                font-optical-sizing: auto;
-                font-weight: 900;
-                font-style: normal;
-                font-variation-settings:"wdth" 100;
-                position: relative;
-                &::after{
-                    content: "";
-                    display: block;
-                    position: absolute;
-                    width: 90px;
-                    height: 1px;
-                    bottom: -10px;
-                    transform: translateY(-50%) translateX(-50%);
-                    left: 50%;
-                    background-color: #004080;
-                }
-            }
-        }
-        .content_inner{
-            display: flex;
-            flex-flow: column;
-            justify-content: space-between;
-            border-bottom: 1px solid #000;
-            padding: 30px 0;
-            &:first-child{
-                border-top: 1px solid #000;
-            }
-            .content_inner_imagearea{
-                .contents_image{
-                    width: 100%;
-                    height: auto;
-                    vertical-align: bottom;
-                }
-            }
-            .content_inner_textarea {
-                display: flex;
-                flex-flow: column;
-                justify-content: space-between;
-                padding: 30px 30px 0;
-                h2{
-                    margin: 0 0 20px;
-                    font-family: "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "メイリオ", Meiryo, Osaka, "ＭＳ Ｐゴシック", "MS PGothic", sans-serif;
-                    font-size: 1.8rem;
-                    letter-spacing: 2px;
-                    text-align: left;
-                    color: #004080;
-                    font-weight: bold;
-                }
-                p{
-                    margin: 0 0 30px;
-                    font-size: 1.4rem;
-                    text-align: justify;
-                    line-height: 1.8;
-                }
-                .link_box {
-                    background-color: #fff;
-                    width: 200px;
-                    height: 50px;
-                    display: flex;
-                    flex-flow: column;
-                    justify-content: center;
-                    margin: 0;
-                    text-decoration: none;
-                    position: relative;
-                    font-size: 1.6rem;
-                    align-items: center;
-                    padding: 0;
-                    border: 1px solid #004080;
-                    border-radius: 25px;
-                    color: #004080;
-                    margin: 0 auto;
-                    overflow: hidden;
-                    span{
-                        z-index: 2;
-                    }
-                    &:hover{
-                        color: #fff;
-                        &::after{
-                            right: 20px;
-                            border-right: 1px solid #fff;
-                            border-bottom: 1px solid #fff;
-                            transition: border, right 0.5s;
-                        }
-                        &::before {
-                            content: "";
-                            width: 105%;
-                            height: 105%;
-                            background-color: #004080;
-                            z-index: 1;
-                            animation: btn_hover 0.5s ease-in-out;
-                            left: -2.5%;
-                            transform: scaleX(1);
-                            transform-origin: left;
-                            transition: transform 0.5s;
-                            top: -2.5%;
-                            position: absolute;
-                          }
-                    }
-                    &::after {
-                        position: absolute;
-                        display: block;
-                        content: "";
-                        width: 12px;
-                        height: 12px;
-                        border-right: 1px solid #004080;
-                        border-bottom: 1px solid #004080;
-                        transform: translateY(-50%) rotate(-45deg);
-                        top: 50%;
-                        right: 30px;
-                        transform-origin: center;
-                        transition: border, right 0.5s;
-                        z-index: 2;
-                    }
-                    &::before {
-                        content: "";
-                        width: 105%;
-                        height: 105%;
-                        background-color: #004080;
-                        z-index: 1;
-                        left: -2.5%;
-                        transform: scaleX(0);
-                        transform-origin: right;
-                        transition: transform 0.5s;
-                        top: -2.5%;
-                        position: absolute;
-                    }
-                }
-            }
-        }
-    }
-    @media only screen and (min-width: 768px) {
-        margin-top: 0;
-        margin-bottom: 100px;
-        #news {
-            padding: 0 30px 0;
-            margin: 60px auto;
-            #news_title{
-                justify-content: center;
-                .title_en{
-                    margin: 0;
-                    font-size: 4.2rem;
-                    display: flex;
-                    align-items: center;
-                    line-height: 1.3;
-                    &::after {
-                        bottom: -10px;
-                        transform: translateY(-50%) translateX(-50%);
-                        left: 50%;
-                      }
-                }
-                .title{
-                    font-family: "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "メイリオ", Meiryo, Osaka, "ＭＳ Ｐゴシック", "MS PGothic", sans-serif;
-                    margin: 0 0 0 15px;
-                    font-size: 2.1rem;
-                }
-                .news_link {
-                    position: absolute;
-                    right: 0;
-                    top: 50%;
-                    transform: translateY(-50%);
-                }
-            }
-            /* アクティブなタブ */
-            .tab-label {
-                font-size: 1.8rem;
-                height: 60px;
-            }
-            .tab-switch:checked+.tab-label {
-                background: transparent;
-            }
-            .tab-switch:checked+.tab-label+.news_inner {
-                height: auto;
-                overflow: hidden;
-                padding: 0;
-                opacity: 1;
-                transition: 0.5s opacity;
-                margin: 0 auto;
-                padding: 30px;
-            }
-            /* ラジオボタン非表示 */
-            .tab-switch {
-                display: none;
-            }
-            .news_inner {
-                border: 1px solid #004080;
-                border-top: 0px;
-                border-radius: 0 0 30px 30px;
-                .news_list {
-                    padding: 0;
-                    display: flex;
-                    flex-flow: column;
-                    justify-content: flex-start;
-                    align-items: flex-start;
-                    font-size: 1.8rem;
-                    color: #1a1a1a;
-                    width: 48%;
-                    margin: 0 0 4%;
-                    &:nth-child(2n){
-                        margin-left: 4%;
-                    }
-                    .news_list_imagearea{
-                        margin-bottom: 20px;
-                    }
-                    .news_list_inner{
-                        margin-bottom: 10px;
-                        .category-wrap{
-                            margin-bottom: 10px;
-                            li{
-                                margin-right: 10px;
-                                .category {
-                                    padding: 8px 10px;
-                                    width: auto;
-                                    font-size: 1.4rem;
-                                    line-height: 1;
-                                  }
-                            }
-                        }
-                        time {
-                            font-size: 1.6rem;
-                        }
-                    }
-                    .news_list_title{
-                        font-size: 1.8rem;
-                    }
-                    .news_list_content{
-                        font-size: 1.6rem;
-                    }
-                  }
-            }
-        }
-        #content {
-            padding: 0 30px;
-            #content_title{
-                .title_en{
-                    font-size: 4.2rem;
-                }
-            }
-            .content_flex{
-                display: flex;
-                flex-flow: row wrap;
-                justify-content: space-between;
-                max-width: 1280px;
-                margin: 0 auto;
-            }
-            .content_inner {
-                flex-flow: column;
-                width: 50%;
-                &:nth-child(2){
-                    border-top: 1px solid #000;
-                }
-                .content_inner_imagearea {
-                    border-radius: 0;
-                    overflow: hidden;
-                    width: 100%;
-                    .contents_image {
-                        width: 100%;
-                        height: 100%;
-                        vertical-align: bottom;
-                        object-fit: cover;
-                    }
-                }
-                .content_inner_textarea {
-                    justify-content: flex-start;
-                    width: 100%;
-                    padding: 30px 0 0;
-                    h2{
-                        margin: 0 0 20px;
-                        font-size: 2.4rem;
-                    }
-                    .link_box{
-                        margin: 0;
-                        font-size: 2rem;
-                        width: 240px;
-                        height: 60px;
-                        border-radius: 30px;
-                        position: relative;
-                        bottom: 0;
-                    }
-                }
-            }
-        }
-    }
-    @media only screen and (min-width: 1024px) {
-        #news{
-            padding: 0 60px 0;
-            margin: 100px auto;
-            #news_title{
-                justify-content: center;
-                max-width: 1280px;
-                margin: 0 auto 50px;
-                .title_en{
-                    margin: 0;
-                }
-                .title{
-                    font-family: "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "メイリオ", Meiryo, Osaka, "ＭＳ Ｐゴシック", "MS PGothic", sans-serif;
-                }
-            }
-            .tab-label {
-                flex: 1;
-                border-top: 0px solid #004080;
-                border-left: 0px solid #004080;
-                &.notice{
-                    border-bottom: 0px solid #004080;
-                    border-right: 0px solid #004080;
-                }
-                &.schoollife{
-                    border-bottom: 0px solid #004080;
-                    border-right: 0px solid #004080;
-                }
-                &.club{
-                    border-bottom: 0px solid #004080;
-                    border-right: 0px solid #004080;
-                }
-            }
-            .news_inner {
-                max-width: 1280px;
-                margin: 0 auto;
-                .news_list {
-                    width: 23.5%;
-                    margin-right: 2%;
-                    &:nth-child(2n){
-                        margin-right: 2%;
-                        margin-left: 0;
-                    }
-                    &:nth-child(4n){
-                        margin-right: 0;
-                    }
-                    &:nth-last-child(1),&:nth-last-child(2),&:nth-last-child(3),&:nth-last-child(4){
-                        margin-bottom: 0;
-                    }
-                    .news_list_inner{
-                        margin-bottom: 5px;
-                        display: flex;
-                        flex-flow: column;
-                        align-items: flex-start;
-                        .category-wrap {
-                            margin-bottom: 0;
-                            flex-flow: row wrap;
-                            li{
-                                margin-bottom: 5px;
-                                .category {
-                                    padding: 8px 10px;
-                                    width: auto;
-                                    display: block;
-                                    font-size: 1.2rem;
-                                }
-                            }
-                        }
-                        time {
-                            font-size: 1.6rem;
-                        }
-                    }
-                    .news_list_title{
-                        font-size: 1.8rem;
-                    }
-                    .news_list_content {
-                        font-size: 1.6rem;
-                      }
-                }
-            }
-            .news_link {
-                justify-content: end;
-                .link_box {
-                    font-size: 1.8rem;
-                }
-              }
-        }
-        #content{
-            padding: 0 60px;
-            .content_inner{
-                display: flex;
-                flex-flow: column;
-                justify-content: space-between;
-                margin: 0 auto;
-                padding: 60px 0;
-                .content_inner_imagearea{
-                    width: 100%;
-                    border-radius: 0;
-                    overflow: hidden;
-                    .contents_image{
-                        width: 100%;
-                        height: 100%;
-                        vertical-align: bottom;
-                    }
-                }
-                .content_inner_textarea{
-                    width: 100%;
-                    justify-content: center;
-                    padding: 30px 0 0;
-                    p {
-                        font-size: 1.6rem;
-                    }
-                }
-            }
-        }
-    }
-    @media only screen and (min-width: 1281px) {
-        #content{
-            padding: 0 60px;
-        }
-    }
-}
-
 .p-main {
     position: relative;
     margin: 0;
@@ -1157,39 +93,41 @@
 
     }
 }
-#p-main__content {
+#p-frontContents {
     background-color: #FBD98D;
-    padding: 64px 8px;
+    @include paddingSide(64px);
     background-image: url(../images/front-page/main_background_sp.png);
     border-image-repeat: no-repeat;
     background-size: cover;
+    padding-bottom: 400px;
     img {
         width: 100%;
     }
 }
-.content--ttl {
+.p-frontContents__title {
     span {
         font-size: 1.3rem;
         @include mq(lg) {
             font-size: 1.8rem;
         }
     }
-}
-h2.content--img {
-    width: 100px;
-    text-align: center;
-    font-size: revert;
-    margin-top: 8px;
-    @include mq(lg) {
-        width: 150px;
+    &--img {
+        width: 100px;
+        text-align: center;
+        font-size: revert;
+        margin-top: 8px;
+        @include mq(lg) {
+            width: 150px;
+        }
     }
 }
-ul.p-main__content--voice {
+
+ul.p-contentsList {
     margin-top: 24px;
-    li.content_list {
+    .p-contentsList__box {
         position: relative;
         width: 100%;
-        .voice_inner {
+        .p-contentsList__boxInner {
             position: absolute;
             left: 0;
             right: 0;
@@ -1217,46 +155,49 @@ ul.p-main__content--voice {
                     margin: 0 auto;
                 }
             }
-        }
-        
-        .name {
-            font-size: 1.4rem;
-            margin-top: 8px;
-            display: block;
-            @include mq(lg) {
-                font-size: 1.6rem;
-            }
-        }
-        .content_inner {
-            display: flex;
-            flex-flow: nowrap;
-            justify-content: space-between;
-            margin-top: 12px;
-        }
-        .img {
-            width: 49%;
-        }
-        .txt {
-            display: flex;
-            flex-flow: column;
-            justify-content: center;
-            width: 45%;
-            text-align: left;
-            b {
-                letter-spacing: revert;
-                font-size: 1.3rem;
+            &--name {
+                font-size: 1.4rem;
+                margin-top: 8px;
+                display: block;
                 @include mq(lg) {
                     font-size: 1.6rem;
                 }
             }
-            ul {
-                li {
+        }
+        
+        
+        .p-contentsList__middle {
+            display: flex;
+            flex-flow: nowrap;
+            justify-content: space-between;
+            margin-top: 12px;
+            &--img {
+            width: 49%;
+            }
+            &--text {
+                display: flex;
+                flex-flow: column;
+                justify-content: center;
+                width: 45%;
+                text-align: left;
+                b {
+                    letter-spacing: revert;
                     font-size: 1.3rem;
-                    margin-top: 8px;
+                    @include mq(lg) {
+                        font-size: 1.6rem;
+                    }
+                }
+                ul {
+                    li {
+                        font-size: 1.3rem;
+                        margin-top: 8px;
+                    }
                 }
             }
         }
-        .comment {
+        
+        
+        .p-contentsList__bottom {
             font-family: "Zen Maru Gothic", serif;
             line-height: 1.5;
             margin-top: 16px;
@@ -1266,7 +207,7 @@ ul.p-main__content--voice {
             }
         }
         &:nth-child(2n) {
-            .voice_inner {
+            .p-contentsList__boxInner {
                 b {
                     &::before {
                         content: "";
@@ -1286,7 +227,7 @@ ul.p-main__content--voice {
             }
         }
         &:nth-child(3n) {
-            .voice_inner {
+            .p-contentsList__boxInner {
                 b {
                     &::before {
                         content: "";

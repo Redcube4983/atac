@@ -79,3 +79,34 @@
 
 // z-index の指定
 // z-index: var(--header); // -> z-index: 9999;
+
+// margin padding -------------------------------------------------------------------
+@mixin marginTop {
+  margin-top: 64px;
+  @include mq(lg) {
+    margin-top: 80px;
+  }
+}
+@mixin paddingTop {
+  padding-top: 64px;
+  @include mq(lg) {
+    padding-top: 80px;
+  }
+}
+@mixin paddingSide($padding-top) {
+  padding: $padding-top 8px;
+  @include mq(lg) {
+    padding: $padding-top 24px;
+  }
+}
+// example▼
+// .ex {
+//   @include paddingSide(64px);
+// }
+
+@mixin fontSize_p {
+  font-size: 1.3rem;
+  @media screen and (min-width:920px){
+      font-size: 1.6rem;
+  }
+}
