@@ -195,5 +195,7 @@
     $('#breadcrumb ul').scrollLeft(list - scrollLeft);
   });
   </script>
+
+<?php wp_footer(); ?>
   </body>
   </html>
