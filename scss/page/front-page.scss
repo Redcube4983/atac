@@ -5,7 +5,7 @@
     padding: 0 32px;
     overflow: hidden;
     position: relative;
-    height: 100vh;
+    height: auto;
     background-image: url(../images/front-page/fv_background_sp.png);
     border-image-repeat: no-repeat;
     background-size: cover;
@@ -13,11 +13,12 @@
         width: 100%;
     }
     .p-firstView-inner {
-        width: 90vw;
-        margin: 80px auto;
-        position: absolute;
-        left: 0;
-        right: 0;
+        margin: 80px auto 0;
+        // width: 90vw;
+        // margin: 80px auto;
+        // position: absolute;
+        // left: 0;
+        // right: 0;
         &--subtitle {
             width: 40vw;
             display: flex;
@@ -29,7 +30,7 @@
         }
         &--illust {
             width: 63%;
-            margin: 32px auto;
+            margin: 32px auto 0;
         }
     }
     
@@ -100,11 +101,55 @@
     border-image-repeat: no-repeat;
     background-size: cover;
     padding-bottom: 400px;
+    position: relative;
+    @include mq(md) {
+        background-image: url(../images/front-page/main_background.png);
+        background-size: contain;
+        background-repeat: no-repeat;
+    }
     img {
         width: 100%;
     }
 }
+.p-main__ornament {
+    position: relative;
+    &--sticky1 {
+        position: absolute;
+        width: 40vw;
+        right: -50px;
+    }
+    &--sticky2 {
+        position: absolute;
+        width: 50vw;
+        top: 200px;
+        right: -100px;
+    }
+    &--sticky3 {
+        position: absolute;
+        width: 50vw;
+        top: 700px;
+        left: -50px;
+    }
+    &--paper1 {
+        position: absolute;
+        width: 65vw;
+        left: -150px;
+    }
+    &--paper2 {
+        position: absolute;
+        width: 70vw;
+        top: 1060px;
+        right: -100px;
+    }
+    &--iphone {
+        position: absolute;
+        width: 70vw;
+        top: 1600px;
+        right: -200px;
+    }
+}
 .p-frontContents__title {
+    position: sticky;
     span {
         font-size: 1.3rem;
         @include mq(lg) {

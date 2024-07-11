@@ -1,5 +1,6 @@
 <!doctype html>
 <html>
+
 <head>
 <meta charset="UTF-8">
 <meta content="IE=edge" http-equiv="X-UA-Compatible">
@@ -11,14 +12,16 @@
 <!--<meta http-equiv="refresh" content="10 ; URL=/">-->
 
 <!--ファビコン-->
-<link rel="shortcut icon" href="common/images/logo.svg">
+<link rel="shortcut icon" href="<?php echo get_template_directory_uri(); ?>/common/images/logo.svg">
 
 <!--スタイルシート-->
-<link href="css/style.css" rel="stylesheet">
+<link href="<?php echo get_template_directory_uri(); ?>/css/style.css" rel="stylesheet">
 
 <!--front-page-->
-<link href="css/front-page.css" rel="stylesheet">
-
+<?php if( is_front_page() ): ?>
+<link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/css/front-page.css">
+<?php else: ?>
+<?php endif; ?>
 <!--jquery-->
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 
@@ -48,7 +51,7 @@
 <header class="l-header">
 <h1 class="l-header__title">
   <a href="/" class="l-header__link">
-    <img class="l-header__sitelogo" src="common/images/logo.svg" alt="総合保険代理店 ATAC">
+    <img class="l-header__sitelogo" src="<?php echo get_template_directory_uri(); ?>/common/images/logo.svg" alt="総合保険代理店 ATAC">
   </a>
 </h1>
 <!--下層ページ
@@ -66,16 +69,16 @@
         <li>
           <a class="l-subnav__link" href="#">
             <picture>
-              <source srcset="common/images/icon_tel.webp" type="image/webp">
-              <img src="common/images/icon_tel.png" alt="電話">
+              <source srcset="<?php echo get_template_directory_uri(); ?>/common/images/icon_tel.webp" type="image/webp">
+              <img src="<?php echo get_template_directory_uri(); ?>/common/images/icon_tel.png" alt="電話">
             </picture>
           </a>
         </li>
         <li
           <a class="l-subnav__link" href="#">
             <picture>
-              <source srcset="common/images/icon_mail.webp" type="image/webp">
-              <img src="common/images/icon_mail.png" alt="メール">
+              <source srcset="<?php echo get_template_directory_uri(); ?>/common/images/icon_mail.webp" type="image/webp">
+              <img src="<?php echo get_template_directory_uri(); ?>/common/images/icon_mail.png" alt="メール">
             </picture>
           </a>
         </li>
@@ -96,8 +99,8 @@
         <div class="l-globalnav__block">
           <a class="l-globalnav__link" href="#">
             <picture>
-              <source srcset="common/images/icon_ATAC.webp" type="image/webp">
-              <img class="icon_img" src="common/images/icon_ATAC.png" alt="">
+              <source srcset="<?php echo get_template_directory_uri(); ?>/common/images/icon_ATAC.webp" type="image/webp">
+              <img class="icon_img" src="<?php echo get_template_directory_uri(); ?>/common/images/icon_ATAC.png" alt="">
             </picture>
             <span>当社のご案内</span>
           </a>
@@ -112,8 +115,8 @@
       <li class="l-globalnav__list l-globalnav__list--single last">
         <a href="#">
           <picture>
-            <source srcset="common/images/icon_insurance.webp" type="image/webp">
-            <img class="icon_img" src="common/images/icon_insurance.png" alt="">
+            <source srcset="<?php echo get_template_directory_uri(); ?>/common/images/icon_insurance.webp" type="image/webp">
+            <img class="icon_img" src="<?php echo get_template_directory_uri(); ?>/common/images/icon_insurance.png" alt="">
           </picture>
           <span>保険のご案内</span>
         </a>
@@ -121,8 +124,8 @@
       <li class="l-globalnav__list l-globalnav__list--single last">
         <a href="#">
           <picture>
-            <source srcset="common/images/icon_Q.webp" type="image/webp">
-            <img class="icon_img" src="common/images/icon_Q.png" alt="">
+            <source srcset="<?php echo get_template_directory_uri(); ?>/common/images/icon_Q.webp" type="image/webp">
+            <img class="icon_img" src="<?php echo get_template_directory_uri(); ?>/common/images/icon_Q.png" alt="">
           </picture>
           <span>よくあるご質問</span>
         </a>
@@ -130,8 +133,8 @@
       <li class="l-globalnav__list l-globalnav__list--single last">
         <a href="#">
           <picture>
-            <source srcset="common/images/icon_info.webp" type="image/webp">
-            <img class="icon_img" src="common/images/icon_info.png" alt="">
+            <source srcset="<?php echo get_template_directory_uri(); ?>/common/images/icon_info.webp" type="image/webp">
+            <img class="icon_img" src="<?php echo get_template_directory_uri(); ?>/common/images/icon_info.png" alt="">
           </picture>
           <span>お役立ち情報</span>
         </a>
@@ -150,22 +153,22 @@
           <div class="p-firstView-inner--title_wrap">
             <span class="p-firstView-inner--subtitle">
               <picture>
-                <source srcset="images/front-page/fv_subtxt.webp" type="image/webp">
-                <img src="images/front-page/fv_subtxt.png" alt="人生の安心　保険の費用">
+                <source srcset="<?php echo get_template_directory_uri(); ?>/images/front-page/fv_subtxt.webp" type="image/webp">
+                <img src="<?php echo get_template_directory_uri(); ?>/images/front-page/fv_subtxt.png" alt="人生の安心　保険の費用">
               </picture>
             </span>
             <h1 class="p-firstView-inner--title">
               <picture>
-                <source srcset="images/front-page/fv_ttl.webp" type="image/webp">
-                <img src="images/front-page/fv_ttl.png" alt="あなたの目線で、あなたの安心を一緒に考えます！">
+                <source srcset="<?php echo get_template_directory_uri(); ?>/images/front-page/fv_ttl.webp" type="image/webp">
+                <img src="<?php echo get_template_directory_uri(); ?>/images/front-page/fv_ttl.png" alt="あなたの目線で、あなたの安心を一緒に考えます！">
               </picture>
             </h1>
           </div>
 
           <div class="p-firstView-inner--illust">
             <picture>
-              <source srcset="images/front-page/illust.webp" type="image/webp">
-              <img src="images/front-page/illust.png" alt="青ちゃん">
+              <source srcset="<?php echo get_template_directory_uri(); ?>/images/front-page/illust.webp" type="image/webp">
+              <img src="<?php echo get_template_directory_uri(); ?>/images/front-page/illust.png" alt="青ちゃん">
             </picture>
           </div>
       </div>
@@ -186,49 +189,49 @@
         
         <div class="p-main__ornament--parts p-main__ornament--sticky1">
           <picture>
-            <source srcset="images/front-page/top_ornament_sticky1.webp" type="image/webp">
-            <img src="images/front-page/top_ornament_sticky1.png" alt="">
+            <source srcset="<?php echo get_template_directory_uri(); ?>/images/front-page/top_ornament_sticky1.webp" type="image/webp">
+            <img src="<?php echo get_template_directory_uri(); ?>/images/front-page/top_ornament_sticky1.png" alt="">
           </picture>
         </div>
         <div class="p-main__ornament--parts p-main__ornament--sticky2">
           <picture>
-            <source srcset="images/front-page/top_ornament_sticky2.webp" type="image/webp">
-            <img src="images/front-page/top_ornament_sticky2.png" alt="">
+            <source srcset="<?php echo get_template_directory_uri(); ?>/images/front-page/top_ornament_sticky2.webp" type="image/webp">
+            <img src="<?php echo get_template_directory_uri(); ?>/images/front-page/top_ornament_sticky2.png" alt="">
           </picture>
         </div>
         <div class="p-main__ornament--parts p-main__ornament--sticky3">
           <picture>
-            <source srcset="images/front-page/top_ornament_sticky3.webp" type="image/webp">
-            <img src="images/front-page/top_ornament_sticky3.png" alt="">
+            <source srcset="<?php echo get_template_directory_uri(); ?>/images/front-page/top_ornament_sticky3.webp" type="image/webp">
+            <img src="<?php echo get_template_directory_uri(); ?>/images/front-page/top_ornament_sticky3.png" alt="">
           </picture>
         </div>
         <div class="p-main__ornament--parts p-main__ornament--iphone">
           <picture>
-            <source srcset="images/front-page/top_ornament_iphone.webp" type="image/webp">
-            <img src="images/front-page/top_ornament_iphone.png" alt="">
+            <source srcset="<?php echo get_template_directory_uri(); ?>/images/front-page/top_ornament_iphone.webp" type="image/webp">
+            <img src="<?php echo get_template_directory_uri(); ?>/images/front-page/top_ornament_iphone.png" alt="">
           </picture>
         </div>
         <div class="p-main__ornament--parts p-main__ornament--paper1">
           <picture>
-            <source srcset="images/front-page/top_ornament_paper1.webp" type="image/webp">
-            <img src="images/front-page/top_ornament_paper1.png" alt="">
+            <source srcset="<?php echo get_template_directory_uri(); ?>/images/front-page/top_ornament_paper1.webp" type="image/webp">
+            <img src="<?php echo get_template_directory_uri(); ?>/images/front-page/top_ornament_paper1.png" alt="">
           </picture>
         </div>
         <div class="p-main__ornament--parts p-main__ornament--paper2">
           <picture>
-            <source srcset="images/front-page/top_ornament_paper2.webp" type="image/webp">
-            <img src="images/front-page/top_ornament_paper2.png" alt="">
+            <source srcset="<?php echo get_template_directory_uri(); ?>/images/front-page/top_ornament_paper2.webp" type="image/webp">
+            <img src="<?php echo get_template_directory_uri(); ?>/images/front-page/top_ornament_paper2.png" alt="">
           </picture>
         </div>
       </div>
       <div class="p-frontContents__title">
         <span>お選びいただける理由</span>
         <h2 class="p-frontContents__title--img">
-          <img src="images/front-page/top_ttl_01.svg" alt="お客様の声">
+          <img src="<?php echo get_template_directory_uri(); ?>/images/front-page/top_ttl_01.svg" alt="お客様の声">
           <div class="p-frontContents__title--underline">
             <picture>
-              <source srcset="images/front-page/ornament_subttl_or.webp" type="image/webp">
-              <img src="images/front-page/ornament_subttl_or.png" alt="">
+              <source srcset="<?php echo get_template_directory_uri(); ?>/images/front-page/ornament_subttl_or.webp" type="image/webp">
+              <img src="<?php echo get_template_directory_uri(); ?>/images/front-page/ornament_subttl_or.png" alt="">
             </picture>
           </div>
         </h2>
@@ -237,8 +240,8 @@
           <li class="p-contentsList__box">
             <div class="p-contentsList__box--img">
               <picture>
-                <source srcset="images/front-page/content_paper.webp" type="image/webp">
-                <img src="images/front-page/content_paper.png" alt="">
+                <source srcset="<?php echo get_template_directory_uri(); ?>/images/front-page/content_paper.webp" type="image/webp">
+                <img src="<?php echo get_template_directory_uri(); ?>/images/front-page/content_paper.png" alt="">
               </picture>
             </div>
             <div class="p-contentsList__boxInner">
@@ -246,8 +249,8 @@
               <div class="p-contentsList__middle">
                 <div class="p-contentsList__middle--img">
                   <picture>
-                    <source srcset="images/front-page/image1.webp" type="image/webp">
-                    <img src="images/front-page/image1.jpg" alt="">
+                    <source srcset="<?php echo get_template_directory_uri(); ?>/images/front-page/image1.webp" type="image/webp">
+                    <img src="<?php echo get_template_directory_uri(); ?>/images/front-page/image1.jpg" alt="">
                   </picture>
                 </div>
                 <div class="p-contentsList__middle--text">
@@ -267,8 +270,8 @@
           <li  class="p-contentsList__box">
             <div class="p-contentsList__box--img">
               <picture>
-                <source srcset="images/front-page/content_paper.webp" type="image/webp">
-                <img src="images/front-page/content_paper.png" alt="">
+                <source srcset="<?php echo get_template_directory_uri(); ?>/images/front-page/content_paper.webp" type="image/webp">
+                <img src="<?php echo get_template_directory_uri(); ?>/images/front-page/content_paper.png" alt="">
               </picture>
             </div>
             <div class="p-contentsList__boxInner">
@@ -276,8 +279,8 @@
               <div class="p-contentsList__middle">
                 <div class="p-contentsList__middle--img">
                   <picture>
-                    <source srcset="images/front-page/image1.webp" type="image/webp">
-                    <img src="images/front-page/image1.jpg" alt="">
+                    <source srcset="<?php echo get_template_directory_uri(); ?>/images/front-page/image1.webp" type="image/webp">
+                    <img src="<?php echo get_template_directory_uri(); ?>/images/front-page/image1.jpg" alt="">
                   </picture>
                 </div>
                 <div class="p-contentsList__middle--text">
@@ -296,8 +299,8 @@
           <li class="p-contentsList__box">
             <div class="p-contentsList__box--img">
               <picture>
-                <source srcset="images/front-page/content_paper.webp" type="image/webp">
-                <img src="images/front-page/content_paper.png" alt="">
+                <source srcset="<?php echo get_template_directory_uri(); ?>/images/front-page/content_paper.webp" type="image/webp">
+                <img src=<?php echo get_template_directory_uri(); ?>/images/front-page/content_paper.png" alt="">
               </picture>
             </div>
             <div class="p-contentsList__boxInner">
@@ -305,8 +308,8 @@
               <div class="p-contentsList__middle">
                 <div class="p-contentsList__middle--img">
                   <picture>
-                    <source srcset="images/front-page/image1.webp" type="image/webp">
-                    <img src="images/front-page/image1.jpg" alt="">
+                    <source srcset="<?php echo get_template_directory_uri(); ?>/images/front-page/image1.webp" type="image/webp">
+                    <img src="<?php echo get_template_directory_uri(); ?>/images/front-page/image1.jpg" alt="">
                   </picture>
                 </div>
                 <div class="p-contentsList__middle--text">
@@ -325,8 +328,8 @@
           <li  class="p-contentsList__box">
             <div class="p-contentsList__box--img">
               <picture>
-                <source srcset="images/front-page/content_paper.webp" type="image/webp">
-                <img src="images/front-page/content_paper.png" alt="">
+                <source srcset="<?php echo get_template_directory_uri(); ?>/images/front-page/content_paper.webp" type="image/webp">
+                <img src="<?php echo get_template_directory_uri(); ?>/images/front-page/content_paper.png" alt="">
               </picture>
             </div>
             <div class="p-contentsList__boxInner">
@@ -334,8 +337,8 @@
               <div class="p-contentsList__middle">
                 <div class="p-contentsList__middle--img">
                   <picture>
-                    <source srcset="images/front-page/image1.webp" type="image/webp">
-                    <img src="images/front-page/image1.jpg" alt="">
+                    <source srcset="<?php echo get_template_directory_uri(); ?>/images/front-page/image1.webp" type="image/webp">
+                    <img src="<?php echo get_template_directory_uri(); ?>/images/front-page/image1.jpg" alt="">
                   </picture>
                 </div>
                 <div class="p-contentsList__middle--text">
@@ -354,8 +357,8 @@
           <li class="p-contentsList__box">
             <div class="p-contentsList__box--img">
               <picture>
-                <source srcset="images/front-page/content_paper.webp" type="image/webp">
-                <img src="images/front-page/content_paper.png" alt="">
+                <source srcset="<?php echo get_template_directory_uri(); ?>/images/front-page/content_paper.webp" type="image/webp">
+                <img src="<?php echo get_template_directory_uri(); ?>/images/front-page/content_paper.png" alt="">
               </picture>
             </div>
             <div class="p-contentsList__boxInner">
@@ -363,8 +366,8 @@
               <div class="p-contentsList__middle">
                 <div class="p-contentsList__middle--img">
                   <picture>
-                    <source srcset="images/front-page/image1.webp" type="image/webp">
-                    <img src="images/front-page/image1.jpg" alt="">
+                    <source srcset="<?php echo get_template_directory_uri(); ?>/images/front-page/image1.webp" type="image/webp">
+                    <img src="<?php echo get_template_directory_uri(); ?>/images/front-page/image1.jpg" alt="">
                   </picture>
                 </div>
                 <div class="p-contentsList__middle--text">
@@ -383,8 +386,8 @@
           <li  class="p-contentsList__box">
             <div class="p-contentsList__box--img">
               <picture>
-                <source srcset="images/front-page/content_paper.webp" type="image/webp">
-                <img src="images/front-page/content_paper.png" alt="">
+                <source srcset="<?php echo get_template_directory_uri(); ?>/images/front-page/content_paper.webp" type="image/webp">
+                <img src="<?php echo get_template_directory_uri(); ?>/images/front-page/content_paper.png" alt="">
               </picture>
             </div>
             <div class="p-contentsList__boxInner">
@@ -392,8 +395,8 @@
               <div class="p-contentsList__middle">
                 <div class="p-contentsList__middle--img">
                   <picture>
-                    <source srcset="images/front-page/image1.webp" type="image/webp">
-                    <img src="images/front-page/image1.jpg" alt="">
+                    <source srcset="<?php echo get_template_directory_uri(); ?>/images/front-page/image1.webp" type="image/webp">
+                    <img src="<?php echo get_template_directory_uri(); ?>/images/front-page/image1.jpg" alt="">
                   </picture>
                 </div>
                 <div class="p-contentsList__middle--text">
@@ -418,11 +421,11 @@
       <div class="l-contactBox">
         <div class="p-frontContents__title">
           <h2 class="p-frontContents__title--img">
-            <img src="images/front-page/top_ttl_02.svg" alt="今すぐ相談">
+            <img src="<?php echo get_template_directory_uri(); ?>/images/front-page/top_ttl_02.svg" alt="今すぐ相談">
             <div class="p-frontContents__title--underline">
               <picture>
-                <source srcset="images/front-page/ornament_subttl_ye.webp" type="image/webp">
-                <img src="images/front-page/ornament_subttl_ye.png" alt="">
+                <source srcset="<?php echo get_template_directory_uri(); ?>/images/front-page/ornament_subttl_ye.webp" type="image/webp">
+                <img src="<?php echo get_template_directory_uri(); ?>/images/front-page/ornament_subttl_ye.png" alt="">
               </picture>
             </div>
           </h2>
@@ -431,13 +434,13 @@
           <li class="l-contact__link">
             <a class="l-contact__link--inner" href="/contact/">
               <b>メールでのお問い合わせ</b>
-              <img src="images/common/icon_mail_white.svg" alt="" class="icon">
+              <img src="<?php echo get_template_directory_uri(); ?>/images/common/icon_mail_white.svg" alt="" class="icon">
             </a>
           </li>
           <li class="l-contact__link">
             <a class="l-contact__link--inner" href="tel:000-1234-5678">
               <b>電話でのお問い合わせ</b>
-              <img src="images/common/icon_tel_white.svg" alt="" class="icon">
+              <img src="<?php echo get_template_directory_uri(); ?>/images/common/icon_tel_white.svg" alt="" class="icon">
             </a>
           </li>
         </ul>
@@ -445,7 +448,7 @@
       <div class="l-footer__top">
         <div class="l-footer__top--inner">
           <div class="l-footer__top--address">
-            <img class="" src="common/images/logo.svg" alt="総合保険代理店 ATAC">
+            <img class="" src="<?php echo get_template_directory_uri(); ?>/common/images/logo.svg" alt="総合保険代理店 ATAC">
             <span class="">〒292-0014千葉県木更津市高柳1-8-1</span>
           </div>
           <ul class="l-footer__top--link">
@@ -467,14 +470,14 @@
                 <ul class="l-footer__top--companyLogo">
                   <li>
                     <picture>
-                      <source srcset="images/common/aioiseimei.webp" type="image/webp">
-                      <img src="images/common/aioiseimei.png" alt="">
+                      <source srcset="<?php echo get_template_directory_uri(); ?>/images/common/aioiseimei.webp" type="image/webp">
+                      <img src="<?php echo get_template_directory_uri(); ?>/images/common/aioiseimei.png" alt="">
                     </picture>
                   </li>
                   <li>
                     <picture>
-                      <source srcset="images/common/sumitomokaijyo.webp" type="image/webp">
-                      <img src="images/common/sumitomokaijyo.png" alt="">
+                      <source srcset="<?php echo get_template_directory_uri(); ?>/images/common/sumitomokaijyo.webp" type="image/webp">
+                      <img src="<?php echo get_template_directory_uri(); ?>/images/common/sumitomokaijyo.png" alt="">
                     </picture>
                   </li>
                 </ul>
@@ -525,13 +528,13 @@
   </footer>
   </div>
   <!--object fit images-->
-  <script type="text/javascript" src="common/js/ofi.min.js"></script>
+  <script type="text/javascript" src="<?php echo get_template_directory_uri(); ?>/common/js/ofi.min.js"></script>
   <!--scrollreveal-->
-  <script type="text/javascript" src="common/js/scrollreveal.min.js"></script>
+  <script type="text/javascript" src="<?php echo get_template_directory_uri(); ?>/common/js/scrollreveal.min.js"></script>
   <!--swiper-->
-  <script type="text/javascript" src="common/js/swiper.min.js"></script>
+  <script type="text/javascript" src="<?php echo get_template_directory_uri(); ?>/common/js/swiper.min.js"></script>
   <!--共通javascript-->
-  <script type="text/javascript" src="common/js/common.js"></script>
+  <script type="text/javascript" src="<?php echo get_template_directory_uri(); ?>/common/js/common.js"></script>
   <!--各javascript-->
   <script>
   $(function() {

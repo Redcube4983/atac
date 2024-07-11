@@ -2210,7 +2210,7 @@ b {
   padding: 0 32px;
   overflow: hidden;
   position: relative;
-  height: 100vh;
+  height: auto;
   background-image: url(../images/front-page/fv_background_sp.png);
   border-image-repeat: no-repeat;
   background-size: cover;
@@ -2219,11 +2219,7 @@ b {
   width: 100%;
 }
 #p-firstView .p-firstView-inner {
-  width: 90vw;
-  margin: 80px auto;
-  position: absolute;
-  left: 0;
-  right: 0;
+  margin: 80px auto 0;
 }
 #p-firstView .p-firstView-inner--subtitle {
   width: 40vw;
@@ -2238,7 +2234,7 @@ b {
 }
 #p-firstView .p-firstView-inner--illust {
   width: 63%;
-  margin: 32px auto;
+  margin: 32px auto 0;
 }
 #p-firstView #p-firstView__banner {
   position: absolute;
@@ -2321,16 +2317,65 @@ b {
   border-image-repeat: no-repeat;
   background-size: cover;
   padding-bottom: 400px;
+  position: relative;
 }
 @media screen and (min-width: 1024px) {
   #p-frontContents {
     padding: 64px 24px;
   }
 }
+@media screen and (min-width: 768px) {
+  #p-frontContents {
+    background-image: url(../images/front-page/main_background.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+  }
+}
 #p-frontContents img {
   width: 100%;
 }
 
+.p-main__ornament {
+  position: relative;
+}
+.p-main__ornament--sticky1 {
+  position: absolute;
+  width: 40vw;
+  right: -50px;
+}
+.p-main__ornament--sticky2 {
+  position: absolute;
+  width: 50vw;
+  top: 200px;
+  right: -100px;
+}
+.p-main__ornament--sticky3 {
+  position: absolute;
+  width: 50vw;
+  top: 700px;
+  left: -50px;
+}
+.p-main__ornament--paper1 {
+  position: absolute;
+  width: 65vw;
+  left: -150px;
+}
+.p-main__ornament--paper2 {
+  position: absolute;
+  width: 70vw;
+  top: 1060px;
+  right: -100px;
+}
+.p-main__ornament--iphone {
+  position: absolute;
+  width: 70vw;
+  top: 1600px;
+  right: -200px;
+}
+
+.p-frontContents__title {
+  position: sticky;
+}
 .p-frontContents__title span {
   font-size: 1.3rem;
 }
