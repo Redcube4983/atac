@@ -135,54 +135,6 @@ Template Name: about-us
   </section>
 
 
-  <div id="l-management-content">
-    <div class="management-content-innner">
-      <img class="policy" src="images/about-page/about-fusen.png">
-      <h2 class="p-page__lead">経営方針</h2>
-
-      <div class="p-management__item">
-        <div class="p-management__inner">
-          <div class="p-management__number">
-            <div class="p-management__num--round">
-              <span class="num">01</span>
-            </div>
-            
-          </div>
-          <div class="p-management__number">
-            <div class="p-management__num--round">
-              <span class="num">02</span>
-            </div>
-            <p class="p-management__lead">
-              
-            </p>
-          </div>
-          <div class="p-management__number">
-            <div class="p-management__num--round">
-              <span class="num">03</span>
-            </div>
-            <p class="p-management__lead">
-              
-            </p>
-          </div>
-          <div class="p-management__number">
-            <div class="p-management__num--round">
-              <span class="num">04</span>
-            </div>
-            <p class="p-management__lead">
-              
-            </p>
-          </div>
-          <div class="p-management__number">
-            <div class="p-management__num--round">
-              <span class="num">05</span>
-            </div>
-            <p class="p-management__lead">
-              地域社会から必要とされるライフプランナーを目指す
-            </p>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
+  
 </main>
 <?php get_footer(); ?>
