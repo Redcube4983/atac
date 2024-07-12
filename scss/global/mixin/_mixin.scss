@@ -1,0 +1,112 @@
+@use "../setting/color" as *;
+@use "../setting/breakpoint" as *;
+
+// メディアクエリー -------------------------------------------------------------------
+@mixin mq($mediaquery: md) {
+  @media #{map-get($mediaquerys, $mediaquery)} {
+    @content;
+  }
+}
+
+@mixin mq-min($width) {
+  @media only screen and (min-width: #{$width}px) {
+    @content;
+  }
+}
+
+@mixin mq-max($width) {
+  @media only screen and (max-width: #{$width}px) {
+    @content;
+  }
+}
+
+// position -------------------------------------------------------------------
+@mixin absolute($top: auto, $right: auto, $bottom: auto, $left: auto) {
+  position: absolute;
+  top: $top;
+  right: $right;
+  bottom: $bottom;
+  left: $left;
+}
+
+// font -------------------------------------------------------------------
+@mixin font($color: false, $family: false, $style: false, $size: false, $weight: false, $line-height: false, $letter-spacing: false) {
+  @if $color {
+    color: $color;
+  }
+
+  @if $family {
+    font-family: $family;
+  }
+
+  @if $style {
+    font-style: $style;
+  }
+
+  @if $size {
+    font-size: $size;
+  }
+
+  @if $weight {
+    font-weight: $weight;
+  }
+
+  @if $line-height {
+    line-height: $line-height;
+  }
+
+  @if $letter-spacing {
+    letter-spacing: $letter-spacing;
+  }
+}
+
+// Z-index -------------------------------------------------------------------
+@mixin z-map($z-map) {
+  $before-index: -1;
+  @each $name, $value in $z-map {
+    $result-z: null;
+
+    @if $value == auto {
+      $result-z: $before-index + 1;
+    } @else {
+      $result-z: $value;
+    }
+
+    $before-index: $result-z;
+    #{$name}: $result-z;
+  }
+}
+
+// z-index の指定
+// z-index: var(--header); // -> z-index: 9999;
+
+// margin padding -------------------------------------------------------------------
+@mixin marginTop {
+  margin-top: 64px;
+  @include mq(lg) {
+    margin-top: 80px;
+  }
+}
+@mixin paddingTop {
+  padding-top: 64px;
+  @include mq(lg) {
+    padding-top: 80px;
+  }
+}
+@mixin paddingSide($padding-top) {
+  padding: $padding-top 8px;
+  @include mq(lg) {
+    padding: $padding-top 24px;
+  }
+}
+// example▼
+// .ex {
+//   @include paddingSide(64px);
+// }
+
+@mixin fontSize_p {
+  font-size: 1.3rem;
+  @media screen and (min-width:920px){
+      font-size: 1.6rem;
+  }
+}

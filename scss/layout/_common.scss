@@ -1,0 +1,198 @@
+@use "../global" as *;
+/*******************************
+		グローバル設定
+*******************************/
+html{
+	font-size: 62.5%;
+	margin: 0!important;
+	height: 100%;
+	box-sizing: border-box; 
+	height: calc( var(--vh) * 100 );
+  	height: -webkit-fill-available;
+}
+body{
+	width: 100%;
+	height: 100%;
+    margin: 0;
+    padding: 0;
+	font-family: -apple-system, BlinkMacSystemFont, "Helvetica Neue", YuGothic, "ヒラギノ角ゴ ProN W3", Hiragino Kaku Gothic ProN, Arial, "メイリオ", Meiryo, sans-serif;
+	line-height: 1;
+	font-weight: normal;
+	position:relative;
+	overflow-x: hidden;
+	background-color: #fff;
+	min-height: calc(var(--vh, 1vh) * 100);
+	&.search{
+		&::before {
+			content: "";
+			z-index: 10000;
+			position: fixed;
+			width: 100%;
+			height: 100vh;
+			background-color: #000;
+			left: 0;
+			top: 0;
+			opacity: 0.8;
+			cursor: pointer;
+		}
+	}
+	&.fixed {
+		position: fixed !important;
+		bottom: 0;
+		left: 0;
+		width: 100%;
+		min-height: calc( var(--vh) * 100 );
+		min-height: -webkit-fill-available;
+		height: calc( var(--vh) * 100 );
+	}
+	p{
+		font-size:16px;
+		font-size:1.6rem;	
+	}
+}
+a[href^="tel"]{
+    color:inherit;
+}
+a {
+ -webkit-tap-highlight-color:rgba(0,0,0,0);
+ color: #000;
+}
+.wrapper{
+	overflow-x: hidden;
+	width: 100%;
+	height: auto;
+}
+#video {
+	position: relative;
+	width: 100%;
+	padding-top: 56.25%;
+	video{
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 100%;
+		height: 100%;
+	}
+}
+.sp{
+	display: block;
+}
+.tab{
+	display: none;
+}
+.pc{
+	display: none;
+}
+@include mq(md) {
+	.sp{
+		display: none;
+	}
+	.tab{
+		display: block;
+	}
+	.pc{
+		display: none;
+	}	
+}
+@include mq(lg) {
+	.wrapper{
+		padding-top: 0;
+	}
+	.sp{
+		display: none;
+	}
+	.tab{
+		display: none;
+	}
+	.pc{
+		display: block;
+	}	
+}
+:root {
+	@include z-map((
+	  --default: auto,
+	  --button: auto,
+	  --arrow: auto,
+	  --modal: auto,
+	  --footer: auto,
+	  --header: 999,
+	  --logo: auto,
+	  --loading: auto,
+	));
+  }
+:root {
+	--clip-triangle-top: polygon(50% 0, 100% 100%, 0 100%);
+	--clip-triangle-bottom: polygon(0 0, 100% 0, 50% 100%);
+	--clip-triangle-right: polygon(0 0, 100% 50%, 0 100%);
+	--clip-triangle-left: polygon(0 50%, 100% 0, 100% 100%);
+	--clip-triangle-lower-left: polygon(0 0, 100% 100%, 0 100%);
+	--clip-triangle-upper-left: polygon(0 0, 100% 0, 0 100%);
+	--clip-triangle-lower-right: polygon(100% 0, 100% 100%, 0 100%);
+	--clip-triangle-upper-right: polygon(0 0, 100% 0, 100% 100%);
+}
+/*******************************
+			 main
+*******************************/
+main {
+	text-align: center;
+	height: auto;
+	position: relative;
+	h2{
+		font-size: 30px;
+	}
+	p{
+		line-height: 2; 
+	}
+}
+.image{
+    width: 100%;
+    height: auto;
+    margin: 0 auto;
+    text-align: center;
+}
+#contents{
+	display: block;
+    position: relative;
+    height: auto;
+	@include mq(md) {
+    }
+	@include mq(lg) {
+    }
+    @include mq(xl) {
+    }
+}
+.l-tagetTop {
+	position: fixed;
+	right: 15px;
+	bottom: 20px;
+	width: 60px;
+	height: 60px;
+	background-color: #fff;
+	z-index: 100;
+	border-radius: 30px;
+	border: 2px solid #004080;
+	a{
+		position: relative;
+		display: block;
+		width: 100%;
+		height: 100%;
+		::after{
+			position: absolute;
+			display: block;
+			content: "";
+			width: 16px;
+			height: 16px;
+			border-right: 2px solid #004080;
+			border-bottom: 2px solid #004080;
+			transform: translate(-50%, -50%) rotate(-135deg);
+			top: 55%;
+			left: 50%;
+			transform-origin: center;
+		}
+	}
+}
+@include mq(lg) {
+.image{
+    max-width: 800px;
+}   
+}
