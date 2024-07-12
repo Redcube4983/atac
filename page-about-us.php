@@ -81,39 +81,57 @@ Template Name: about-us
         </div>
           <ul class="p-aboutUsContents__infoArea--box1 p-aboutUsContents__policy--list">
             <li>
-              <span class="">01</span>
-              <p class="">保険業務知識はもとよりその周辺知識を貪欲に吸収し、真のプロを目指す</p>
+              <span>01</span>
+              <p>保険業務知識はもとよりその周辺知識を貪欲に吸収し、真のプロを目指す</p>
             </li>
             <li>
-              <span class="">02</span>
-              <p class="">保険／金融のプロとしてお客さまの願いや価値観をしっかり聞き、お客さまが描く未来予想図の実現のお手伝いをする</p>
+              <span>02</span>
+              <p>保険／金融のプロとしてお客さまの願いや価値観をしっかり聞き、お客さまが描く未来予想図の実現のお手伝いをする</p>
             </li>
             <li>
-              <span class="">03</span>
-              <p class="">常に、コンプライアンス遵守を最優先とし、お客さまの信頼に応えていく</p>
+              <span>03</span>
+              <p>常に、コンプライアンス遵守を最優先とし、お客さまの信頼に応えていく</p>
             </li>
             <li>
-              <span class="">04</span>
-              <p class="">自由に意見の云える明るいアットホームな職場環境を整備していく</p>
+              <span>04</span>
+              <p>自由に意見の云える明るいアットホームな職場環境を整備していく</p>
             </li>
             <li>
-              <span class="">05</span>
-              <p class="">地域社会から必要とされるライフプランナーを目指す</p>
+              <span>05</span>
+              <p>地域社会から必要とされるライフプランナーを目指す</p>
             </li>
           </ul>
       </div>
 
       <div class="p-aboutUsContents__philosophy">
         <div class="p-aboutUsContents__infoArea--title">
-          <h2>経営方針</h2>
+          <h2>経営理念</h2>
+        </div>
+        <div class="p-aboutUsContents__infoArea--box1 p-aboutUsContents__inner">
+          <div class="p-aboutUsContents__inner--text1">
+            <p>
+            時には、良きアドバイザーとして… 時には、良きコンシェルジュとして… 
+            お客様と信頼で結ばれた『人生のパートナー』であり続けたい。
+            ATACは、ライフプランニングから始まる、お客様への生涯サポートを安心とともにお届けします。
+            </p>
+          </div>
+          <div class="p-aboutUsContents__inner--text2">
+            <p class="p-aboutUsContents__inner--weightBold">保険は目に見えない“将来の保証”を買うもの。</p>
+            <p>だから良い買い物をしたのかどうかは、いざその時になってみないとわかりません。 
+              保険を選ぶ時点で、重要となるポイントは『なぜこの保険設計になったのか？』ということを、 
+              ご自身が十分納得できているかどうかではないでしょうか？
+            </p>
+          </div>
+        </div>
+        <div class="p-aboutUsContents__comment">
+          <p class="p-aboutUsContents__comment--title">我々にお任せ下さい！！</p>
+          <p>ATACは、保険業務知識はもとより周辺知識を貧欲に吸収し、保険・金融のプロとして
+              お客様の経済的変化を把握し、一人ひとりに適したアドバイスをさせていただきます。 
+              万一の際の迅速な対応はもちろん、ご家族のゆく末までしっかりと見守り続けます。
+          </p>
         </div>
       </div>
     </div>
-
-
-
-
-
   </section>
 
 
