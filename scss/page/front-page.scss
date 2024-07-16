@@ -24,28 +24,46 @@
     }
     .p-firstView__inner {
         margin: 80px auto 0;
-        // width: 90vw;
-        // margin: 80px auto;
-        // position: absolute;
-        // left: 0;
-        // right: 0;
-        .p-firstView__subtitle {
-            width: 40vw;
+        @include mq(lg) {
+            margin: 120px auto 0;
             display: flex;
-            margin: 0 0 0 auto;
+            flex-flow: wrap;
+            justify-content: space-between;
+            width: 80%;
         }
-        .p-firstView__title {
-            margin-top: 16px;
-            width: 75vw;
-            @include mq(md) {
-                width: 65vw;
+        .p-firstView__titleWrap {
+            @include mq(lg) {
+                width: 49%;
+                margin-top: 30px;
+            }
+            .p-firstView__subtitle {
+                width: 40vw;
+                display: flex;
+                margin: 0 0 0 auto;
+                @include mq(lg) {
+                    width: 18vw;
+                }
+            }
+            .p-firstView__title {
+                margin-top: 16px;
+                width: 75vw;
+                @include mq(md) {
+                    width: 60vw;
+                }
+                @include mq(lg) {
+                    width: revert;
+                }
             }
         }
         .p-firstView__illust {
             width: 63%;
             margin: 32px auto 0;
             @include mq(md) {
-                width: 50%;
+                width: 39vw;
+            }
+            @include mq(lg) {
+                margin: 0;
+                width: 49%;
             }
         }
     }
@@ -96,7 +114,7 @@
     }
 }
 .p-main {
-    position: relative;
+    // position: relative;
     margin: 0;
     @include mq(md) {
     }
@@ -133,13 +151,13 @@
     }
 }
 .p-main__ornament {
-    position: relative;
+    // position: relative;
     &-parts-sticky1 { 
         position: absolute;
         width: 40vw;
         right: -50px;
         @include mq(md) {
-            width: 25vw;
+            width: 35vw;
         }
     }
     &-parts-sticky2 {
@@ -149,6 +167,7 @@
         right: -100px;
         @include mq(md) {
             width: 35vw;
+            top: 300px;
         }
     }
     &-parts-sticky3 {
@@ -162,7 +181,7 @@
     }
     &-parts-paper1 {
         position: absolute;
-        width: 65vw;
+        width: 45vw;
         left: -150px;
         @include mq(md) {
             width: 35vw;
@@ -174,7 +193,8 @@
         top: 1060px;
         right: -100px;
         @include mq(md) {
-            width: 55vw;
+            width: 50vw;
+            top: 870px;
         }
     }
     &-parts-iphone {
@@ -227,6 +247,9 @@ ul.p-contentsList {
         @include mq(md) {
             margin: 0;
             width: 49%;
+        }
+        @include mq(lg) {
+
         }
         .p-contentsList__boxInner {
             position: absolute;

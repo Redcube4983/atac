@@ -65,7 +65,6 @@
 .l-footer {
     height: auto;
     display: block;
-    background-color: #fff;
     position: relative;
     z-index: 2;
     box-sizing: border-box;
@@ -80,6 +79,9 @@
         padding: 0 24px;
         max-width: 400px;
         margin: 32px auto 0;
+        @include mq(lg) {
+            
+        }
     }
     .l-contact__link {
         position: relative;
