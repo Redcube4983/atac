@@ -6,19 +6,41 @@ Template Name: about-us
 <?php get_header(); ?>
 <main>
   <section id="l-internalTop">
-  
-        <img class="abut_image01" src="images/about-page/about-window.png" alt="画像1">
-        <img class="abut_title" src="images/about-page/title.png" alt="当社のご案内">
-        <img class="abut_image02" src="images/about-page/about-sofa.png" alt="画像2">
+    <div class="l-internalTop__ornamentLeft">
+      <picture>
+        <source srcset="<?php echo get_template_directory_uri(); ?>/images/about-us/ornamentLeft.webp" type="image/webp">
+        <img src="<?php echo get_template_directory_uri(); ?>/images/about-us/ornamentLeft.png" alt="">
+      </picture>
+    </div>
+    <div class="l-internalTop__ornamentRight">
+      <picture>
+        <source srcset="<?php echo get_template_directory_uri(); ?>/images/about-us/ornamentRight.webp" type="image/webp">
+        <img src="<?php echo get_template_directory_uri(); ?>/images/about-us/ornamentRight.png" alt="">
+      </picture>
+    </div>
+    <h1 class="l-internalTop__title">
+      <div class="l-internalTop__text">
+        <picture>
+          <source srcset="<?php echo get_template_directory_uri(); ?>/images/about-us/pageTitle.webp" type="image/webp">
+          <img src="<?php echo get_template_directory_uri(); ?>/images/about-us/pageTitle.png" alt="">
+        </picture>
+      </div>
+      <div class="l-internalTop__underLine">
+        <picture>
+          <source srcset="<?php echo get_template_directory_uri(); ?>/images/about-us/ornamentLine.webp" type="image/webp">
+          <img src="<?php echo get_template_directory_uri(); ?>/images/about-us/ornamentLine.png" alt="当社のご案内">
+        </picture>
+      </div>
+    </h1>
   </section>
 
   <section id="p-aboutUsContents">
     <div class="p-aboutUsContents__infoArea">
       <div class="p-aboutUsContents__company">
-        <div class="p-aboutUsContents__infoArea--title">
+        <div class="p-aboutUsContents__infoArea-title">
           <h2>会社概要</h2>
         </div>
-        <div class="p-aboutUsContents__infoArea--box1">
+        <div class="p-aboutUsContents__infoArea-box1">
           <dl class="p-aboutUsContents__item">
             <dt class="p-profile__list__head">社名</dt>
             <dd class="p-profile__list__body">株式会社ATAC</dd>
@@ -50,10 +72,10 @@ Template Name: about-us
             </dd>
           </dl>
         </div>
-        <div class="p-aboutUsContents__infoArea--box2">
+        <div class="p-aboutUsContents p-aboutUsContents__infoArea-box2">
           <a href="">
             <b>取扱保険会社</b>
-            <ul class="l-footer__top--companyLogo">
+            <ul class="l-footer__top-companyLogo">
               <li>
                 <picture>
                   <source srcset="<?php echo get_template_directory_uri(); ?>/images/common/aioiseimei.webp" type="image/webp">
@@ -71,11 +93,11 @@ Template Name: about-us
         </div>
       </div>
 
-      <div class="p-aboutUsContents__policy">
-        <div class="p-aboutUsContents__infoArea--title">
+      <div class="p-aboutUsContents p-aboutUsContents__policy">
+        <div class="p-aboutUsContents__infoArea-title">
           <h2>経営方針</h2>
         </div>
-          <ul class="p-aboutUsContents__infoArea--box1 p-aboutUsContents__policy--list">
+          <ul class="p-aboutUsContents__infoArea-box1 p-aboutUsContents__policy-list">
             <li>
               <span>01</span>
               <p>保険業務知識はもとよりその周辺知識を貪欲に吸収し、真のプロを目指す</p>
@@ -99,20 +121,20 @@ Template Name: about-us
           </ul>
       </div>
 
-      <div class="p-aboutUsContents__philosophy">
+      <div class="p-aboutUsContents p-aboutUsContents__philosophy">
         <div class="p-aboutUsContents__infoArea--title">
           <h2>経営理念</h2>
         </div>
-        <div class="p-aboutUsContents__infoArea--box1 p-aboutUsContents__inner">
-          <div class="p-aboutUsContents__inner--text1">
+        <div class="p-aboutUsContents__infoArea-box1 p-aboutUsContents__inner">
+          <div class="p-aboutUsContents__inner-text1">
             <p>
             時には、良きアドバイザーとして… 時には、良きコンシェルジュとして… 
             お客様と信頼で結ばれた『人生のパートナー』であり続けたい。
             ATACは、ライフプランニングから始まる、お客様への生涯サポートを安心とともにお届けします。
             </p>
           </div>
-          <div class="p-aboutUsContents__inner--text2">
-            <p class="p-aboutUsContents__inner--weightBold">保険は目に見えない“将来の保証”を買うもの。</p>
+          <div class="p-aboutUsContents__inner-text2">
+            <p class="p-aboutUsContents__inner-weightBold">保険は目に見えない“将来の保証”を買うもの。</p>
             <p>だから良い買い物をしたのかどうかは、いざその時になってみないとわかりません。 
               保険を選ぶ時点で、重要となるポイントは『なぜこの保険設計になったのか？』ということを、 
               ご自身が十分納得できているかどうかではないでしょうか？
@@ -120,7 +142,7 @@ Template Name: about-us
           </div>
         </div>
         <div class="p-aboutUsContents__comment">
-          <p class="p-aboutUsContents__comment--title">我々にお任せ下さい！！</p>
+          <p class="p-aboutUsContents__comment-title">我々にお任せ下さい！！</p>
           <p>ATACは、保険業務知識はもとより周辺知識を貧欲に吸収し、保険・金融のプロとして
               お客様の経済的変化を把握し、一人ひとりに適したアドバイスをさせていただきます。 
               万一の際の迅速な対応はもちろん、ご家族のゆく末までしっかりと見守り続けます。

@@ -2206,8 +2206,34 @@ b {
   }
 }
 
-.p-aboutUsContents__infoArea--box1 {
-  margin-top: 120px;
+#l-internalTop {
+  margin-top: 60px;
+  height: 120px;
+  position: relative;
+}
+#l-internalTop .l-internalTop__ornamentLeft {
+  position: absolute;
+  width: 150px;
+}
+#l-internalTop .l-internalTop__ornamentRight {
+  position: absolute;
+  width: 200px;
+  right: 0;
+  bottom: 0;
+}
+#l-internalTop h1.l-internalTop__title {
+  position: absolute;
+  left: 0;
+  right: 0;
+  width: 50vw;
+  margin-top: inherit;
+}
+#l-internalTop img {
+  width: 100%;
+}
+
+#p-aboutUsContents {
+  margin-top: 60px;
 }
 
 #p-firstView {
