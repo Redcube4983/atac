@@ -95,6 +95,20 @@
       .l-footer__top-companyLogo img {
         width: 100%;
       }
+      .p-aboutUsContents.p-aboutUsContents__policy {
+        padding-top: 40px;
+        &-list {
+            display: block;
+            background-color: #FFF;
+            border-radius: 20px;
+            width: 355px;
+            height: auto;
+            text-align: center;
+            margin: 8px;
+            padding: 16px 0;
+        }
+        
+      }
 }
 
 

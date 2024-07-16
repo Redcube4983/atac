@@ -736,7 +736,6 @@ b {
 .l-footer {
   height: auto;
   display: block;
-  background-color: #fff;
   position: relative;
   z-index: 2;
   box-sizing: border-box;
@@ -1918,6 +1917,19 @@ b {
 }
 #p-aboutUsContents .l-footer__top-companyLogo img {
   width: 100%;
+}
+#p-aboutUsContents .p-aboutUsContents.p-aboutUsContents__policy {
+  padding-top: 40px;
+}
+#p-aboutUsContents .p-aboutUsContents.p-aboutUsContents__policy-list {
+  display: block;
+  background-color: #FFF;
+  border-radius: 20px;
+  width: 355px;
+  height: auto;
+  text-align: center;
+  margin: 8px;
+  padding: 16px 0;
 }
 
 #p-firstView {
