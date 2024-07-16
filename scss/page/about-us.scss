@@ -9,20 +9,22 @@
     position: relative;
     .l-internalTop__ornamentLeft {
         position: absolute;
-        width: 150px;
+        width: 100px;
+        top: -24px;
     }
     .l-internalTop__ornamentRight {
         position: absolute;
-        width: 200px;
-        right: 0;
+        width:  124px;
+        right: -24px;
         bottom: 0;
     }
     h1.l-internalTop__title {
+        width: 40vw;
         position: absolute;
-        left: 0;
+        top: 50%;
+        left: 0%;
         right: 0;
-        width: 50vw;
-        margin-top: inherit;
+        transform: translateY(-50%);
     }
     img {
         width: 100%;
@@ -30,7 +32,14 @@
 }
 
 #p-aboutUsContents {
-    margin-top: 60px;
+    background-color: #FFF4E6;
+    .p-aboutUsContents__infoArea {
+        &-title {
+            h2 {
+                font-size:  1.8rem;
+            }
+        }
+    }
 }
 
 
