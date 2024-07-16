@@ -38,26 +38,27 @@ Template Name: about-us
     <div class="p-aboutUsContents__infoArea">
       <div class="p-aboutUsContents__company">
         <div class="p-aboutUsContents__infoArea-title">
-          <h2>会社概要</h2>
+            <h2>会社概要</h2>
         </div>
         <div class="p-aboutUsContents__infoArea-box1">
           <dl class="p-aboutUsContents__item">
-            <dt class="p-profile__list__head">社名</dt>
-            <dd class="p-profile__list__body">株式会社ATAC</dd>
-            <dt class="p-profile__list__head">住所</dt>
-            <dd class="p-profile__list__body">〒292-0014千葉県木更津市高柳1-8-1</dd>
-            <dt class="p-profile__list__head">TEL</dt>
-            <dd class="p-profile__list__body">0438-41-6011</dd>
-            <dt class="p-profile__list__head">FAX</dt>
-            <dd class="p-profile__list__body">0438-41-6006</dd>
-            <dt class="p-profile__list__head">E-mail</dt>
-            <dd class="p-profile__list__body">info.6011@atac.jp</dd>
-            <dt class="p-profile__list__head">定休日</dt>
-            <dd class="p-profile__list__body">日曜・祝日（ご予約頂いた場合はＯＫです。）</dd>
-            <dt class="p-profile__list__head">代表者</dt>
-            <dd class="p-profile__list__body">青木　亮</dd>
-            <dt class="p-profile__list__head">事業内容</dt>
-            <dd class="p-profile__list__body">
+            <dt class="p-profile__list-head">社名</dt>
+            <dd class="p-profile__list-body">株式会社ATAC</dd>
+            <dt class="p-profile__list-head">住所</dt>
+            <dd class="p-profile__list-body">〒292-0014千葉県木更津市高柳1-8-1</dd>
+            <dt class="p-profile__list-head">TEL</dt>
+            <dd class="p-profile__list-body">0438-41-6011</dd>
+            <dt class="p-profile__list-head">FAX</dt>
+            <dd class="p-profile__list-body">0438-41-6006</dd>
+            <dt class="p-profile__list-head">E-mail</dt>
+            <dd class="p-profile__list-body">info.6011@atac.jp</dd>
+            <dt class="p-profile__list-head">定休日</dt>
+            <dd class="p-profile__list-body">日曜・祝日（ご予約頂いた場合はＯＫです。）</dd>
+
+            <dt class="p-profile__list-head">代表者</dt>
+            <dd class="p-profile__list-body">青木　亮</dd>
+            <dt class="p-profile__list-head">事業内容</dt>
+            <dd class="p-profile__list-body">
               <ol class="p-numberlist">
                 <li class="p-numberlist__item">
                   各種保険代理業（各種生命保険・各種損害保険）
@@ -122,7 +123,7 @@ Template Name: about-us
       </div>
 
       <div class="p-aboutUsContents p-aboutUsContents__philosophy">
-        <div class="p-aboutUsContents__infoArea--title">
+        <div class="p-aboutUsContents__infoArea-title">
           <h2>経営理念</h2>
         </div>
         <div class="p-aboutUsContents__infoArea-box1 p-aboutUsContents__inner">
