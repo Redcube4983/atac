@@ -161,6 +161,22 @@ Template Name: about-us
           
         </div>
       </div>
+      <div class="p-aboutUsContents p-aboutUsContents__staff">
+        <h1 class="l-staff__title">
+          <div class="l-staff__text">
+            <picture>
+              <source srcset="<?php echo get_template_directory_uri(); ?>/images/about-us/staff_title.webp" type="image/webp">
+              <img src="<?php echo get_template_directory_uri(); ?>/images/about-us/staff_title.png" alt="">
+            </picture>
+          </div>
+          <div class="l-staff__underLine">
+            <picture>
+              <source srcset="<?php echo get_template_directory_uri(); ?>/images/about-us/ornamentLine.webp" type="image/webp">
+              <img src="<?php echo get_template_directory_uri(); ?>/images/about-us/ornamentLine.png" alt="スタッフ紹介">
+            </picture>
+          </div>
+        </h1>
+      </div>
     </div>
   </section>
 
