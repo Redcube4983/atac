@@ -36,7 +36,7 @@ Template Name: about-us
 
   <section id="p-aboutUsContents">
     <div class="p-aboutUsContents__infoArea">
-      <div class="p-aboutUsContents__company">
+      <div class="p-aboutUsContents p-aboutUsContents__company">
         <div class="p-aboutUsContents__infoArea-title">
             <h2>会社概要</h2>
         </div>
@@ -74,23 +74,25 @@ Template Name: about-us
           </dl>
         </div>
         <div class="p-aboutUsContents p-aboutUsContents__infoArea-box2">
-          <a href="">
             <b>取扱保険会社</b>
             <ul class="l-footer__top-companyLogo">
+            <a href="https://www.ms-ins.com/">
+              <li>
+              <picture>
+                  <source srcset="<?php echo get_template_directory_uri(); ?>/images/common/sumitomokaijyo.webp" type="image/webp">
+                  <img src="<?php echo get_template_directory_uri(); ?>/images/common/sumitomokaijyo.png" alt="">
+              </picture>
+              </li>
+            </a>
+            <a href="https://www.msa-life.co.jp/">
               <li>
                 <picture>
                   <source srcset="<?php echo get_template_directory_uri(); ?>/images/common/aioiseimei.webp" type="image/webp">
                   <img src="<?php echo get_template_directory_uri(); ?>/images/common/aioiseimei.png" alt="">
                 </picture>
               </li>
-              <li>
-                <picture>
-                  <source srcset="<?php echo get_template_directory_uri(); ?>/images/common/sumitomokaijyo.webp" type="image/webp">
-                  <img src="<?php echo get_template_directory_uri(); ?>/images/common/sumitomokaijyo.png" alt="">
-                </picture>
-              </li>
+            </a>
             </ul>
-          </a>
         </div>
       </div>
 

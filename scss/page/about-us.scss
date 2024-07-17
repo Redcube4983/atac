@@ -9,17 +9,17 @@
     position: relative;
     .l-internalTop__ornamentLeft {
         position: absolute;
-        width: 100px;
+        width: 140px;
         top: -24px;
     }
     .l-internalTop__ornamentRight {
         position: absolute;
-        width:  124px;
+        width:  150px;
         right: -24px;
         bottom: 0;
     }
     h1.l-internalTop__title {
-        width: 40vw;
+        width: 30vw;
         position: absolute;
         top: 50%;
         left: 0%;
@@ -33,8 +33,15 @@
 
 #p-aboutUsContents {
     background-color: #FFF4E6;
+    .p-aboutUsContents__infoArea{
+        &-box1{
+            margin-top: 16px;
+        }
+    }
+    .p-aboutUsContents{
+        padding: 40px 8px 0;
+    }
     .p-aboutUsContents__infoArea {
-        padding-top: 40px;
         &-title {
             background-image: url(../images/about-us/sticky_sp.png);
             background-size: contain;
@@ -42,7 +49,7 @@
             background-position: center;
             padding: 16px;
             h2 {
-                font-size:  1.4rem;
+                font-size:  1.6rem;
                 font-weight: bold;
             }
         }
@@ -50,25 +57,29 @@
     .p-aboutUsContents__item{
         display: flex;
         flex-flow: column;
-        margin: 40px 20px;
+        margin-bottom: 32px;
         text-align: center;
     }
     .p-profile__list-head{
         text-align: left;
-        padding: 8px 0;
         color: #FF8900;
         font-weight: bold;
         font-size: 1.3rem;
+        &:not(:first-child){
+            padding-top: 16px;
+        }
     }
     .p-profile__list-body{
         text-align: left;
         padding-bottom: 16px;
         border-bottom: 1px solid #FFC042;
         font-size: 1.3rem;
+        margin-top: 8px;
     }
     ol.p-numberlist{
         list-style-type: decimal;
         padding-left: 15px;
+        line-height: 1.5;
     }
     .p-aboutUsContents__infoArea-box2{
         border: solid #4DC0B2;
@@ -95,17 +106,37 @@
       .l-footer__top-companyLogo img {
         width: 100%;
       }
-      .p-aboutUsContents.p-aboutUsContents__policy {
+      .p-aboutUsContents__policy {
         padding-top: 40px;
         &-list {
             display: block;
             background-color: #FFF;
             border-radius: 20px;
-            width: 355px;
             height: auto;
             text-align: center;
-            margin: 8px;
-            padding: 16px 0;
+            padding: 16px;
+            li{
+                text-align: left;
+                &:not(:first-child){
+                    margin-top: 16px;
+                }
+            }
+            span{
+                font-size: 1.3rem;
+                font-weight: bold;
+                background-color: #37AB9D;
+                color: #FFF;
+                border-radius: 20px;
+                display: flex;
+                width: 88px;
+                height: 24px;
+                justify-content: center;
+                align-items: center;
+            }
+            p{
+                margin-top: 8px;
+                font-size: 1.3rem;
+            }
         }
         
       }
