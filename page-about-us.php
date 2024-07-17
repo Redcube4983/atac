@@ -139,7 +139,7 @@ Template Name: about-us
           <div class="p-aboutUsContents__inner-text2">
             <p class="p-aboutUsContents__inner-weightBold">保険は目に見えない“将来の保証”を買うもの。</p>
             <p>だから良い買い物をしたのかどうかは、いざその時になってみないとわかりません。 <br>
-              保険を選ぶ時点で、重要となるポイントは『なぜこの保険設計になったのか？』ということを、 
+              保険を選ぶ時点で、重要となるポイントは『なぜこの保険設計になったのか？』ということを、<br class="pc">
               ご自身が十分納得できているかどうかではないでしょうか？
             </p>
           </div>
