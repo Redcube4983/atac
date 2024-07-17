@@ -74,6 +74,16 @@
         left: 0;
         right: 0;
     }
+    .l-footerContents__title{
+        width: 30vw;
+        margin: 0 auto;
+        @include mq(md){
+            width: 25vw;
+        }
+        @include mq(lg){
+            width: 18vw;
+        }
+    }
     .l-contact {
         text-align: center;
         padding: 0 24px;

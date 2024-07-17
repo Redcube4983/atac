@@ -11,12 +11,22 @@
         position: absolute;
         width: 140px;
         top: -24px;
+        @include mq(lg){
+            margin-top: 100px;
+            width: 180px;
+            top: -42px;
+            left: 192px;
+        }
     }
     .l-internalTop__ornamentRight {
         position: absolute;
         width:  150px;
         right: -24px;
         bottom: 0;
+        @include mq(lg){
+            width: 250px;
+            right: 32px;
+        }
     }
     h1.l-internalTop__title {
         width: 30vw;
@@ -25,6 +35,12 @@
         left: 0%;
         right: 0;
         transform: translateY(-50%);
+        @include mq(md){
+            width: 25vw;
+        }
+        @include mq(lg){
+            width: 18vw;
+        }
     }
     img {
         width: 100%;
@@ -40,6 +56,11 @@
     }
     .p-aboutUsContents{
         padding: 40px 8px 0;
+        max-width: 1050px;
+        margin: 0 auto;
+        @include mq(md){
+            padding: 64px 24px 0;
+        }
     }
     .p-aboutUsContents__infoArea {
         &-title {
@@ -51,6 +72,9 @@
             h2 {
                 font-size:  1.6rem;
                 font-weight: bold;
+                @include mq(md){
+                    font-size: 1.7rem;
+                }
             }
         }
     }
@@ -59,8 +83,13 @@
         flex-flow: column;
         margin-bottom: 32px;
         text-align: center;
+        @include mq(md){
+            flex-flow: wrap;
+            width: 100%;
+        }
     }
-    .p-profile__list-head{
+    .p-profile__list{
+        &-head{
         text-align: left;
         color: #FF8900;
         font-weight: bold;
@@ -68,13 +97,28 @@
         &:not(:first-child){
             padding-top: 16px;
         }
+        @include mq(md){
+            width: 30%;
+            border-bottom: 1px solid #FFC042;
+            padding: 16px 0;
+            font-size: 1.6rem;
+        }
+        }
     }
-    .p-profile__list-body{
+    .p-profile__list{
+        &-body{
         text-align: left;
         padding-bottom: 16px;
         border-bottom: 1px solid #FFC042;
         font-size: 1.3rem;
         margin-top: 8px;
+        @include mq(md){
+            margin: 0;
+            width: 70%;
+            padding: 16px 0;
+            font-size: 1.6rem;
+        }
+        }
     }
     ol.p-numberlist{
         list-style-type: decimal;
@@ -84,10 +128,13 @@
     .p-aboutUsContents__infoArea-box2{
         border: solid #4DC0B2;
         border-width: 5px 2px 2px 2px;
-        margin: 0 8px;
         padding: 8px;
         text-align: center;
         background-color: #FFF;
+        @include mq(md){
+            width: 456px;
+            margin: 0 auto;
+        }
     }
     .p-aboutUsContents__infoArea-box2 a{
         text-decoration: none;
@@ -98,6 +145,10 @@
         padding-bottom: 8px;
         border-bottom: solid 1px #4DC0B2;
         width: 100%;
+        color: #4DC0B2;
+        @include mq(md){
+            font-size: 1.6rem;
+        }
       }
       .l-footer__top-companyLogo {
         display: flex;
@@ -108,6 +159,8 @@
       }
       .p-aboutUsContents__policy {
         padding-top: 40px;
+        max-width: 1050px;
+        margin: 0 auto;
         &-list {
             display: block;
             background-color: #FFF;
@@ -115,6 +168,9 @@
             height: auto;
             text-align: center;
             padding: 16px;
+            @include mq(md){
+                padding: 32px;
+            }
             li{
                 text-align: left;
                 &:not(:first-child){
@@ -132,14 +188,104 @@
                 height: 24px;
                 justify-content: center;
                 align-items: center;
+                @include mq(md){
+                    font-size: 1.6rem;
+                }
             }
             p{
                 margin-top: 8px;
                 font-size: 1.3rem;
+                @include mq(md){
+                    font-size: 1.6rem;
+                }
             }
         }
         
       }
+      .p-aboutUsContents__philosophy{
+        padding-bottom: 420px;
+        max-width: 1050px;
+        margin: 0 auto;
+      }
+      .p-aboutUsContents__inner{
+        &-text1{
+            p{
+                font-size: 1.3rem;
+                font-weight: bold;
+                @include mq(md){
+                    font-size: 1.6rem;
+                }
+            }
+        }
+        &-text2{
+            margin-top: 40px;
+            .p-aboutUsContents__inner-weightBold{
+                font-weight: bold;
+                font-size: 1.4rem;
+                @include mq(md){
+                    font-size: 1.7rem;
+                }
+                @include mq(lg){
+                    font-size: 1.8rem;
+                }
+            }
+            p{
+                font-size: 1.3rem;
+                @include mq(md){
+                    font-size: 1.6rem;
+                }
+            }
+        }
+      }
+      .p-aboutUsContents__comment {
+        padding: 16px 16px 0;
+        background-color: #FFF;
+        border-radius: 20px;
+        margin-top: 40px;
+        @include mq(md){
+            display: flex;
+        }
+        &-textBox{
+            text-align: left;
+            @include mq(md){
+                width: auto;
+            }
+        }
+        &-title{
+            font-size: 1.3rem;
+            font-weight: bold;
+            @include mq(md){
+                font-size: 1.6rem;
+            }
+            @include mq(lg){
+                font-size: 2.3rem;
+            }
+        }
+        &-sentencs{
+            font-size: 1.3rem;
+            @include mq(md){
+                font-size: 1.6rem;
+            }
+        }
+        &-illustBox{
+            text-align: right;
+            margin-top: 16px;
+            @include mq(md){
+                margin: 0 0 0 30px;
+            }
+            img{
+                width: 140px;
+                box-sizing: border-box;
+                height: 180px;
+                object-fit: cover;
+                object-position: top;
+                @include mq(md){
+                    width: 150px;
+                }
+            }
+        }
+      }
+
 }
 
 

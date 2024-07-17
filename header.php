@@ -76,87 +76,87 @@
 </div>
 -->
 <div class="l-header__right">
-<nav class="l-subnav">
-  <div class="l-subnav__inner">
-    <p>ご相談はこちら</p>
-      <ul class="l-subnav__list">
-        <li>
-          <a class="l-subnav__link" href="#">
+  <div class="l-header__toggle js-navSwitch">
+    <div class="l-header__inner">
+      <span class="l-header__inner-bar1"></span>
+      <span class="l-header__inner-bar2"></span>
+      <span class="l-header__inner-bar3"></span>
+    </div>
+    <p class="l-header__text js-navText">MENU</p>
+  </div>
+  <nav class="l-globalnav js-globalNav">
+      <ul class="l-globalnav__inner">
+        <li class="l-globalnav__list l-globalnav__list-parent">
+          <div class="l-globalnav__block">
+            <a class="l-globalnav__link" href="#">
+              <picture>
+                <source srcset="<?php echo get_template_directory_uri(); ?>/common/images/icon_ATAC.webp" type="image/webp">
+                <img class="icon_img" src="<?php echo get_template_directory_uri(); ?>/common/images/icon_ATAC.png" alt="">
+              </picture>
+              <span>当社のご案内</span>
+            </a>
+            <span class="js-globalnavlinkArrow l-globalnav__link-arrow"></span>
+          </div>
+          <ul class="l-globalnav__child">
+            <li class="l-globalnav__granchild">
+              <a class="l-globalnav__link" href="#">BLOG</a>
+            </li>
+          </ul>
+        </li>
+        <li class="l-globalnav__list l-globalnav__list-single last">
+          <a href="#">
             <picture>
-              <source srcset="<?php echo get_template_directory_uri(); ?>/common/images/icon_tel.webp" type="image/webp">
-              <img src="<?php echo get_template_directory_uri(); ?>/common/images/icon_tel.png" alt="電話">
+              <source srcset="<?php echo get_template_directory_uri(); ?>/common/images/icon_insurance.webp" type="image/webp">
+              <img class="icon_img" src="<?php echo get_template_directory_uri(); ?>/common/images/icon_insurance.png" alt="">
             </picture>
+            <span>保険のご案内</span>
           </a>
         </li>
-        <li
-          <a class="l-subnav__link" href="#">
+        <li class="l-globalnav__list l-globalnav__list-single last">
+          <a href="#">
             <picture>
-              <source srcset="<?php echo get_template_directory_uri(); ?>/common/images/icon_mail.webp" type="image/webp">
-              <img src="<?php echo get_template_directory_uri(); ?>/common/images/icon_mail.png" alt="メール">
+              <source srcset="<?php echo get_template_directory_uri(); ?>/common/images/icon_Q.webp" type="image/webp">
+              <img class="icon_img" src="<?php echo get_template_directory_uri(); ?>/common/images/icon_Q.png" alt="">
             </picture>
+            <span>よくあるご質問</span>
           </a>
+        </li>
+        <li class="l-globalnav__list l-globalnav__list-single last">
+          <a href="#">
+            <picture>
+              <source srcset="<?php echo get_template_directory_uri(); ?>/common/images/icon_info.webp" type="image/webp">
+              <img class="icon_img" src="<?php echo get_template_directory_uri(); ?>/common/images/icon_info.png" alt="">
+            </picture>
+            <span>お役立ち情報</span>
+          </a>
+        </li>
+        <li class="l-globalnav__list l-globalnav__list-parent l-globalnav__list-pc">
+          <div class="l-globalnav__block"><a class="l-globalnav__link l-globalnav__contact__link" href="#">ご相談はこちら</a><span class="js-globalnavlinkArrow l-globalnav__link--arrow"></span></div>
         </li>
       </ul>
-    </div>
-</nav>
-<div class="l-header__toggle js-navSwitch">
-  <div class="l-header__inner">
-    <span class="l-header__inner--bar1"></span>
-    <span class="l-header__inner--bar2"></span>
-    <span class="l-header__inner--bar3"></span>
-  </div>
-  <p class="l-header__text js-navText">MENU</p>
-</div>
-<nav class="l-globalnav js-globalNav">
-    <ul class="l-globalnav__inner">
-      <li class="l-globalnav__list l-globalnav__list--parent">
-        <div class="l-globalnav__block">
-          <a class="l-globalnav__link" href="#">
-            <picture>
-              <source srcset="<?php echo get_template_directory_uri(); ?>/common/images/icon_ATAC.webp" type="image/webp">
-              <img class="icon_img" src="<?php echo get_template_directory_uri(); ?>/common/images/icon_ATAC.png" alt="">
-            </picture>
-            <span>当社のご案内</span>
-          </a>
-          <span class="js-globalnavlinkArrow l-globalnav__link--arrow"></span>
-        </div>
-        <ul class="l-globalnav__child">
-          <li class="l-globalnav__granchild">
-            <a class="l-globalnav__link" href="#">BLOG</a>
+  </nav>
+  <!-- <div class="l-contactNav">
+    <div class="l-contactNav__inner">
+      <p>ご相談はこちら</p>
+        <ul class="l-contactNav__list">
+          <li>
+            <a class="l-contactNav__link" href="#">
+              <picture>
+                <source srcset="<?php echo get_template_directory_uri(); ?>/common/images/icon_tel.webp" type="image/webp">
+                <img src="<?php echo get_template_directory_uri(); ?>/common/images/icon_tel.png" alt="電話">
+              </picture>
+            </a>
+          </li>
+          <li>
+            <a class="l-contactNav__link" href="#">
+              <picture>
+                <source srcset="<?php echo get_template_directory_uri(); ?>/common/images/icon_mail.webp" type="image/webp">
+                <img src="<?php echo get_template_directory_uri(); ?>/common/images/icon_mail.png" alt="メール">
+              </picture>
+            </a>
           </li>
         </ul>
-      </li>
-      <li class="l-globalnav__list l-globalnav__list--single last">
-        <a href="#">
-          <picture>
-            <source srcset="<?php echo get_template_directory_uri(); ?>/common/images/icon_insurance.webp" type="image/webp">
-            <img class="icon_img" src="<?php echo get_template_directory_uri(); ?>/common/images/icon_insurance.png" alt="">
-          </picture>
-          <span>保険のご案内</span>
-        </a>
-      </li>
-      <li class="l-globalnav__list l-globalnav__list--single last">
-        <a href="#">
-          <picture>
-            <source srcset="<?php echo get_template_directory_uri(); ?>/common/images/icon_Q.webp" type="image/webp">
-            <img class="icon_img" src="<?php echo get_template_directory_uri(); ?>/common/images/icon_Q.png" alt="">
-          </picture>
-          <span>よくあるご質問</span>
-        </a>
-      </li>
-      <li class="l-globalnav__list l-globalnav__list--single last">
-        <a href="#">
-          <picture>
-            <source srcset="<?php echo get_template_directory_uri(); ?>/common/images/icon_info.webp" type="image/webp">
-            <img class="icon_img" src="<?php echo get_template_directory_uri(); ?>/common/images/icon_info.png" alt="">
-          </picture>
-          <span>お役立ち情報</span>
-        </a>
-      </li>
-      <li class="l-globalnav__list l-globalnav__list--parent l-globalnav__list--pc">
-        <div class="l-globalnav__block"><a class="l-globalnav__link l-globalnav__contact__link" href="#">ご相談はこちら</a><span class="js-globalnavlinkArrow l-globalnav__link--arrow"></span></div>
-      </li>
-    </ul>
-</nav>
+    </div>
+  </div> -->
 </div>
 </header>

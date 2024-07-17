@@ -1,11 +1,11 @@
 
 <footer class="l-footer">
-    <section class="l-footer__contact p-frontContents">
+    <section class="l-footer__contact l-footerContents">
       <div class="l-contactBox">
-        <div class="p-frontContents__title">
-          <h2 class="p-frontContents__title-img">
+        <div class="l-footerContents__title">
+          <h2 class="l-footerContents__title-img">
             <img src="<?php echo get_template_directory_uri(); ?>/images/front-page/top_ttl_02.svg" alt="今すぐ相談">
-            <div class="p-frontContents__title-underline">
+            <div class="l-footerContents__title-underline">
               <picture>
                 <source srcset="<?php echo get_template_directory_uri(); ?>/images/front-page/ornament_subttl_ye.webp" type="image/webp">
                 <img src="<?php echo get_template_directory_uri(); ?>/images/front-page/ornament_subttl_ye.png" alt="">

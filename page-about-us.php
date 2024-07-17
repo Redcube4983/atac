@@ -131,25 +131,34 @@ Template Name: about-us
         <div class="p-aboutUsContents__infoArea-box1 p-aboutUsContents__inner">
           <div class="p-aboutUsContents__inner-text1">
             <p>
-            時には、良きアドバイザーとして… 時には、良きコンシェルジュとして… 
-            お客様と信頼で結ばれた『人生のパートナー』であり続けたい。
+            時には、良きアドバイザーとして… <br class="sp">時には、良きコンシェルジュとして… <br>
+            お客様と信頼で結ばれた『人生のパートナー』であり続けたい。<br class="pc">
             ATACは、ライフプランニングから始まる、お客様への生涯サポートを安心とともにお届けします。
             </p>
           </div>
           <div class="p-aboutUsContents__inner-text2">
             <p class="p-aboutUsContents__inner-weightBold">保険は目に見えない“将来の保証”を買うもの。</p>
-            <p>だから良い買い物をしたのかどうかは、いざその時になってみないとわかりません。 
+            <p>だから良い買い物をしたのかどうかは、いざその時になってみないとわかりません。 <br>
               保険を選ぶ時点で、重要となるポイントは『なぜこの保険設計になったのか？』ということを、 
               ご自身が十分納得できているかどうかではないでしょうか？
             </p>
           </div>
         </div>
         <div class="p-aboutUsContents__comment">
-          <p class="p-aboutUsContents__comment-title">我々にお任せ下さい！！</p>
-          <p>ATACは、保険業務知識はもとより周辺知識を貧欲に吸収し、保険・金融のプロとして
-              お客様の経済的変化を把握し、一人ひとりに適したアドバイスをさせていただきます。 
-              万一の際の迅速な対応はもちろん、ご家族のゆく末までしっかりと見守り続けます。
-          </p>
+          <div class="p-aboutUsContents__comment-textBox">
+            <p class="p-aboutUsContents__comment-title">我々にお任せ下さい！！</p>
+            <p class="p-aboutUsContents__comment-sentence">ATACは、保険業務知識はもとより周辺知識を貧欲に吸収し、保険・金融のプロとして
+                お客様の経済的変化を把握し、一人ひとりに適したアドバイスをさせていただきます。 
+                万一の際の迅速な対応はもちろん、ご家族のゆく末までしっかりと見守り続けます。
+            </p>
+          </div>
+          <div class="p-aboutUsContents__comment-illustBox">
+            <picture>
+              <source srcset="<?php echo get_template_directory_uri(); ?>/images/common/illust.webp" type="image/webp">
+              <img src="<?php echo get_template_directory_uri(); ?>/images/common/illust.png" alt="">
+            </picture>
+          </div>
+          
         </div>
       </div>
     </div>
