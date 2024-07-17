@@ -34,12 +34,81 @@
 #p-aboutUsContents {
     background-color: #FFF4E6;
     .p-aboutUsContents__infoArea {
+        padding-top: 40px;
         &-title {
+            background-image: url(../images/about-us/sticky_sp.png);
+            background-size: contain;
+            background-repeat: no-repeat;
+            background-position: center;
+            padding: 16px;
             h2 {
-                font-size:  1.8rem;
+                font-size:  1.4rem;
+                font-weight: bold;
             }
         }
     }
+    .p-aboutUsContents__item{
+        display: flex;
+        flex-flow: column;
+        margin: 40px 20px;
+        text-align: center;
+    }
+    .p-profile__list-head{
+        text-align: left;
+        padding: 8px 0;
+        color: #FF8900;
+        font-weight: bold;
+        font-size: 1.3rem;
+    }
+    .p-profile__list-body{
+        text-align: left;
+        padding-bottom: 16px;
+        border-bottom: 1px solid #FFC042;
+        font-size: 1.3rem;
+    }
+    ol.p-numberlist{
+        list-style-type: decimal;
+        padding-left: 15px;
+    }
+    .p-aboutUsContents__infoArea-box2{
+        border: solid #4DC0B2;
+        border-width: 5px 2px 2px 2px;
+        margin: 0 8px;
+        padding: 8px;
+        text-align: center;
+        background-color: #FFF;
+    }
+    .p-aboutUsContents__infoArea-box2 a{
+        text-decoration: none;
+    }
+    .p-aboutUsContents__infoArea-box2 b {
+        font-size: 1.3rem;
+        display: block;
+        padding-bottom: 8px;
+        border-bottom: solid 1px #4DC0B2;
+        width: 100%;
+      }
+      .l-footer__top-companyLogo {
+        display: flex;
+        flex-flow: row nowrap;
+      }
+      .l-footer__top-companyLogo img {
+        width: 100%;
+      }
+      .p-aboutUsContents.p-aboutUsContents__policy {
+        padding-top: 40px;
+        &-list {
+            display: block;
+            background-color: #FFF;
+            border-radius: 20px;
+            width: 355px;
+            height: auto;
+            text-align: center;
+            margin: 8px;
+            padding: 16px 0;
+        }
+        
+      }
 }
 
 

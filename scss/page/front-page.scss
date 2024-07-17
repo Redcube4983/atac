@@ -25,16 +25,24 @@
     .p-firstView__inner {
         margin: 80px auto 0;
         @include mq(lg) {
-        display: flex;
-        flex-flow: wrap;
-        width: 100%;
-        justify-content: space-between;
+            margin: 120px auto 0;
+            display: flex;
+            flex-flow: wrap;
+            justify-content: space-between;
+            width: 80%;
         }
         .p-firstView__titleWrap {
+            @include mq(lg) {
+                width: 49%;
+                margin-top: 30px;
+            }
             .p-firstView__subtitle {
                 width: 40vw;
                 display: flex;
                 margin: 0 0 0 auto;
+                @include mq(lg) {
+                    width: 18vw;
+                }
             }
             .p-firstView__title {
                 margin-top: 16px;
@@ -42,16 +50,20 @@
                 @include mq(md) {
                     width: 60vw;
                 }
-            }
-            @include mq(lg) {
-                width: 49%;
+                @include mq(lg) {
+                    width: revert;
+                }
             }
         }
         .p-firstView__illust {
             width: 63%;
             margin: 32px auto 0;
             @include mq(md) {
-                width: 50%;
+                width: 39vw;
+            }
+            @include mq(lg) {
+                margin: 0;
+                width: 49%;
             }
         }
     }
@@ -235,6 +247,9 @@ ul.p-contentsList {
         @include mq(md) {
             margin: 0;
             width: 49%;
+        }
+        @include mq(lg) {
+
         }
         .p-contentsList__boxInner {
             position: absolute;
