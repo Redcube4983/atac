@@ -7,12 +7,14 @@
     margin-top: 60px;
     height: 120px;
     position: relative;
+    @include mq(lg){
+        margin-top: 100px;
+    }
     .l-internalTop__ornamentLeft {
         position: absolute;
         width: 140px;
         top: -24px;
         @include mq(lg){
-            margin-top: 100px;
             width: 180px;
             top: -42px;
             left: 192px;
@@ -69,11 +71,17 @@
             background-repeat: no-repeat;
             background-position: center;
             padding: 16px;
+            @include mq(lg){
+                padding: 20px;
+            }
             h2 {
                 font-size:  1.6rem;
                 font-weight: bold;
                 @include mq(md){
                     font-size: 1.7rem;
+                }
+                @include mq(lg){
+                    font-size: 2.3rem;
                 }
             }
         }
@@ -245,6 +253,9 @@
         @include mq(md){
             display: flex;
         }
+        @include mq(lg){
+            padding: 48px 48px 0;
+        }
         &-textBox{
             text-align: left;
             @include mq(md){
@@ -281,6 +292,10 @@
                 object-position: top;
                 @include mq(md){
                     width: 150px;
+                }
+                @include mq(lg){
+                    width: 170px;
+                    height: 200px;
                 }
             }
         }
