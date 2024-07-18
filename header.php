@@ -78,15 +78,15 @@
 <div class="l-header__right">
   <div class="l-header__toggle js-navSwitch">
     <div class="l-header__inner">
-      <span class="l-header__inner-bar1"></span>
-      <span class="l-header__inner-bar2"></span>
-      <span class="l-header__inner-bar3"></span>
+      <span class="l-header__inner--bar1"></span>
+      <span class="l-header__inner--bar2"></span>
+      <span class="l-header__inner--bar3"></span>
     </div>
     <p class="l-header__text js-navText">MENU</p>
   </div>
   <nav class="l-globalnav js-globalNav">
       <ul class="l-globalnav__inner">
-        <li class="l-globalnav__list l-globalnav__list-parent">
+        <li class="l-globalnav__list l-globalnav__list--parent">
           <div class="l-globalnav__block">
             <a class="l-globalnav__link" href="#">
               <picture>
@@ -95,7 +95,7 @@
               </picture>
               <span>当社のご案内</span>
             </a>
-            <span class="js-globalnavlinkArrow l-globalnav__link-arrow"></span>
+            <span class="js-globalnavlinkArrow l-globalnav__link--arrow"></span>
           </div>
           <ul class="l-globalnav__child">
             <li class="l-globalnav__granchild">
@@ -103,7 +103,7 @@
             </li>
           </ul>
         </li>
-        <li class="l-globalnav__list l-globalnav__list-single last">
+        <li class="l-globalnav__list l-globalnav__list--single last">
           <a href="#">
             <picture>
               <source srcset="<?php echo get_template_directory_uri(); ?>/common/images/icon_insurance.webp" type="image/webp">
@@ -112,7 +112,7 @@
             <span>保険のご案内</span>
           </a>
         </li>
-        <li class="l-globalnav__list l-globalnav__list-single last">
+        <li class="l-globalnav__list l-globalnav__list--single last">
           <a href="#">
             <picture>
               <source srcset="<?php echo get_template_directory_uri(); ?>/common/images/icon_Q.webp" type="image/webp">
@@ -121,7 +121,7 @@
             <span>よくあるご質問</span>
           </a>
         </li>
-        <li class="l-globalnav__list l-globalnav__list-single last">
+        <li class="l-globalnav__list l-globalnav__list--single last">
           <a href="#">
             <picture>
               <source srcset="<?php echo get_template_directory_uri(); ?>/common/images/icon_info.webp" type="image/webp">
@@ -130,17 +130,17 @@
             <span>お役立ち情報</span>
           </a>
         </li>
-        <li class="l-globalnav__list l-globalnav__list-parent l-globalnav__list-pc">
+        <li class="l-globalnav__list l-globalnav__list--parent l-globalnav__list--pc">
           <div class="l-globalnav__block"><a class="l-globalnav__link l-globalnav__contact__link" href="#">ご相談はこちら</a><span class="js-globalnavlinkArrow l-globalnav__link--arrow"></span></div>
         </li>
       </ul>
   </nav>
-  <!-- <div class="l-contactNav">
-    <div class="l-contactNav__inner">
+  <div class="l-contactArea">
+    <div class="l-contactArea__inner">
       <p>ご相談はこちら</p>
-        <ul class="l-contactNav__list">
+        <ul class="l-contactArea__list">
           <li>
-            <a class="l-contactNav__link" href="#">
+            <a class="l-contactArea__link" href="#">
               <picture>
                 <source srcset="<?php echo get_template_directory_uri(); ?>/common/images/icon_tel.webp" type="image/webp">
                 <img src="<?php echo get_template_directory_uri(); ?>/common/images/icon_tel.png" alt="電話">
@@ -148,7 +148,7 @@
             </a>
           </li>
           <li>
-            <a class="l-contactNav__link" href="#">
+            <a class="l-contactArea__link" href="#">
               <picture>
                 <source srcset="<?php echo get_template_directory_uri(); ?>/common/images/icon_mail.webp" type="image/webp">
                 <img src="<?php echo get_template_directory_uri(); ?>/common/images/icon_mail.png" alt="メール">
@@ -157,6 +157,6 @@
           </li>
         </ul>
     </div>
-  </div> -->
+  </div>
 </div>
 </header>

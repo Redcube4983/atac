@@ -63,7 +63,7 @@
             }
             @include mq(lg) {
                 margin: 0;
-                width: 49%;
+                width: 45%;
             }
         }
     }
@@ -130,11 +130,10 @@
 }
 #p-frontContents {
     background-color: #FBD98D;
-    @include paddingSide(64px);
     background-image: url(../images/front-page/main_background_sp.png);
     border-image-repeat: no-repeat;
     background-size: cover;
-    padding-bottom: 400px;
+    padding: 64px 0 400px 0;
     position: relative;
     background-position: bottom;
     @include mq(md) {
@@ -144,6 +143,11 @@
     }
     @include mq(lg) {
         background-image: url(../images/front-page/main_background.png);
+        background-size: contain;
+        background-repeat: no-repeat;
+    }
+    @include mq(xxl) {
+        background-image: url(../images/front-page/main_background_pc2.png);
         background-size: contain;
         background-repeat: no-repeat;
     }
@@ -160,6 +164,10 @@
         @include mq(md) {
             width: calc(250vw / 7.68);
         }
+        @include mq(lg) {
+            width: 280px;
+            right: 10%;
+        }
     }
     &-parts-sticky2 {
         position: absolute;
@@ -170,6 +178,10 @@
             width: calc(280vw / 7.68);
             top: 300px;
         }
+        @include mq(lg) {
+            width: 370px;
+            right: -50px;
+        }
     }
     &-parts-sticky3 {
         position: absolute;
@@ -179,6 +191,9 @@
         @include mq(md) {
             width: calc(250vw / 7.68);
         }
+        @include mq(lg) {
+            width: 350px;
+        }
     }
     &-parts-paper1 {
         position: absolute;
@@ -186,6 +201,9 @@
         left: -150px;
         @include mq(md) {
             width: calc(320vw / 7.68);
+        }
+        @include mq(lg) {
+            width: 480px;
         }
     }
     &-parts-paper2 {
@@ -196,17 +214,25 @@
         @include mq(md) {
             width: calc(350vw / 7.68);
             top: 970px;
-            right: 180px;
+            right: 20%;
+        }
+        @include mq(lg) {
+            width: 500px;
+            top: 1000px;
         }
     }
     &-parts-iphone {
         position: absolute;
         width: calc(220vw / 3.75);
         top: 1700px;
-        right: -200px;
+        right: -150px;
         @include mq(md) {
             width: calc(250vw / 7.68);
             top: 1000px;
+        }
+        @include mq(lg) {
+            width: 430px;
+            right: -200px;
         }
     }
 }
