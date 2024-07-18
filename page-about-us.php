@@ -139,7 +139,7 @@ Template Name: about-us
           <div class="p-aboutUsContents__inner-text2">
             <p class="p-aboutUsContents__inner-weightBold">保険は目に見えない“将来の保証”を買うもの。</p>
             <p>だから良い買い物をしたのかどうかは、いざその時になってみないとわかりません。 <br>
-              保険を選ぶ時点で、重要となるポイントは『なぜこの保険設計になったのか？』ということを、 
+              保険を選ぶ時点で、重要となるポイントは『なぜこの保険設計になったのか？』ということを、<br class="pc">
               ご自身が十分納得できているかどうかではないでしょうか？
             </p>
           </div>
@@ -147,7 +147,7 @@ Template Name: about-us
         <div class="p-aboutUsContents__comment">
           <div class="p-aboutUsContents__comment-textBox">
             <p class="p-aboutUsContents__comment-title">我々にお任せ下さい！！</p>
-            <p>ATACは、保険業務知識はもとより周辺知識を貧欲に吸収し、保険・金融のプロとして
+            <p class="p-aboutUsContents__comment-sentence">ATACは、保険業務知識はもとより周辺知識を貧欲に吸収し、保険・金融のプロとして
                 お客様の経済的変化を把握し、一人ひとりに適したアドバイスをさせていただきます。 
                 万一の際の迅速な対応はもちろん、ご家族のゆく末までしっかりと見守り続けます。
             </p>
@@ -160,6 +160,22 @@ Template Name: about-us
           </div>
           
         </div>
+      </div>
+      <div class="p-aboutUsContents p-aboutUsContents__staff">
+        <h1 class="l-staff__title">
+          <div class="l-staff__text">
+            <picture>
+              <source srcset="<?php echo get_template_directory_uri(); ?>/images/about-us/staff_title.webp" type="image/webp">
+              <img src="<?php echo get_template_directory_uri(); ?>/images/about-us/staff_title.png" alt="">
+            </picture>
+          </div>
+          <div class="l-staff__underLine">
+            <picture>
+              <source srcset="<?php echo get_template_directory_uri(); ?>/images/about-us/ornamentLine.webp" type="image/webp">
+              <img src="<?php echo get_template_directory_uri(); ?>/images/about-us/ornamentLine.png" alt="スタッフ紹介">
+            </picture>
+          </div>
+        </h1>
       </div>
     </div>
   </section>
