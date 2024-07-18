@@ -161,7 +161,7 @@ Template Name: about-us
           
         </div>
       </div>
-      <div class="p-aboutUsContents p-aboutUsContents__staff">
+      <div class="p-aboutUsContents p-aboutUsContents__staffList">
         <h1 class="l-staff__title">
           <div class="l-staff__text">
             <picture>
@@ -176,6 +176,177 @@ Template Name: about-us
             </picture>
           </div>
         </h1>
+		<p class="p-aboutUsContents__staff-text">皆様をサポートするスタッフを紹介します！</p>
+		 
+		  <div class="p-aboutUsContents p-aboutUsContents__staff">
+			<div class="p-aboutUsContents__infoArea-title">
+				<h2>代表取締役</h2>
+			</div>
+			  <div class="p-aboutUsContents__staff-illustBox">
+				<picture>
+				  <source srcset="<?php echo get_template_directory_uri(); ?>/images/common/illust.webp" type="image/webp">
+				  <img src="<?php echo get_template_directory_uri(); ?>/images/common/illust.png" alt="">
+				</picture>
+          	  </div>
+			  <div class="p-aboutUsContents__staff-name">
+				  <b>青木　亮</b>
+				  <p class="p-aboutUsContents__staff-nameEn">
+					  Akira Aoki
+				  </p>
+			  </div>
+			  <div class="p-aboutUsContents__qualification-box1">
+				  <dl class="p-aboutUsContents__qualification-item">
+					  <dt class="p-qualification__list-head">担当業務</dt>
+					  <dd class="p-qualification__list-body">営業・新規開拓・更改・事故処理・事業拡大担当・生保推進リーダー</dd>
+					  <dt class="p-qualification__list-head">資格損保</dt>
+					  <dd class="p-qualification__list-body">
+						  <ul class="p-numberlist">
+							<li class="p-qualificationlist__item">
+							  損害保険大学課程専門コース資格
+							</li>
+							<li class="p-numberlist__item">
+							  特級（一般）資格
+							</li>
+							<li class="p-numberlist__item">
+							  損害サービスアドバイザー資格
+							</li>
+						  </ul>
+					　</dd>
+					  <dt class="p-qualification__list-head">生保</dt>
+					  <dd class="p-qualification__list-body">普通資格</dd>
+					  <dt class="p-qualification__list-head">その他</dt>
+					  <dd class="p-qualification__list-body">
+						  <ul class="p-numberlist">
+							<li class="p-qualificationlist__item">
+							  宅地建物取引主任者
+							</li>
+							<li class="p-numberlist__item">
+							  衛生工学衛生管理者
+							</li>
+							<li class="p-numberlist__item">
+							  第1種衛生管理者
+							</li>
+						  </ul>
+					  </dd>
+					  <dt class="p-qualification__list-head">趣味・特技</dt>
+					  <dd class="p-qualification__list-body">ワイン収集、食べ歩き</dd>
+				  </dl>
+				  <div class="p-aboutUsContents__messageBox">
+					  <div class="p-aboutUsContents__message">
+						  <p class="p-aboutUsContents__message-title">一言メッセージ</p>
+						  <p>人生の「もしも」を安堵（あんど）にかえる・・・<br>
+							  それが私の仕事です。
+						　</p>
+					  </div>
+				  </div>	  
+			  </div>
+			  <div class="p-aboutUsContents__infoArea-title">
+				<h2>営業</h2>
+			  </div>
+				  <div class="p-aboutUsContents__staff-illustBox">
+					<picture>
+					  <source srcset="<?php echo get_template_directory_uri(); ?>/images/common/illust.webp" type="image/webp">
+					  <img src="<?php echo get_template_directory_uri(); ?>/images/common/illust.png" alt="">
+					</picture>
+				  </div>
+				  <div class="p-aboutUsContents__staff-name">
+					  <b>森　浩和</b>
+					  <p class="p-aboutUsContents__staff-nameEn">
+						  Hirokazu Mori
+					  </p>
+				  </div>
+			  <div class="p-aboutUsContents__qualification-box1">
+				  <dl class="p-aboutUsContents__qualification-item">
+					  <dt class="p-qualification__list-head">担当業務</dt>
+					  <dd class="p-qualification__list-body">営業・新規開拓・更改・事故処理・渉外担当・損保推進リーダー三井住友海上木更津MSA生保推進リーダー</dd>
+					  <dt class="p-qualification__list-head">資格損保</dt>
+					  <dd class="p-qualification__list-body">
+						  <ul class="p-numberlist">
+							<li class="p-qualificationlist__item">
+							  損害保険大学課程専門コース資格
+							</li>
+							<li class="p-numberlist__item">
+							  特級（一般）資格
+							</li>
+							<li class="p-numberlist__item">
+							  特級（工場）資格
+							</li>
+							<li class="p-numberlist__item">
+							  損害サービスアドバイザー資格
+							</li>
+						  </ul>
+					　</dd>
+					  <dt class="p-qualification__list-head">生保</dt>
+					  <dd class="p-qualification__list-body">専門資格【LCライフ・コンサルタント】</dd>
+					  <dt class="p-qualification__list-head">趣味・特技</dt>
+					  <dd class="p-qualification__list-body">500円玉貯金</dd>
+				  </dl>
+				  <div class="p-aboutUsContents__messageBox">
+					  <div class="p-aboutUsContents__message">
+						  <p class="p-aboutUsContents__message-title">一言メッセージ</p>
+						  <p>事故は現場で起きている！<br>
+						　　　現場のお客様の身になって対応します！
+						　</p>
+					  </div>
+				  </div>	  
+			  </div>
+			    <div class="p-aboutUsContents__infoArea-title">
+				  <h2>事務</h2>
+			     </div>
+				  <div class="p-aboutUsContents__staff-illustBox">
+					<picture>
+					  <source srcset="<?php echo get_template_directory_uri(); ?>/images/common/illust.webp" type="image/webp">
+					  <img src="<?php echo get_template_directory_uri(); ?>/images/common/illust.png" alt="">
+					</picture>
+				  </div>
+				  <div class="p-aboutUsContents__staff-name">
+					  <b>青木　かおり</b>
+					  <p class="p-aboutUsContents__staff-nameEn">
+						  Kaori Aoki
+					  </p>
+				  </div>
+			  <div class="p-aboutUsContents__qualification-box1">
+				  <dl class="p-aboutUsContents__qualification-item">
+					  <dt class="p-qualification__list-head">担当業務</dt>
+					  <dd class="p-qualification__list-body">契約入力・精算・営業事務・事務リーダー</dd>
+					  <dt class="p-qualification__list-head">資格損保</dt>
+					  <dd class="p-qualification__list-body">
+						  <ul class="p-numberlist">
+							<li class="p-qualificationlist__item">
+							  損害保険大学課程専門コース資格
+							</li>
+							<li class="p-numberlist__item">
+							  特級（一般）資格
+							</li>
+						  </ul>
+					　</dd>
+					  <dt class="p-qualification__list-head">生保</dt>
+					  <dd class="p-qualification__list-body">応用資格</dd>
+					  <dt class="p-qualification__list-head">その他</dt>
+					  <dd class="p-qualification__list-body">
+						  <ul class="p-numberlist">
+							<li class="p-qualificationlist__item">
+							  AFP資格
+							</li>
+							<li class="p-numberlist__item">
+							  FP2級資格
+							</li>
+						  </ul>
+					  </dd>
+					  <dt class="p-qualification__list-head">趣味・特技</dt>
+					  <dd class="p-qualification__list-body">旅行、読書</dd>
+				  </dl>
+				  <div class="p-aboutUsContents__messageBox">
+					  <div class="p-aboutUsContents__message">
+						  <p class="p-aboutUsContents__message-title">一言メッセージ</p>
+						  <p>お客様第一に迅速かつ丁寧な対応を心がけています。<br>
+							 きめ細かいサポートができるように頑張ります！
+						　</p>
+					  </div>
+				  </div>	  
+			  </div>
+		  	</div>
+	  </div>
       </div>
     </div>
   </section>

@@ -136,6 +136,7 @@
     background-size: cover;
     padding-bottom: 400px;
     position: relative;
+    background-position: bottom;
     @include mq(md) {
         background-image: url(../images/front-page/main_background_tab.png);
         background-size: contain;
@@ -154,74 +155,82 @@
     // position: relative;
     &-parts-sticky1 { 
         position: absolute;
-        width: 40vw;
+        width: calc(145vw / 3.75);
         right: -50px;
         @include mq(md) {
-            width: 35vw;
+            width: calc(250vw / 7.68);
         }
     }
     &-parts-sticky2 {
         position: absolute;
-        width: 50vw;
-        top: 200px;
+        width: calc(210vw / 3.75);
+        top: 300px;
         right: -100px;
         @include mq(md) {
-            width: 35vw;
+            width: calc(280vw / 7.68);
             top: 300px;
         }
     }
     &-parts-sticky3 {
         position: absolute;
-        width: 50vw;
-        top: 700px;
+        width: calc(200vw / 3.75);
+        top: 800px;
         left: -50px;
         @include mq(md) {
-            width: 35vw;
+            width: calc(250vw / 7.68);
         }
     }
     &-parts-paper1 {
         position: absolute;
-        width: 45vw;
+        width: calc(230vw / 3.75);
         left: -150px;
         @include mq(md) {
-            width: 35vw;
+            width: calc(320vw / 7.68);
         }
     }
     &-parts-paper2 {
         position: absolute;
-        width: 70vw;
+        width: calc(230vw / 3.75);
         top: 1060px;
         right: -100px;
         @include mq(md) {
-            width: 50vw;
-            top: 870px;
+            width: calc(350vw / 7.68);
+            top: 970px;
+            right: 180px;
         }
     }
     &-parts-iphone {
         position: absolute;
-        width: 70vw;
-        top: 1600px;
+        width: calc(220vw / 3.75);
+        top: 1700px;
         right: -200px;
         @include mq(md) {
-            width: 55vw;
+            width: calc(250vw / 7.68);
+            top: 1000px;
         }
     }
 }
 .p-frontContents__title {
     position: sticky;
     span {
-        font-size: 1.3rem;
+        font-size: calc(13vw / 3.75);
+        @include mq(md) {
+            font-size: calc(15svw / 7.68);
+        }
         @include mq(lg) {
             font-size: 1.8rem;
         }
     }
     &-img {
-        width: 100px;
+        width: calc(100vw / 3.75);
         text-align: center;
         font-size: revert;
         margin-top: 8px;
         @include mq(md) {
-            width: 150px;
+            width: calc(150vw / 7.68);
+        }
+        @include mq(lg) {
+            width: 148px;
         }
     }
 }
@@ -233,7 +242,7 @@ ul.p-contentsList {
     display: flex;
     flex-flow: wrap;
     justify-content: space-between;
-    max-width: 800px;
+    max-width: 840px;
     margin: 32px auto 0;
     }
     @include mq(lg) {
@@ -241,12 +250,13 @@ ul.p-contentsList {
     }
     .p-contentsList__box {
         position: relative;
-        width: 100%;
-        max-width: 400px;
+        width: calc(360vw / 3.75);
+        // max-width: 400px;
         margin: 0 auto;
         @include mq(md) {
             margin: 0;
             width: 49%;
+            max-width: revert;
         }
         @include mq(lg) {
             
@@ -260,9 +270,12 @@ ul.p-contentsList {
             margin: 0 auto;
             b {
                 letter-spacing: revert;
-                font-size: 1.3rem;
+                font-size: calc(13vw / 3.75);
+                @include mq(md) {
+                    font-size: calc(14vw / 7.68);
+                }
                 @include mq(lg) {
-                    font-size: 1.6rem;
+                    font-size: 1.8rem;
                 }
                 &::before {
                     content: "";
@@ -296,25 +309,35 @@ ul.p-contentsList {
             justify-content: space-between;
             margin-top: 12px;
             &-img {
-            width: 49%;
+            width: 50%;
             }
             &-text {
                 display: flex;
                 flex-flow: column;
+                align-items: center;
                 justify-content: center;
-                width: 45%;
+                width: 50%;
                 text-align: left;
                 b {
                     letter-spacing: revert;
-                    font-size: 1.3rem;
+                    font-size: calc(13vw / 3.75);
+                    @include mq(md) {
+                        font-size: calc(13vw / 7.68);
+                    }
                     @include mq(lg) {
                         font-size: 1.6rem;
                     }
                 }
                 ul {
                     li {
-                        font-size: 1.3rem;
                         margin-top: 8px;
+                        font-size: calc(13vw / 3.75);
+                        @include mq(md) {
+                            font-size: calc(13vw / 7.68);
+                        }
+                        @include mq(lg) {
+                            font-size: 1.6rem;
+                        }
                     }
                 }
             }
@@ -325,7 +348,10 @@ ul.p-contentsList {
             font-family: "Zen Maru Gothic", serif;
             line-height: 1.5;
             margin-top: 16px;
-            font-size: 1.3rem;
+            font-size: calc(13vw / 3.75);
+            @include mq(md) {
+                font-size: calc(13vw / 7.68);
+            }
             @include mq(lg) {
                 font-size: 1.6rem;
             }
