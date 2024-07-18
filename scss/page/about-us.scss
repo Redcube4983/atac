@@ -37,6 +37,7 @@
         left: 0%;
         right: 0;
         transform: translateY(-50%);
+        max-width: 185px;
         @include mq(md){
             width: 25vw;
         }
@@ -50,6 +51,10 @@
 }
 
 #p-aboutUsContents {
+    background-image: url(../images/about-us/background_bottom.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: bottom;
     background-color: #FFF4E6;
     .p-aboutUsContents__infoArea{
         &-box1{
@@ -62,6 +67,9 @@
         margin: 0 auto;
         @include mq(md){
             padding: 64px 24px 0;
+        }
+        @include mq(lg){
+            padding-top: 80px;
         }
     }
     .p-aboutUsContents__infoArea {
@@ -166,7 +174,6 @@
         width: 100%;
       }
       .p-aboutUsContents__policy {
-        padding-top: 40px;
         max-width: 1050px;
         margin: 0 auto;
         &-list {
@@ -272,7 +279,7 @@
                 font-size: 2.3rem;
             }
         }
-        &-sentencs{
+        &-sentence{
             font-size: 1.3rem;
             @include mq(md){
                 font-size: 1.6rem;
