@@ -51,18 +51,18 @@
 }
 
 #p-aboutUsContents {
-    background-image: url(../images/about-us/background_bottom.png);
-    background-size: contain;
-    background-repeat: no-repeat;
-    background-position: bottom;
     background-color: #FFF4E6;
     .p-aboutUsContents__infoArea{
+        background-image: url(../images/about-us/background_bottom.png);
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position: bottom;
         &-box1{
             margin-top: 16px;
         }
     }
     .p-aboutUsContents{
-        padding: 40px 8px 0;
+        padding: 40px 8px;
         max-width: 1050px;
         margin: 0 auto;
         @include mq(md){
@@ -218,7 +218,6 @@
         
       }
       .p-aboutUsContents__philosophy{
-        padding-bottom: 420px;
         max-width: 1050px;
         margin: 0 auto;
       }
@@ -608,7 +607,17 @@ ul.p-contentsList {
     }
     
 }
-.l-footer__contact {
+
+
+
+.p-aboutUsContents__staffArea {
+    padding-bottom: 420px;
+    background-image: url(../images/about-us/background_bottom.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: bottom;
+    background-color: #FFF;
+
     img {
         width: 100%;
     }
