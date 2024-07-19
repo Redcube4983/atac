@@ -158,26 +158,227 @@ Template Name: about-us
               <img src="<?php echo get_template_directory_uri(); ?>/images/common/illust.png" alt="">
             </picture>
           </div>
-          
         </div>
       </div>
-      <div class="p-aboutUsContents p-aboutUsContents__staff">
-        <h1 class="l-staff__title">
-          <div class="l-staff__text">
-            <picture>
-              <source srcset="<?php echo get_template_directory_uri(); ?>/images/about-us/staff_title.webp" type="image/webp">
-              <img src="<?php echo get_template_directory_uri(); ?>/images/about-us/staff_title.png" alt="">
-            </picture>
-          </div>
-          <div class="l-staff__underLine">
-            <picture>
-              <source srcset="<?php echo get_template_directory_uri(); ?>/images/about-us/ornamentLine.webp" type="image/webp">
-              <img src="<?php echo get_template_directory_uri(); ?>/images/about-us/ornamentLine.png" alt="スタッフ紹介">
-            </picture>
-          </div>
-        </h1>
-      </div>
-    </div>
+	</div>
+
+	<div class="p-aboutUsContents__staffArea">
+		<div class="p-aboutUsContents__profileBox">
+			<div class="p-aboutUsContents__staffArea-titleWrap">
+					<h2 class="p-aboutUsContents__staffArea-title">
+						<div class="p-aboutUsContents__staffArea-titleImg">
+							<picture>
+							<source srcset="<?php echo get_template_directory_uri(); ?>/images/about-us/staff_title.webp" type="image/webp">
+							<img src="<?php echo get_template_directory_uri(); ?>/images/about-us/staff_title.png" alt="スタッフ紹介">
+							</picture>
+						</div>
+						<div class="p-aboutUsContents__staffArea-titleUnderline">
+							<picture>
+							<source srcset="<?php echo get_template_directory_uri(); ?>/images/about-us/ornamentLine.webp" type="image/webp">
+							<img src="<?php echo get_template_directory_uri(); ?>/images/about-us/ornamentLine.png" alt="">
+							</picture>
+						</div>
+					</h2>
+					<p class="p-aboutUsContents__staffArea-titleCaption">皆様をサポートするスタッフを紹介します！</p>
+			</div>
+
+
+			<div class="p-aboutUsContents p-aboutUsContents__staffArea-box">
+				<div class="p-aboutUsContents__staffArea-boxLeft">
+					<div class="p-aboutUsContents__staffArea-boxLeft-position">
+						<b>代表取締役</b>
+					</div>
+					<div class="p-aboutUsContents__staffArea-boxLeft-image">
+						<picture>
+						<source srcset="<?php echo get_template_directory_uri(); ?>/images/common/illust.webp" type="image/webp">
+						<img src="<?php echo get_template_directory_uri(); ?>/images/common/illust.png" alt="">
+						</picture>
+					</div>
+					<div class="p-aboutUsContents__staffArea-boxLeft-name">
+						<b>青木　亮</b>
+						<span>Akira Aoki</span>
+					</div>
+				</div>
+				<div class="p-aboutUsContents__staffArea-boxRight">
+					<dl class="p-aboutUsContents__staffArea-boxRight-item">
+					  <dt class="p-qualification__staffArea-boxRight-head">担当業務</dt>
+					  <dd class="p-qualification__staffArea-boxRight-body">営業・新規開拓・更改・事故処理・事業拡大担当・生保推進リーダー</dd>
+					  <dt class="p-qualification__staffArea-boxRight-head">資格損保</dt>
+						<dd class="p-qualification__staffArea-boxRight-body">
+							<ul class="">
+								<li class="">
+									損害保険大学課程専門コース資格
+								</li>
+								<li class="p-qualification__staffArea-boxRight-bodyBold">
+									特級（一般）資格
+								</li>
+								<li class="p-numberlist__item">
+									損害サービスアドバイザー資格
+								</li>
+							</ul>
+						</dd>
+					  <dt class="p-qualification__staffArea-boxRight-head">生保</dt>
+					  <dd class="p-qualification__staffArea-boxRight-body">普通資格</dd>
+					  <dt class="p-qualification__staffArea-boxRight-head">その他</dt>
+					  <dd class="p-qualification__staffArea-boxRight-body">
+						  <ul class="">
+							<li class="">
+							  宅地建物取引主任者
+							</li>
+							<li class="">
+							  衛生工学衛生管理者
+							</li>
+							<li class="">
+							  第1種衛生管理者
+							</li>
+						  </ul>
+					  </dd>
+					  <dt class="p-qualification__staffArea-boxRight-head">趣味・特技</dt>
+					  <dd class="p-qualification__staffArea-boxRight-body">ワイン収集、食べ歩き</dd>
+					</dl>
+				  <div class="p-aboutUsContents__messageBox">
+					  <div class="p-aboutUsContents__message">
+						  <p class="p-aboutUsContents__message-title">一言メッセージ</p>
+						  <p>人生の「もしも」を安堵（あんど）にかえる・・・<br>
+							  それが私の仕事です。
+						　</p>
+					  </div>
+				  </div>
+				</div>
+			</div>
+
+
+			<div class="p-aboutUsContents__staffArea-box">
+				<div class="p-aboutUsContents__staffArea-boxLeft">
+					<div class="p-aboutUsContents__staffArea-boxLeft-position">
+						<b>営業</b>
+					</div>
+					<div class="p-aboutUsContents__staffArea-boxLeft-image">
+						<picture>
+						<source srcset="<?php echo get_template_directory_uri(); ?>/images/common/illust.webp" type="image/webp">
+						<img src="<?php echo get_template_directory_uri(); ?>/images/common/illust.png" alt="">
+						</picture>
+					</div>
+					<div class="p-aboutUsContents__staffArea-boxLeft-name">
+						<b>青木　亮</b>
+						<span>Akira Aoki</span>
+					</div>
+				</div>
+				<div class="p-aboutUsContents__staffArea-boxRight">
+					<dl class="p-aboutUsContents__staffArea-boxRight-item">
+					  <dt class="p-qualification__staffArea-boxRight-head">担当業務</dt>
+					  <dd class="p-qualification__staffArea-boxRight-body">営業・新規開拓・更改・事故処理・事業拡大担当・生保推進リーダー</dd>
+					  <dt class="p-qualification__staffArea-boxRight-head">資格損保</dt>
+						<dd class="p-qualification__staffArea-boxRight-body">
+							<ul class="">
+								<li class="">
+									損害保険大学課程専門コース資格
+								</li>
+								<li class="p-qualification__staffArea-boxRight-bodyBold">
+									特級（一般）資格
+								</li>
+								<li class="p-numberlist__item">
+									損害サービスアドバイザー資格
+								</li>
+							</ul>
+						</dd>
+					  <dt class="p-qualification__staffArea-boxRight-head">生保</dt>
+					  <dd class="p-qualification__staffArea-boxRight-body">普通資格</dd>
+					  <dt class="p-qualification__staffArea-boxRight-head">その他</dt>
+					  <dd class="p-qualification__staffArea-boxRight-body">
+						  <ul class="">
+							<li class="">
+							  宅地建物取引主任者
+							</li>
+							<li class="">
+							  衛生工学衛生管理者
+							</li>
+							<li class="">
+							  第1種衛生管理者
+							</li>
+						  </ul>
+					  </dd>
+					  <dt class="p-qualification__staffArea-boxRight-head">趣味・特技</dt>
+					  <dd class="p-qualification__staffArea-boxRight-body">ワイン収集、食べ歩き</dd>
+					</dl>
+				  <div class="p-aboutUsContents__messageBox">
+					  <div class="p-aboutUsContents__message">
+						  <p class="p-aboutUsContents__message-title">一言メッセージ</p>
+						  <p>人生の「もしも」を安堵（あんど）にかえる・・・<br>
+							  それが私の仕事です。
+						　</p>
+					  </div>
+				  </div>
+				</div>
+			</div>
+
+
+			<div class="p-aboutUsContents__staffArea-box">
+				<div class="p-aboutUsContents__staffArea-boxLeft">
+					<div class="p-aboutUsContents__staffArea-boxLeft-position">
+						<b>代表取締役</b>
+					</div>
+					<div class="p-aboutUsContents__staffArea-boxLeft-image">
+						<picture>
+						<source srcset="<?php echo get_template_directory_uri(); ?>/images/common/illust.webp" type="image/webp">
+						<img src="<?php echo get_template_directory_uri(); ?>/images/common/illust.png" alt="">
+						</picture>
+					</div>
+					<div class="p-aboutUsContents__staffArea-boxLeft-name">
+						<b>青木　亮</b>
+						<span>Akira Aoki</span>
+					</div>
+				</div>
+				<div class="p-aboutUsContents__staffArea-boxRight">
+					<dl class="p-aboutUsContents__staffArea-boxRight-item">
+					  <dt class="p-qualification__staffArea-boxRight-head">担当業務</dt>
+					  <dd class="p-qualification__staffArea-boxRight-body">営業・新規開拓・更改・事故処理・事業拡大担当・生保推進リーダー</dd>
+					  <dt class="p-qualification__staffArea-boxRight-head">資格損保</dt>
+						<dd class="p-qualification__staffArea-boxRight-body">
+							<ul class="">
+								<li class="">
+									損害保険大学課程専門コース資格
+								</li>
+								<li class="p-qualification__staffArea-boxRight-bodyBold">
+									特級（一般）資格
+								</li>
+								<li class="p-numberlist__item">
+									損害サービスアドバイザー資格
+								</li>
+							</ul>
+						</dd>
+					  <dt class="p-qualification__staffArea-boxRight-head">生保</dt>
+					  <dd class="p-qualification__staffArea-boxRight-body">普通資格</dd>
+					  <dt class="p-qualification__staffArea-boxRight-head">その他</dt>
+					  <dd class="p-qualification__staffArea-boxRight-body">
+						  <ul class="">
+							<li class="">
+							  宅地建物取引主任者
+							</li>
+							<li class="">
+							  衛生工学衛生管理者
+							</li>
+							<li class="">
+							  第1種衛生管理者
+							</li>
+						  </ul>
+					  </dd>
+					  <dt class="p-qualification__staffArea-boxRight-head">趣味・特技</dt>
+					  <dd class="p-qualification__staffArea-boxRight-body">ワイン収集、食べ歩き</dd>
+					</dl>
+				  <div class="p-aboutUsContents__messageBox">
+					  <div class="p-aboutUsContents__message">
+						  <p class="p-aboutUsContents__message-title">一言メッセージ</p>
+						  <p>人生の「もしも」を安堵（あんど）にかえる・・・<br>
+							  それが私の仕事です。
+						　</p>
+					  </div>
+				  </div>
+				</div>
+			</div>
+		</div>
+	</div>
+    
   </section>
 
 
