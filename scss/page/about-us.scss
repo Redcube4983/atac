@@ -59,6 +59,7 @@
         background-position: bottom;
         &-box1{
             margin-top: 16px;
+            padding: 0 8px;
         }
     }
     .p-aboutUsContents{
@@ -310,306 +311,6 @@
 }
 
 
-
-
-
-
-#p-firstView {
-    padding: 0 32px;
-    overflow: hidden;
-    position: relative;
-    height: auto;
-    background-image: url(../images/front-page/fv_background_sp.png);
-    border-image-repeat: no-repeat;
-    background-size: cover;
-    img {
-        width: 100%;
-    }
-    .p-firstView-inner {
-        margin: 80px auto 0;
-        // width: 90vw;
-        // margin: 80px auto;
-        // position: absolute;
-        // left: 0;
-        // right: 0;
-        &--subtitle {
-            width: 40vw;
-            display: flex;
-            margin: 0 0 0 auto;
-        }
-        &--title {
-            margin-top: 16px;
-            width: 75vw;
-        }
-        &--illust {
-            width: 63%;
-            margin: 32px auto 0;
-        }
-    }
-    
-    #p-firstView__banner {
-        position: absolute;
-        width: 100%;
-        bottom: 160px;
-        display: flex;
-        flex-flow: column;
-        justify-content: center;
-        align-items: center;
-        z-index: 2;
-        cursor: pointer;
-        &.bottom {
-            bottom: 50px;
-        }
-        &--bottomArea {
-            width: 60%;
-            max-width: 240px;
-            display: block;
-            margin-top: 20px;
-            &:first-child{
-                margin-top: 0;
-            }
-        }
-    }
-    @include mq(md) {
-        #p-firstView__banner {
-            position: absolute;
-            width: 100%;
-            &.bottom {
-                bottom: 50px;
-            }
-        }
-    }
-    @include mq(lg) {
-        #p-firstView__banner {
-            position: absolute;
-            bottom: 50px;
-            width: auto;
-            display: flex;
-            flex-flow: row nowrap;
-            padding: 0 50px;
-            justify-content: flex-start;
-            align-items: center;
-        }
-    }
-}
-.p-main {
-    position: relative;
-    margin: 0;
-    @include mq(md) {
-    }
-    .p-main__ornament {
-        img {
-            width: 100%;
-        }
-        .ornament_parts {
-            position: absolute;
-        }
-
-    }
-}
-#p-frontContents {
-    background-color: #FBD98D;
-    @include paddingSide(64px);
-    background-image: url(../images/front-page/main_background_sp.png);
-    border-image-repeat: no-repeat;
-    background-size: cover;
-    padding-bottom: 400px;
-    position: relative;
-    @include mq(md) {
-        background-image: url(../images/front-page/main_background.png);
-        background-size: contain;
-        background-repeat: no-repeat;
-    }
-    img {
-        width: 100%;
-    }
-}
-.p-main__ornament {
-    position: relative;
-    &--sticky1 {
-        position: absolute;
-        width: 40vw;
-        right: -50px;
-    }
-    &--sticky2 {
-        position: absolute;
-        width: 50vw;
-        top: 200px;
-        right: -100px;
-    }
-    &--sticky3 {
-        position: absolute;
-        width: 50vw;
-        top: 700px;
-        left: -50px;
-    }
-    &--paper1 {
-        position: absolute;
-        width: 65vw;
-        left: -150px;
-    }
-    &--paper2 {
-        position: absolute;
-        width: 70vw;
-        top: 1060px;
-        right: -100px;
-    }
-    &--iphone {
-        position: absolute;
-        width: 70vw;
-        top: 1600px;
-        right: -200px;
-    }
-}
-.p-frontContents__title {
-    position: sticky;
-    span {
-        font-size: 1.3rem;
-        @include mq(lg) {
-            font-size: 1.8rem;
-        }
-    }
-    &--img {
-        width: 100px;
-        text-align: center;
-        font-size: revert;
-        margin-top: 8px;
-        @include mq(lg) {
-            width: 150px;
-        }
-    }
-}
-
-ul.p-contentsList {
-    margin-top: 24px;
-    .p-contentsList__box {
-        position: relative;
-        width: 100%;
-        .p-contentsList__boxInner {
-            position: absolute;
-            left: 0;
-            right: 0;
-            top: 32px;
-            width: 85%;
-            margin: 0 auto;
-            b {
-                letter-spacing: revert;
-                font-size: 1.3rem;
-                @include mq(lg) {
-                    font-size: 1.6rem;
-                }
-                &::before {
-                    content: "";
-                    display: block;
-                    width: 33px;
-                    height: 33px;
-                    background-image: url(../images/front-page/top_ornament_pin_ye.webp);
-                    background-size: contain;
-                    background-repeat: no-repeat;
-                    position: absolute;
-                    top: -30px;
-                    left: 0;
-                    right: 0;
-                    margin: 0 auto;
-                }
-            }
-            &--name {
-                font-size: 1.4rem;
-                margin-top: 8px;
-                display: block;
-                @include mq(lg) {
-                    font-size: 1.6rem;
-                }
-            }
-        }
-        
-        
-        .p-contentsList__middle {
-            display: flex;
-            flex-flow: nowrap;
-            justify-content: space-between;
-            margin-top: 12px;
-            &--img {
-            width: 49%;
-            }
-            &--text {
-                display: flex;
-                flex-flow: column;
-                justify-content: center;
-                width: 45%;
-                text-align: left;
-                b {
-                    letter-spacing: revert;
-                    font-size: 1.3rem;
-                    @include mq(lg) {
-                        font-size: 1.6rem;
-                    }
-                }
-                ul {
-                    li {
-                        font-size: 1.3rem;
-                        margin-top: 8px;
-                    }
-                }
-            }
-        }
-        
-        
-        .p-contentsList__bottom {
-            font-family: "Zen Maru Gothic", serif;
-            line-height: 1.5;
-            margin-top: 16px;
-            font-size: 1.3rem;
-            @include mq(lg) {
-                font-size: 1.6rem;
-            }
-        }
-        &:nth-child(2n) {
-            .p-contentsList__boxInner {
-                b {
-                    &::before {
-                        content: "";
-                        display: block;
-                        width: 33px;
-                        height: 33px;
-                        background-image: url(../images/front-page/top_ornament_pin_or.webp);
-                        background-size: contain;
-                        background-repeat: no-repeat;
-                        position: absolute;
-                        top: -30px;
-                        left: 0;
-                        right: 0;
-                        margin: 0 auto;
-                    } 
-                }
-            }
-        }
-        &:nth-child(3n) {
-            .p-contentsList__boxInner {
-                b {
-                    &::before {
-                        content: "";
-                        display: block;
-                        width: 33px;
-                        height: 33px;
-                        background-image: url(../images/front-page/top_ornament_pin_ma.webp);
-                        background-size: contain;
-                        background-repeat: no-repeat;
-                        position: absolute;
-                        top: -30px;
-                        left: 0;
-                        right: 0;
-                        margin: 0 auto;
-                    } 
-                }
-            }
-        }
-    }
-    
-}
-
-
-
 .p-aboutUsContents__staffArea {
     padding-bottom: 420px;
     background-image: url(../images/about-us/background_bottom.png);
@@ -617,8 +318,123 @@ ul.p-contentsList {
     background-repeat: no-repeat;
     background-position: bottom;
     background-color: #FFF;
-
+    &-title{
+        width: 30vw;
+        max-width: 185px;
+        margin: 0 auto;
+    }
+    &-titleUnderline {
+        font-size: 0;
+    }
     img {
         width: 100%;
+    }
+    &-titleCaption{
+        font-size: 1.4rem;
+        font-weight: bold;
+    }
+    &-box {
+        margin-top: 40px;
+    }
+    &-boxLeft {
+        &-position{
+            background-image: url(../images/about-us/sticky_2.png);
+            background-size: contain;
+            background-repeat: no-repeat;
+            background-position: center;
+            height: 48px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            b{
+                font-size: 1.3rem;
+                font-weight: bold;
+            }
+        }
+        &-image{
+            width: 50%;
+            margin: 0 auto;
+        }
+        &-name{
+            display: flex;
+            flex-flow: column;
+            margin-top: 8px;
+            b{
+                font-size: 1.6rem;
+                padding-bottom: 6px;
+            }
+            span{
+                font-size: 1.3rem;
+            }
+        }
+    }
+    &-boxRight {
+        &-item{
+            margin-top: 16px;
+            display: flex;
+            flex-flow: wrap;
+            width: 100%;
+            padding: 0 8px;
+        }
+        &-head{
+            text-align: left;
+            width: 40%;
+            border-bottom: 1px dotted #FFC042;
+            line-height: 1.8;
+            font-size: 1.4rem;
+            font-weight: bold;
+            color: #FF8900;
+            padding: 16px 0;
+            &:first-child{
+                padding: 0 0 16px 0;
+                + dd {
+                    padding: 0 0 16px 0;
+                }
+            }
+        }
+        &-body{
+            text-align: left;
+            width: 60%;
+            line-height: 1.8;
+            border-bottom: 1px dotted #FFC042;
+            font-size: 1.3rem;
+            padding: 16px 0;
+            &:first-child{
+                padding: 0 0 16px 0;
+            }
+            li{
+                font-size: 1.3rem;
+            }
+            &-bodyBold{
+                font-size: 1.3rem;
+                font-weight: bold;
+            }
+        }
+        &-messageBox{
+            border: solid 1px #F58906;
+            border-radius: 20px;
+            margin-top: 16px 8px;
+            display: flex;
+            flex-flow: column;
+            margin-top: 24px;
+            span {
+                background-color: #F58906;
+                padding: 16px 8px;
+                margin: 0;
+                border-radius: 16px 16px 0 0;
+                color: #FFF;
+                text-align: left;
+                font-size: 1.4rem;
+                font-weight: bold;
+            }
+            p{
+                font-size: 1.3rem;
+                margin: 0;
+                text-align: left;
+                padding: 16px 8px;
+                border-radius: 20px;
+                background-color: #fff;
+            }
+        }
     }
 }

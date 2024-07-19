@@ -163,7 +163,7 @@ Template Name: about-us
 	</div>
 
 	<div class="p-aboutUsContents__staffArea">
-		<div class="p-aboutUsContents__profileBox">
+		<div class="p-aboutUsContents p-aboutUsContents__profileBox">
 			<div class="p-aboutUsContents__staffArea-titleWrap">
 					<h2 class="p-aboutUsContents__staffArea-title">
 						<div class="p-aboutUsContents__staffArea-titleImg">
@@ -183,7 +183,7 @@ Template Name: about-us
 			</div>
 
 
-			<div class="p-aboutUsContents p-aboutUsContents__staffArea-box">
+			<div class="p-aboutUsContents__staffArea-box">
 				<div class="p-aboutUsContents__staffArea-boxLeft">
 					<div class="p-aboutUsContents__staffArea-boxLeft-position">
 						<b>代表取締役</b>
@@ -201,15 +201,15 @@ Template Name: about-us
 				</div>
 				<div class="p-aboutUsContents__staffArea-boxRight">
 					<dl class="p-aboutUsContents__staffArea-boxRight-item">
-					  <dt class="p-qualification__staffArea-boxRight-head">担当業務</dt>
-					  <dd class="p-qualification__staffArea-boxRight-body">営業・新規開拓・更改・事故処理・事業拡大担当・生保推進リーダー</dd>
-					  <dt class="p-qualification__staffArea-boxRight-head">資格損保</dt>
-						<dd class="p-qualification__staffArea-boxRight-body">
+					  <dt class="p-aboutUsContents__staffArea-boxRight-head">担当業務</dt>
+					  <dd class="p-aboutUsContents__staffArea-boxRight-body">営業・新規開拓・更改・事故処理・事業拡大担当・生保推進リーダー</dd>
+					  <dt class="p-aboutUsContents__staffArea-boxRight-head">資格損保</dt>
+						<dd class="p-aboutUsContents__staffArea-boxRight-body">
 							<ul class="">
 								<li class="">
 									損害保険大学課程専門コース資格
 								</li>
-								<li class="p-qualification__staffArea-boxRight-bodyBold">
+								<li class="p-aboutUsContents__staffArea-boxRight-bodyBold">
 									特級（一般）資格
 								</li>
 								<li class="p-numberlist__item">
@@ -217,10 +217,10 @@ Template Name: about-us
 								</li>
 							</ul>
 						</dd>
-					  <dt class="p-qualification__staffArea-boxRight-head">生保</dt>
-					  <dd class="p-qualification__staffArea-boxRight-body">普通資格</dd>
-					  <dt class="p-qualification__staffArea-boxRight-head">その他</dt>
-					  <dd class="p-qualification__staffArea-boxRight-body">
+					  <dt class="p-aboutUsContents__staffArea-boxRight-head">生保</dt>
+					  <dd class="p-aboutUsContents__staffArea-boxRight-body">普通資格</dd>
+					  <dt class="p-aboutUsContents__staffArea-boxRight-head">その他</dt>
+					  <dd class="p-aboutUsContents__staffArea-boxRight-body">
 						  <ul class="">
 							<li class="">
 							  宅地建物取引主任者
@@ -233,17 +233,13 @@ Template Name: about-us
 							</li>
 						  </ul>
 					  </dd>
-					  <dt class="p-qualification__staffArea-boxRight-head">趣味・特技</dt>
-					  <dd class="p-qualification__staffArea-boxRight-body">ワイン収集、食べ歩き</dd>
+					  <dt class="p-aboutUsContents__staffArea-boxRight-head">趣味・特技</dt>
+					  <dd class="p-aboutUsContents__staffArea-boxRight-body">ワイン収集、食べ歩き</dd>
 					</dl>
-				  <div class="p-aboutUsContents__messageBox">
-					  <div class="p-aboutUsContents__message">
-						  <p class="p-aboutUsContents__message-title">一言メッセージ</p>
-						  <p>人生の「もしも」を安堵（あんど）にかえる・・・<br>
-							  それが私の仕事です。
-						　</p>
-					  </div>
-				  </div>
+				  <div class="p-aboutUsContents__staffArea-boxRight-messageBox">
+							<span>一言メッセージ</span>
+							<p>人生の「もしも」を安堵（あんど）にかえる・・・それが私の仕事です。</p>
+					</div>
 				</div>
 			</div>
 
@@ -266,15 +262,15 @@ Template Name: about-us
 				</div>
 				<div class="p-aboutUsContents__staffArea-boxRight">
 					<dl class="p-aboutUsContents__staffArea-boxRight-item">
-					  <dt class="p-qualification__staffArea-boxRight-head">担当業務</dt>
-					  <dd class="p-qualification__staffArea-boxRight-body">営業・新規開拓・更改・事故処理・事業拡大担当・生保推進リーダー</dd>
-					  <dt class="p-qualification__staffArea-boxRight-head">資格損保</dt>
-						<dd class="p-qualification__staffArea-boxRight-body">
+						<dt class="p-aboutUsContents__staffArea-boxRight-head">担当業務</dt>
+						<dd class="p-aboutUsContents__staffArea-boxRight-body">営業・新規開拓・更改・事故処理・事業拡大担当・生保推進リーダー</dd>
+						<dt class="p-aboutUsContents__staffArea-boxRight-head">資格損保</dt>
+						<dd class="p-aboutUsContents__staffArea-boxRight-body">
 							<ul class="">
 								<li class="">
 									損害保険大学課程専門コース資格
 								</li>
-								<li class="p-qualification__staffArea-boxRight-bodyBold">
+								<li class="p-aboutUsContents__staffArea-boxRight-bodyBold">
 									特級（一般）資格
 								</li>
 								<li class="p-numberlist__item">
@@ -282,33 +278,29 @@ Template Name: about-us
 								</li>
 							</ul>
 						</dd>
-					  <dt class="p-qualification__staffArea-boxRight-head">生保</dt>
-					  <dd class="p-qualification__staffArea-boxRight-body">普通資格</dd>
-					  <dt class="p-qualification__staffArea-boxRight-head">その他</dt>
-					  <dd class="p-qualification__staffArea-boxRight-body">
-						  <ul class="">
+						<dt class="p-aboutUsContents__staffArea-boxRight-head">生保</dt>
+						<dd class="p-aboutUsContents__staffArea-boxRight-body">普通資格</dd>
+						<dt class="p-aboutUsContents__staffArea-boxRight-head">その他</dt>
+						<dd class="p-aboutUsContents__staffArea-boxRight-body">
+							<ul class="">
 							<li class="">
-							  宅地建物取引主任者
+								宅地建物取引主任者
 							</li>
 							<li class="">
-							  衛生工学衛生管理者
+								衛生工学衛生管理者
 							</li>
 							<li class="">
-							  第1種衛生管理者
+								第1種衛生管理者
 							</li>
-						  </ul>
-					  </dd>
-					  <dt class="p-qualification__staffArea-boxRight-head">趣味・特技</dt>
-					  <dd class="p-qualification__staffArea-boxRight-body">ワイン収集、食べ歩き</dd>
+							</ul>
+						</dd>
+						<dt class="p-aboutUsContents__staffArea-boxRight-head">趣味・特技</dt>
+						<dd class="p-aboutUsContents__staffArea-boxRight-body">ワイン収集、食べ歩き</dd>
 					</dl>
-				  <div class="p-aboutUsContents__messageBox">
-					  <div class="p-aboutUsContents__message">
-						  <p class="p-aboutUsContents__message-title">一言メッセージ</p>
-						  <p>人生の「もしも」を安堵（あんど）にかえる・・・<br>
-							  それが私の仕事です。
-						　</p>
-					  </div>
-				  </div>
+					<div class="p-aboutUsContents__staffArea-boxRight-messageBox">
+							<span>一言メッセージ</span>
+							<p>人生の「もしも」を安堵（あんど）にかえる・・・それが私の仕事です。</p>
+					</div>
 				</div>
 			</div>
 
@@ -331,15 +323,15 @@ Template Name: about-us
 				</div>
 				<div class="p-aboutUsContents__staffArea-boxRight">
 					<dl class="p-aboutUsContents__staffArea-boxRight-item">
-					  <dt class="p-qualification__staffArea-boxRight-head">担当業務</dt>
-					  <dd class="p-qualification__staffArea-boxRight-body">営業・新規開拓・更改・事故処理・事業拡大担当・生保推進リーダー</dd>
-					  <dt class="p-qualification__staffArea-boxRight-head">資格損保</dt>
-						<dd class="p-qualification__staffArea-boxRight-body">
+					  <dt class="p-aboutUsContents__staffArea-boxRight-head">担当業務</dt>
+					  <dd class="p-aboutUsContents__staffArea-boxRight-body">営業・新規開拓・更改・事故処理・事業拡大担当・生保推進リーダー</dd>
+					  <dt class="p-aboutUsContents__staffArea-boxRight-head">資格損保</dt>
+						<dd class="p-aboutUsContents__staffArea-boxRight-body">
 							<ul class="">
 								<li class="">
 									損害保険大学課程専門コース資格
 								</li>
-								<li class="p-qualification__staffArea-boxRight-bodyBold">
+								<li class="p-aboutUsContents__staffArea-boxRight-bodyBold">
 									特級（一般）資格
 								</li>
 								<li class="p-numberlist__item">
@@ -347,10 +339,10 @@ Template Name: about-us
 								</li>
 							</ul>
 						</dd>
-					  <dt class="p-qualification__staffArea-boxRight-head">生保</dt>
-					  <dd class="p-qualification__staffArea-boxRight-body">普通資格</dd>
-					  <dt class="p-qualification__staffArea-boxRight-head">その他</dt>
-					  <dd class="p-qualification__staffArea-boxRight-body">
+					  <dt class="p-aboutUsContents__staffArea-boxRight-head">生保</dt>
+					  <dd class="p-aboutUsContents__staffArea-boxRight-body">普通資格</dd>
+					  <dt class="p-aboutUsContents__staffArea-boxRight-head">その他</dt>
+					  <dd class="p-aboutUsContents__staffArea-boxRight-body">
 						  <ul class="">
 							<li class="">
 							  宅地建物取引主任者
@@ -363,17 +355,13 @@ Template Name: about-us
 							</li>
 						  </ul>
 					  </dd>
-					  <dt class="p-qualification__staffArea-boxRight-head">趣味・特技</dt>
-					  <dd class="p-qualification__staffArea-boxRight-body">ワイン収集、食べ歩き</dd>
+					  <dt class="p-aboutUsContents__staffArea-boxRight-head">趣味・特技</dt>
+					  <dd class="p-aboutUsContents__staffArea-boxRight-body">ワイン収集、食べ歩き</dd>
 					</dl>
-				  <div class="p-aboutUsContents__messageBox">
-					  <div class="p-aboutUsContents__message">
-						  <p class="p-aboutUsContents__message-title">一言メッセージ</p>
-						  <p>人生の「もしも」を安堵（あんど）にかえる・・・<br>
-							  それが私の仕事です。
-						　</p>
-					  </div>
-				  </div>
+					<div class="p-aboutUsContents__staffArea-boxRight-messageBox">
+							<span>一言メッセージ</span>
+							<p>人生の「もしも」を安堵（あんど）にかえる・・・それが私の仕事です。</p>
+					</div>
 				</div>
 			</div>
 		</div>
