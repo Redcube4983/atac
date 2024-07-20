@@ -1916,7 +1916,7 @@ b {
 }
 @media screen and (min-width: 768px) {
   #p-aboutUsContents .p-aboutUsContents {
-    padding: 64px 24px 0;
+    padding: 64px 24px;
   }
 }
 @media screen and (min-width: 1024px) {
@@ -1939,6 +1939,7 @@ b {
 #p-aboutUsContents .p-aboutUsContents__infoArea-title h2 {
   font-size: 1.6rem;
   font-weight: bold;
+  color: #1E313B;
 }
 @media screen and (min-width: 768px) {
   #p-aboutUsContents .p-aboutUsContents__infoArea-title h2 {
@@ -1985,6 +1986,7 @@ b {
   border-bottom: 1px solid #FFC042;
   font-size: 1.3rem;
   margin-top: 8px;
+  color: #1E313B;
 }
 @media screen and (min-width: 768px) {
   #p-aboutUsContents .p-profile__list-body {
@@ -2078,6 +2080,7 @@ b {
 #p-aboutUsContents .p-aboutUsContents__policy-list p {
   margin-top: 8px;
   font-size: 1.3rem;
+  color: #1E313B;
 }
 @media screen and (min-width: 768px) {
   #p-aboutUsContents .p-aboutUsContents__policy-list p {
@@ -2091,6 +2094,7 @@ b {
 #p-aboutUsContents .p-aboutUsContents__inner-text1 p {
   font-size: 1.3rem;
   font-weight: bold;
+  color: #1E313B;
 }
 @media screen and (min-width: 768px) {
   #p-aboutUsContents .p-aboutUsContents__inner-text1 p {
@@ -2103,6 +2107,7 @@ b {
 #p-aboutUsContents .p-aboutUsContents__inner-text2 .p-aboutUsContents__inner-weightBold {
   font-weight: bold;
   font-size: 1.4rem;
+  color: #1E313B;
 }
 @media screen and (min-width: 768px) {
   #p-aboutUsContents .p-aboutUsContents__inner-text2 .p-aboutUsContents__inner-weightBold {
@@ -2116,6 +2121,7 @@ b {
 }
 #p-aboutUsContents .p-aboutUsContents__inner-text2 p {
   font-size: 1.3rem;
+  color: #1E313B;
 }
 @media screen and (min-width: 768px) {
   #p-aboutUsContents .p-aboutUsContents__inner-text2 p {
@@ -2149,6 +2155,7 @@ b {
 #p-aboutUsContents .p-aboutUsContents__comment-title {
   font-size: 1.3rem;
   font-weight: bold;
+  color: #1E313B;
 }
 @media screen and (min-width: 768px) {
   #p-aboutUsContents .p-aboutUsContents__comment-title {
@@ -2162,6 +2169,7 @@ b {
 }
 #p-aboutUsContents .p-aboutUsContents__comment-sentence {
   font-size: 1.3rem;
+  color: #1E313B;
 }
 @media screen and (min-width: 768px) {
   #p-aboutUsContents .p-aboutUsContents__comment-sentence {
@@ -2218,6 +2226,7 @@ b {
 .p-aboutUsContents__staffArea-titleCaption {
   font-size: 1.4rem;
   font-weight: bold;
+  color: #1E313B;
 }
 @media screen and (min-width: 768px) {
   .p-aboutUsContents__staffArea-titleCaption {
@@ -2262,6 +2271,7 @@ b {
 .p-aboutUsContents__staffArea-boxLeft-position b {
   font-size: 1.3rem;
   font-weight: bold;
+  color: #1E313B;
 }
 @media screen and (min-width: 768px) {
   .p-aboutUsContents__staffArea-boxLeft-position b {
@@ -2285,6 +2295,7 @@ b {
 .p-aboutUsContents__staffArea-boxLeft-name b {
   font-size: 1.6rem;
   padding-bottom: 6px;
+  color: #1E313B;
 }
 @media screen and (min-width: 768px) {
   .p-aboutUsContents__staffArea-boxLeft-name b {
@@ -2293,6 +2304,7 @@ b {
 }
 .p-aboutUsContents__staffArea-boxLeft-name span {
   font-size: 1.3rem;
+  color: #1E313B;
 }
 @media screen and (min-width: 768px) {
   .p-aboutUsContents__staffArea-boxLeft-name span {
@@ -2338,6 +2350,7 @@ b {
   line-height: 1.8;
   border-bottom: 1px dotted #FFC042;
   font-size: 1.3rem;
+  color: #1E313B;
   padding: 16px 0;
 }
 @media screen and (min-width: 768px) {
@@ -2350,14 +2363,14 @@ b {
 }
 .p-aboutUsContents__staffArea-boxRight-body li {
   font-size: 1.3rem;
+  color: #1E313B;
 }
 @media screen and (min-width: 768px) {
   .p-aboutUsContents__staffArea-boxRight-body li {
     font-size: 1.6rem;
   }
 }
-.p-aboutUsContents__staffArea-boxRight-body li-bodyBold {
-  font-size: 1.6rem;
+.p-aboutUsContents__staffArea-boxRight-body .p-aboutUsContents__staffArea-boxRight-bodyBold {
   font-weight: bold;
 }
 .p-aboutUsContents__staffArea-boxRight-messageBox {
@@ -2385,6 +2398,7 @@ b {
 }
 .p-aboutUsContents__staffArea-boxRight-messageBox p {
   font-size: 1.3rem;
+  color: #1E313B;
   margin: 0;
   text-align: left;
   padding: 16px 8px;
