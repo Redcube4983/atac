@@ -2153,16 +2153,11 @@ b {
   }
 }
 #p-aboutUsContents .p-aboutUsContents__comment-title {
-  font-size: 1.3rem;
+  font-size: 1.4rem;
   font-weight: bold;
   color: #1E313B;
 }
 @media screen and (min-width: 768px) {
-  #p-aboutUsContents .p-aboutUsContents__comment-title {
-    font-size: 1.6rem;
-  }
-}
-@media screen and (min-width: 1024px) {
   #p-aboutUsContents .p-aboutUsContents__comment-title {
     font-size: 2.3rem;
   }

@@ -276,13 +276,10 @@
             }
         }
         &-title{
-            font-size: 1.3rem;
+            font-size: 1.4rem;
             font-weight: bold;
             color: $black;
             @include mq(md){
-                font-size: 1.6rem;
-            }
-            @include mq(lg){
                 font-size: 2.3rem;
             }
         }
