@@ -1920,8 +1920,10 @@ b {
   display: block;
   border-radius: 20px;
   background-color: #FFF;
-  margin-bottom: 32px;
-  padding-bottom: 16px;
+  margin-top: 48px;
+}
+#p-aboutUsContents .p-aboutUsContents__insuranceBox:first-child {
+  margin: 0;
 }
 #p-aboutUsContents .p-aboutUsContents__insuranceBox-title h2 {
   font-size: 1.4rem;
@@ -1931,11 +1933,28 @@ b {
   border-radius: 20px 20px 0 0;
   color: #FFF;
 }
-#p-aboutUsContents .p-aboutUsContents__insuranceBox-lead {
-  margin: 16px 0;
+#p-aboutUsContents .p-aboutUsContents__insuranceBox-whiteArea {
+  padding: 16px;
 }
-#p-aboutUsContents .p-aboutUsContents__insuranceBox-lead b {
+#p-aboutUsContents .p-aboutUsContents__insuranceBox-whiteArea img {
+  width: 100%;
+}
+#p-aboutUsContents .p-aboutUsContents__insuranceBox-whiteArea b {
   font-size: 1.3rem;
+}
+#p-aboutUsContents .p-aboutUsContents__insuranceBox-whiteArea-inner {
+  text-align: left;
+  margin-top: 16px;
+}
+#p-aboutUsContents .p-aboutUsContents__insuranceBox-whiteArea-inner ul {
+  margin-top: 24px;
+}
+#p-aboutUsContents .p-aboutUsContents__insuranceBox-whiteArea-inner ul li {
+  font-size: 1.3rem;
+  margin-top: 8px;
+}
+#p-aboutUsContents .p-aboutUsContents__insuranceBox-whiteArea-inner ul li:first-child {
+  margin: 0;
 }
 #p-aboutUsContents .p-aboutUsContents__insuranceBox-kinds {
   display: flex;

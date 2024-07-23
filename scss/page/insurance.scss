@@ -70,8 +70,10 @@
         display: block;
         border-radius: 20px;
         background-color: #FFF;
-        margin-bottom: 32px;
-        padding-bottom: 16px;
+        margin-top: 48px;
+        &:first-child{
+            margin: 0;
+        }
         &-title{
             h2{
                 font-size: 1.4rem;
@@ -82,12 +84,30 @@
                 color: #FFF;
             }
         }
-        &-lead{
-            margin: 16px 0;
+        &-whiteArea{
+            padding: 16px;
+            img{
+                width: 100%;
+            }
             b{
                 font-size: 1.3rem;
             }
+            &-inner{
+                text-align: left;
+                margin-top: 16px;
+                ul{
+                    margin-top: 24px;
+                    li{
+                        font-size: 1.3rem;
+                        margin-top: 8px;
+                        &:first-child{
+                            margin: 0;
+                        }
+                    }
+                }
+            }
         }
+        
         &-kinds{
             display: flex;
             flex-flow: column;
