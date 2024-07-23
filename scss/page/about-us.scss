@@ -332,7 +332,10 @@
         font-size: 0;
     }
     img {
-        width: 100%;
+        width: 50%;
+        @include mq(md){
+            width: 100%;
+        }
     }
     &-titleCaption{
         font-size: 1.4rem;
@@ -348,14 +351,16 @@
             display: flex;
             flex-flow: row nowrap;
             width: 100%;
+            justify-content: space-between;
         }
         @include mq(lg){
             margin-bottom: 80px;
         }
     }
     &-boxLeft {
+        width: 100%;
         @include mq(md){
-            width: 30%;
+            width: 35%;
         }
         &-position{
             background-image: url(../images/about-us/sticky_2.png);
@@ -379,7 +384,6 @@
             }
         }
         &-image{
-            width: 50%;
             margin: 0 auto;
             @include mq(md){
                 width: 80%;
@@ -408,7 +412,7 @@
     }
     &-boxRight {
         @include mq(md){
-            width: 70%;
+            width: 55%;
         }
         &-item{
             margin-top: 16px;
