@@ -37,7 +37,8 @@ Template Name: insurance
   </section>
 
   <section id="p-insuranceContents">
-    <div class="c-contentsLayout p-insuranceContents__insuranceArea">
+    <div class="p-insuranceContents__insuranceArea">
+      <div class="c-contentsLayout">
       <div class="p-insuranceContents__insuranceBox">
         <div class="p-insuranceContents__insuranceBox-title">
             <h2>生命保険</h2>
@@ -69,7 +70,7 @@ Template Name: insurance
         <div class="p-insuranceContents__insuranceBox-whiteArea">
           <b>カーライフに安心を</b>
           <div class="p-insuranceContents__insuranceBox-whiteArea-inner">
-            <ul class="">
+            <ul>
               <li>&#9632;GK クルマの保険（家庭用自動車総合保険）</li>
               <li>&#9632;はじめての自動車保険（個人用自動車保険）</li>
               <li>&#9632;自賠責保険</li>
@@ -189,6 +190,7 @@ Template Name: insurance
                 </a>
             </div>
         </div>
+      </div>
       </div>
     </div>
   </section>

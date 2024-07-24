@@ -196,6 +196,22 @@
   }
 }
 
+.c-contentsLayout {
+  padding: 40px 8px;
+  max-width: 1050px;
+  margin: 0 auto;
+}
+@media screen and (min-width: 768px) {
+  .c-contentsLayout {
+    padding: 64px 24px;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .c-contentsLayout {
+    padding-top: 80px;
+  }
+}
+
 /*******************************
 		グローバル設定
 *******************************/
@@ -1967,6 +1983,12 @@ b {
   border-radius: 20px;
   background-color: #FFF;
   margin-top: 48px;
+  max-width: 1050px;
+}
+@media screen and (min-width: 768px) {
+  #p-insuranceContents .p-insuranceContents__insuranceBox {
+    margin-top: 80px;
+  }
 }
 #p-insuranceContents .p-insuranceContents__insuranceBox:first-child {
   margin: 0;
@@ -1979,14 +2001,31 @@ b {
   border-radius: 20px 20px 0 0;
   color: #FFF;
 }
+@media screen and (min-width: 768px) {
+  #p-insuranceContents .p-insuranceContents__insuranceBox-title h2 {
+    font-size: 2.3rem;
+    padding: 24px;
+  }
+}
 #p-insuranceContents .p-insuranceContents__insuranceBox-whiteArea {
   padding: 16px;
+}
+@media screen and (min-width: 768px) {
+  #p-insuranceContents .p-insuranceContents__insuranceBox-whiteArea {
+    padding: 24px 80px;
+  }
 }
 #p-insuranceContents .p-insuranceContents__insuranceBox-whiteArea img {
   width: 100%;
 }
 #p-insuranceContents .p-insuranceContents__insuranceBox-whiteArea b {
+  color: #1E313B;
   font-size: 1.3rem;
+}
+@media screen and (min-width: 768px) {
+  #p-insuranceContents .p-insuranceContents__insuranceBox-whiteArea b {
+    font-size: 1.8rem;
+  }
 }
 #p-insuranceContents .p-insuranceContents__insuranceBox-whiteArea-inner {
   text-align: left;
@@ -1995,26 +2034,46 @@ b {
 #p-insuranceContents .p-insuranceContents__insuranceBox-whiteArea-inner ul {
   margin-top: 24px;
 }
+#p-insuranceContents .p-insuranceContents__insuranceBox-whiteArea-inner ul img {
+  width: 50%;
+}
+@media screen and (min-width: 768px) {
+  #p-insuranceContents .p-insuranceContents__insuranceBox-whiteArea-inner ul img {
+    width: 60%;
+  }
+}
 #p-insuranceContents .p-insuranceContents__insuranceBox-whiteArea-inner ul li {
+  color: #1E313B;
   font-size: 1.3rem;
   margin-top: 8px;
 }
 #p-insuranceContents .p-insuranceContents__insuranceBox-whiteArea-inner ul li:first-child {
   margin: 0;
 }
-#p-insuranceContents .p-insuranceContents__insuranceBox-whiteArea-products {
+@media screen and (min-width: 768px) {
+  #p-insuranceContents .p-insuranceContents__insuranceBox-whiteArea-inner ul li {
+    font-size: 1.6rem;
+  }
+}
+#p-insuranceContents .p-insuranceContents__insuranceBox-whiteArea-inner-products {
   display: flex;
   border: 1px solid #FF8900;
-  width: 140px;
+  width: 240px;
   height: 50px;
   flex-flow: column;
-  margin: 16px auto;
+  margin: 0 0 16px;
 }
-#p-insuranceContents .p-insuranceContents__insuranceBox-whiteArea-products a {
+@media screen and (min-width: 768px) {
+  #p-insuranceContents .p-insuranceContents__insuranceBox-whiteArea-inner-products {
+    width: 340px;
+    margin: 0 0 24px;
+  }
+}
+#p-insuranceContents .p-insuranceContents__insuranceBox-whiteArea-inner-products a {
   text-decoration: none;
-  padding: 8px;
+  padding: 16px;
 }
-#p-insuranceContents .p-insuranceContents__insuranceBox-whiteArea-products span {
+#p-insuranceContents .p-insuranceContents__insuranceBox-whiteArea-inner-products span {
   font-size: 1.6rem;
   color: #FF8900;
 }

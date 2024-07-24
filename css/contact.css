@@ -196,6 +196,22 @@
   }
 }
 
+.c-contentsLayout {
+  padding: 40px 8px;
+  max-width: 1050px;
+  margin: 0 auto;
+}
+@media screen and (min-width: 768px) {
+  .c-contentsLayout {
+    padding: 64px 24px;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .c-contentsLayout {
+    padding-top: 80px;
+  }
+}
+
 #contents #contact #contact_title {
   margin-bottom: 60px;
 }

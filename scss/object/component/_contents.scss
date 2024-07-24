@@ -1,11 +1,11 @@
 @use "../../global" as *;
 
 .c-contentsLayout{
-    padding: 40px 8px 420px;
+    padding: 40px 8px;
     max-width: 1050px;
     margin: 0 auto;
     @include mq(md){
-        padding: 64px 24px 460px;
+        padding: 64px 24px;
     }
     @include mq(lg){
         padding-top: 80px;
