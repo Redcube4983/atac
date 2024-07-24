@@ -36,15 +36,15 @@ Template Name: insurance
     </h1>
   </section>
 
-  <section id="p-aboutUsContents">
-    <div class="p-aboutUsContents p-aboutUsContents__insuranceArea">
-      <div class="p-aboutUsContents__insuranceBox">
-        <div class="p-aboutUsContents__insuranceBox-title">
+  <section id="p-insuranceContents">
+    <div class="c-contentsLayout p-insuranceContents__insuranceArea">
+      <div class="p-insuranceContents__insuranceBox">
+        <div class="p-insuranceContents__insuranceBox-title">
             <h2>生命保険</h2>
         </div>
-        <div class="p-aboutUsContents__insuranceBox-whiteArea">
+        <div class="p-insuranceContents__insuranceBox-whiteArea">
           <b>万一の時、将来のために</b>
-          <div class="p-aboutUsContents__insuranceBox-whiteArea-inner">
+          <div class="p-insuranceContents__insuranceBox-whiteArea-inner">
             <ul class="">
               <li>&#9632;&amp;LIFE 新総合収入保障</li>
               <li>&#9632;&amp;LIFE 医療保険Ａエースセレクト</li>
@@ -62,13 +62,13 @@ Template Name: insurance
         </div>
       </div>
 
-      <div class="p-aboutUsContents__insuranceBox">
-        <div class="p-aboutUsContents__insuranceBox-title">
+      <div class="p-insuranceContents__insuranceBox">
+        <div class="p-insuranceContents__insuranceBox-title">
             <h2>自動車保険</h2>
         </div>
-        <div class="p-aboutUsContents__insuranceBox-whiteArea">
+        <div class="p-insuranceContents__insuranceBox-whiteArea">
           <b>カーライフに安心を</b>
-          <div class="p-aboutUsContents__insuranceBox-whiteArea-inner">
+          <div class="p-insuranceContents__insuranceBox-whiteArea-inner">
             <ul class="">
               <li>&#9632;GK クルマの保険（家庭用自動車総合保険）</li>
               <li>&#9632;はじめての自動車保険（個人用自動車保険）</li>
@@ -89,13 +89,13 @@ Template Name: insurance
       </div>
 
 
-      <div class="p-aboutUsContents__insuranceBox">
-        <div class="p-aboutUsContents__insuranceBox-title">
+      <div class="p-insuranceContents__insuranceBox">
+        <div class="p-insuranceContents__insuranceBox-title">
             <h2>火災保険</h2>
         </div>
-        <div class="p-aboutUsContents__insuranceBox-whiteArea">
+        <div class="p-insuranceContents__insuranceBox-whiteArea">
             <b>快適で安心な暮らしのために</b>
-            <div class="p-aboutUsContents__insuranceBox-whiteArea-inner">
+            <div class="p-insuranceContents__insuranceBox-whiteArea-inner">
               <ul class="">
                 <li>&#9632;GK すまいの保険（家庭用火災保険）</li>
                 <li>&#9632;リビングＦＩＴ（賃貸住宅居住者総合保険）</li>
@@ -105,13 +105,13 @@ Template Name: insurance
         </div>
       </div>
 
-      <div class="p-aboutUsContents__insuranceBox">
-        <div class="p-aboutUsContents__insuranceBox-title">
+      <div class="p-insuranceContents__insuranceBox">
+        <div class="p-insuranceContents__insuranceBox-title">
             <h2>ケガの保険</h2>
         </div>
-        <div class="p-aboutUsContents__insuranceBox-whiteArea">
+        <div class="p-insuranceContents__insuranceBox-whiteArea">
               <b>突然の事故によるケガに</b>
-              <div class="p-aboutUsContents__insuranceBox-whiteArea-inner">
+              <div class="p-insuranceContents__insuranceBox-whiteArea-inner">
                 <ul class="">
                     <li>&#9632;GKケガの保険（パーソナル総合傷害保険）</li>
                     <li>&#9632;晴れやか世代（特定傷害保険）</li>
@@ -120,13 +120,13 @@ Template Name: insurance
         </div>
       </div>
 
-      <div class="p-aboutUsContents__insuranceBox">
-        <div class="p-aboutUsContents__insuranceBox-title">
+      <div class="p-insuranceContents__insuranceBox">
+        <div class="p-insuranceContents__insuranceBox-title">
             <h2>旅行の保険</h2>
         </div>
-        <div class="p-aboutUsContents__insuranceBox-whiteArea">
+        <div class="p-insuranceContents__insuranceBox-whiteArea">
               <b>旅先での突然のトラブルに</b>
-              <div class="p-aboutUsContents__insuranceBox-whiteArea-inner">
+              <div class="p-insuranceContents__insuranceBox-whiteArea-inner">
                 <ul class="">
                     <li>&#9632;海外旅行保険</li>
                     <li>&#9632;国内旅行傷害保険</li>
@@ -145,13 +145,13 @@ Template Name: insurance
         </div>
       </div>
 
-      <div class="p-aboutUsContents__insuranceBox">
-        <div class="p-aboutUsContents__insuranceBox-title">
+      <div class="p-insuranceContents__insuranceBox">
+        <div class="p-insuranceContents__insuranceBox-title">
             <h2>レジャーの保険</h2>
         </div>
-        <div class="p-aboutUsContents__insuranceBox-whiteArea">
+        <div class="p-insuranceContents__insuranceBox-whiteArea">
             <b>レジャーを安心して楽しむために</b>
-            <div class="p-aboutUsContents__insuranceBox-whiteArea-inner">
+            <div class="p-insuranceContents__insuranceBox-whiteArea-inner">
               <ul class="">
                   <li>&#9632;ゴルファー保険</li>
                   <li>&#9632;レクレーション傷害補償プラン</li>
@@ -170,17 +170,17 @@ Template Name: insurance
         </div>
       </div>
 
-      <div class="p-aboutUsContents__insuranceBox">
-        <div class="p-aboutUsContents__insuranceBox-title">
+      <div class="p-insuranceContents__insuranceBox">
+        <div class="p-insuranceContents__insuranceBox-title">
             <h2>その他の保険</h2>
         </div>
-        <div class="p-aboutUsContents__insuranceBox-whiteArea">
-            <div class="p-aboutUsContents__insuranceBox-products">
+        <div class="p-insuranceContents__insuranceBox-whiteArea">
+            <div class="p-insuranceContents__insuranceBox-whiteArea-inner-products">
                 <a href="https://www.ms-ins.com/business/">
                 <span>企業向け商品・サービス</span>
                 </a>
             </div>
-            <div class="p-aboutUsContents__bicycleImg">
+            <div class="p-insuranceContents__bicycleImg">
                 <a href="https://net2.ms-ins.com/servlet/scy/SCY_UII_CYS0010?free_area1=&free_area2=">
                     <picture>
                         <source srcset="<?php echo get_template_directory_uri(); ?>/images/insurance/bicycle.webp" type="image/webp">

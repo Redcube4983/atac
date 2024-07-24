@@ -62,17 +62,6 @@
             padding: 0 8px;
         }
     }
-    .p-aboutUsContents{
-        padding: 40px 8px;
-        max-width: 1050px;
-        margin: 0 auto;
-        @include mq(md){
-            padding: 64px 24px;
-        }
-        @include mq(lg){
-            padding-top: 80px;
-        }
-    }
     .p-aboutUsContents__infoArea {
         &-title {
             background-image: url(../images/about-us/sticky_sp.png);

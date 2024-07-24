@@ -19,6 +19,11 @@
 <!--front-page-->
 <?php if( is_front_page() ): ?>
 <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/css/front-page.css">
+<!--404-->
+<?php elseif( is_404() ): ?>
+<link rel="stylesheet" type="text/css" href="<?php echo get_template_directory_uri(); ?>/css/404.css"/>
+<?php elseif( is_post_type_archive('blog') ): ?>
+<link rel="stylesheet" type="text/css" href="<?php echo get_template_directory_uri(); ?>/css/blog.css"/>
 <?php else: ?>
 <?php endif; ?>
 

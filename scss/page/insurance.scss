@@ -46,27 +46,16 @@
     }
 }
 
-#p-aboutUsContents{
+#p-insuranceContents{
     background-color: #F7E4E9;
-    .p-aboutUsContents{
-        padding: 40px 8px;
-        max-width: 1050px;
-        margin: 0 auto;
-        @include mq(md){
-            padding: 64px 24px;
-        }
-        @include mq(lg){
-            padding-top: 80px;
-        }
-    }
-    .p-aboutUsContents__insuranceArea{
+    .p-insuranceContents__insuranceArea{
         background-image: url(../images/insurance/background_bottom.png);
         background-size: contain;
         background-repeat: no-repeat;
         background-position: bottom;
         padding-bottom: 400px;
     }
-    .p-aboutUsContents__insuranceBox{
+    .p-insuranceContents__insuranceBox{
         display: block;
         border-radius: 20px;
         background-color: #FFF;
@@ -84,6 +73,7 @@
                 color: #FFF;
             }
         }
+        
         &-whiteArea{
             padding: 16px;
             img{
@@ -106,6 +96,23 @@
                     }
                 }
             }
+            &-products{
+                display: flex;
+                border: 1px solid #FF8900;
+                width: 140px;
+                height: 50px;
+                flex-flow: column;
+                margin: 16px auto;
+                a{
+                    text-decoration: none;
+                    padding: 8px;
+                }
+                span{
+                    font-size: 1.6rem;
+                    color: #FF8900;
+                    
+                }
+            }
         }
         
         &-kinds{
@@ -118,23 +125,7 @@
                 text-align: left;
             }
         }
-        &-products{
-            display: flex;
-            border: 1px solid #FF8900;
-            width: 140px;
-            height: 50px;
-            flex-flow: column;
-            margin: 16px auto;
-            a{
-                text-decoration: none;
-                padding: 8px;
-            }
-            span{
-                font-size: 1.6rem;
-                color: #FF8900;
-                
-            }
-        }
+        
         .p-aboutUsContents__carImg{
             width: 100%;
             margin-top: 8px;

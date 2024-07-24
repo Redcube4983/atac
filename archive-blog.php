@@ -4,8 +4,8 @@ Template Name: archive-blog
 */
 ?>
 <?php get_header(); ?>
-<section id="news">
-<h2>News</h2>
+<section id="p-blogContents">
+<h2>Blog</h2>
 <ul>
 <?php if (have_posts()): ?>
     <?php while (have_posts()) : the_post(); ?>

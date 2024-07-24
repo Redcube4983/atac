@@ -145,6 +145,7 @@
         background-image: url(../images/front-page/main_background.png);
         background-size: contain;
         background-repeat: no-repeat;
+        padding-bottom: 480px;
     }
     @include mq(xxl) {
         background-image: url(../images/front-page/main_background_pc2.png);

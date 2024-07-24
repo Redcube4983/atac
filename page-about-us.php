@@ -36,7 +36,7 @@ Template Name: about-us
 
   <section id="p-aboutUsContents">
     <div class="p-aboutUsContents__infoArea">
-      <div class="p-aboutUsContents p-aboutUsContents__company">
+      <div class="c-contentsLayout p-aboutUsContents__company">
         <div class="p-aboutUsContents__infoArea-title">
             <h2>会社概要</h2>
         </div>
@@ -73,7 +73,7 @@ Template Name: about-us
             </dd>
           </dl>
         </div>
-        <div class="p-aboutUsContents p-aboutUsContents__infoArea-box2">
+        <div class="c-contentsLayout p-aboutUsContents__infoArea-box2">
             <b>取扱保険会社</b>
             <ul class="l-footer__top-companyLogo">
             <a href="https://www.ms-ins.com/">
@@ -96,7 +96,7 @@ Template Name: about-us
         </div>
       </div>
 
-      <div class="p-aboutUsContents p-aboutUsContents__policy">
+      <div class="c-contentsLayout p-aboutUsContents__policy">
         <div class="p-aboutUsContents__infoArea-title">
           <h2>経営方針</h2>
         </div>
@@ -124,7 +124,7 @@ Template Name: about-us
           </ul>
       </div>
 
-      <div class="p-aboutUsContents p-aboutUsContents__philosophy">
+      <div class="c-contentsLayout p-aboutUsContents__philosophy">
         <div class="p-aboutUsContents__infoArea-title">
           <h2>経営理念</h2>
         </div>
@@ -163,7 +163,7 @@ Template Name: about-us
 	</div>
 
 	<div class="p-aboutUsContents__staffArea">
-		<div class="p-aboutUsContents p-aboutUsContents__profileBox">
+		<div class="c-contentsLayout p-aboutUsContents__profileBox">
 			<div class="p-aboutUsContents__staffArea-titleWrap">
 					<h2 class="p-aboutUsContents__staffArea-title">
 						<div class="p-aboutUsContents__staffArea-titleImg">
@@ -346,8 +346,29 @@ Template Name: about-us
 				</div>
 			</div>
 		</div>
+		<div class="p-aboutUsContents__blogArea">
+		<h2>BLOG</h2>
+			<ul>
+			<?php $args = array(
+					'post_type' => 'blog',
+					'post_status' => 'publish',// 公開済の投稿を指定
+					'paged' => $paged, 
+					'posts_per_page' => 1// 投稿件数の指定
+					);
+					$paged = ( get_query_var( 'paged' ) ) ? get_query_var( 'paged' ) : 1;
+					$the_query = new WP_Query($args);
+					if($the_query->have_posts()):?>
+			<?php while ($the_query->have_posts()): $the_query->the_post(); ?>
+				<li class="blog-inner"><time class="blog-time"><?php echo get_the_date('Y/m/d'); ?></time><p class="blog-text"><a class="blog-link" href="<?php the_permalink(); ?>"><?php echo get_the_title(); ?></a></p></li> 
+			<?php endwhile; ?>
+			<?php else: ?>
+			<!-- 投稿が無い場合の処理 -->
+			<?php endif; ?>
+			</ul>
+		<a href="<?php echo esc_url( home_url('/blog/') ); ?>" class="topics-archive-link"><span>ブログ一覧</span></a>
 	</div>
-    
+	</div>
+	
   </section>
 
 
