@@ -1,0 +1,130 @@
+@use "../global" as *;
+@use "../object" as *;
+@use "../../common/css/layout" as *;
+
+#l-internalTop {
+    margin-top: 60px;
+    height: 120px;
+    position: relative;
+    @include mq(lg){
+        margin-top: 100px;
+    }
+    .l-internalTop__ornamentLeft {
+        position: absolute;
+        width: 120px;
+        bottom: 0;
+        @include mq(lg){
+            width: 180px;
+            top: -42px;
+            left: 192px;
+        }
+    }
+    h1.l-internalTop__title {
+        width: 30vw;
+        position: absolute;
+        top: 50%;
+        left: 0%;
+        right: 0;
+        transform: translateY(-50%);
+        max-width: 185px;
+        @include mq(md){
+            width: 25vw;
+        }
+        @include mq(lg){
+            width: 18vw;
+        }
+    }
+    .l-internalTop__illust{
+        position: absolute;
+        right: -120px;
+        top: -30px;
+        bottom: 0;
+        width: 100px;
+    }
+    img {
+        width: 100%;
+    }
+}
+
+#p-aboutUsContents{
+    background-color: #F7E4E9;
+    .p-aboutUsContents{
+        padding: 40px 8px;
+        max-width: 1050px;
+        margin: 0 auto;
+        @include mq(md){
+            padding: 64px 24px;
+        }
+        @include mq(lg){
+            padding-top: 80px;
+        }
+    }
+    .p-aboutUsContents__insuranceArea{
+        background-image: url(../images/insurance/background_bottom.png);
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position: bottom;
+        padding-bottom: 400px;
+    }
+    .p-aboutUsContents__insuranceBox{
+        display: block;
+        border-radius: 20px;
+        background-color: #FFF;
+        margin-bottom: 32px;
+        padding-bottom: 16px;
+        &-title{
+            h2{
+                font-size: 1.4rem;
+                font-weight: bold;
+                padding: 16px;
+                background-color: #FF7C9F;
+                border-radius: 20px 20px 0 0;
+                color: #FFF;
+            }
+        }
+        b{
+            font-size: 1.3rem;
+            margin: 16px 0;
+        }
+        &-kinds{
+            display: flex;
+            flex-flow: column;
+            padding: 0 64px;
+            li{
+                font-size: 1.3rem;
+                line-height: 1.8;
+                text-align: left;
+            }
+        }
+        &-products{
+            display: flex;
+            border: 1px solid #FF8900;
+            width: 140px;
+            height: 50px;
+            flex-flow: column;
+            margin: 16px auto;
+            a{
+                text-decoration: none;
+                padding: 8px;
+            }
+            span{
+                font-size: 1.6rem;
+                color: #FF8900;
+                
+            }
+        }
+        .p-aboutUsContents__carImg{
+            width: 100%;
+            margin-top: 8px;
+            img{
+                width: 50%;
+            }
+        }
+        .p-aboutUsContents__bicycleImg{
+            width: 100%;
+            img{
+                width: 70%;
+            }
+        }
+    }
+}
