@@ -85,7 +85,7 @@
         &-whiteArea{
             padding: 16px;
             @include mq(md){
-                padding: 24px 80px;
+                padding: 24px;
             }
             img{
                 width: 100%;
@@ -99,15 +99,23 @@
             }
             &-inner{
                 text-align: left;
-                margin-top: 16px;
+                @include mq(lg){
+                    display: flex;
+                    flex-flow: wrap;
+                    justify-content: space-between;
+                }
                 ul{
                     margin-top: 24px;
-                    img{
+                    &:last-child{
                         width: 50%;
+                        @include mq(lg){
+                            width: 48%;
+                        }
                     }
-                    @include mq(md){
-                        img{
-                            width: 60%;
+                    &:first-child{
+                        width: 50%;
+                        @include mq(lg){
+                            width: 48%;
                         }
                     }
                     li{
@@ -119,55 +127,18 @@
                         }
                         @include mq(md){
                             font-size: 1.6rem;
+                            line-height: 1.5;
                         }
                     }
                 }
                 &-products{
-                    display: flex;
-                    border: 1px solid #FF8900;
-                    width: 240px;
-                    height: 50px;
-                    flex-flow: column;
-                    margin: 0 0 16px;
-                    @include mq(md){
-                        width: 340px;
-                        margin: 0 0 24px;
+                        &:first-child{
+                            width: 50%;
+                            @include mq(lg){
+                                width: 40%;
+                            }
+                        }
                     }
-                    a{
-                        text-decoration: none;
-                        padding: 16px;
-                    }
-                    span{
-                        font-size: 1.6rem;
-                        color: #FF8900;
-                        
-                    }
-                }
-            }
-        }
-        
-        &-kinds{
-            display: flex;
-            flex-flow: column;
-            padding: 0 64px;
-            li{
-                font-size: 1.3rem;
-                line-height: 1.8;
-                text-align: left;
-            }
-        }
-        
-        .p-aboutUsContents__carImg{
-            width: 100%;
-            margin-top: 8px;
-            img{
-                width: 50%;
-            }
-        }
-        .p-aboutUsContents__bicycleImg{
-            width: 100%;
-            img{
-                width: 70%;
             }
         }
     }

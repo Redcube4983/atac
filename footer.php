@@ -87,13 +87,13 @@
             </ul>
           </li>
           <li class="l-footernav__list l-footernav__inner__list">
-            <div class="l-footernav__block"><a class="l-footernav__link" href="#">保険のご案内</a><span class="js-linkArrow l-footernav__link--arrow"></span></div>
+            <div class="l-footernav__block"><a class="l-footernav__link" href="#">保険のご案内</a><span class=""></span></div>
           </li>
           <li class="l-footernav__list l-footernav__inner__list">
-            <div class="l-footernav__block"><a class="l-footernav__link" href="#">よくあるご質問</a><span class="js-linkArrow l-footernav__link--arrow"></span></div>
+            <div class="l-footernav__block"><a class="l-footernav__link" href="#">よくあるご質問</a><span class=""></span></div>
           </li>
           <li class="l-footernav__list l-footernav__inner__list">
-            <div class="l-footernav__block"><a class="l-footernav__link" href="#">お役立ち情報</a><span class="js-linkArrow l-footernav__link--arrow"></span></div>
+            <div class="l-footernav__block"><a class="l-footernav__link" href="#">お役立ち情報</a><span class=""></span></div>
           </li>
           <li class="l-footernav__inner__list">
               <ul class="l-footernav__inner__list--child">

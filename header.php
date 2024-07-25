@@ -93,7 +93,7 @@
       <ul class="l-globalnav__inner">
         <li class="l-globalnav__list l-globalnav__list--parent">
           <div class="l-globalnav__block">
-            <a class="l-globalnav__link" href="#">
+            <a class="l-globalnav__link" href="<?php echo esc_url( home_url('about-us') ); ?>">
               <picture>
                 <source srcset="<?php echo get_template_directory_uri(); ?>/common/images/icon_ATAC.webp" type="image/webp">
                 <img class="icon_img" src="<?php echo get_template_directory_uri(); ?>/common/images/icon_ATAC.png" alt="">
@@ -104,12 +104,12 @@
           </div>
           <ul class="l-globalnav__child">
             <li class="l-globalnav__granchild">
-              <a class="l-globalnav__link" href="#">BLOG</a>
+              <a class="l-globalnav__link" href="<?php echo esc_url( home_url('blog') ); ?>">BLOG</a>
             </li>
           </ul>
         </li>
         <li class="l-globalnav__list l-globalnav__list--single last">
-          <a href="#">
+          <a href="<?php echo esc_url( home_url('insurance') ); ?>">
             <picture>
               <source srcset="<?php echo get_template_directory_uri(); ?>/common/images/icon_insurance.webp" type="image/webp">
               <img class="icon_img" src="<?php echo get_template_directory_uri(); ?>/common/images/icon_insurance.png" alt="">
@@ -118,7 +118,7 @@
           </a>
         </li>
         <li class="l-globalnav__list l-globalnav__list--single last">
-          <a href="#">
+          <a href="<?php echo esc_url( home_url('faq') ); ?>">
             <picture>
               <source srcset="<?php echo get_template_directory_uri(); ?>/common/images/icon_Q.webp" type="image/webp">
               <img class="icon_img" src="<?php echo get_template_directory_uri(); ?>/common/images/icon_Q.png" alt="">
@@ -127,7 +127,7 @@
           </a>
         </li>
         <li class="l-globalnav__list l-globalnav__list--single last">
-          <a href="#">
+          <a href="<?php echo esc_url( home_url('usefulInfo') ); ?>">
             <picture>
               <source srcset="<?php echo get_template_directory_uri(); ?>/common/images/icon_info.webp" type="image/webp">
               <img class="icon_img" src="<?php echo get_template_directory_uri(); ?>/common/images/icon_info.png" alt="">
@@ -136,7 +136,7 @@
           </a>
         </li>
         <li class="l-globalnav__list l-globalnav__list--parent l-globalnav__list--pc">
-          <div class="l-globalnav__block"><a class="l-globalnav__link l-globalnav__contact__link" href="#">ご相談はこちら</a><span class="js-globalnavlinkArrow l-globalnav__link--arrow"></span></div>
+          <div class="l-globalnav__block"><a class="l-globalnav__link l-globalnav__contact__link" href="<?php echo esc_url( home_url('contact') ); ?>">ご相談はこちら</a><span class="js-globalnavlinkArrow l-globalnav__link--arrow"></span></div>
         </li>
       </ul>
   </nav>
@@ -153,7 +153,7 @@
             </a>
           </li>
           <li>
-            <a class="l-contactArea__link" href="#">
+            <a class="l-contactArea__link" href="<?php echo esc_url( home_url('contact') ); ?>">
               <picture>
                 <source srcset="<?php echo get_template_directory_uri(); ?>/common/images/icon_mail.webp" type="image/webp">
                 <img src="<?php echo get_template_directory_uri(); ?>/common/images/icon_mail.png" alt="メール">

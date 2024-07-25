@@ -815,7 +815,7 @@ b {
   position: relative;
   font-size: 1.3rem;
 }
-@media screen and (min-width: 920px) {
+@media screen and (min-width: 768px) {
   .l-footer .l-contact__link--inner {
     font-size: 1.6rem;
   }
@@ -871,7 +871,7 @@ b {
   margin-top: 8px;
   font-size: 1.3rem;
 }
-@media screen and (min-width: 920px) {
+@media screen and (min-width: 768px) {
   .l-footer .l-footer__top--address span {
     font-size: 1.6rem;
   }
@@ -892,7 +892,7 @@ b {
   border-bottom: solid 1px #FF7C9F;
   padding-bottom: 8px;
 }
-@media screen and (min-width: 920px) {
+@media screen and (min-width: 768px) {
   .l-footer .l-footer__top--link li:first-child b {
     font-size: 1.6rem;
   }
@@ -908,7 +908,7 @@ b {
   border-bottom: solid 1px #005ab5;
   padding-bottom: 8px;
 }
-@media screen and (min-width: 920px) {
+@media screen and (min-width: 768px) {
   .l-footer .l-footer__top--link li:nth-child(n+2) b {
     font-size: 1.6rem;
   }
@@ -924,7 +924,7 @@ b {
   border-bottom: solid 1px #4DC0B2;
   padding-bottom: 8px;
 }
-@media screen and (min-width: 920px) {
+@media screen and (min-width: 768px) {
   .l-footer .l-footer__top--link li:nth-child(n+3) b {
     font-size: 1.6rem;
   }
@@ -1222,7 +1222,7 @@ b {
   background-color: #fff;
   padding: 20px 0;
 }
-@media screen and (min-width: 920px) {
+@media screen and (min-width: 768px) {
   .l-footer .l-copyright {
     font-size: 1.6rem;
   }
@@ -1392,7 +1392,6 @@ b {
   padding: 0;
   display: none;
   top: 60px;
-  width: 73.828125vw;
   left: 0;
   height: calc(100vh - 60px);
   overflow-y: auto;
@@ -2012,7 +2011,7 @@ b {
 }
 @media screen and (min-width: 768px) {
   #p-insuranceContents .p-insuranceContents__insuranceBox-whiteArea {
-    padding: 24px 80px;
+    padding: 24px;
   }
 }
 #p-insuranceContents .p-insuranceContents__insuranceBox-whiteArea img {
@@ -2029,17 +2028,31 @@ b {
 }
 #p-insuranceContents .p-insuranceContents__insuranceBox-whiteArea-inner {
   text-align: left;
-  margin-top: 16px;
+}
+@media screen and (min-width: 1024px) {
+  #p-insuranceContents .p-insuranceContents__insuranceBox-whiteArea-inner {
+    display: flex;
+    flex-flow: wrap;
+    justify-content: space-between;
+  }
 }
 #p-insuranceContents .p-insuranceContents__insuranceBox-whiteArea-inner ul {
   margin-top: 24px;
 }
-#p-insuranceContents .p-insuranceContents__insuranceBox-whiteArea-inner ul img {
+#p-insuranceContents .p-insuranceContents__insuranceBox-whiteArea-inner ul:last-child {
   width: 50%;
 }
-@media screen and (min-width: 768px) {
-  #p-insuranceContents .p-insuranceContents__insuranceBox-whiteArea-inner ul img {
-    width: 60%;
+@media screen and (min-width: 1024px) {
+  #p-insuranceContents .p-insuranceContents__insuranceBox-whiteArea-inner ul:last-child {
+    width: 48%;
+  }
+}
+#p-insuranceContents .p-insuranceContents__insuranceBox-whiteArea-inner ul:first-child {
+  width: 50%;
+}
+@media screen and (min-width: 1024px) {
+  #p-insuranceContents .p-insuranceContents__insuranceBox-whiteArea-inner ul:first-child {
+    width: 48%;
   }
 }
 #p-insuranceContents .p-insuranceContents__insuranceBox-whiteArea-inner ul li {
@@ -2053,50 +2066,14 @@ b {
 @media screen and (min-width: 768px) {
   #p-insuranceContents .p-insuranceContents__insuranceBox-whiteArea-inner ul li {
     font-size: 1.6rem;
+    line-height: 1.5;
   }
 }
-#p-insuranceContents .p-insuranceContents__insuranceBox-whiteArea-inner-products {
-  display: flex;
-  border: 1px solid #FF8900;
-  width: 240px;
-  height: 50px;
-  flex-flow: column;
-  margin: 0 0 16px;
-}
-@media screen and (min-width: 768px) {
-  #p-insuranceContents .p-insuranceContents__insuranceBox-whiteArea-inner-products {
-    width: 340px;
-    margin: 0 0 24px;
-  }
-}
-#p-insuranceContents .p-insuranceContents__insuranceBox-whiteArea-inner-products a {
-  text-decoration: none;
-  padding: 16px;
-}
-#p-insuranceContents .p-insuranceContents__insuranceBox-whiteArea-inner-products span {
-  font-size: 1.6rem;
-  color: #FF8900;
-}
-#p-insuranceContents .p-insuranceContents__insuranceBox-kinds {
-  display: flex;
-  flex-flow: column;
-  padding: 0 64px;
-}
-#p-insuranceContents .p-insuranceContents__insuranceBox-kinds li {
-  font-size: 1.3rem;
-  line-height: 1.8;
-  text-align: left;
-}
-#p-insuranceContents .p-insuranceContents__insuranceBox .p-aboutUsContents__carImg {
-  width: 100%;
-  margin-top: 8px;
-}
-#p-insuranceContents .p-insuranceContents__insuranceBox .p-aboutUsContents__carImg img {
+#p-insuranceContents .p-insuranceContents__insuranceBox-whiteArea-inner-products:first-child {
   width: 50%;
 }
-#p-insuranceContents .p-insuranceContents__insuranceBox .p-aboutUsContents__bicycleImg {
-  width: 100%;
-}
-#p-insuranceContents .p-insuranceContents__insuranceBox .p-aboutUsContents__bicycleImg img {
-  width: 70%;
+@media screen and (min-width: 1024px) {
+  #p-insuranceContents .p-insuranceContents__insuranceBox-whiteArea-inner-products:first-child {
+    width: 40%;
+  }
 }/*# sourceMappingURL=insurance.css.map */
