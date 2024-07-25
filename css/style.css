@@ -605,4 +605,20 @@ main p {
     background-color: #004080;
     padding: 0 0 60px;
   }
+}
+
+.c-contentsLayout {
+  padding: 40px 8px;
+  max-width: 1050px;
+  margin: 0 auto;
+}
+@media screen and (min-width: 768px) {
+  .c-contentsLayout {
+    padding: 64px 24px;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .c-contentsLayout {
+    padding-top: 80px;
+  }
 }/*# sourceMappingURL=style.css.map */
