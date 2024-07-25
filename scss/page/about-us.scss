@@ -343,7 +343,7 @@
             justify-content: space-between;
         }
         @include mq(lg){
-            margin-bottom: 80px;
+            margin-bottom: 160px;
         }
     }
     &-boxLeft {
@@ -473,6 +473,9 @@
                 @include mq(md){
                     font-size: 1.8rem;
                 }
+                @include mq(lg){
+                    padding: 24px 16px;
+                }
             }
             p{
                 font-size: 1.3rem;
@@ -484,6 +487,9 @@
                 background-color: #fff;
                 @include mq(md){
                     font-size: 1.6rem;
+                }
+                @include mq(lg){
+                    padding: 24px 16px;
                 }
             }
         }

@@ -6,20 +6,18 @@ Template Name: insurance
 <?php get_header(); ?>
 <main>
   <section id="l-internalTop">
-
-
     <div class="l-internalTop__ornamentLeft">
       <picture>
         <source srcset="<?php echo get_template_directory_uri(); ?>/images/insurance/ornament.webp" type="image/webp">
         <img src="<?php echo get_template_directory_uri(); ?>/images/insurance/ornament.png" alt="">
       </picture>
     </div>
-    <!-- <div class="l-internalTop__ornamentRight">
+    <div class="l-internalTop__ornamentRight">
       <picture>
         <source srcset="<?php echo get_template_directory_uri(); ?>/images/common/illust.webp" type="image/webp">
         <img src="<?php echo get_template_directory_uri(); ?>/images/common/illust.png" alt="">
       </picture>
-    </div> -->
+    </div>
     <h1 class="l-internalTop__title">
       <div class="l-internalTop__text">
         <picture>

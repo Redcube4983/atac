@@ -13,10 +13,39 @@
         position: absolute;
         width: 120px;
         bottom: 0;
+        left: 8px;
+        @include mq(md){
+            width: 15%;
+            left: 48px;
+        }
         @include mq(lg){
-            width: 180px;
-            top: -42px;
-            left: 192px;
+            width: 10%;
+            bottom: 0;
+            left: 260px;
+        }
+    }
+    .l-internalTop__ornamentRight{
+        position: absolute;
+        right: 8px;
+        top: 0;
+        width: 100px;
+        @include mq(md){
+            right: 48px;
+            top: 0;
+            width: 15%;
+        }
+        @include mq(lg){
+            width: 8%;
+            right: 260px;
+        }
+        img{
+            box-sizing: border-box;
+            object-fit: cover;
+            object-position: top;
+            height: 120px;
+            @include mq(md){
+                height: 120px;
+            }
         }
     }
     h1.l-internalTop__title {
@@ -33,13 +62,6 @@
         @include mq(lg){
             width: 18vw;
         }
-    }
-    .l-internalTop__illust{
-        position: absolute;
-        right: -120px;
-        top: -30px;
-        bottom: 0;
-        width: 100px;
     }
     img {
         width: 100%;
@@ -131,14 +153,6 @@
                         }
                     }
                 }
-                &-products{
-                        &:first-child{
-                            width: 50%;
-                            @include mq(lg){
-                                width: 40%;
-                            }
-                        }
-                    }
             }
         }
     }

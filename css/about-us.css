@@ -2307,7 +2307,7 @@ b {
 }
 @media screen and (min-width: 1024px) {
   .p-aboutUsContents__staffArea-box {
-    margin-bottom: 80px;
+    margin-bottom: 160px;
   }
 }
 .p-aboutUsContents__staffArea-boxLeft {
@@ -2460,6 +2460,11 @@ b {
     font-size: 1.8rem;
   }
 }
+@media screen and (min-width: 1024px) {
+  .p-aboutUsContents__staffArea-boxRight-messageBox span {
+    padding: 24px 16px;
+  }
+}
 .p-aboutUsContents__staffArea-boxRight-messageBox p {
   font-size: 1.3rem;
   color: #1E313B;
@@ -2472,5 +2477,10 @@ b {
 @media screen and (min-width: 768px) {
   .p-aboutUsContents__staffArea-boxRight-messageBox p {
     font-size: 1.6rem;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .p-aboutUsContents__staffArea-boxRight-messageBox p {
+    padding: 24px 16px;
   }
 }/*# sourceMappingURL=about-us.css.map */
