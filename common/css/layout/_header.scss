@@ -11,7 +11,7 @@
     background-color: #fff;
     top: 0;
     left: 0;
-    height: 60px;
+    height: 64px;
     filter: drop-shadow(0px 5px 10px transparent);
     transition: filter 1s;
     transform: translateZ(0);
@@ -98,7 +98,8 @@
     top: 60px;
     // width: calc(756vw / 10.24);
     left: 0;
-    height: calc(100vh - 60px);
+    // height: calc(100vh - 60px);
+    height: 100vh;
     overflow-y: auto;
     background-color: $white;
     &.open{
@@ -110,7 +111,7 @@
         justify-content: flex-start;
         background-color: $white;
         height: auto;
-        padding-bottom: 60px;
+        padding: 60px 0;
         margin-bottom: 60px;
         .icon_img {
             width: 50px;
@@ -187,6 +188,7 @@
                     }
                 }
             }
+            
             &--parent{
                 .l-globalnav__child {
                     display: none;
@@ -279,6 +281,17 @@
                 }
             }
         }
+    }
+    .l-globalnav__blockContact {
+        padding-top: 40px;
+        border-top: solid 4px #ff9c33;
+        margin: 0 20px;
+        &-inner {
+            display: flex;
+            flex-flow: row nowrap;
+            justify-content: center;
+            margin-top: 32px;
+          }
     }
     @include mq(lg) {
         display: block !important;

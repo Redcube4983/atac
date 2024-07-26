@@ -365,6 +365,222 @@ a {
   display: none;
 }
 
+@media screen and (min-width: 768px) {
+  .sp {
+    display: none;
+  }
+  .tab {
+    display: block;
+  }
+  .pc {
+    display: none;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .wrapper {
+    padding-top: 0;
+  }
+  .sp {
+    display: none;
+  }
+  .tab {
+    display: none;
+  }
+  .pc {
+    display: block;
+  }
+}
+:root {
+  --default: 0;
+  --button: 1;
+  --arrow: 2;
+  --modal: 3;
+  --footer: 4;
+  --header: 999;
+  --logo: 1000;
+  --loading: 1001;
+}
+
+:root {
+  --clip-triangle-top: polygon(50% 0, 100% 100%, 0 100%);
+  --clip-triangle-bottom: polygon(0 0, 100% 0, 50% 100%);
+  --clip-triangle-right: polygon(0 0, 100% 50%, 0 100%);
+  --clip-triangle-left: polygon(0 50%, 100% 0, 100% 100%);
+  --clip-triangle-lower-left: polygon(0 0, 100% 100%, 0 100%);
+  --clip-triangle-upper-left: polygon(0 0, 100% 0, 0 100%);
+  --clip-triangle-lower-right: polygon(100% 0, 100% 100%, 0 100%);
+  --clip-triangle-upper-right: polygon(0 0, 100% 0, 100% 100%);
+}
+
+/*******************************
+			 main
+*******************************/
+main {
+  text-align: center;
+  height: auto;
+  position: relative;
+}
+main h2 {
+  font-size: 30px;
+}
+main p {
+  line-height: 2;
+}
+
+.image {
+  width: 100%;
+  height: auto;
+  margin: 0 auto;
+  text-align: center;
+}
+
+#contents {
+  display: block;
+  position: relative;
+  height: auto;
+}
+.l-tagetTop {
+  position: fixed;
+  right: 15px;
+  bottom: 20px;
+  width: 60px;
+  height: 60px;
+  background-color: #fff;
+  z-index: 100;
+  border-radius: 30px;
+  border: 2px solid #FF8900;
+}
+.l-tagetTop a {
+  position: relative;
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+.l-tagetTop a ::after {
+  position: absolute;
+  display: block;
+  content: "";
+  width: 16px;
+  height: 16px;
+  border-right: 2px solid #FF8900;
+  border-bottom: 2px solid #FF8900;
+  -webkit-transform: translate(-50%, -50%) rotate(-135deg);
+          transform: translate(-50%, -50%) rotate(-135deg);
+  top: 55%;
+  left: 50%;
+  -webkit-transform-origin: center;
+          transform-origin: center;
+}
+
+@media screen and (min-width: 1024px) {
+  .image {
+    max-width: 800px;
+  }
+}
+#l-internalTop {
+  margin-top: 60px;
+  height: 120px;
+  position: relative;
+}
+@media screen and (min-width: 1024px) {
+  #l-internalTop {
+    margin-top: 100px;
+    height: 200px;
+  }
+}
+
+/*******************************
+		グローバル設定
+*******************************/
+html {
+  font-size: 62.5%;
+  margin: 0 !important;
+  height: 100%;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  height: calc(var(--vh) * 100);
+  height: -webkit-fill-available;
+}
+
+body {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Helvetica Neue", YuGothic, "ヒラギノ角ゴ ProN W3", Hiragino Kaku Gothic ProN, Arial, "メイリオ", Meiryo, sans-serif;
+  line-height: 1;
+  font-weight: normal;
+  position: relative;
+  overflow-x: hidden;
+  background-color: #fff;
+  min-height: calc(var(--vh, 1vh) * 100);
+}
+body.search::before {
+  content: "";
+  z-index: 10000;
+  position: fixed;
+  width: 100%;
+  height: 100vh;
+  background-color: #000;
+  left: 0;
+  top: 0;
+  opacity: 0.8;
+  cursor: pointer;
+}
+body.fixed {
+  position: fixed !important;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  min-height: calc(var(--vh) * 100);
+  min-height: -webkit-fill-available;
+  height: calc(var(--vh) * 100);
+}
+body p {
+  font-size: 16px;
+  font-size: 1.6rem;
+}
+
+a[href^=tel] {
+  color: inherit;
+}
+
+a {
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+  color: #000;
+}
+
+.wrapper {
+  overflow-x: hidden;
+  width: 100%;
+  height: auto;
+}
+
+#video {
+  position: relative;
+  width: 100%;
+  padding-top: 56.25%;
+}
+#video video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.sp {
+  display: block;
+}
+
+.tab {
+  display: none;
+}
+
+.pc {
+  display: none;
+}
+
 @media only screen and (min-width: 768px) {
   .sp {
     display: none;
@@ -1530,7 +1746,7 @@ b {
   background-color: #fff;
   top: 0;
   left: 0;
-  height: 60px;
+  height: 64px;
   -webkit-filter: drop-shadow(0px 5px 10px transparent);
           filter: drop-shadow(0px 5px 10px transparent);
   -webkit-transition: -webkit-filter 1s;
@@ -1641,7 +1857,7 @@ b {
   display: none;
   top: 60px;
   left: 0;
-  height: calc(100vh - 60px);
+  height: 100vh;
   overflow-y: auto;
   background-color: #FFF;
 }
@@ -1661,7 +1877,7 @@ b {
           justify-content: flex-start;
   background-color: #FFF;
   height: auto;
-  padding-bottom: 60px;
+  padding: 60px 0;
   margin-bottom: 60px;
 }
 .l-globalnav .l-globalnav__inner .icon_img {
@@ -1864,6 +2080,24 @@ b {
   background-size: contain;
   left: 0;
   border: none;
+}
+.l-globalnav .l-globalnav__blockContact {
+  padding-top: 40px;
+  border-top: solid 4px #ff9c33;
+  margin: 0 20px;
+}
+.l-globalnav .l-globalnav__blockContact-inner {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row nowrap;
+          flex-flow: row nowrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-top: 32px;
 }
 @media screen and (min-width: 1024px) {
   .l-globalnav {
@@ -2296,16 +2530,6 @@ b {
   }
 }
 
-#l-internalTop {
-  margin-top: 60px;
-  height: 120px;
-  position: relative;
-}
-@media screen and (min-width: 1024px) {
-  #l-internalTop {
-    margin-top: 100px;
-  }
-}
 #l-internalTop .l-internalTop__ornamentLeft {
   position: absolute;
   width: 140px;
@@ -2718,7 +2942,7 @@ b {
 }
 @media screen and (min-width: 1024px) {
   .p-aboutUsContents__staffArea-box {
-    margin-bottom: 80px;
+    margin-bottom: 160px;
   }
 }
 .p-aboutUsContents__staffArea-boxLeft {
@@ -2890,6 +3114,11 @@ b {
     font-size: 1.8rem;
   }
 }
+@media screen and (min-width: 1024px) {
+  .p-aboutUsContents__staffArea-boxRight-messageBox span {
+    padding: 24px 16px;
+  }
+}
 .p-aboutUsContents__staffArea-boxRight-messageBox p {
   font-size: 1.3rem;
   color: #1E313B;
@@ -2902,5 +3131,10 @@ b {
 @media screen and (min-width: 768px) {
   .p-aboutUsContents__staffArea-boxRight-messageBox p {
     font-size: 1.6rem;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .p-aboutUsContents__staffArea-boxRight-messageBox p {
+    padding: 24px 16px;
   }
 }/*# sourceMappingURL=about-us.css.map */

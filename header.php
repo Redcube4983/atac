@@ -76,7 +76,7 @@
 <!--下層ページ
 <div class="l-header__title">
   <a href="/" class="l-header__title__link">
-    <img class="l-header__title__sitelogo" src="common/images/kogyokusha_logo.svg" alt="攻玉社 中学校・高等学校">
+    <img class="l-header__title__sitelogo" src="common/images/kogyokusha_logo.svg" alt="">
   </a>
 </div>
 -->
@@ -135,8 +135,28 @@
             <span>お役立ち情報</span>
           </a>
         </li>
-        <li class="l-globalnav__list l-globalnav__list--parent l-globalnav__list--pc">
-          <div class="l-globalnav__block"><a class="l-globalnav__link l-globalnav__contact__link" href="<?php echo esc_url( home_url('contact') ); ?>">ご相談はこちら</a><span class="js-globalnavlinkArrow l-globalnav__link--arrow"></span></div>
+        <li class="l-globalnav__list--pc">
+        <div class="l-globalnav__blockContact">
+            <p>ご相談はこちら</p>
+            <ul class="l-globalnav__blockContact-inner">
+              <li>
+                <a class="l-globalnav__blockContact-link" href="tel:0438416011">
+                  <picture>
+                    <source srcset="<?php echo get_template_directory_uri(); ?>/common/images/icon_tel.webp" type="image/webp">
+                    <img src="<?php echo get_template_directory_uri(); ?>/common/images/icon_tel.png" alt="電話">
+                  </picture>
+                </a>
+              </li>
+              <li>
+                <a class="l-globalnav__blockContact-link" href="<?php echo esc_url( home_url('contact') ); ?>">
+                  <picture>
+                    <source srcset="<?php echo get_template_directory_uri(); ?>/common/images/icon_mail.webp" type="image/webp">
+                    <img src="<?php echo get_template_directory_uri(); ?>/common/images/icon_mail.png" alt="メール">
+                  </picture>
+                </a>
+              </li>
+            </ul>
+          </div>
         </li>
       </ul>
   </nav>

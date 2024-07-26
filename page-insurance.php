@@ -6,20 +6,18 @@ Template Name: insurance
 <?php get_header(); ?>
 <main>
   <section id="l-internalTop">
-
-
     <div class="l-internalTop__ornamentLeft">
       <picture>
         <source srcset="<?php echo get_template_directory_uri(); ?>/images/insurance/ornament.webp" type="image/webp">
         <img src="<?php echo get_template_directory_uri(); ?>/images/insurance/ornament.png" alt="">
       </picture>
     </div>
-    <!-- <div class="l-internalTop__ornamentRight">
+    <div class="l-internalTop__ornamentRight">
       <picture>
         <source srcset="<?php echo get_template_directory_uri(); ?>/images/common/illust.webp" type="image/webp">
         <img src="<?php echo get_template_directory_uri(); ?>/images/common/illust.png" alt="">
       </picture>
-    </div> -->
+    </div>
     <h1 class="l-internalTop__title">
       <div class="l-internalTop__text">
         <picture>
@@ -77,7 +75,7 @@ Template Name: insurance
             </ul>
             <ul class="">
               <li>
-                <a href="https://www.btoc.ms-ins.com/qsc/QSC00000">
+                <a href="https://www.btoc.ms-ins.com/qsc/QSC00000" rel="noopener noreferrer" target="_blank">
                   <picture>
                       <source srcset="<?php echo get_template_directory_uri(); ?>/images/insurance/car.webp" type="image/webp">
                       <img src="<?php echo get_template_directory_uri(); ?>/images/insurance/car.png" alt="">
@@ -88,7 +86,6 @@ Template Name: insurance
           </div>
         </div>
       </div>
-
 
       <div class="p-insuranceContents__insuranceBox">
         <div class="p-insuranceContents__insuranceBox-title">
@@ -134,7 +131,7 @@ Template Name: insurance
                 </ul>
                 <ul class="">
                   <li>
-                    <a href="https://www.net.ms-ins.com/servlet/NAB_UII_UG0010">
+                    <a href="https://www.net.ms-ins.com/servlet/NAB_UII_UG0010" rel="noopener noreferrer" target="_blank">
                       <picture>
                           <source srcset="<?php echo get_template_directory_uri(); ?>/images/insurance/abroad.webp" type="image/webp">
                           <img src="<?php echo get_template_directory_uri(); ?>/images/insurance/abroad.png" alt="">
@@ -157,9 +154,9 @@ Template Name: insurance
                   <li>&#9632;ゴルファー保険</li>
                   <li>&#9632;レクレーション傷害補償プラン</li>
               </ul>
-              <ul class="">
+              <ul>
                   <li>
-                    <a href="https://net2.ms-ins.com/servlet/sgl/SGL_UII_GLS0010">
+                    <a href="https://net2.ms-ins.com/servlet/sgl/SGL_UII_GLS0010" rel="noopener noreferrer" target="_blank">
                       <picture>
                           <source srcset="<?php echo get_template_directory_uri(); ?>/images/insurance/golf.webp" type="image/webp">
                           <img src="<?php echo get_template_directory_uri(); ?>/images/insurance/golf.png" alt="">
@@ -176,21 +173,29 @@ Template Name: insurance
             <h2>その他の保険</h2>
         </div>
         <div class="p-insuranceContents__insuranceBox-whiteArea">
-            <div class="p-insuranceContents__insuranceBox-whiteArea-inner-products">
-                <a href="https://www.ms-ins.com/business/">
-                <span>企業向け商品・サービス</span>
-                </a>
-            </div>
-            <div class="p-insuranceContents__bicycleImg">
-                <a href="https://net2.ms-ins.com/servlet/scy/SCY_UII_CYS0010?free_area1=&free_area2=">
-                    <picture>
-                        <source srcset="<?php echo get_template_directory_uri(); ?>/images/insurance/bicycle.webp" type="image/webp">
-                        <img src="<?php echo get_template_directory_uri(); ?>/images/insurance/bicycle.png" alt="">
-                    </picture>
-                </a>
+            <div class="p-insuranceContents__insuranceBox-whiteArea-inner">
+              <ul>
+                  <li>
+                    <a href="https://www.ms-ins.com/business/" rel="noopener noreferrer" target="_blank">
+                      <picture>
+                          <source srcset="<?php echo get_template_directory_uri(); ?>/images/insurance/service.webp" type="image/webp">
+                          <img src="<?php echo get_template_directory_uri(); ?>/images/insurance/service.png" alt="">
+                      </picture>
+                    </a>
+                  </li>
+              </ul>
+              <ul>
+                  <li>
+                    <a href="https://net2.ms-ins.com/servlet/sgl/SGL_UII_GLS0010" rel="noopener noreferrer" target="_blank">
+                      <picture>
+                          <source srcset="<?php echo get_template_directory_uri(); ?>/images/insurance/bicycle.webp" type="image/webp">
+                          <img src="<?php echo get_template_directory_uri(); ?>/images/insurance/bicycle.png" alt="">
+                      </picture>
+                    </a>
+                  </li>
+                </ul>
             </div>
         </div>
-      </div>
       </div>
     </div>
   </section>

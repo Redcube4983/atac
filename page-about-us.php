@@ -348,26 +348,29 @@ Template Name: about-us
 			<div class="p-aboutUsContents__blogArea">
 				<div class="p-aboutUsContents__blogArea-inner">
 					<h2>BLOG</h2>
-					<ul>
-					<?php $args = array(
-							'post_type' => 'blog',
-							'post_status' => 'publish',// 公開済の投稿を指定
-							'paged' => $paged, 
-							'posts_per_page' => 1// 投稿件数の指定
-							);
-							$paged = ( get_query_var( 'paged' ) ) ? get_query_var( 'paged' ) : 1;
-							$the_query = new WP_Query($args);
-							if($the_query->have_posts()):?>
-					<?php while ($the_query->have_posts()): $the_query->the_post(); ?>
-						<li class="blog-inner"><time class="blog-time"><?php echo get_the_date('Y/m/d'); ?></time><p class="blog-text"><a class="blog-link" href="<?php the_permalink(); ?>"><?php echo get_the_title(); ?></a></p></li> 
-					<?php endwhile; ?>
-					<?php else: ?>
-					<!-- 投稿が無い場合の処理 -->
-					<?php endif; ?>
-					</ul>
+					<div class="p-aboutUsContents__blogArea-whiteBox">
+						<?php $args = array(
+								'post_type' => 'blog',
+								'post_status' => 'publish',// 公開済の投稿を指定
+								'paged' => $paged, 
+								'posts_per_page' => 1// 投稿件数の指定
+								);
+								$paged = ( get_query_var( 'paged' ) ) ? get_query_var( 'paged' ) : 1;
+								$the_query = new WP_Query($args);
+								if($the_query->have_posts()):?>
+						<?php while ($the_query->have_posts()): $the_query->the_post(); ?>
+							<time class=""><?php echo get_the_date('Y/m/d'); ?></time>
+							<p class="">
+								<a class="" href="<?php the_permalink(); ?>"><?php echo get_the_title(); ?></a>
+							</p>
+						<?php endwhile; ?>
+						<?php else: ?>
+						<!-- 投稿が無い場合の処理 -->
+						<?php endif; ?>
+					</div>
 				</div>
 				<div class="p-aboutUsContents__blogArea-button">
-					<a href="<?php echo esc_url( home_url('/blog/') ); ?>" class="topics-archive-link"><span>ブログ一覧</span></a>
+					<a href="<?php echo esc_url( home_url('/blog/') ); ?>" class="topics-archive-link"><span>ブログ一覧を見る</span></a>
 				</div>
 			</div>
 		</div>
