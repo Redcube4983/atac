@@ -354,10 +354,7 @@
         font-size: 0;
     }
     img {
-        width: 50%;
-        @include mq(md){
-            width: 100%;
-        }
+        width: 100%;
     }
     &-titleCaption{
         font-size: 1.4rem;
@@ -407,6 +404,7 @@
         }
         &-image{
             margin: 0 auto;
+            width: 50%;
             @include mq(md){
                 width: 80%;
             }

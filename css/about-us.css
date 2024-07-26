@@ -2530,12 +2530,7 @@ b {
   font-size: 0;
 }
 .p-aboutUsContents__staffArea img {
-  width: 50%;
-}
-@media screen and (min-width: 768px) {
-  .p-aboutUsContents__staffArea img {
-    width: 100%;
-  }
+  width: 100%;
 }
 .p-aboutUsContents__staffArea-titleCaption {
   font-size: 1.4rem;
@@ -2598,6 +2593,7 @@ b {
 }
 .p-aboutUsContents__staffArea-boxLeft-image {
   margin: 0 auto;
+  width: 50%;
 }
 @media screen and (min-width: 768px) {
   .p-aboutUsContents__staffArea-boxLeft-image {
