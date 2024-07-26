@@ -1,0 +1,69 @@
+@use "../global" as *;
+@use "../object" as *;
+@use "../../common/css/layout" as *;
+
+#l-internalTop {
+    margin-top: 60px;
+    height: 120px;
+    position: relative;
+    @include mq(lg){
+        margin-top: 100px;
+    }
+    .l-internalTop__ornamentLeft {
+        position: absolute;
+        width: 120px;
+        bottom: 0;
+        left: 8px;
+        @include mq(md){
+            width: 15%;
+            left: 48px;
+        }
+        @include mq(lg){
+            width: 10%;
+            bottom: 0;
+            left: 260px;
+        }
+    }
+    .l-internalTop__ornamentRight{
+        position: absolute;
+        right: 8px;
+        top: 0;
+        width: 100px;
+        @include mq(md){
+            right: 48px;
+            top: 0;
+            width: 15%;
+        }
+        @include mq(lg){
+            width: 8%;
+            right: 260px;
+        }
+        img{
+            box-sizing: border-box;
+            object-fit: cover;
+            object-position: top;
+            height: 120px;
+            @include mq(md){
+                height: 120px;
+            }
+        }
+    }
+    h1.l-internalTop__title {
+        width: 30vw;
+        position: absolute;
+        top: 50%;
+        left: 0%;
+        right: 0;
+        transform: translateY(-50%);
+        max-width: 185px;
+        @include mq(md){
+            width: 25vw;
+        }
+        @include mq(lg){
+            width: 18vw;
+        }
+    }
+    img {
+        width: 100%;
+    }
+}

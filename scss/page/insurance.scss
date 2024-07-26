@@ -1,14 +1,9 @@
 @use "../global" as *;
 @use "../object" as *;
+@use "../layout" as *;
 @use "../../common/css/layout" as *;
 
 #l-internalTop {
-    margin-top: 60px;
-    height: 120px;
-    position: relative;
-    @include mq(lg){
-        margin-top: 100px;
-    }
     .l-internalTop__ornamentLeft {
         position: absolute;
         width: 120px;
