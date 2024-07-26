@@ -2538,13 +2538,11 @@ b {
 }
 @media screen and (min-width: 768px) {
   #l-internalTop .l-internalTop__ornamentLeft {
-    width: 15%;
     left: 48px;
   }
 }
 @media screen and (min-width: 1024px) {
   #l-internalTop .l-internalTop__ornamentLeft {
-    width: 10%;
     bottom: 0;
     left: 260px;
   }
@@ -2552,19 +2550,15 @@ b {
 #l-internalTop .l-internalTop__ornamentRight {
   position: absolute;
   right: 8px;
-  top: 0;
-  width: 100px;
+  bottom: 0;
 }
 @media screen and (min-width: 768px) {
   #l-internalTop .l-internalTop__ornamentRight {
     right: 48px;
-    top: 0;
-    width: 15%;
   }
 }
 @media screen and (min-width: 1024px) {
   #l-internalTop .l-internalTop__ornamentRight {
-    width: 8%;
     right: 260px;
   }
 }
@@ -2575,12 +2569,8 @@ b {
      object-fit: cover;
   -o-object-position: top;
      object-position: top;
-  height: 120px;
-}
-@media screen and (min-width: 768px) {
-  #l-internalTop .l-internalTop__ornamentRight img {
-    height: 120px;
-  }
+  width: 100px;
+  height: 110px;
 }
 #l-internalTop h1.l-internalTop__title {
   width: 30vw;
