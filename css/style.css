@@ -349,6 +349,19 @@ main p {
     max-width: 800px;
   }
 }
+#l-internalTop {
+  margin-top: 60px;
+  height: 120px;
+  position: relative;
+}
+@media screen and (min-width: 1024px) {
+  #l-internalTop {
+    margin-top: 100px;
+    height: 200px;
+    max-width: 1050px;
+  }
+}
+
 .c-linkbtn {
   padding: 0 15px 0;
   margin-bottom: 60px;

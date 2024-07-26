@@ -296,6 +296,44 @@
             }
         }
       }
+    .p-aboutUsContents__blogArea{
+        display: block;
+        background-image: url(../images/about-us/AdobeStock_588223106.jpeg);
+        border-radius: 10px 50px 50px 10px;
+        background-position: center;
+        background-size: cover;
+        margin-top: 32px;
+        &-inner{
+            display: flex;
+            flex-flow: column;
+            padding: 16px;
+            h2{
+                color: #FFF;
+                font-size: 1.6rem;
+                font-weight: bold;
+            }
+        }
+        &-whiteBox{
+            display: flex;
+            flex-flow: wrap;
+            justify-content: space-between;
+            align-items: center;
+            background-color: #FFF;
+            opacity: 0.9;
+            border-radius: 10px 50px 50px 10px;
+            margin-top: 16px;
+            padding: 16px 8px;
+            time{
+                font-size: 1.4rem;
+            }
+            p{
+                font-size: 1.4rem;
+                a{
+                    text-decoration: none;
+                }
+            }
+        }
+    }
 
 }
 
