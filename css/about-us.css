@@ -2512,6 +2512,29 @@ b {
 #p-aboutUsContents .p-aboutUsContents__blogArea-whiteBox p a {
   text-decoration: none;
 }
+#p-aboutUsContents .p-aboutUsContents__blogArea-button {
+  position: relative;
+  display: block;
+  margin-top: 24px;
+}
+#p-aboutUsContents .p-aboutUsContents__blogArea-button .topics-archive-link {
+  line-height: 1;
+  position: relative;
+  background: #000;
+}
+#p-aboutUsContents .p-aboutUsContents__blogArea-button .topics-archive-link ::after {
+  width: 20px;
+  height: 1px;
+  border-left: 0;
+  border-bottom: 0;
+  transform: rotate(45deg);
+  transform-origin: top right;
+  top: 50%;
+  right: -1px;
+}
+#p-aboutUsContents .p-aboutUsContents__blogArea-button span {
+  font-size: 1.3rem;
+}
 
 .p-aboutUsContents__staffArea {
   padding-bottom: 420px;
@@ -2603,11 +2626,11 @@ b {
 .p-aboutUsContents__staffArea-boxLeft-name {
   display: flex;
   flex-flow: column;
-  margin-top: 8px;
+  margin: 16px 0;
 }
 .p-aboutUsContents__staffArea-boxLeft-name b {
   font-size: 1.6rem;
-  padding-bottom: 6px;
+  padding-bottom: 8px;
   color: #1E313B;
 }
 @media screen and (min-width: 768px) {
