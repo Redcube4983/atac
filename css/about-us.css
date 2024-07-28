@@ -2482,15 +2482,32 @@ b {
   background-size: cover;
   margin-top: 32px;
 }
+@media screen and (min-width: 768px) {
+  #p-aboutUsContents .p-aboutUsContents__blogArea {
+    max-width: 666px;
+  }
+}
 #p-aboutUsContents .p-aboutUsContents__blogArea-inner {
   display: flex;
   flex-flow: column;
   padding: 16px;
 }
+@media screen and (min-width: 768px) {
+  #p-aboutUsContents .p-aboutUsContents__blogArea-inner {
+    flex-flow: wrap;
+    justify-content: space-between;
+    align-items: center;
+  }
+}
 #p-aboutUsContents .p-aboutUsContents__blogArea-inner h2 {
   color: #FFF;
   font-size: 1.6rem;
   font-weight: bold;
+}
+@media screen and (min-width: 768px) {
+  #p-aboutUsContents .p-aboutUsContents__blogArea-inner h2 {
+    font-size: 3.2rem;
+  }
 }
 #p-aboutUsContents .p-aboutUsContents__blogArea-whiteBox {
   display: flex;
@@ -2503,11 +2520,32 @@ b {
   margin-top: 16px;
   padding: 16px 8px;
 }
+@media screen and (min-width: 768px) {
+  #p-aboutUsContents .p-aboutUsContents__blogArea-whiteBox {
+    flex-flow: column;
+    justify-content: start;
+    padding: 16px;
+    width: 560px;
+    align-items: flex-start;
+    margin: 0;
+  }
+}
 #p-aboutUsContents .p-aboutUsContents__blogArea-whiteBox time {
   font-size: 1.4rem;
 }
+@media screen and (min-width: 768px) {
+  #p-aboutUsContents .p-aboutUsContents__blogArea-whiteBox time {
+    font-size: 1.6rem;
+  }
+}
 #p-aboutUsContents .p-aboutUsContents__blogArea-whiteBox p {
   font-size: 1.4rem;
+}
+@media screen and (min-width: 768px) {
+  #p-aboutUsContents .p-aboutUsContents__blogArea-whiteBox p {
+    font-size: 1.8rem;
+    margin: 0;
+  }
 }
 #p-aboutUsContents .p-aboutUsContents__blogArea-whiteBox p a {
   text-decoration: none;
@@ -2522,20 +2560,33 @@ b {
   top: 50%;
   right: 0;
   transform: translate(-50%);
+  text-decoration: none;
 }
 #p-aboutUsContents .p-aboutUsContents__blogArea-button .topics-archive-link :after {
   content: "";
-  width: 20px;
-  height: 1px;
-  border-left: 0;
-  border-bottom: 0;
+  width: 10px;
+  height: 10px;
+  border-top: 1px solid #000;
+  border-right: 1px solid #000;
   transform: rotate(45deg);
   transform-origin: top right;
+  display: inline-block;
+  border-radius: 1px;
+  transition: 0.3s ease-in-out;
+  position: absolute;
   top: 50%;
-  right: -1px;
+  right: -20px;
+}
+#p-aboutUsContents .p-aboutUsContents__blogArea-button .topics-archive-link :hover:after {
+  right: -30px;
 }
 #p-aboutUsContents .p-aboutUsContents__blogArea-button span {
   font-size: 1.3rem;
+}
+@media screen and (min-width: 768px) {
+  #p-aboutUsContents .p-aboutUsContents__blogArea-button span {
+    font-size: 1.8rem;
+  }
 }
 
 .p-aboutUsContents__staffArea {
