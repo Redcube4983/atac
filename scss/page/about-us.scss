@@ -338,10 +338,12 @@
             display: block;
             margin-top: 24px;
             .topics-archive-link{
-                line-height: 1;
-                position: relative;
-                background: #000;
-                ::after{
+                position: absolute;
+                top: 50%;
+                right: 0;
+                transform: translate(-50%);
+                :after{
+                    content: '';
                     width: 20px;
                     height: 1px;
                     border-left: 0;

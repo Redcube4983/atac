@@ -2518,11 +2518,13 @@ b {
   margin-top: 24px;
 }
 #p-aboutUsContents .p-aboutUsContents__blogArea-button .topics-archive-link {
-  line-height: 1;
-  position: relative;
-  background: #000;
+  position: absolute;
+  top: 50%;
+  right: 0;
+  transform: translate(-50%);
 }
-#p-aboutUsContents .p-aboutUsContents__blogArea-button .topics-archive-link ::after {
+#p-aboutUsContents .p-aboutUsContents__blogArea-button .topics-archive-link :after {
+  content: "";
   width: 20px;
   height: 1px;
   border-left: 0;
