@@ -4,36 +4,28 @@ Template Name: archive-blog
 */
 ?>
 <?php get_header(); ?>
-<section id="l-internalTop">
-    <div class="l-internalTop__ornamentLeft">
-        <picture>
-        <source srcset="<?php echo get_template_directory_uri(); ?>/images/about-us/ornamentLeft.webp" type="image/webp">
-        <img src="<?php echo get_template_directory_uri(); ?>/images/about-us/ornamentLeft.png" alt="">
-        </picture>
-    </div>
-    <div class="l-internalTop__ornamentRight">
-        <picture>
-        <source srcset="<?php echo get_template_directory_uri(); ?>/images/about-us/ornamentRight.webp" type="image/webp">
-        <img src="<?php echo get_template_directory_uri(); ?>/images/about-us/ornamentRight.png" alt="">
-        </picture>
-    </div>
-    <h1 class="l-internalTop__title">
-        <div class="l-internalTop__text">
-        <picture>
-            <source srcset="<?php echo get_template_directory_uri(); ?>/images/about-us/pageTitle.webp" type="image/webp">
-            <img src="<?php echo get_template_directory_uri(); ?>/images/about-us/pageTitle.png" alt="">
-        </picture>
-        </div>
-        <div class="l-internalTop__underLine">
-        <picture>
-            <source srcset="<?php echo get_template_directory_uri(); ?>/images/about-us/ornamentLine.webp" type="image/webp">
-            <img src="<?php echo get_template_directory_uri(); ?>/images/about-us/ornamentLine.png" alt="当社のご案内">
-        </picture>
-        </div>
-    </h1>
+<section id="l-internalTop__blogArea">
+<div class="l-internalTop__titleWrap">
+    <h2>Blog</h2>
+    <h1>ATAC通信</h1>
+    <span>保険のアレコレ配信</span>
+</div>
 </section>
 <section id="p-blogContents">
-<h2>Blog</h2>
+<h2 class="p-blogContents-title">
+    <div class="p-blogContents-titleImg">
+        <picture>
+        <source srcset="<?php echo get_template_directory_uri(); ?>/images/about-us/staff_title.webp" type="image/webp">
+        <img src="<?php echo get_template_directory_uri(); ?>/images/about-us/staff_title.png" alt="スタッフ紹介">
+        </picture>
+    </div>
+    <div class="p-blogContents-titleUnderline">
+        <picture>
+        <source srcset="<?php echo get_template_directory_uri(); ?>/images/about-us/ornamentLine.webp" type="image/webp">
+        <img src="<?php echo get_template_directory_uri(); ?>/images/about-us/ornamentLine.png" alt="">
+        </picture>
+    </div>
+</h2>
 <ul>
 <?php if (have_posts()): ?>
     <?php while (have_posts()) : the_post(); ?>

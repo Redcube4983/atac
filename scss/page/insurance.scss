@@ -6,15 +6,23 @@
 #l-internalTop {
     .l-internalTop__ornamentLeft {
         position: absolute;
-        width: 120px;
         bottom: 0;
         left: 8px;
         @include mq(md){
             left: 48px;
         }
         @include mq(lg){
-            bottom: 0;
-            left: 260px;
+            left: 0;
+        }
+        img{
+            width: auto;
+            height: 100px;
+            box-sizing: border-box;
+            object-fit: contain;
+            object-position: top;
+            @include mq(lg){
+                height: 140px;
+            }
         }
     }
     .l-internalTop__ornamentRight{
@@ -25,7 +33,7 @@
             right: 48px;
         }
         @include mq(lg){
-            right: 260px;
+            right: 0;
         }
         img{
             box-sizing: border-box;
@@ -33,6 +41,10 @@
             object-position: top;
             width: 100px;
             height: 110px;
+            @include mq(lg){
+                width: 190px;
+                height: 200px;
+            }
         }
     }
     h1.l-internalTop__title {

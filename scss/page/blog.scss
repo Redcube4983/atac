@@ -4,7 +4,52 @@
 @use "../../common/css/layout" as *;
 
 
-#p-blogContents {
-    margin-top: 120px;
-    padding-bottom: 600px;
+
+#l-internalTop__blogArea {
+  margin-top: 64px;
+  height: 120px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: url(../images/blog/top_background.png);
+  color: #fff;
+  text-align: center;
+  background-position: center;
+  background-size: cover;
+  @include mq(md){
   }
+  @include mq(lg){
+    height: 200px;
+  }
+  h1 {
+    font-size: 2rem;
+    margin-top: 8px;
+    @include mq(md){
+      font-size: 2.3rem;
+    }
+    @include mq(lg){
+    }
+  }
+  h2 {
+    font-size: 1.3rem;
+    @include mq(md){
+      font-size: 1.6rem;
+    }
+    @include mq(lg){
+    }
+  }
+  span {
+    font-size: 1.3rem;
+    margin-top: 8px;  
+    display: block;
+    @include mq(md){
+      font-size: 1.6rem;
+    }
+    @include mq(lg){
+    }
+  }
+}
+#p-blogContents {
+  margin-top: 32px;
+  padding: 0 24px 420px;
+}

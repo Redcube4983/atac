@@ -1238,6 +1238,19 @@ b {
     padding: 64px 24px;
   }
 }
+@media screen and (min-width: 1024px) {
+  .l-footer .l-footer__top--inner {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-flow: nowrap;
+        flex-flow: nowrap;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    width: 100%;
+  }
+}
 .l-footer .l-footer__top--address {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1246,6 +1259,11 @@ b {
   -webkit-box-direction: normal;
       -ms-flex-flow: column;
           flex-flow: column;
+}
+@media screen and (min-width: 1024px) {
+  .l-footer .l-footer__top--address {
+    width: 30%;
+  }
 }
 .l-footer .l-footer__top--address img {
   width: 100px;
@@ -1257,6 +1275,26 @@ b {
 @media screen and (min-width: 768px) {
   .l-footer .l-footer__top--address span {
     font-size: 1.6rem;
+  }
+}
+@media screen and (min-width: 768px) {
+  .l-footer .l-footer__top--link {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: row nowrap;
+            flex-flow: row nowrap;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .l-footer .l-footer__top--link {
+    width: 70%;
+    max-width: 66.5277777778vw;
   }
 }
 .l-footer .l-footer__top--link li {
@@ -1312,11 +1350,32 @@ b {
     font-size: 1.6rem;
   }
 }
+@media screen and (min-width: 768px) {
+  .l-footer .l-footer__top--link li {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: row nowrap;
+            flex-flow: row nowrap;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    width: 32.6666666667%;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .l-footer .l-footer__top--link li {
+    margin: 0;
+  }
+}
 .l-footer .l-footer__top--link li p {
   padding-top: 8px;
 }
 .l-footer .l-footer__top--link li a {
   text-decoration: none;
+  width: 100%;
 }
 .l-footer .l-footer__top .l-footer__top--companyLogo {
   display: -webkit-box;
@@ -1329,6 +1388,7 @@ b {
   border: none;
   margin: 0;
   padding: 0;
+  width: revert;
 }
 .l-footer .l-footernav__inner {
   display: -webkit-box;
@@ -1354,7 +1414,6 @@ b {
     -webkit-box-pack: start;
         -ms-flex-pack: start;
             justify-content: flex-start;
-    max-width: 1100px;
     margin: 0 auto;
     padding: 0 30px;
     background-color: #fff;
@@ -1572,6 +1631,11 @@ b {
     border-bottom: 1px solid #1E313B;
   }
 }
+@media screen and (min-width: 768px) {
+  .l-footer .l-footernav__inner .l-footernav__inner__list:not(:first-child) {
+    margin-left: 32px;
+  }
+}
 .l-footer .l-footernav__inner .l-footernav__inner__list:first-child .l-footernav__inner__list--child .l-footernav__list.single:first-of-type .l-footernav__block {
   border-top: 0px solid #fff;
 }
@@ -1589,13 +1653,7 @@ b {
   border-bottom: 0px solid #fff;
 }
 @media screen and (min-width: 768px) {
-  .l-footer .l-footernav__inner .l-footernav__inner__list:nth-last-child(2) {
-    margin-top: 30px;
-  }
-}
-@media screen and (min-width: 768px) {
   .l-footer .l-footernav__inner .l-footernav__inner__list {
-    width: 33.3333333333%;
     margin-bottom: 0;
   }
 }
@@ -1604,6 +1662,28 @@ b {
 }
 .l-footer .l-footernav__inner .l-footernav__inner__list .l-footernav__inner__list--child .l-footernav__list.parent:nth-child(2) {
   border-top: 1px solid #fff;
+}
+@media screen and (min-width: 768px) {
+  .l-footer .l-footernav__inner-list2 {
+    margin: 0;
+    width: 100%;
+  }
+}
+@media screen and (min-width: 768px) {
+  .l-footer .l-footernav__inner-list2 .single {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: row nowrap;
+            flex-flow: row nowrap;
+  }
+}
+@media screen and (min-width: 768px) {
+  .l-footer .l-footernav__inner-list2 .single .l-footernav__block:not(:first-child) {
+    margin-left: 32px;
+  }
 }
 .l-footer .l-footer__address {
   display: -webkit-box;
@@ -1711,25 +1791,7 @@ b {
     margin-left: 20px;
   }
 }
-@media screen and (min-width: 1024px) {
-  .l-footer {
-    padding: 0;
-  }
-  .l-footer .l-footernav__inner {
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
-  }
-  .l-footer .l-footernav__inner .l-footernav__inner__list {
-    width: auto;
-  }
-  .l-footer .l-footernav__inner .l-footernav__inner__list:last-child {
-    margin-top: 0;
-  }
-  .l-footer .l-footernav__inner .l-footernav__inner__list:nth-last-child(2) {
-    margin-top: 0;
-  }
-}
+
 .l-footer__contact img {
   width: 100%;
 }
@@ -2532,7 +2594,6 @@ b {
 
 #l-internalTop .l-internalTop__ornamentLeft {
   position: absolute;
-  width: 120px;
   bottom: 0;
   left: 8px;
 }
@@ -2543,8 +2604,22 @@ b {
 }
 @media screen and (min-width: 1024px) {
   #l-internalTop .l-internalTop__ornamentLeft {
-    bottom: 0;
-    left: 260px;
+    left: 0;
+  }
+}
+#l-internalTop .l-internalTop__ornamentLeft img {
+  width: auto;
+  height: 100px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  -o-object-fit: contain;
+     object-fit: contain;
+  -o-object-position: top;
+     object-position: top;
+}
+@media screen and (min-width: 1024px) {
+  #l-internalTop .l-internalTop__ornamentLeft img {
+    height: 140px;
   }
 }
 #l-internalTop .l-internalTop__ornamentRight {
@@ -2559,7 +2634,7 @@ b {
 }
 @media screen and (min-width: 1024px) {
   #l-internalTop .l-internalTop__ornamentRight {
-    right: 260px;
+    right: 0;
   }
 }
 #l-internalTop .l-internalTop__ornamentRight img {
@@ -2571,6 +2646,12 @@ b {
      object-position: top;
   width: 100px;
   height: 110px;
+}
+@media screen and (min-width: 1024px) {
+  #l-internalTop .l-internalTop__ornamentRight img {
+    width: 190px;
+    height: 200px;
+  }
 }
 #l-internalTop h1.l-internalTop__title {
   width: 30vw;
