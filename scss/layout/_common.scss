@@ -205,6 +205,66 @@ main {
 	@include mq(lg){
 		margin-top: 100px;
 		height: 200px;
-		max-width: 1050px;
 	}
+	.l-internalTop__ornamentLeft {
+        position: absolute;
+        bottom: 0;
+        left: 8px;
+        @include mq(md){
+            left: 48px;
+        }
+        @include mq(lg){
+            left: 0;
+        }
+        img{
+            width: auto;
+            height: 100px;
+            box-sizing: border-box;
+            object-fit: contain;
+            object-position: top;
+            @include mq(lg){
+                height: 140px;
+            }
+        }
+    }
+    .l-internalTop__ornamentRight{
+        position: absolute;
+        right: 8px;
+        bottom: 0;
+        @include mq(md){
+            right: 48px;
+        }
+        @include mq(lg){
+            right: 0;
+        }
+        img{
+            box-sizing: border-box;
+            object-fit: cover;
+            object-position: top;
+            width: 100px;
+            height: 110px;
+            @include mq(lg){
+                width: 190px;
+                height: 200px;
+            }
+        }
+    }
+    h1.l-internalTop__title {
+        width: 30vw;
+        position: absolute;
+        top: 50%;
+        left: 0%;
+        right: 0;
+        transform: translateY(-50%);
+        max-width: 185px;
+        @include mq(md){
+            width: 25vw;
+        }
+        @include mq(lg){
+            width: 18vw;
+        }
+    }
+    img {
+        width: 100%;
+    }
 }

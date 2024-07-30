@@ -24,16 +24,38 @@
     @include mq(lg) {
         display: flex;
         justify-content: space-between;
-        height: 100px;
+        height: 120px;
         padding: 15px 30px 0px;
     }
     .l-header__title {
-        margin: 0;
         width: auto;
         height: 40px;
-        position: relative;
         z-index: var(--logo);
         display: inline-block;
+        position: absolute;
+        top: 10px;
+        @include mq(md) {
+            height: 55px;
+        }
+        @include mq(md) {
+            top: 20px;
+        }
+        .l-header__link{
+            picture {
+                img {
+                    width: 50px;
+                }
+            }
+            .l-header__sitelogo {
+                width: auto;
+                display: block;
+                @include mq(xl) {
+                    width: auto;
+                    height: 55px;
+                    display: block;
+                }
+            }
+        }
         .l-header__sitelogo {
             width: auto;
             height: auto;
@@ -58,34 +80,6 @@
             width: 100%;
         }
     }
-    .l-header__title{
-        position: absolute;
-        top: 10px;
-        width: auto;
-        margin-right: 0;
-        @include mq(xl) {
-            position: relative;
-            width: auto;
-            height: 55px;
-            margin-right: 20px;
-        }
-        .l-header__link{
-            picture {
-                img {
-                    width: 50px;
-                }
-            }
-            .l-header__sitelogo {
-                width: auto;
-                display: block;
-                @include mq(xl) {
-                    width: auto;
-                    height: 55px;
-                    display: block;
-                }
-            }
-        }
-    }
 }
 
 .l-globalnav{
@@ -94,25 +88,43 @@
     margin: 0 auto;
     padding: 0;
     display: none;
-    // position: absolute;
     top: 60px;
-    // width: calc(756vw / 10.24);
     left: 0;
-    // height: calc(100vh - 60px);
     height: 100vh;
     overflow-y: auto;
     background-color: $white;
     &.open{
         height: calc(var(--vh, 1vh) * 100);
+        @include mq(lg) {
+            height: auto;
+            min-height: auto;
+        }
     }
+    @include mq(lg) {
+        width: calc(576vw / 10.24);
+        display: block !important;
+        padding: 0;
+        position: relative;
+        top: 0;
+        left: 0;
+        height: auto;
+        min-height: auto;
+        overflow-y: visible;
+    }
+    
     .l-globalnav__inner{
         display: flex;
         flex-flow: column;
         justify-content: flex-start;
-        background-color: $white;
         height: auto;
         padding: 60px 0;
         margin-bottom: 60px;
+        @include mq(lg) {
+            flex-flow: row nowrap;
+            justify-content: space-between;
+            padding: 0;
+            margin-bottom: 0;
+        }
         .icon_img {
             width: 50px;
           }
@@ -124,6 +136,16 @@
             font-size: 1.8rem;
             color: $black;
             text-decoration: none;
+            @include mq(lg) {
+                margin: 0 ;
+                padding: 0;
+                border: 0;
+                position: relative;
+                // width: calc(100% / 4);
+                &--pc{
+                    display: none;
+                }
+            }
             .l-globalnav__block {
                 position: relative;
                 display: flex;
@@ -131,6 +153,11 @@
                 justify-content: space-between;
                 align-items: center;
                 padding: 0;
+                @include mq(lg) {
+                    position: relative;
+                    justify-content: center;
+                }
+
                 .l-globalnav__link{
                     padding: 20px 0 20px 40px;
                     display: block;
@@ -139,6 +166,22 @@
                     text-decoration: none;
                     display: flex;
                     flex-flow: nowrap;
+                    @include mq(lg) {
+                        font-size: 1.4rem;
+                        color: #1a1311;
+                        text-decoration: none;
+                        width: auto;
+                        padding: 0;
+                        font-size: 1.6rem;
+                        display: flex;
+                        flex-flow: column;
+                    }
+                    &.hover{
+                        @include mq(lg) {
+                            color: $blue-hover;
+                            transition: color .5s;
+                        }
+                    }
                     &::before{
                         position: absolute;
                         display: block;
@@ -151,11 +194,25 @@
                         top: 50%;
                         left: 0;
                         transform-origin: center;
+                        @include mq(lg) {
+                            content: none;
+                        }
                     }
                     span {
                         color: $black;
                         padding-left: 20px;
                         display: flex;
+                        align-items: center;
+                        @include mq(lg) {
+                            padding: 0;
+                        }
+                    }
+                    picture {
+                        text-align: center;
+                        width: 100px;
+                        height: 80px;
+                        display: flex;
+                        justify-content: center;
                         align-items: center;
                     }
                 }
@@ -169,6 +226,9 @@
                     transform: rotateX(0deg);
                     transition: transform .5s;
                     cursor: pointer;
+                    @include mq(lg) {
+                        display: none;
+                    }
                     &::after{
                         position: absolute;
                         display: block;
@@ -181,6 +241,9 @@
                         top: 35%;
                         left: 50%;
                         transform-origin: center;
+                        @include mq(lg) {
+                            content: none;
+                        }
                     }
                     &.open{
                         transform: rotateX(180deg);
@@ -234,6 +297,22 @@
                     position: relative;
                     display: flex;
                     flex-flow: nowrap;
+                    @include mq(lg) {
+                        font-size:1.6rem;
+                        color: #1a1311;
+                        display: flex;
+                        flex-flow: row nowrap;
+                        justify-content: center;
+                        align-items: center;
+                        flex-flow: column;
+                        padding: 0;
+                    }
+                    &:hover{
+                        @include mq(lg) {
+                            color: $blue-hover;
+                            transition: color .5s;
+                        }
+                    }
                     &::before{
                         position: absolute;
                         display: block;
@@ -246,14 +325,27 @@
                         top: 50%;
                         left: 0;
                         transform-origin: center;
+                        @include mq(lg) {
+                            content: none;
+                        }
                     }
                     span {
                         color: $black;
                         padding-left: 20px;
                         display: flex;
                         align-items: center;
+                        @include mq(lg) {
+                            padding: 0;
+                        }
                     }
                 } 
+                picture {
+                    width: 100px;
+                    height: 80px;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                }
             }
             &.global_nav_contact{
                 a{
@@ -294,65 +386,8 @@
           }
     }
     @include mq(lg) {
-        display: block !important;
-        padding: 0;
-        position: relative;
-        top: 0;
-        width: 100%;
-        left: 0;
-        height: auto;
-        min-height: auto;
-        overflow-y: visible;
-        &.open{
-            height: auto;
-            min-height: auto;
-        }
         .l-globalnav__inner{
-            flex-flow: row nowrap;
-            justify-content: space-between;
-            background-color: #fff;
-            padding: 0;
-            margin-bottom: 0;
             .l-globalnav__list{
-                margin: 0 ;
-                padding: 0;
-                border: 0;
-                position: relative;
-                width: calc(100% / 4);
-                &--pc{
-                    display: none;
-                }
-                .l-globalnav__block {
-                    position: relative;
-                    padding: 8px 0;
-                    margin: 12px 0;
-                    border-left: 1px solid #000;
-                    justify-content: center;
-                    .l-globalnav__link{
-                        font-size: 1.4rem;
-                        color: #1a1311;
-                        text-decoration: none;
-                        width: auto;
-                        padding: 0;
-                        &.hover{
-                            color: $blue-hover;
-                            transition: color .5s;
-                        }
-                        &:hover{
-                            color: $blue-hover;
-                            transition: color .5s;
-                        }
-                        &::before {
-                            content: none;
-                        }
-                    }
-                    .l-globalnav__link--arrow{
-                        display: none;
-                        &::after {
-                            content: none;
-                        }
-                    }
-                }
                 &--parent{
                     .l-globalnav__child {
                         display: none;
@@ -468,26 +503,7 @@
                         }
                     }
                 }
-                &--single{
-                    a{
-                        font-size:1.4rem;
-                        color: #1a1311;
-                        display: flex;
-                        flex-flow: row nowrap;
-                        justify-content: center;
-                        align-items: center;
-                        padding: 8px 0;
-                        margin: 12px 0;
-                        border-left: 1px solid #000;
-                        &:hover{
-                            color: $blue-hover;
-                            transition: color .5s;
-                        }
-                        &::before {
-                            content: none;
-                        }
-                    } 
-                }
+                
                 &.global_nav_contact{
                     &.white{
                         a{
@@ -523,22 +539,6 @@
             .l-globalnav__child {
                 display: block;
                 position: absolute;
-            }
-        }
-    }
-    @include mq(xxl) {
-        .l-globalnav__inner{
-            l-.globalnav__list{
-                .l-globalnav__block {
-                    .l-globalnav__block__link{
-                        font-size: 1.6rem;
-                    }
-                }
-                &--single{
-                    a{
-                        font-size:1.6rem;
-                    } 
-                }
             }
         }
     }

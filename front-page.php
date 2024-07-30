@@ -34,14 +34,6 @@ Template Name: front-page
     <div id="p-firstView__banner">
       <a target="_blank" href="https://mirai-compass.net/usr/kogyokuj/event/evtIndex.jsf" class="p-firstView__bottomArea"></a>
     </div>
-    <!-- <div class="p-background">
-      <picture>
-        <source srcset="images/front-page/main_background.webp" media="(min-width:768px)" type="image/webp" />
-        <source srcset="images/front-page/main_background.png" media="(min-width:768px)" />
-        <source srcset="images/front-page/main_background_sp.webp" type="image/webp" />
-        <img src="images/front-page/main_background_sp.png" />
-      </picture>
-    </div> -->
     <section id="p-frontContents">
       <div class="p-main__ornament">
         <div class="p-main__ornament-parts p-main__ornament-parts-sticky1">

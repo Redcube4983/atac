@@ -1,0 +1,36 @@
+
+@use "../../global" as *;
+#c-contactContents {
+    padding-bottom: 420px;
+}
+
+#l-internalTop {
+    .l-internalTop__ornamentRight {
+        position: absolute;
+        width:  150px;
+        right: -24px;
+        bottom: 0;
+        @include mq(lg){
+            width: 250px;
+            right: 32px;
+        }
+    }
+    h1.l-internalTop__title {
+        width: 30vw;
+        position: absolute;
+        top: 50%;
+        left: 0%;
+        right: 0;
+        transform: translateY(-50%);
+        max-width: 185px;
+        @include mq(md){
+            width: 25vw;
+        }
+        @include mq(lg){
+            width: 18vw;
+        }
+    }
+    img {
+        width: 100%;
+    }
+}
