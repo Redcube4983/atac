@@ -1,5 +1,6 @@
 @use "../global" as *;
 @use "../object" as *;
+@use "../layout" as *;
 @use "../../common/css/layout" as *;
 
 #l-internalTop {
@@ -65,5 +66,30 @@
     }
     img {
         width: 100%;
+    }
+}
+#p-usefulinfoContents{
+    background-color: #DEFFFB;
+    .p-insuranceContents__insuranceArea{
+        background-image: url(../images/usefulinfo/background_bottom.png);
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position: bottom;
+        padding-bottom: 400px;
+    }
+    .p-usefulinfoContents__usefulinfoBox{
+        &-title{
+            h2{
+                font-size: 1.4rem;
+                font-weight: bold;
+            }
+        }
+        &-whiteArea{
+            display: block;
+            border-radius: 20px;
+            background: #FFF;
+            margin-top: 48px;
+            border: 1px solid #4DC0B2;
+        }
     }
 }
