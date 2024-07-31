@@ -152,6 +152,20 @@
   }
 }
 
+.c-usefulinfoContents__usefulinfoBox--btn {
+  display: flex;
+  background: #4DC0B2;
+  border-radius: 0 50px 50px 0;
+  padding: 16px;
+  width: 252px;
+}
+@media screen and (min-width: 768px) {
+  .c-usefulinfoContents__usefulinfoBox {
+    padding: 24px;
+    width: 320px;
+  }
+}
+
 .search-input-wrap {
   display: block;
   text-align: center;
@@ -2372,7 +2386,7 @@ b {
 #p-usefulinfoContents {
   background-color: #DEFFFB;
 }
-#p-usefulinfoContents .p-insuranceContents__insuranceArea {
+#p-usefulinfoContents .p-usefulinfoContents__usefulinfoArea {
   background-image: url(../images/usefulinfo/background_bottom.png);
   background-size: contain;
   background-repeat: no-repeat;
@@ -2383,10 +2397,61 @@ b {
   font-size: 1.4rem;
   font-weight: bold;
 }
+@media screen and (min-width: 768px) {
+  #p-usefulinfoContents .p-usefulinfoContents__usefulinfoBox-title h2 {
+    font-size: 2.3rem;
+  }
+}
 #p-usefulinfoContents .p-usefulinfoContents__usefulinfoBox-whiteArea {
   display: block;
   border-radius: 20px;
   background: #FFF;
-  margin-top: 48px;
+  margin-top: 40px;
   border: 1px solid #4DC0B2;
+}
+@media screen and (min-width: 768px) {
+  #p-usefulinfoContents .p-usefulinfoContents__usefulinfoBox-whiteArea {
+    max-width: 1050px;
+    margin-top: 64px;
+  }
+}
+#p-usefulinfoContents .p-usefulinfoContents__usefulinfoBox-whiteArea-inner {
+  padding: 16px;
+  display: flex;
+  flex-flow: column;
+  justify-content: start;
+}
+@media screen and (min-width: 768px) {
+  #p-usefulinfoContents .p-usefulinfoContents__usefulinfoBox-whiteArea-inner {
+    padding: 40px;
+  }
+}
+#p-usefulinfoContents .p-usefulinfoContents__usefulinfoBox-whiteArea b {
+  font-size: 1.4rem;
+  text-align: left;
+}
+@media screen and (min-width: 768px) {
+  #p-usefulinfoContents .p-usefulinfoContents__usefulinfoBox-whiteArea b {
+    font-size: 1.8rem;
+  }
+}
+#p-usefulinfoContents .p-usefulinfoContents__usefulinfoBox-whiteArea p {
+  font-size: 1.3rem;
+  text-align: left;
+  line-height: 1.5;
+  padding: 8px 0;
+  margin: 0;
+}
+@media screen and (min-width: 768px) {
+  #p-usefulinfoContents .p-usefulinfoContents__usefulinfoBox-whiteArea p {
+    font-size: 1.6rem;
+    padding: 24px 0;
+  }
+}
+#p-usefulinfoContents .p-usefulinfoContents__usefulinfoBox .c-usefulinfoContents__usefulinfoBox--btn a {
+  text-decoration: none;
+}
+#p-usefulinfoContents .p-usefulinfoContents__usefulinfoBox .c-usefulinfoContents__usefulinfoBox--btn span {
+  font-size: 1.3rem;
+  color: #FFF;
 }/*# sourceMappingURL=usefulinfo.css.map */

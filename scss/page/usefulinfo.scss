@@ -70,7 +70,7 @@
 }
 #p-usefulinfoContents{
     background-color: #DEFFFB;
-    .p-insuranceContents__insuranceArea{
+    .p-usefulinfoContents__usefulinfoArea{
         background-image: url(../images/usefulinfo/background_bottom.png);
         background-size: contain;
         background-repeat: no-repeat;
@@ -82,14 +82,60 @@
             h2{
                 font-size: 1.4rem;
                 font-weight: bold;
+                @include mq(md){
+                    font-size: 2.3rem;
+                }
             }
         }
         &-whiteArea{
             display: block;
             border-radius: 20px;
             background: #FFF;
-            margin-top: 48px;
+            margin-top: 40px;
             border: 1px solid #4DC0B2;
+            @include mq(md){
+                max-width: 1050px;
+                margin-top: 64px;
+            }
+            &-inner{
+                padding: 16px;
+                display: flex;
+                flex-flow: column;
+                justify-content: start;
+                @include mq(md){
+                    padding: 40px;
+                }
+            }
+            b{
+                font-size: 1.4rem;
+                text-align: left;
+                @include mq(md){
+                    font-size: 1.8rem;
+                }
+            }
+            p{
+                font-size: 1.3rem;
+                text-align: left;
+                line-height: 1.5;
+                padding: 8px 0;
+                margin: 0;
+                @include mq(md){
+                    font-size: 1.6rem;
+                    padding: 24px 0;
+                }
+            }
         }
+        .c-usefulinfoContents__usefulinfoBox{
+            &--btn{
+                a{
+                    text-decoration: none;
+                }
+                span{
+                    font-size: 1.3rem;
+                    color: #FFF; 
+                }
+            }
+        }
+
     }
 }
