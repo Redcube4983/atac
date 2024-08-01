@@ -1,0 +1,84 @@
+@use "../global" as *;
+@use "../object" as *;
+@use "../layout" as *;
+@use "../../common/css/layout" as *;
+
+#l-internalTop {
+    margin-top: 60px;
+    height: 120px;
+    position: relative;
+    @include mq(lg){
+        margin-top: 100px;
+    }
+    h1.l-internalTop__title {
+        width: 30vw;
+        position: absolute;
+        top: 50%;
+        left: 0%;
+        right: 0;
+        transform: translateY(-50%);
+        max-width: 185px;
+        @include mq(md){
+            width: 25vw;
+        }
+        @include mq(lg){
+            width: 18vw;
+        }
+    }
+    img {
+        width: 100%;
+    }
+}
+
+#p-privacyContents{
+    background-color: #EFEFEF;
+    .p-privacyContents__privacyArea{
+        background-image: url(../images/privacy-policy/background_bottom.png);
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position: bottom;
+        padding-bottom: 400px;
+    }
+    .p-privacyContents__privacyBox{
+        &-title{
+            h2{
+                font-size: 1.4rem;
+                font-weight: bold;
+                text-align: left;
+            }
+        }
+        &-inner{
+            p{
+                font-size: 1.3rem;
+                line-height: 1.5;
+                text-align: left;
+                padding: 8px 0;
+            }
+        }
+    }
+    .p-privacyContents__numberList{
+        margin-top: 16px;
+        &-title{
+            h3{
+                font-size: 1.4rem;
+                font-weight: bold;
+                text-align: left;
+            }
+        }
+        &-inner{
+            p{
+            font-size: 1.3rem;
+            line-height: 1.5;
+            text-align: left;
+            padding: 8px 0;
+            }
+            &-insurance{
+                margin: 16px 0;
+                text-align: left;
+                span{
+                    font-size: 1.3rem;
+                }
+            }
+        }
+    }
+}
