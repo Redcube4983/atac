@@ -154,124 +154,171 @@ Template Name: privacy-policy
                 <p>個人データを取り扱う国における個人情報の保護に関する制度を把握した上で安全管理措置を実施しています。</p>
             </div>
         </div>
-
-
-
-
-
-
-
-          <div class="p-privacy-policyContents__privacy-policyBox-whiteArea">
-            <div class="p-privacy-policyContents__privacy-policyBox-whiteArea-inner">
-              <b>事故多発交差点</b>
-              <p>事故が多発している交差点を「曜日別」「時間帯別」など１１項目で分析しているコーナーです。お近くを通る際の情報としてご参考ください。</p>
-              <div class="c-privacy-policyContents__privacy-policyBox--btn">
-                <a href="http://www.sonpo.or.jp/protection/kousaten/" rel="noopener noreferrer" target="_blank">
-                  <span>詳しくはこちらをチェック！</span>
-                </a>
-              </div>
+        <div class="p-privacyContents__numberList">
+            <div class="p-privacyContents__numberList-title">
+                <h3>4.勧誘方針</h3>
             </div>
-          </div>
-
-          <div class="p-privacy-policyContents__privacy-policyBox-whiteArea">
-            <div class="p-privacy-policyContents__privacy-policyBox-whiteArea-inner">
-              <b>安全運転のポイント</b>
-              <p>安全運転や事故防止のポイントを時事テーマをもとにまとめています。</p>
-              <div class="c-privacy-policyContents__privacy-policyBox--btn">
-                <a href="http://www.dairitenhp.com/anzen/anzen_top.htm" rel="noopener noreferrer" target="_blank">
-                  <span>詳しくはこちらをチェック！</span>
-                </a>
-              </div>
+            <div class="p-privacyContents__numberList-inner">
+              <span>お客さまへのお知らせ</span>
+                <p>
+                「金融サービスの提供及び利用環境の整備等に関する法律」に基づき、当代理店の金融商品の勧誘方針を次のとおり定めておりますので、ご案内いたします。
+                </p>
             </div>
-          </div>
-
-          <div class="p-privacy-policyContents__privacy-policyBox-whiteArea">
-            <div class="p-privacy-policyContents__privacy-policyBox-whiteArea-inner">
-              <b>日本損害保険協会</b>
-              <p>自動車の事故や災害に遭ったときに役立つ情報、防災情報および各種統計等を提供しています。</p>
-              <div class="c-privacy-policyContents__privacy-policyBox--btn">
-                <a href="http://www.sonpo.or.jp/" rel="noopener noreferrer" target="_blank">
-                  <span>詳しくはこちらをチェック！</span>
-                </a>
-              </div>
+            <div class="p-privacyContents__numberList-num">
+                <p>（1）保険法、保険業法、金融サービスの提供及び利用環境の整備等に関する法律、金融商品取引法、消費者契約法、個人情報の保護に関する法律およびその他各種法令等を遵守し、適正な商品販売に努めてまいります。
+                </p>
             </div>
-          </div>
-
-          <div class="p-privacy-policyContents__privacy-policyBox-whiteArea">
-            <div class="p-privacy-policyContents__privacy-policyBox-whiteArea-inner">
-              <b>生命保険協会</b>
-              <p>生命保険の基礎知識、生命保険協会からの最新のニュース等を提供しています。</p>
-              <div class="c-privacy-policyContents__privacy-policyBox--btn">
-                <a href="http://www.seiho.or.jp/" rel="noopener noreferrer" target="_blank">
-                  <span>詳しくはこちらをチェック！</span>
-                </a>
-              </div>
+            <div class="p-privacyContents__numberList-num">
+                <p>（2）お客さまに商品内容を十分ご理解いただけるよう、知識の修得、研さんに励むとともに､説明方法等について工夫し、わかりやすい説明に努めてまいります｡
+                </p>
             </div>
-          </div>
-
-          <div class="p-privacy-policyContents__privacy-policyBox-whiteArea">
-            <div class="p-privacy-policyContents__privacy-policyBox-whiteArea-inner">
-              <b>厚生労働省-先進医療</b>
-              <p>厚生労働省のホームページから先進医療についての情報を提供しています。</p>
-              <div class="c-privacy-policyContents__privacy-policyBox--btn">
-                <a href="http://www.mhlw.go.jp/topics/bukyoku/isei/sensiniryo/index.html" rel="noopener noreferrer" target="_blank">
-                  <span>詳しくはこちらをチェック！</span>
-                </a>
-              </div>
+            <div class="p-privacyContents__numberList-num">
+                <p>（3）お客さまの商品に関する知識､経験、財産の状況および購入の目的等を総合的に勘案し、お客さまに適切な商品をご選択いただけるよう、お客さまのご意向と実情に沿った説明に努めてまいります。
+                </p>
             </div>
-          </div>
-
-          <div class="p-privacy-policyContents__privacy-policyBox-whiteArea">
-            <div class="p-privacy-policyContents__privacy-policyBox-whiteArea-inner">
-              <b>生命保険文化センター</b>
-              <p>生命保険に関する全国実態調査についての情報提供しています。</p>
-              <div class="c-privacy-policyContents__privacy-policyBox--btn">
-                <a href="http://www.jili.or.jp/research/report/zenkokujittai.html" rel="noopener noreferrer" target="_blank">
-                  <span>詳しくはこちらをチェック！</span>
-                </a>
-              </div>
+            <div class="p-privacyContents__numberList-num">
+                <p>（4）市場の動向に大きく影響される投資性商品については、リスクの内容について、適切な説明に努めてまいります｡
+                </p>
             </div>
-          </div>
-
-          <div class="p-privacy-policyContents__privacy-policyBox-whiteArea">
-            <div class="p-privacy-policyContents__privacy-policyBox-whiteArea-inner">
-              <b>ゴールドリボン・ネットワーク</b>
-              <p>ゴールドリボン・ネットワークは、小児がんの治療法や薬、経験者の生活の質（QOL）向上のための
-              研究開発を支援する非営利団体です。</p>
-              <div class="c-privacy-policyContents__privacy-policyBox--btn">
-                <a href="http://www.goldribbon.jp/index.htm" rel="noopener noreferrer" target="_blank">
-                  <span>詳しくはこちらをチェック！</span>
-                </a>
-              </div>
+            <div class="p-privacyContents__numberList-num">
+                <p>（5）商品の販売にあたっては､お客さまの立場に立って、時間帯、場所、方法等について十分配慮いたします｡
+                </p>
             </div>
-          </div>
-
-          <div class="p-privacy-policyContents__privacy-policyBox-whiteArea">
-            <div class="p-privacy-policyContents__privacy-policyBox-whiteArea-inner">
-              <b>J.POSH 日本乳がんピンクリボン運動</b>
-              <p>私たちのスローガンである”for the future generation”明日を担う次の世代のために、
-              明日の健康な社会を残せるよう活動しています。</p>
-              <div class="c-privacy-policyContents__privacy-policyBox--btn">
-                <a href="http://www.j-posh.com/index.html" rel="noopener noreferrer" target="_blank">
-                  <span>詳しくはこちらをチェック！</span>
-                </a>
-              </div>
+            <div class="p-privacyContents__numberList-num">
+                <p>（6）お客さまに関する情報については、適正に取り扱うとともに厳正に管理いたします。
+                </p>
             </div>
-          </div>
-
-          <div class="p-privacy-policyContents__privacy-policyBox-whiteArea">
-            <div class="p-privacy-policyContents__privacy-policyBox-whiteArea-inner">
-              <b>日本脳卒中協会</b>
-              <p>脳卒中に関する正しい知識の普及および社会啓発によって新たな脳卒中発症の減少に寄与すると同時に、
-                脳卒中患者・家族に対する情報提供、自立のための支援を促進することによって、患者・家族の不安と
-                ハンディキャップの軽減と生活の質の改善を図り、その成果を通じて国民の保健、福祉の向上に寄与して行く事が目的…</p>
-              <div class="c-privacy-policyContents__privacy-policyBox--btn">
-                <a href="http://www.jsa-web.org/" rel="noopener noreferrer" target="_blank">
-                  <span>詳しくはこちらをチェック！</span>
-                </a>
-              </div>
+            <div class="p-privacyContents__numberList-num">
+                <p>（7）お客さまのご意見、ご要望等を、商品ご提供の参考にさせていただくよう努めてまいります。
+                </p>
             </div>
-          </div>
+            <div class="p-privacyContents__numberList-num">
+                <p>（8）万一保険事故が発生した場合には､保険金のご請求にあたり適切な助言を行うよう努めてまいります｡
+                </p>
+            </div>
+            <div class="p-privacyContents__numberList-num">
+                <p>（9）保険金を不正に取得されることを防止する観点から、適正に保険金額を定める等、適切な商品の販売に努めてまいります。
+                </p>
+            </div>
+        </div>
+        <div class="p-privacyContents__numberList">
+            <div class="p-privacyContents__numberList-title">
+                <h3>5.個人データの第三者への提供および第三者からの取得</h3>
+            </div>
+            <div class="p-privacyContents__numberList-inner">
+                <p>
+                （1）当代理店は、個人データ（個人番号および特定個人情報については、下記６．をご覧ください。）を第三者に提供するにあたり、以下の場合を除き、ご本人の同意なく第三者に提供しません。
+                </p>
+            </div>
+            <div class="p-privacyContents__numberList-num">
+                <p>&#9312;法令に基づく場合</p>
+            </div>
+            <div class="p-privacyContents__numberList-num">
+                <p>&#9313;人の生命、身体又は財産の保護のために必要がある場合であって、本人の同意を得ることが困難であるとき。
+                </p>
+            </div>
+            <div class="p-privacyContents__numberList-num">
+                <p>&#9314;公衆衛生の向上又は児童の健全な育成の推進のために特に必要がある場合であって、本人の同意を得ることが困難であるとき。
+                </p>
+            </div>
+            <div class="p-privacyContents__numberList-num">
+                <p>&#9315;国の機関若しくは地方公共団体又はその委託を受けた者が法令の定める事務を 遂行することに対して協力する必要がある場合であって、 本人の同意を得ることにより当該事務の遂行に支障を及ぼすおそれがあるとき。
+                </p>
+            </div>
+            <div class="p-privacyContents__numberList-num">
+                <p>&#9316;当該第三者が学術研究機関等である場合であって、当該第三者が当該個人データを学術研究目的で取り扱う必要があるとき（当該個人データを取り扱う目的の一部が学術研究目的である場合を含み、個人の権利利益を不当に侵害するおそれがある場合を除く）。
+                </p>
+            </div>
+            <div class="p-privacyContents__numberList-num">
+                <p>（2）個人データを第三者に提供したとき、あるいは第三者から取得したとき（個人関連情報を個人データとして取得する場合を含みます。）提供・取得経緯等の確認を行うとともに、提供先・提供者の氏名等、法令で定める事項を記録し、保管します。
+                </p>
+            </div>
+        </div>
+        <div class="p-privacyContents__numberList">
+            <div class="p-privacyContents__numberList-title">
+                <h3>6.センシティブ情報の取扱い</h3>
+            </div>
+            <div class="p-privacyContents__numberList-inner">
+                <p>
+                当社は、要配慮個人情報（人種、信条、社会的身分、病歴、前科・前歴、犯罪被害情報などをいいます）ならびに労働組合への加盟、門地および本籍地、保健医療および性生活に関する個人情報（センシティブ情報）については、次の場合を除き、原則として取得、利用または第三者提供を行いません。
+                </p>
+            </div>
+            <div class="p-privacyContents__numberList-num">
+                <p>&#9312; 保険業の適切な業務運営を確保する必要性から、本人の同意に基づき業務遂行上必要な範囲でセンシティブ情報を取得、利用又は第三者提供する場合</p>
+            </div>
+            <div class="p-privacyContents__numberList-num">
+                <p>&#9313; 保険料収納事務等の遂行上必要な範囲において、政治・宗教等の団体若しくは労働組合への所属若しくは加盟に関する従業員等のセンシティブ情報を取得、利用又は第三者提供する場合
+                </p>
+            </div>
+            <div class="p-privacyContents__numberList-num">
+                <p>&#9314; 相続手続を伴う保険金支払事務等の遂行に必要な限りにおいて、センシティブ情報を取得、利用又は第三者提供する場合
+                </p>
+            </div>
+            <div class="p-privacyContents__numberList-num">
+                <p>&#9315;法令等に基づく場合
+                </p>
+            </div>
+            <div class="p-privacyContents__numberList-num">
+                <p>&#9316;人の生命、身体又は財産の保護のために必要がある場合
+                </p>
+            </div>
+            <div class="p-privacyContents__numberList-num">
+                <p>&#9317;公衆衛生の向上又は児童の健全な育成の推進のため特に必要がある場合
+                </p>
+            </div>
+            <div class="p-privacyContents__numberList-num">
+                <p>&#9318; 国の機関若しくは地方公共団体又はその委託を受けた者が法令の定める事務を遂行することに対して協力する必要がある場合
+                </p>
+            </div>
+        </div>
+        <div class="p-privacyContents__numberList">
+            <div class="p-privacyContents__numberList-title">
+                <h3>7. 個人番号及び特定個人情報の取扱い</h3>
+            </div>
+            <div class="p-privacyContents__numberList-inner">
+                <p>
+                当社は、個人番号および特定個人情報について、法令で限定的に明記された目的以外の為に取得・利用しません。番号法で限定
+                的に明示された場合を除き、個人番号および特定個人情報を第三者に提供しません。
+                </p>
+            </div>
+        </div>
+        <div class="p-privacyContents__numberList">
+            <div class="p-privacyContents__numberList-title">
+                <h3>8. 個人情報保護法に基づく保有個人データの開示、<br class="sp">訂正、利用停止など</h3>
+            </div>
+            <div class="p-privacyContents__numberList-inner">
+                <p>
+                個人情報保護法に基づく保有個人データ（上記6.の個人番号及び特定個人情報を含みます。）に関する開示（確認・記録の開示を含む）、訂正または利用停止などに関するご請求については、データの保有者である保険会社に対してお取次ぎいたします。
+                </p>
+            </div>
+        </div>
+        <div class="p-privacyContents__numberList">
+            <div class="p-privacyContents__numberList-title">
+                <h3>9. 当代理店に対するご照会</h3>
+            </div>
+            <div class="p-privacyContents__numberList-inner">
+                <p>
+                  下記お問い合わせ窓口にお問い合せください。また保険事故に関するご照会については下記お問い合わせ窓口のほか、
+                  保険証券に記載の事故相談窓口にお問い合わせください。
+                  ご照会者がご本人であることをご確認させていただいたうえで、対応させていただきますので、あらかじめご了承願います。
+                  なお、個人情報保護法に基づく保険契約等に係わる保有個人データに関する開示、訂正等または利用停止等に関するご請求については、保険会社にお取り次ぎいたします。
+                </p>
+            </div>
+        </div>
+        <div class="p-privacyContents__numberList">
+            <div class="p-privacyContents__numberList-title">
+                <h3>お問い合わせ窓口</h3>
+            </div>
+            <div class="p-privacyContents__numberList-inner">
+                <ul>
+                  <li>代理店：千葉県木更津市高柳1丁目8番1号</li>
+                  <li>株式会社 ＡＴＡＣ(アタック)</li>
+                  <li>TEL：0438-41-6011／FAX：0438-41-6006
+                  <br class="sp">（受付時間：9時〜18時）</li>
+                  <li>MAIL：info.6011@atac.jp／
+                  <br class="sp">HOMEPAGE：http://www.atac.jp</li>
+                </ul>
+            </div>
         </div>
       </div>
     </div>
