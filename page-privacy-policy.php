@@ -62,14 +62,14 @@ Template Name: privacy-policy
                 <div class="p-privacyContents__numberList-inner-insurance">
                     <span>&#60;損害保険会社&#62;</span>
                     <a href="http://www.ms-ins.com" rel="noopener noreferrer" target="_blank">
-                        <p>&#127019;三井住友海上火災保険株式会社（http://www.ms-ins.com）
+                        <p>&#9632;三井住友海上火災保険株式会社（http://www.ms-ins.com）
                         </p>
                     </a>
                 </div>
                 <div class="p-privacyContents__numberList-inner-insurance">
                     <span>&#60;生命保険会社&#62;</span>
                     <a href="http://www.msa-life.co.jp" rel="noopener noreferrer" target="_blank">
-                        <p>&#127019;三井住友海上あいおい生命保険株式会社（http://www.msa-life.co.jp）
+                        <p>&#9632;三井住友海上あいおい生命保険株式会社（http://www.msa-life.co.jp）
                         </p>
                     </a>
                 </div>
@@ -87,18 +87,18 @@ Template Name: privacy-policy
                 安全管理措置に関するご質問については、下記８．のお問い合わせ窓口までお寄せください。
                 </p>
             </div>
-            <div class="p-privacyContents__numberList3-num">
-                <div class="p-privacyContents__numberList3-num-title">
+            <div class="p-privacyContents__numberList-num">
+                <div class="p-privacyContents__numberList-num-title">
                     <h3>（1）基本方針の整備</h3>
                 </div>
                 <p>個人データの適正な取扱いの確保のため、「関係法令・ガイドライン等の遵守」、「安全管理措置に関する事項」、「質問および苦情処理の窓口」等について本基本方針を策定し、必要に応じて見直しています。</p>
 
-                <div class="p-privacyContents__numberList3-num-title">
+                <div class="p-privacyContents__numberList-num-title">
                     <h3>（2）個人データの安全管理に係る取扱規程の整備</h3>
                 </div>
                 <p>取得、利用、保存、提供、削除・廃棄等の段階ごとに、取扱方法、責任者・担当者およびその任務等についての規程を整備し、必要に応じて見直しています。</p>
 
-                <div class="p-privacyContents__numberList3-num-title">
+                <div class="p-privacyContents__numberList-num-title">
                     <h3>（3）組織的安全管理措置</h3>
                 </div>
                 <ul>
@@ -110,7 +110,7 @@ Template Name: privacy-policy
                     <li>漏えい等事案に対応する体制の整備</li>
                 </ul>
 
-                <div class="p-privacyContents__numberList3-num-title">
+                <div class="p-privacyContents__numberList-num-title">
                     <h3>（4）人的安全管理措置</h3>
                 </div>
                 <ul>
@@ -120,7 +120,7 @@ Template Name: privacy-policy
                     <li>従業者による個人データ管理手続の遵守状況の確認</li>
                 </ul>
 
-                <div class="p-privacyContents__numberList3-num-title">
+                <div class="p-privacyContents__numberList-num-title">
                     <h3>（5）物理的安全管理措置</h3>
                 </div>
                 <ul>
@@ -130,7 +130,7 @@ Template Name: privacy-policy
                     <li>個人データの削除及び機器、電子媒体等の廃棄</li>
                 </ul>
 
-                <div class="p-privacyContents__numberList3-num-title">
+                <div class="p-privacyContents__numberList-num-title">
                     <h3>（6）技術的安全管理措置</h3>
                 </div>
                 <ul>
@@ -143,12 +143,12 @@ Template Name: privacy-policy
                     <li>個人データを取り扱う情報システムの監視及び監査</li>
                 </ul>
 
-                <div class="p-privacyContents__numberList3-num-title">
+                <div class="p-privacyContents__numberList-num-title">
                     <h3>（7）委託先の監督</h3>
                 </div>
                 <p>個人データの取扱いを委託する場合には、個人データを適正に取り扱っている者を選定し、委託先における安全管理措置の実施を確保するため、外部委託に係る取扱規程を整備し、定期的に見直しています。</p>
 
-                <div class="p-privacyContents__numberList3-num-title">
+                <div class="p-privacyContents__numberList-num-title">
                     <h3>（8）外的環境の把握</h3>
                 </div>
                 <p>個人データを取り扱う国における個人情報の保護に関する制度を把握した上で安全管理措置を実施しています。</p>
