@@ -1,0 +1,188 @@
+@use "../global" as *;
+@use "../object" as *;
+@use "../layout" as *;
+@use "../../common/css/layout" as *;
+
+#l-internalTop {
+    .l-internalTop__ornamentLeft {
+        position: absolute;
+        bottom: 0;
+        left: 8px;
+        @include mq(md){
+            left: 48px;
+        }
+        @include mq(lg){
+            left: 0;
+        }
+        img{
+            width: 180px;
+            height: 118px;
+            box-sizing: border-box;
+            object-fit: cover;
+            object-position: top;
+            @include mq(md){
+                width: 240px;
+                height: 160px;
+            }
+            @include mq(lg){
+                height: 200px;
+                width: 320px;
+            }
+        }
+    }
+    .l-internalTop__ornamentRight{
+        position: absolute;
+        right: 8px;
+        bottom: 0;
+        z-index: 9;
+        @include mq(md){
+            right: 48px;
+        }
+        @include mq(lg){
+            right: 0;
+        }
+        img{
+            box-sizing: border-box;
+            object-fit: cover;
+            object-position: top;
+            width: 100px;
+            height: 80px;
+            @include mq(md){
+                width: 132px;
+                height: 100px;
+            }
+            @include mq(lg){
+                width: 180px;
+                height: 180px;
+            }
+        }
+    }
+    .l-internalTop__ornamentRight2{
+        position: absolute;
+        right: 8px;
+        bottom: 0;
+        @include mq(md){
+            right: 48px;
+        }
+        @include mq(lg){
+            right: 0;
+        }
+        img{
+            box-sizing: border-box;
+            object-fit: cover;
+            object-position: top;
+            width: 100px;
+            height: 100px;
+            @include mq(md){
+                width: 140px;
+                height: 140px;
+            }
+            @include mq(lg){
+                width: 190px;
+                height: 200px;
+            }
+        }
+    }
+    h1.l-internalTop__title {
+        width: 30vw;
+        position: absolute;
+        top: 50%;
+        left: 0%;
+        right: 0;
+        transform: translateY(-50%);
+        max-width: 185px;
+        @include mq(md){
+            width: 25vw;
+        }
+        @include mq(lg){
+            width: 18vw;
+        }
+    }
+    img {
+        width: 100%;
+    }
+}
+
+#p-faqContents{
+    background: #FFF7D3;
+    .p-faqContents__faqArea{
+        background-image: url(../images/faq/background_bottom.png);
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position: bottom;
+        padding-bottom: 400px;
+    }
+    .p-faqContents__faqBox{
+        display: block;
+        border-radius: 62px;
+        border: 1px solid #FFC042;
+        background: #FFF;
+        padding: 16px;
+        @include mq(md){
+            padding: 72px;
+            max-width: 1050px;
+        }
+        &-title{
+            p{
+            font-size: 1.4rem;
+            line-height: 1.5;
+            @include mq(md){
+                font-size: 1.8rem;
+            }
+            @include mq(lg){
+                font-size: 2.6rem;
+            }
+            }
+        }
+        &-btn{
+            display: block;
+            border-radius: 63px;
+            background: #FFC042;
+            margin: 24px auto 0;
+            padding: 24px;
+            position: relative;
+            width: 300px;
+            @include mq(md){
+                margin: 56px auto 0;
+                padding: 30px;
+            }
+            a{
+                text-decoration: none;
+                position: absolute;
+                top: 32%;
+                left: 32%;
+                transform: translate(-32%);
+                @include mq(md){
+                top: 40%;
+                left: 40%;
+                transform: translate(-40%);
+                }
+                :after{
+                    content: "";
+                    width: 10px;
+                    height: 10px;
+                    border-top: 1px solid #FFF;
+                    border-right: 1px solid #FFF;
+                    transform: rotate(45deg);
+                    transform-origin: top right;
+                    display: inline-block;
+                    border-radius: 1px;
+                    transition: 0.3s ease-in-out;
+                    position: absolute;
+                    top: 50%;
+                    right: -48px;
+                }
+                :hover:after{
+                    right: -58px;
+                }
+            }
+            b{
+                color: #FFF;
+                font-size: 1.4rem;
+                @include mq(md){
+                    font-size: 1.6rem;
+                }
+            }
+        }
+    }
+}

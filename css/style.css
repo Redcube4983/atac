@@ -591,20 +591,6 @@ main p {
   }
 }
 
-.c-usefulinfoContents__usefulinfoBox--btn {
-  display: flex;
-  background: #4DC0B2;
-  border-radius: 0 50px 50px 0;
-  padding: 16px;
-  width: 252px;
-}
-@media screen and (min-width: 768px) {
-  .c-usefulinfoContents__usefulinfoBox {
-    padding: 24px;
-    width: 320px;
-  }
-}
-
 .search-input-wrap {
   display: block;
   text-align: center;
