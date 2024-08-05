@@ -99,7 +99,7 @@
               <ul class="l-footernav__list single">
                   <li class="l-footernav__block"><a class="l-footernav__link" href="#">ご相談 / お問い合わせ</a></li>
                   <li class="l-footernav__block"><a class="l-footernav__link" href="https://atac.cube-stg.com/privacy-policy/">個人情報保護法 / 勧誘方針</a></li>
-                  <li class="l-footernav__block"><a class="l-footernav__link" href="#">業務運営方針</a></li>
+                  <li class="l-footernav__block"><a class="l-footernav__link" href="https://atac.cube-stg.com/operations">業務運営方針</a></li>
               </ul>
           </li>
         </ul>

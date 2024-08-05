@@ -9,6 +9,7 @@
     position: relative;
     @include mq(lg){
         margin-top: 100px;
+        height: 200px;
     }
     .l-internalTop__ornamentLeft {
         position: absolute;
@@ -16,36 +17,45 @@
         bottom: 0;
         left: 8px;
         @include mq(md){
-            width: 15%;
             left: 48px;
         }
         @include mq(lg){
-            width: 10%;
-            bottom: 0;
-            left: 260px;
+            left: 0;
+        }
+        img{
+            width: auto;
+            height: 132px;
+            box-sizing: border-box;
+            object-fit: cover;
+            object-position: top;
+            @include mq(lg){
+                height: 210px;
+            }
         }
     }
     .l-internalTop__ornamentRight{
         position: absolute;
         right: 8px;
-        top: 0;
-        width: 100px;
+        bottom: 0;
         @include mq(md){
             right: 48px;
-            top: 0;
-            width: 15%;
         }
         @include mq(lg){
-            width: 8%;
-            right: 260px;
+            right: 0;
         }
         img{
             box-sizing: border-box;
             object-fit: cover;
             object-position: top;
-            height: 120px;
+            height: 113px;
+            width: 150px;
             @include mq(md){
-                height: 120px;
+                height: 136px;
+                width: 180px;
+            }
+            @include mq(lg){
+                height: 180px;
+                width: 240px;
             }
         }
     }
