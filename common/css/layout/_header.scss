@@ -551,16 +551,35 @@
     @include mq(lg) {
         display: flex;
         flex-flow: row nowrap;
-        justify-content: flex-end;
+        justify-content: space-around;
         align-items: center;
+        background: #FF8900;
+        border-radius: 0 0 10px 10px;
+        position: absolute;
+        top: 0;
+        right: 0;
+        width: 240px;
+        height: 100px;
     }
     @include mq(xl) {
         .l-contactArea__inner {
+            display: flex;
+            flex-flow: column;
+                p{
+                    color: #fff;
+                }
             .l-contactArea__list {
-                font-size: 1.4rem;
-                margin-left: 40px;
-                &:first-child{
-                    margin-left: 0px;
+                width: 100%;
+                margin: 8px;
+                li{
+                    width: 100px;
+                    height: 62px;
+                    background: #FFF;
+                    border-radius: 10px;
+                }
+                img{
+                    width: 40px;
+                    height: 30px;
                 }
             }
         }

@@ -74,30 +74,30 @@
           <li class="l-footernav__inner__list">
               <ul class="l-footernav__inner__list--child">
                     <li class="l-footernav__list single first">
-                      <div class="l-footernav__block"><a class="l-footernav__link" href="#">HOME</a></div>
+                      <div class="l-footernav__block"><a class="l-footernav__link" href="/">HOME</a></div>
                     </li>
               </ul>
           </li>
           <li class="l-footernav__list l-footernav__inner__list js-footerNav parent">
-            <div class="l-footernav__block"><a class="l-footernav__link" href="#">当社のご案内</a><span class="js-linkArrow l-footernav__link--arrow"></span></div>
+            <div class="l-footernav__block"><a class="l-footernav__link" href="https://atac.cube-stg.com/about-us/">当社のご案内</a><span class="js-linkArrow l-footernav__link--arrow"></span></div>
             <ul class="l-footernav__child">
               <li class="l-footernav__granchild">
-                <a class="l-footernav__granchild--link" href="#">Blog</a>
+                <a class="l-footernav__granchild--link" href="https://atac.cube-stg.com/blog/">Blog</a>
               </li>
             </ul>
           </li>
           <li class="l-footernav__list l-footernav__inner__list">
-            <div class="l-footernav__block"><a class="l-footernav__link" href="#">保険のご案内</a><span class=""></span></div>
+            <div class="l-footernav__block"><a class="l-footernav__link" href="https://atac.cube-stg.com/insurance/">保険のご案内</a><span class=""></span></div>
           </li>
           <li class="l-footernav__list l-footernav__inner__list">
-            <div class="l-footernav__block"><a class="l-footernav__link" href="#">よくあるご質問</a><span class=""></span></div>
+            <div class="l-footernav__block"><a class="l-footernav__link" href="https://atac.cube-stg.com/faq/">よくあるご質問</a><span class=""></span></div>
           </li>
           <li class="l-footernav__list l-footernav__inner__list">
-            <div class="l-footernav__block"><a class="l-footernav__link" href="#">お役立ち情報</a><span class=""></span></div>
+            <div class="l-footernav__block"><a class="l-footernav__link" href="https://atac.cube-stg.com/usefulInfo/">お役立ち情報</a><span class=""></span></div>
           </li>
           <li class="l-footernav__inner-list2">
               <ul class="l-footernav__list single">
-                  <li class="l-footernav__block"><a class="l-footernav__link" href="#">ご相談 / お問い合わせ</a></li>
+                  <li class="l-footernav__block"><a class="l-footernav__link" href="https://atac.cube-stg.com/contact/">ご相談 / お問い合わせ</a></li>
                   <li class="l-footernav__block"><a class="l-footernav__link" href="https://atac.cube-stg.com/privacy-policy/">個人情報保護法 / 勧誘方針</a></li>
                   <li class="l-footernav__block"><a class="l-footernav__link" href="https://atac.cube-stg.com/operations">業務運営方針</a></li>
               </ul>

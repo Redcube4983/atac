@@ -2180,17 +2180,38 @@ b {
   .l-contactArea {
     display: flex;
     flex-flow: row nowrap;
-    justify-content: flex-end;
+    justify-content: space-around;
     align-items: center;
+    background: #FF8900;
+    border-radius: 0 0 10px 10px;
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 240px;
+    height: 100px;
   }
 }
 @media screen and (min-width: 1280px) {
-  .l-contactArea .l-contactArea__inner .l-contactArea__list {
-    font-size: 1.4rem;
-    margin-left: 40px;
+  .l-contactArea .l-contactArea__inner {
+    display: flex;
+    flex-flow: column;
   }
-  .l-contactArea .l-contactArea__inner .l-contactArea__list:first-child {
-    margin-left: 0px;
+  .l-contactArea .l-contactArea__inner p {
+    color: #fff;
+  }
+  .l-contactArea .l-contactArea__inner .l-contactArea__list {
+    width: 100%;
+    margin: 8px;
+  }
+  .l-contactArea .l-contactArea__inner .l-contactArea__list li {
+    width: 100px;
+    height: 62px;
+    background: #FFF;
+    border-radius: 10px;
+  }
+  .l-contactArea .l-contactArea__inner .l-contactArea__list img {
+    width: 40px;
+    height: 30px;
   }
 }
 

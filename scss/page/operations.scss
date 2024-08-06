@@ -2,3 +2,144 @@
 @use "../object" as *;
 @use "../layout" as *;
 @use "../../common/css/layout" as *;
+
+#l-internalTop {
+    margin-top: 60px;
+    height: 120px;
+    position: relative;
+    @include mq(lg){
+        margin-top: 100px;
+    }
+    h1.l-internalTop__title {
+        width: 30vw;
+        position: absolute;
+        top: 50%;
+        left: 0%;
+        right: 0;
+        transform: translateY(-50%);
+        max-width: 185px;
+        @include mq(md){
+            width: 25vw;
+        }
+        @include mq(lg){
+            width: 18vw;
+        }
+    }
+    img {
+        width: 100%;
+    }
+}
+
+#p-operationsContents{
+    background-color: #EFEFEF;
+    .p-operationsContents__operationsArea{
+        background-image: url(../images/privacy-policy/background_bottom.png);
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position: bottom;
+        padding-bottom: 400px;
+    }
+    .p-operationsContents__operationsBox{
+        &-title{
+            h2{
+                font-size: 1.4rem;
+                font-weight: bold;
+                @include mq(md){
+                    font-size: 2rem;
+                }
+            }
+        }
+        &-policy{
+            display: flex;
+            flex-flow: column;
+            justify-content: start;
+            text-align: left;
+            margin: 24px 0;
+            &:nth-child(n+3){
+                margin-top: 0;
+            }
+            @include mq(md){
+                margin: 72px 0 48px;
+                &:nth-child(n+3){
+                    margin-top: 0;
+                }
+            }
+            h2{
+                font-size: 1.4rem;
+                font-weight: bold;
+                margin: 0;
+                line-height: 1.4;
+                @include mq(md){
+                    font-size: 1.6rem;
+                }
+            }
+            p{
+                font-size: 1.4rem;
+                line-height: 1.7;
+                padding-top: 8px;
+                @include mq(md){
+                    font-size: 1.6rem;
+                }
+            }
+        }
+        &-name{
+            display: flex;
+            flex-flow: wrap;
+            justify-content: space-between;
+            margin: 72px 0 0;
+            @include mq(md){
+                margin-top: 132px;
+            }
+            @include mq(lg){
+                margin: 160px 0;
+            }
+            &-imageLeft{
+                width: 64%;
+                position: relative;
+                @include mq(md){
+                    width: 72%;
+                }
+                @include mq(lg){
+                    width: 80%;
+                }
+                img{
+                    width: auto;
+                    height: 110px;
+                    position: absolute;
+                    top: -70%;
+                    transform: translate(70%);
+                    @include mq(md){
+                        height: 180px;
+                        top: -108%;
+                        right: 18%;
+                        transform: translate(108%);
+                    }
+                    @include mq(lg){
+                        right: 16%;
+                    }
+                }
+            }
+            &-Right{
+                width: 34%;
+                @include mq(md){
+                    width: 24%;
+                }
+                @include mq(lg){
+                    width: 16%;
+                }
+                ul{
+                    text-align: left;
+                    line-height: 1.5;
+                    font-size: 1.4rem;
+                    @include mq(md){
+                        font-size: 1.6rem;
+                        line-height: 1.8;
+                    }
+                }
+                li:nth-child(3){
+                    font-weight: bold;
+                }
+            }
+        }
+    }
+}
