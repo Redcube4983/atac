@@ -550,7 +550,7 @@
     }
     @include mq(lg) {
         display: flex;
-        flex-flow: row nowrap;
+        flex-flow: column;
         justify-content: space-around;
         align-items: center;
         background: #FF8900;
@@ -560,8 +560,6 @@
         right: 0;
         width: 240px;
         height: 100px;
-    }
-    @include mq(xl) {
         .l-contactArea__inner {
             display: flex;
             flex-flow: column;
@@ -585,6 +583,7 @@
         }
     }
 }
+
 .l-header__toggle {
     position: fixed;
     right: 0;
