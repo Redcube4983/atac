@@ -1888,38 +1888,45 @@ b {
 }
 @media screen and (min-width: 1024px) {
   .l-contactArea {
-    display: flex;
-    flex-flow: column;
-    justify-content: space-around;
-    align-items: center;
+    display: block;
     background: #FF8900;
     border-radius: 0 0 10px 10px;
     position: absolute;
     top: 0;
     right: 0;
-    width: 240px;
-    height: 100px;
+    width: 200px;
+    height: auto;
   }
   .l-contactArea .l-contactArea__inner {
     display: flex;
     flex-flow: column;
+    padding: 8px 0;
   }
   .l-contactArea .l-contactArea__inner p {
     color: #fff;
   }
   .l-contactArea .l-contactArea__inner .l-contactArea__list {
+    font-size: 1.4rem;
+    display: flex;
+    flex-flow: nowrap;
+    justify-content: space-around;
     width: 100%;
-    margin: 8px;
   }
   .l-contactArea .l-contactArea__inner .l-contactArea__list li {
-    width: 100px;
-    height: 62px;
     background: #FFF;
+    width: 100px;
     border-radius: 10px;
+    height: 62px;
+    margin: 8px 8px 0;
+    position: relative;
   }
   .l-contactArea .l-contactArea__inner .l-contactArea__list img {
-    width: 40px;
+    width: 30px;
     height: 30px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
   }
 }
 
