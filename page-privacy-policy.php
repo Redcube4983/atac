@@ -156,54 +156,7 @@ Template Name: privacy-policy
         </div>
         <div class="p-privacyContents__numberList">
             <div class="p-privacyContents__numberList-title">
-                <h3>4.勧誘方針</h3>
-            </div>
-            <div class="p-privacyContents__numberList-inner">
-              <span>お客さまへのお知らせ</span>
-                <p>
-                「金融サービスの提供及び利用環境の整備等に関する法律」に基づき、当代理店の金融商品の勧誘方針を次のとおり定めておりますので、ご案内いたします。
-                </p>
-            </div>
-            <div class="p-privacyContents__numberList-num">
-                <p>（1）保険法、保険業法、金融サービスの提供及び利用環境の整備等に関する法律、金融商品取引法、消費者契約法、個人情報の保護に関する法律およびその他各種法令等を遵守し、適正な商品販売に努めてまいります。
-                </p>
-            </div>
-            <div class="p-privacyContents__numberList-num">
-                <p>（2）お客さまに商品内容を十分ご理解いただけるよう、知識の修得、研さんに励むとともに､説明方法等について工夫し、わかりやすい説明に努めてまいります｡
-                </p>
-            </div>
-            <div class="p-privacyContents__numberList-num">
-                <p>（3）お客さまの商品に関する知識､経験、財産の状況および購入の目的等を総合的に勘案し、お客さまに適切な商品をご選択いただけるよう、お客さまのご意向と実情に沿った説明に努めてまいります。
-                </p>
-            </div>
-            <div class="p-privacyContents__numberList-num">
-                <p>（4）市場の動向に大きく影響される投資性商品については、リスクの内容について、適切な説明に努めてまいります｡
-                </p>
-            </div>
-            <div class="p-privacyContents__numberList-num">
-                <p>（5）商品の販売にあたっては､お客さまの立場に立って、時間帯、場所、方法等について十分配慮いたします｡
-                </p>
-            </div>
-            <div class="p-privacyContents__numberList-num">
-                <p>（6）お客さまに関する情報については、適正に取り扱うとともに厳正に管理いたします。
-                </p>
-            </div>
-            <div class="p-privacyContents__numberList-num">
-                <p>（7）お客さまのご意見、ご要望等を、商品ご提供の参考にさせていただくよう努めてまいります。
-                </p>
-            </div>
-            <div class="p-privacyContents__numberList-num">
-                <p>（8）万一保険事故が発生した場合には､保険金のご請求にあたり適切な助言を行うよう努めてまいります｡
-                </p>
-            </div>
-            <div class="p-privacyContents__numberList-num">
-                <p>（9）保険金を不正に取得されることを防止する観点から、適正に保険金額を定める等、適切な商品の販売に努めてまいります。
-                </p>
-            </div>
-        </div>
-        <div class="p-privacyContents__numberList">
-            <div class="p-privacyContents__numberList-title">
-                <h3>5.個人データの第三者への提供および第三者からの取得</h3>
+                <h3>4.個人データの第三者への提供および第三者からの取得</h3>
             </div>
             <div class="p-privacyContents__numberList-inner">
                 <p>
@@ -236,7 +189,7 @@ Template Name: privacy-policy
         </div>
         <div class="p-privacyContents__numberList">
             <div class="p-privacyContents__numberList-title">
-                <h3>6.センシティブ情報の取扱い</h3>
+                <h3>5.センシティブ情報の取扱い</h3>
             </div>
             <div class="p-privacyContents__numberList-inner">
                 <p>
@@ -284,7 +237,7 @@ Template Name: privacy-policy
         </div>
         <div class="p-privacyContents__numberList">
             <div class="p-privacyContents__numberList-title">
-                <h3>8. 個人情報保護法に基づく保有個人データの開示、<br class="sp">訂正、利用停止など</h3>
+                <h3>6. 個人情報保護法に基づく保有個人データの開示、<br class="sp">訂正、利用停止など</h3>
             </div>
             <div class="p-privacyContents__numberList-inner">
                 <p>
@@ -294,7 +247,7 @@ Template Name: privacy-policy
         </div>
         <div class="p-privacyContents__numberList">
             <div class="p-privacyContents__numberList-title">
-                <h3>9. 当代理店に対するご照会</h3>
+                <h3>7. 当代理店に対するご照会</h3>
             </div>
             <div class="p-privacyContents__numberList-inner">
                 <p>

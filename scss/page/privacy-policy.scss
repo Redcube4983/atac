@@ -11,19 +11,13 @@
         margin-top: 100px;
     }
     h1.l-internalTop__title {
-        width: 30vw;
+        width: 40vw;
         position: absolute;
         top: 50%;
         left: 0%;
         right: 0;
         transform: translateY(-50%);
-        max-width: 185px;
-        @include mq(md){
-            width: 25vw;
-        }
-        @include mq(lg){
-            width: 18vw;
-        }
+        max-width: 200px;
     }
     img {
         width: 100%;
@@ -49,7 +43,7 @@
         &-title{
             text-align: left;
             h2{
-                font-size: 1.6rem;
+                font-size: 1.4rem;
                 font-weight: bold;
                 @include mq(md){
                     font-size: 2rem;
@@ -63,8 +57,11 @@
                 margin: 16px 0 0;
             }
             p{
-                font-size: 1.6rem;
+                font-size: 1.3rem;
                 line-height: 1.6;
+                @include mq(md){
+                    font-size: 1.6rem;
+                }
             }
         }
     }
@@ -80,7 +77,7 @@
             text-align: left;
             line-height: 1.4;
             h3{
-                font-size: 1.6rem;
+                font-size: 1.4rem;
                 font-weight: bold;
                 @include mq(md){
                     font-size: 2rem;
@@ -90,19 +87,21 @@
         &-inner{
             text-align: left;
             margin: 8px 0 0;
-            span{
-                font-size: 1.4rem;
-                font-weight: bold;
-            }
             p{
-            font-size: 1.6rem;
+            font-size: 1.3rem;
             line-height: 1.6;
+            @include mq(md){
+                font-size: 1.6rem;
+            }
             }
             &-insurance{
-                margin: 16px 0;
+                margin: 16px 0 0;
                 text-align: left;
                 span{
-                    font-size: 1.6rem;
+                    font-size: 1.4rem;
+                    @include mq(md){
+                        font-size: 1.6rem;
+                    }
                 }
                 a{
                     text-decoration: none;
@@ -112,9 +111,13 @@
                 }
             }
             ul{
-                line-height: 1.6;
-                font-size: 1.6rem
+                font-size: 1.3rem;
+                line-height: 1.5;
+                @include mq(md){
+                    font-size: 1.6rem;
+                }
             }
+
         }
         &-num{
             display: flex;
@@ -123,23 +126,33 @@
             margin-top: 24px;
             text-align: left;
             &-title{
-                &:not(:first-child){
-                    margin-top: 24px;
+                margin: 24px 0 8px;
+                &:first-child{
+                    margin-top: 0;
                 }
                 h3{
-                    font-size: 1.6rem;
+                    font-size: 1.4rem;
+                    @include mq(md){
+                        font-size: 2rem;
+                    }
                 }
             }
             p{
-                font-size: 1.6rem;
+                font-size: 1.3rem;
                 line-height: 1.5;
                 margin: 0;
+                @include mq(md){
+                    font-size: 1.6rem;
+                }
             }
             ul{
                 list-style-type: disc;
                 padding: 8px 0 0 16px;
                 line-height: 1.6;
-                font-size: 1.6rem
+                font-size: 1.3rem;
+                @include mq(md){
+                    font-size: 1.6rem;
+                }
             }
         }
     }

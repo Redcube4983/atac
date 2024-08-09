@@ -7,22 +7,24 @@
 #l-internalTop {
     .l-internalTop__ornamentLeft {
         position: absolute;
-        width: 140px;
-        top: -24px;
-        @include mq(lg){
-            width: 180px;
-            top: -42px;
-            left: 192px;
-        }
+        top: -30%;
+        left: 0;
+        transform: translate(-30%);
     }
     .l-internalTop__ornamentRight {
         position: absolute;
-        width:  150px;
-        right: -24px;
+        right: 0;
         bottom: 0;
         @include mq(lg){
             width: 250px;
             right: 32px;
+        }
+        img{
+            box-sizing: border-box;
+            object-fit: cover;
+            object-position: top;
+            width: auto;
+            height: 60px;
         }
     }
     h1.l-internalTop__title {

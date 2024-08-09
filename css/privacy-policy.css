@@ -2324,23 +2324,13 @@ b {
   }
 }
 #l-internalTop h1.l-internalTop__title {
-  width: 30vw;
+  width: 40vw;
   position: absolute;
   top: 50%;
   left: 0%;
   right: 0;
   transform: translateY(-50%);
-  max-width: 185px;
-}
-@media screen and (min-width: 768px) {
-  #l-internalTop h1.l-internalTop__title {
-    width: 25vw;
-  }
-}
-@media screen and (min-width: 1024px) {
-  #l-internalTop h1.l-internalTop__title {
-    width: 18vw;
-  }
+  max-width: 200px;
 }
 #l-internalTop img {
   width: 100%;
@@ -2370,7 +2360,7 @@ b {
   text-align: left;
 }
 #p-privacyContents .p-privacyContents__privacyBox-title h2 {
-  font-size: 1.6rem;
+  font-size: 1.4rem;
   font-weight: bold;
 }
 @media screen and (min-width: 768px) {
@@ -2388,8 +2378,13 @@ b {
   }
 }
 #p-privacyContents .p-privacyContents__privacyBox-inner p {
-  font-size: 1.6rem;
+  font-size: 1.3rem;
   line-height: 1.6;
+}
+@media screen and (min-width: 768px) {
+  #p-privacyContents .p-privacyContents__privacyBox-inner p {
+    font-size: 1.6rem;
+  }
 }
 #p-privacyContents .p-privacyContents__numberList {
   margin-top: 32px;
@@ -2407,7 +2402,7 @@ b {
   line-height: 1.4;
 }
 #p-privacyContents .p-privacyContents__numberList-title h3 {
-  font-size: 1.6rem;
+  font-size: 1.4rem;
   font-weight: bold;
 }
 @media screen and (min-width: 768px) {
@@ -2419,20 +2414,26 @@ b {
   text-align: left;
   margin: 8px 0 0;
 }
-#p-privacyContents .p-privacyContents__numberList-inner span {
-  font-size: 1.4rem;
-  font-weight: bold;
-}
 #p-privacyContents .p-privacyContents__numberList-inner p {
-  font-size: 1.6rem;
+  font-size: 1.3rem;
   line-height: 1.6;
 }
+@media screen and (min-width: 768px) {
+  #p-privacyContents .p-privacyContents__numberList-inner p {
+    font-size: 1.6rem;
+  }
+}
 #p-privacyContents .p-privacyContents__numberList-inner-insurance {
-  margin: 16px 0;
+  margin: 16px 0 0;
   text-align: left;
 }
 #p-privacyContents .p-privacyContents__numberList-inner-insurance span {
-  font-size: 1.6rem;
+  font-size: 1.4rem;
+}
+@media screen and (min-width: 768px) {
+  #p-privacyContents .p-privacyContents__numberList-inner-insurance span {
+    font-size: 1.6rem;
+  }
 }
 #p-privacyContents .p-privacyContents__numberList-inner-insurance a {
   text-decoration: none;
@@ -2441,8 +2442,13 @@ b {
   text-decoration: underline;
 }
 #p-privacyContents .p-privacyContents__numberList-inner ul {
-  line-height: 1.6;
-  font-size: 1.6rem;
+  font-size: 1.3rem;
+  line-height: 1.5;
+}
+@media screen and (min-width: 768px) {
+  #p-privacyContents .p-privacyContents__numberList-inner ul {
+    font-size: 1.6rem;
+  }
 }
 #p-privacyContents .p-privacyContents__numberList-num {
   display: flex;
@@ -2451,20 +2457,38 @@ b {
   margin-top: 24px;
   text-align: left;
 }
-#p-privacyContents .p-privacyContents__numberList-num-title:not(:first-child) {
-  margin-top: 24px;
+#p-privacyContents .p-privacyContents__numberList-num-title {
+  margin: 24px 0 8px;
+}
+#p-privacyContents .p-privacyContents__numberList-num-title:first-child {
+  margin-top: 0;
 }
 #p-privacyContents .p-privacyContents__numberList-num-title h3 {
-  font-size: 1.6rem;
+  font-size: 1.4rem;
+}
+@media screen and (min-width: 768px) {
+  #p-privacyContents .p-privacyContents__numberList-num-title h3 {
+    font-size: 2rem;
+  }
 }
 #p-privacyContents .p-privacyContents__numberList-num p {
-  font-size: 1.6rem;
+  font-size: 1.3rem;
   line-height: 1.5;
   margin: 0;
+}
+@media screen and (min-width: 768px) {
+  #p-privacyContents .p-privacyContents__numberList-num p {
+    font-size: 1.6rem;
+  }
 }
 #p-privacyContents .p-privacyContents__numberList-num ul {
   list-style-type: disc;
   padding: 8px 0 0 16px;
   line-height: 1.6;
-  font-size: 1.6rem;
+  font-size: 1.3rem;
+}
+@media screen and (min-width: 768px) {
+  #p-privacyContents .p-privacyContents__numberList-num ul {
+    font-size: 1.6rem;
+  }
 }/*# sourceMappingURL=privacy-policy.css.map */
