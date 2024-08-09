@@ -414,6 +414,9 @@
     background-repeat: no-repeat;
     background-position: bottom;
     background-color: #FFF;
+    @include mq(lg){
+        padding-bottom: 640px;
+    }
     &-title{
         width: 30vw;
         max-width: 185px;

@@ -2313,111 +2313,18 @@ b {
   }
 }
 
-#l-internalTop .l-internalTop__ornamentLeft {
-  position: absolute;
-  bottom: 0;
-  left: 8px;
-}
-@media screen and (min-width: 768px) {
-  #l-internalTop .l-internalTop__ornamentLeft {
-    left: 48px;
-  }
+#l-internalTop {
+  margin-top: 60px;
+  height: 120px;
+  position: relative;
 }
 @media screen and (min-width: 1024px) {
-  #l-internalTop .l-internalTop__ornamentLeft {
-    left: 0;
-  }
-}
-#l-internalTop .l-internalTop__ornamentLeft img {
-  width: 180px;
-  height: 118px;
-  box-sizing: border-box;
-  object-fit: cover;
-  object-position: top;
-}
-@media screen and (min-width: 768px) {
-  #l-internalTop .l-internalTop__ornamentLeft img {
-    width: 240px;
-    height: 160px;
-  }
-}
-@media screen and (min-width: 1024px) {
-  #l-internalTop .l-internalTop__ornamentLeft img {
-    height: 200px;
-    width: 320px;
-  }
-}
-#l-internalTop .l-internalTop__ornamentRight {
-  position: absolute;
-  right: 8px;
-  bottom: 0;
-  z-index: 9;
-}
-@media screen and (min-width: 768px) {
-  #l-internalTop .l-internalTop__ornamentRight {
-    right: 48px;
-  }
-}
-@media screen and (min-width: 1024px) {
-  #l-internalTop .l-internalTop__ornamentRight {
-    right: 0;
-  }
-}
-#l-internalTop .l-internalTop__ornamentRight img {
-  box-sizing: border-box;
-  object-fit: cover;
-  object-position: top;
-  width: 100px;
-  height: 80px;
-}
-@media screen and (min-width: 768px) {
-  #l-internalTop .l-internalTop__ornamentRight img {
-    width: 132px;
-    height: 100px;
-  }
-}
-@media screen and (min-width: 1024px) {
-  #l-internalTop .l-internalTop__ornamentRight img {
-    width: 180px;
-    height: 180px;
-  }
-}
-#l-internalTop .l-internalTop__ornamentRight2 {
-  position: absolute;
-  right: 8px;
-  bottom: 0;
-}
-@media screen and (min-width: 768px) {
-  #l-internalTop .l-internalTop__ornamentRight2 {
-    right: 48px;
-  }
-}
-@media screen and (min-width: 1024px) {
-  #l-internalTop .l-internalTop__ornamentRight2 {
-    right: 0;
-  }
-}
-#l-internalTop .l-internalTop__ornamentRight2 img {
-  box-sizing: border-box;
-  object-fit: cover;
-  object-position: top;
-  width: 100px;
-  height: 100px;
-}
-@media screen and (min-width: 768px) {
-  #l-internalTop .l-internalTop__ornamentRight2 img {
-    width: 140px;
-    height: 140px;
-  }
-}
-@media screen and (min-width: 1024px) {
-  #l-internalTop .l-internalTop__ornamentRight2 img {
-    width: 190px;
-    height: 200px;
+  #l-internalTop {
+    margin-top: 100px;
   }
 }
 #l-internalTop h1.l-internalTop__title {
-  width: 30vw;
+  width: 20vw;
   position: absolute;
   top: 50%;
   left: 0%;
@@ -2427,113 +2334,80 @@ b {
 }
 @media screen and (min-width: 768px) {
   #l-internalTop h1.l-internalTop__title {
-    width: 25vw;
+    width: 16vw;
   }
 }
 @media screen and (min-width: 1024px) {
   #l-internalTop h1.l-internalTop__title {
-    width: 18vw;
+    width: 10vw;
   }
 }
 #l-internalTop img {
   width: 100%;
 }
 
-#p-faqContents {
-  background: #FFF7D3;
+#p-solicitationContents {
+  background-color: #EFEFEF;
 }
-#p-faqContents .p-faqContents__faqArea {
-  background-image: url(../images/faq/background_bottom.png);
+#p-solicitationContents .p-solicitationContents__solicitationArea {
+  background-image: url(../images/privacy-policy/background_bottom.png);
   background-size: contain;
   background-repeat: no-repeat;
   background-position: bottom;
   padding-bottom: 400px;
 }
 @media screen and (min-width: 1024px) {
-  #p-faqContents .p-faqContents__faqArea {
+  #p-solicitationContents .p-solicitationContents__solicitationArea {
     padding-bottom: 640px;
   }
 }
-#p-faqContents .p-faqContents__faqBox {
-  display: block;
-  border-radius: 62px;
-  border: 1px solid #FFC042;
-  background: #FFF;
-  padding: 16px;
+#p-solicitationContents .p-solicitationContents__solicitationBox-title h2 {
+  font-size: 1.6rem;
+  font-weight: bold;
 }
 @media screen and (min-width: 768px) {
-  #p-faqContents .p-faqContents__faqBox {
-    padding: 72px;
-    max-width: 1050px;
+  #p-solicitationContents .p-solicitationContents__solicitationBox-title h2 {
+    font-size: 2rem;
   }
 }
-#p-faqContents .p-faqContents__faqBox-title p {
+#p-solicitationContents .p-solicitationContents__solicitationBox-lead {
+  margin-top: 16px;
+  text-align: left;
+}
+@media screen and (min-width: 768px) {
+  #p-solicitationContents .p-solicitationContents__solicitationBox-lead {
+    margin-top: 32px;
+  }
+}
+@media screen and (min-width: 1024px) {
+  #p-solicitationContents .p-solicitationContents__solicitationBox-lead {
+    margin-top: 72px;
+  }
+}
+#p-solicitationContents .p-solicitationContents__solicitationBox-lead b {
   font-size: 1.4rem;
   line-height: 1.5;
 }
 @media screen and (min-width: 768px) {
-  #p-faqContents .p-faqContents__faqBox-title p {
+  #p-solicitationContents .p-solicitationContents__solicitationBox-lead b {
     font-size: 1.8rem;
   }
 }
-@media screen and (min-width: 1024px) {
-  #p-faqContents .p-faqContents__faqBox-title p {
-    font-size: 2.6rem;
-  }
-}
-#p-faqContents .p-faqContents__faqBox-btn {
-  display: block;
-  border-radius: 63px;
-  background: #FFC042;
-  margin: 24px auto 0;
-  padding: 24px;
-  position: relative;
-  width: 300px;
+#p-solicitationContents .p-solicitationContents__solicitationBox-number {
+  margin-top: 16px;
+  text-align: left;
 }
 @media screen and (min-width: 768px) {
-  #p-faqContents .p-faqContents__faqBox-btn {
-    margin: 56px auto 0;
-    padding: 30px;
+  #p-solicitationContents .p-solicitationContents__solicitationBox-number {
+    margin-top: 48px;
   }
 }
-#p-faqContents .p-faqContents__faqBox-btn a {
-  text-decoration: none;
-  position: absolute;
-  top: 32%;
-  left: 32%;
-  transform: translate(-32%);
+#p-solicitationContents .p-solicitationContents__solicitationBox-number p {
+  font-size: 1.3rem;
+  line-height: 1.5;
 }
 @media screen and (min-width: 768px) {
-  #p-faqContents .p-faqContents__faqBox-btn a {
-    top: 40%;
-    left: 40%;
-    transform: translate(-40%);
-  }
-}
-#p-faqContents .p-faqContents__faqBox-btn a :after {
-  content: "";
-  width: 10px;
-  height: 10px;
-  border-top: 1px solid #FFF;
-  border-right: 1px solid #FFF;
-  transform: rotate(45deg);
-  transform-origin: top right;
-  display: inline-block;
-  border-radius: 1px;
-  transition: 0.3s ease-in-out;
-  position: absolute;
-  top: 50%;
-  right: -48px;
-}
-#p-faqContents .p-faqContents__faqBox-btn a :hover:after {
-  right: -58px;
-}
-#p-faqContents .p-faqContents__faqBox-btn b {
-  color: #FFF;
-  font-size: 1.4rem;
-}
-@media screen and (min-width: 768px) {
-  #p-faqContents .p-faqContents__faqBox-btn b {
+  #p-solicitationContents .p-solicitationContents__solicitationBox-number p {
     font-size: 1.6rem;
   }
-}/*# sourceMappingURL=faq.css.map */
+}/*# sourceMappingURL=solicitation-policy.css.map */

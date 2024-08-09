@@ -1,0 +1,87 @@
+@use "../global" as *;
+@use "../object" as *;
+@use "../layout" as *;
+@use "../../common/css/layout" as *;
+
+#l-internalTop {
+    margin-top: 60px;
+    height: 120px;
+    position: relative;
+    @include mq(lg){
+        margin-top: 100px;
+    }
+    h1.l-internalTop__title {
+        width: 20vw;
+        position: absolute;
+        top: 50%;
+        left: 0%;
+        right: 0;
+        transform: translateY(-50%);
+        max-width: 185px;
+        @include mq(md){
+            width: 16vw;
+        }
+        @include mq(lg){
+            width: 10vw;
+        }
+    }
+    img {
+        width: 100%;
+    }
+}
+
+#p-solicitationContents{
+    background-color: #EFEFEF;
+    .p-solicitationContents__solicitationArea{
+        background-image: url(../images/privacy-policy/background_bottom.png);
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position: bottom;
+        padding-bottom: 400px;
+        @include mq(lg){
+            padding-bottom: 640px;
+        }
+    }
+    .p-solicitationContents__solicitationBox{
+        &-title{
+            h2{
+                font-size: 1.6rem;
+                font-weight: bold;
+                @include mq(md){
+                    font-size: 2rem;
+                }
+            }
+        }
+        &-lead{
+            margin-top: 16px;
+            text-align: left;
+            @include mq(md){
+                margin-top: 32px;
+            }
+            @include mq(lg){
+                margin-top: 72px;
+            }
+            b{
+                font-size: 1.4rem;
+                line-height: 1.5;
+                @include mq(md){
+                    font-size: 1.8rem;
+                }
+            }
+        }
+        &-number{
+            margin-top: 16px;
+            text-align: left;
+            @include mq(md){
+                margin-top: 48px;
+            }
+            p{
+                font-size: 1.3rem;
+                line-height: 1.5;
+                @include mq(md){
+                    font-size: 1.6rem;
+                }
+            }
+        }
+    }
+}

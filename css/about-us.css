@@ -1054,7 +1054,7 @@ b {
 }
 @media screen and (min-width: 1024px) {
   .l-footer .l-contactBox {
-    top: -420px;
+    top: -560px;
   }
 }
 .l-footer .l-footerContents__title {
@@ -2780,6 +2780,11 @@ b {
   background-repeat: no-repeat;
   background-position: bottom;
   background-color: #FFF;
+}
+@media screen and (min-width: 1024px) {
+  .p-aboutUsContents__staffArea {
+    padding-bottom: 640px;
+  }
 }
 .p-aboutUsContents__staffArea-title {
   width: 30vw;

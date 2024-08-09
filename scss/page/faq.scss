@@ -111,6 +111,9 @@
         background-repeat: no-repeat;
         background-position: bottom;
         padding-bottom: 400px;
+        @include mq(lg){
+            padding-bottom: 640px;
+        }
     }
     .p-faqContents__faqBox{
         display: block;
