@@ -251,8 +251,8 @@ Template Name: about-us
 					</div>
 					<div class="p-aboutUsContents__staffArea-boxLeft-image">
 						<picture>
-						<source srcset="<?php echo get_template_directory_uri(); ?>/images/common/illust.webp" type="image/webp">
-						<img src="<?php echo get_template_directory_uri(); ?>/images/common/illust.png" alt="">
+						<source srcset="<?php echo get_template_directory_uri(); ?>/images/about-us/mori.webp" type="image/webp">
+						<img src="<?php echo get_template_directory_uri(); ?>/images/about-us/mori.png" alt="">
 						</picture>
 					</div>
 					<div class="p-aboutUsContents__staffArea-boxLeft-name">
@@ -302,8 +302,8 @@ Template Name: about-us
 					</div>
 					<div class="p-aboutUsContents__staffArea-boxLeft-image">
 						<picture>
-						<source srcset="<?php echo get_template_directory_uri(); ?>/images/common/illust.webp" type="image/webp">
-						<img src="<?php echo get_template_directory_uri(); ?>/images/common/illust.png" alt="">
+						<source srcset="<?php echo get_template_directory_uri(); ?>/images/about-us/aoki.webp" type="image/webp">
+						<img src="<?php echo get_template_directory_uri(); ?>/images/about-us/aoki.png" alt="">
 						</picture>
 					</div>
 					<div class="p-aboutUsContents__staffArea-boxLeft-name">

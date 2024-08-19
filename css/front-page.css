@@ -2182,7 +2182,7 @@ b {
     background-image: url(../images/front-page/main_background.png);
     background-size: contain;
     background-repeat: no-repeat;
-    padding-bottom: 480px;
+    padding-bottom: 640px;
   }
 }
 @media screen and (min-width: 1280px) {

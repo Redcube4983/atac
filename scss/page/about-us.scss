@@ -7,17 +7,40 @@
 #l-internalTop {
     .l-internalTop__ornamentLeft {
         position: absolute;
-        top: -30%;
+        top: -24%;
         left: 0;
-        transform: translate(-30%);
+        transform: translate(0%);
+        @include mq(md){
+            top: -40%;
+            left: 5%;
+            transform: translate(-5%);
+        }
+        @include mq(lg){
+            top: -10%;
+            left: 10%;
+            transform: translate(-10%);
+        }
+        img{
+            width: auto;
+            height: 80px;
+            box-sizing: border-box;
+            object-fit: cover;
+            object-position: bottom;
+            @include mq(md){
+                height: 120px;
+            }
+            @include mq(lg){
+                height: 140px;
+            }
+        }
     }
     .l-internalTop__ornamentRight {
         position: absolute;
         right: 0;
         bottom: 0;
-        @include mq(lg){
-            width: 250px;
-            right: 32px;
+        @include mq(md){
+            right: 5%;
+            transform: translate(-5%);
         }
         img{
             box-sizing: border-box;
@@ -25,6 +48,12 @@
             object-position: top;
             width: auto;
             height: 60px;
+            @include mq(md){
+                height: 80px;
+            }
+            @include mq(lg){
+                height: 120px;
+            }
         }
     }
     h1.l-internalTop__title {

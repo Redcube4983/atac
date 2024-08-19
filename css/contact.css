@@ -2311,4 +2311,33 @@ b {
   .l-header__toggle {
     display: none;
   }
+}
+
+#l-internalTop .l-internalTop__ornamentRight img {
+  box-sizing: border-box;
+  object-fit: cover;
+  object-position: top;
+  width: 120px;
+  height: 110px;
+}
+@media screen and (min-width: 768px) {
+  #l-internalTop .l-internalTop__ornamentRight img {
+    width: 156px;
+    height: 140px;
+  }
+}
+@media screen and (min-width: 1024px) {
+  #l-internalTop .l-internalTop__ornamentRight img {
+    width: 230px;
+    height: 200px;
+  }
+}
+
+#c-contactContents {
+  background-color: #FFF4E6;
+}
+#c-contactContents .p-contactPage__lead {
+  font-size: 1.4rem;
+  font-weight: bold;
+  text-align: center;
 }/*# sourceMappingURL=contact.css.map */
