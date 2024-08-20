@@ -11,12 +11,18 @@ Template Name: archive-blog
     <span>保険のアレコレ配信</span>
 </div>
 </section>
+    <div id="breadcrumb">
+        <ul class="breadcrumb_inner">
+        <li class="breadcrumb"><a class="breadcrumb_link" href="/">TOP</a></li>
+        <li class="breadcrumb">ブログ一覧</li>
+        </ul>
+    </div>
 <section id="p-blogContents">
 <h2 class="p-blogContents-title">
     <div class="p-blogContents-titleImg">
         <picture>
-        <source srcset="<?php echo get_template_directory_uri(); ?>/images/about-us/staff_title.webp" type="image/webp">
-        <img src="<?php echo get_template_directory_uri(); ?>/images/about-us/staff_title.png" alt="スタッフ紹介">
+        <source srcset="<?php echo get_template_directory_uri(); ?>/images/blog/blog_title.webp" type="image/webp">
+        <img src="<?php echo get_template_directory_uri(); ?>/images/about-us/blog_title.png" alt="ブログ一覧">
         </picture>
     </div>
     <div class="p-blogContents-titleUnderline">
@@ -26,19 +32,27 @@ Template Name: archive-blog
         </picture>
     </div>
 </h2>
-<ul>
-<?php if (have_posts()): ?>
-    <?php while (have_posts()) : the_post(); ?>
-    <?php
-        $cat = get_the_category();
-        $catid = $cat[0]->cat_ID; // ID
-        $catname = $cat[0]->name; // カテゴリ名
-        $catslug = $cat[0]->category_nicename; // カテゴリスラッグ名
-        $link = get_category_link($catid); // カテゴリURL
-    ?>
+<ul class="news-box">
+<?php
+$paged = ( get_query_var( 'paged' ) ) ? get_query_var( 'paged' ) : 1;
+$args = array(
+            'post_type' => 'post',
+            'post_status' => 'publish',// 公開済の投稿を指定
+            'paged' => $paged, 
+            'posts_per_page' => 10 // 投稿件数の指定
+            );
+        $the_query = new WP_Query($args);
+        if($the_query->have_posts()):?>
+        <?php while ($the_query->have_posts()): $the_query->the_post(); ?>
+
     <li class="news-inner">
+        <?php
+          // カテゴリーのデータを取得
+          $cat = get_the_category();
+          $cat = $cat[0];
+        ?>
         <time class="news-time"><?php echo get_the_date('Y/m/d'); ?></time>
-        <a class="category" href="<?php echo $link; ?>"><?php echo $catname; ?></a>
+        <span class="category <?php echo $cat->slug; ?>"><?php echo $cat->cat_name;?></span>
         <p class="news-text">
             <a class="news-link" href="<?php the_permalink(); ?>"><?php echo get_the_title(); ?></a>
         </p>
