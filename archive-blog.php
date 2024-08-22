@@ -51,11 +51,19 @@ $args = array(
           $cat = get_the_category();
           $cat = $cat[0];
         ?>
-        <time class="news-time"><?php echo get_the_date('Y/m/d'); ?></time>
-        <span class="category <?php echo $cat->slug; ?>"><?php echo $cat->cat_name;?></span>
+        <h2 class="news-title">
+            <?php echo get_the_title(); ?>
+        </h2>
+        <div class="date-box">
+            <time class="news-date"><?php echo get_the_date('Y/m/d'); ?></time>
+            <span class="category <?php echo $cat->slug; ?>"><?php echo $cat->cat_name;?></span>
+        </div>
         <p class="news-text">
-            <a class="news-link" href="<?php the_permalink(); ?>"><?php echo get_the_title(); ?></a>
+            <a class="news-link" href="<?php the_permalink(); ?>"><?php echo get_the_content(); ?></a>
         </p>
+        <div class="p-blogContents__blog-button">
+            <a href="<?php the_permalink(); ?>>" class="blog-archive-link"><span>続きを見る</span></a>
+		</div>
     </li>
     <?php endwhile; ?>
     <?php wp_reset_postdata(); ?>

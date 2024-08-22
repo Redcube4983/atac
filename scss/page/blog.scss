@@ -116,5 +116,74 @@
   }
   .news-box{
     margin-top: 48px;
+    .news-inner{
+      &:not(:last-child){
+        margin-bottom: 32px;
+        border-bottom: solid 1px #D0D0D0;
+        padding-bottom: 40px;
+      }
+      h2.news-title{
+        font-size: 1.4rem;
+        font-weight: bold;
+        @include mq(md){
+          font-size: 2.3rem;
+        }
+      }
+      .date-box {
+        display: flex;
+        flex-flow: nowrap;
+        align-items: center;
+        margin: 16px 0 8px;
+        .news-date{
+          font-size: 1.3rem;
+          margin-right: 16px;
+          @include mq(md){
+            font-size: 1.6rem;
+          }
+        }
+        .category{
+          display: flex;
+          justify-content: center;
+          border-radius: 20px;
+          align-items: center;
+          width: 80px;
+          height: 24px;
+        }
+        .cat_daily {
+          background: #FF7C9F;
+          color: #FFF;
+          font-size: 1.3rem;
+        }
+        .cat_products{
+          background: #37AB9D;
+          color: #FFF;
+          font-size: 1.3rem;
+        }
+        .cat_notice{
+          background: #FF8900;
+          color: #FFF;
+          font-size: 1.3rem;
+        }
+      }
+    }
+  }
+  .p-blogContents__blog{
+    &-button{
+      display: flex;
+      justify-content: center;
+      border-radius: 60px;
+      align-items: center;
+      width: 230px;
+      height: 60px;
+      background: #FF8900;
+      margin-top: 32px;
+      .blog-archive-link{
+        text-decoration: none;
+      }
+      span {
+        font-size: 1.8rem;
+        color: #FFF;
+      }
+    }
   }
 }
