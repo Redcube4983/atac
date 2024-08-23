@@ -85,6 +85,7 @@
 #p-blogContents {
   margin-top: 32px;
   padding: 0 24px 420px;
+  max-width: 1050px;
   @include mq(lg){
     padding-bottom: 800px;
   }
@@ -186,4 +187,34 @@
       }
     }
   }
+  .pagination {
+    margin: 40px 0 0;
+}
+.nav-links {
+    display: flex;
+}
+.pagination .page-numbers {
+    display: inline-block;
+    margin-right: 10px;
+    padding: 1px 15px;
+    color: #0f1419;
+    border-radius: 3px;
+    background: #fff;
+    border: 1px solid #0353a9;
+}
+.pagination .current {
+    background: #0353a9;
+    color: #fff;
+}
+.pagination .prev,
+.pagination .next {
+    background: transparent;
+    box-shadow: none;
+    color: #0353a9;
+}
+.pagination .dots {
+    background: transparent;
+    box-shadow: none;
+    border: none;
+}
 }

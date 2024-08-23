@@ -46,24 +46,38 @@ $args = array(
         <?php while ($the_query->have_posts()): $the_query->the_post(); ?>
 
     <li class="news-inner">
-        <?php
-          // カテゴリーのデータを取得
-          $cat = get_the_category();
-          $cat = $cat[0];
-        ?>
         <h2 class="news-title">
             <?php echo get_the_title(); ?>
         </h2>
         <div class="date-box">
+        <?php
+        // カテゴリーのデータを取得
+        $cat = get_the_category();
+        $cat = $cat[0];
+        ?>
             <time class="news-date"><?php echo get_the_date('Y/m/d'); ?></time>
             <span class="category <?php echo $cat->slug; ?>"><?php echo $cat->cat_name;?></span>
         </div>
         <p class="news-text">
-            <a class="news-link" href="<?php the_permalink(); ?>"><?php echo get_the_content(); ?></a>
+            <?php
+            $remove_array = ["\r\n", "\r", "\n", " ", "　"];
+            $content = wp_trim_words(strip_shortcodes(get_the_content()), 4, '…' );
+            $content = str_replace($remove_array, '', $content);
+            echo $content;
+            ?>
         </p>
-        <div class="p-blogContents__blog-button">
-            <a href="<?php the_permalink(); ?>>" class="blog-archive-link"><span>続きを見る</span></a>
-		</div>
+        <div class="p-blogContents__blog-linkBox">
+            <div class="p-blogContents__blog-img">
+                <?php if (has_post_thumbnail()) : ?>
+                <?php the_post_thumbnail('thumbnail'); ?>
+                <?php else : ?>
+                <img src=”<?php echo catch_that_image(); ?>” />
+                <?php endif ; ?>
+            </div>
+            <div class="p-blogContents__blog-button">
+                <a href="<?php the_permalink(); ?>" class="blog-archive-link"><span>続きを見る</span></a>
+            </div>
+        </div>
     </li>
     <?php endwhile; ?>
     <?php wp_reset_postdata(); ?>
@@ -71,7 +85,16 @@ $args = array(
     <!-- 投稿が無い場合の処理 -->
     <?php endif; ?>
 </ul>
-
+    <?php
+    $args = array(
+        'mid_size' => 1,
+        'prev_text' => '前へ',
+        'next_text' => '次へ',
+        'screen_reader_text' => ' ',
+    );
+    the_posts_pagination($args);
+    ?>
+    <?php wp_reset_postdata(); ?>
 </section>
 </main>
 <?php get_footer(); ?>
