@@ -1,18 +1,5 @@
 <?php
 // 
-function catch_that_image(){
-  global $post, $posts;
-  $first_img = ”;
-  ob_start();
-  ob_end_clean();
-  $output = preg_match_all('/<img.+src=[\'”]([^\'”]+)[\'”].*>/i', $post->post_content, $matches);
-  $first_img = $matches [1] [0];
-  if(empty($first_img)){
-  // 記事内で画像がなかったときのためのデフォルト画像を指定
-  $first_img = '<img class="attachment_post_thumbnail" src="' . get_stylesheet_directory_uri() . '/common/images/icon_ATAC.png” alt="No image" />';
-  }
-  return $first_img;
-  }
 
 /* mwwpform エラーメッセージ変更 */
 function my_error_message($error, $key, $rule){
@@ -86,3 +73,22 @@ return $error;
 }
 add_filter( 'mwform_error_message_mw-wp-form-38', 'my_error_message', 10, 3 );
 
+function setup_theme() {
+  add_theme_support('post-thumbnails');
+}
+add_action('after_setup_theme', 'setup_theme');
+
+function catch_that_image(){
+  global $post, $posts;
+  $first_img = ”;
+  ob_start();
+  ob_end_clean();
+  $output = preg_match_all('/<img.+src=[\'”]([^\'”]+)[\'”].*>/i', $post->post_content, $matches);
+  $first_img = $matches [1] [0];
+  if(empty($first_img)){
+  // 記事内で画像がなかったときのためのデフォルト画像を指定
+  $first_img = esc_url(get_template_directory_uri()) . '/common/images/icon_ATAC.png” alt="No image" />';
+  }
+  return $first_img;
+  }
+?>

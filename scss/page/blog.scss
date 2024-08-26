@@ -115,17 +115,18 @@
         }
       }
   }
-  .news-box{
+  .blog-list{
     margin-top: 48px;
-    .news-inner{
+    .blog-inner{
       &:not(:last-child){
         margin-bottom: 32px;
         border-bottom: solid 1px #D0D0D0;
         padding-bottom: 40px;
       }
-      h2.news-title{
+      h2.blog-title{
         font-size: 1.4rem;
         font-weight: bold;
+        text-align: left;
         @include mq(md){
           font-size: 2.3rem;
         }
@@ -135,7 +136,7 @@
         flex-flow: nowrap;
         align-items: center;
         margin: 16px 0 8px;
-        .news-date{
+        .blog-date{
           font-size: 1.3rem;
           margin-right: 16px;
           @include mq(md){
@@ -165,6 +166,9 @@
           color: #FFF;
           font-size: 1.3rem;
         }
+      }
+      .blog-text {
+        text-align: left;
       }
     }
   }
