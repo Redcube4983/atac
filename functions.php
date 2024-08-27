@@ -87,7 +87,7 @@ function catch_that_image(){
   $first_img = $matches [1] [0];
   if(empty($first_img)){
   // 記事内で画像がなかったときのためのデフォルト画像を指定
-  $first_img = esc_url(get_template_directory_uri()) . '/common/images/icon_ATAC.png” alt="No image" />';
+  $first_img = "/common/images/icon_ATAC.png";
   }
   return $first_img;
   }

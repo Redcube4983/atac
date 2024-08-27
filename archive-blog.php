@@ -72,7 +72,7 @@ Template Name: archive-blog
                     <?php if (has_post_thumbnail()) : ?>
                     <?php the_post_thumbnail('thumbnail'); ?>
                     <?php else : ?>
-                    <img src=”<?php echo catch_that_image(); ?>” alt=”<?php the_title(); ?>”/>
+                    <img src="<?php echo catch_that_image(); ?>" alt="<?php the_title(); ?>" />
                     <?php endif ; ?>
                 </div>
                 <div class="p-blogContents__blog-button">
