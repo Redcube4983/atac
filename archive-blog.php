@@ -35,17 +35,16 @@ Template Name: archive-blog
     </h2>
     <ul class="blog-list">
     <?php
-    $paged = ( get_query_var( 'paged' ) ) ? get_query_var( 'paged' ) : 1;
     $args = array(
                 'post_type' => 'blog',
                 'post_status' => 'publish',// 公開済の投稿を指定
                 'paged' => $paged, 
                 'posts_per_page' => 10 // 投稿件数の指定
                 );
+            $paged = ( get_query_var( 'paged' ) ) ? get_query_var( 'paged' ) : 1;
             $the_query = new WP_Query($args);
             if($the_query->have_posts()):?>
             <?php while ($the_query->have_posts()): $the_query->the_post(); ?>
-
         <li class="blog-inner">
             <h2 class="blog-title">
                 <?php echo get_the_title(); ?>
@@ -55,6 +54,7 @@ Template Name: archive-blog
             // カテゴリーのデータを取得
             $cat = get_the_category();
             $cat = $cat[0];
+            $link = get_category_link($catid); // カテゴリURL
             ?>
                 <time class="blog-date"><?php echo get_the_date('Y/m/d'); ?></time>
                 <span class="category <?php echo $cat->slug; ?>"><?php echo $cat->cat_name;?></span>
@@ -69,11 +69,13 @@ Template Name: archive-blog
             </p>
             <div class="p-blogContents__blog-linkBox">
                 <div class="p-blogContents__blog-img">
-                    <?php if (has_post_thumbnail()) : ?>
-                    <?php the_post_thumbnail('thumbnail'); ?>
-                    <?php else : ?>
-                    <img src="<?php echo catch_that_image(); ?>" alt="<?php the_title(); ?>" />
-                    <?php endif ; ?>
+                    <?php if (has_post_thumbnail()){
+                    the_post_thumbnail('thumbnail');
+                    }
+                    else{
+                    echo '<img src="' . get_template_directory_uri() . '/common/images/icon_ATAC.png" alt="">';
+                    }
+                    ?>
                 </div>
                 <div class="p-blogContents__blog-button">
                     <a href="<?php the_permalink(); ?>" class="blog-archive-link"><span>続きを見る</span></a>

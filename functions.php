@@ -73,6 +73,7 @@ return $error;
 }
 add_filter( 'mwform_error_message_mw-wp-form-38', 'my_error_message', 10, 3 );
 
+// アイキャッチ画像を有効化
 function setup_theme() {
   add_theme_support('post-thumbnails');
 }
@@ -87,7 +88,7 @@ function catch_that_image(){
   $first_img = $matches [1] [0];
   if(empty($first_img)){
   // 記事内で画像がなかったときのためのデフォルト画像を指定
-  $first_img = "/common/images/icon_ATAC.png";
+  $first_img = esc_url(get_template_directory_uri()) . "/common/images/icon_ATAC.png";
   }
   return $first_img;
   }
