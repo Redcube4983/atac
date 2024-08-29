@@ -69,13 +69,11 @@ Template Name: archive-blog
             </p>
             <div class="p-blogContents__blog-linkBox">
                 <div class="p-blogContents__blog-img">
-                    <?php if (has_post_thumbnail()){
-                    the_post_thumbnail('thumbnail');
-                    }
-                    else{
-                    echo '<img src="' . get_template_directory_uri() . '/common/images/icon_ATAC.png" alt="">';
-                    }
-                    ?>
+                    <?php if (has_post_thumbnail()) : ?>
+                    <?php the_post_thumbnail('thumbnail'); ?>
+                    <?php else : ?>
+                    <img src= <?php echo catch_that_image(); ?> alt="" />
+                    <?php endif ; ?>
                 </div>
                 <div class="p-blogContents__blog-button">
                     <a href="<?php the_permalink(); ?>" class="blog-archive-link"><span>続きを見る</span></a>

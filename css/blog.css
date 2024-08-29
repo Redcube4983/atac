@@ -2497,15 +2497,16 @@ b {
   align-items: center;
   width: 230px;
   height: 60px;
-  background: #FF8900;
+  background: #FFF;
   margin-top: 32px;
+  border: 1px solid #FF8900;
 }
 #p-blogContents .p-blogContents__blog-button .blog-archive-link {
   text-decoration: none;
 }
 #p-blogContents .p-blogContents__blog-button span {
   font-size: 1.8rem;
-  color: #FFF;
+  color: #FF8900;
 }
 #p-blogContents .pagination {
   margin: 40px 0 0;
