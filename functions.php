@@ -81,12 +81,14 @@ add_action('after_setup_theme', 'setup_theme');
 function catch_that_image() {
   global $post, $posts;
   $first_img = '';
+  // 本来表示されるべき内容を表示せず、バッファという領域に一時的に保存。任意のタイミングで取り出す。
   ob_start();
+  // ob_start()を終了させたい場面で使用。バッファの保存をすべてクリアし、バッファのオフにします。
   ob_end_clean();
   if (preg_match_all('/<img.+src=[\'"]([^\'"]+)[\'"].*>/i', $post->post_content, $matches)){
     $first_img = $matches [1] [0];
 }else{
-  $first_img = get_theme_file_uri('/common/images/icon_ATAC.png');
+  $first_img = get_theme_file_uri('/images/blog/ATAC.png');
 }
 return $first_img;
 }
@@ -97,10 +99,12 @@ return $first_img;
 //   ob_start();
 //   ob_end_clean();
 //   $output = preg_match_all('/<img.+src=[\'”]([^\'”]+)[\'”].*>/i', $post->post_content, $matches);
-//   $first_img = $matches [1] [0];
+//   if(isset($matches [1] [0])){
+//     $first_img = $matches [1] [0];
+//   }
 //   if(empty($first_img)){
 //   // 記事内で画像がなかったときのためのデフォルト画像を指定
-//   $first_img = esc_url(get_template_directory_uri()) . "/common/images/icon_ATAC.png";
+//   $first_img = get_theme_file_uri('/common/images/icon_ATAC.png');
 //   }
 //   return $first_img;
 //   }
