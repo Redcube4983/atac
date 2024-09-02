@@ -2440,7 +2440,7 @@ b {
 #p-blogContents .blog-list .blog-inner:not(:last-child) {
   margin-bottom: 32px;
   border-bottom: solid 1px #D0D0D0;
-  padding-bottom: 40px;
+  padding-bottom: 64px;
 }
 #p-blogContents .blog-list .blog-inner .p-blogContents__blog-img {
   width: 100%;

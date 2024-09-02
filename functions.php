@@ -93,6 +93,19 @@ function catch_that_image() {
 return $first_img;
 }
 
+function catch_post_movie() {
+	global $post;
+	$first_movie = '';
+	preg_match_all('/<iframe.+src=[\'"]([^\'"]+)[\'"].*>/i', $post->post_content, $matches);
+	if (isset($matches[1])) {
+		$first_movie = $matches[1][0];
+	}
+	if(empty($first_movie)){
+		$first_movie = '';
+	}
+	return $first_movie;
+}
+
 // function catch_that_image(){
 //   global $post, $posts;
 //   $first_img = ”;

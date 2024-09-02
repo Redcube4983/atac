@@ -46,6 +46,12 @@ Template Name: archive-blog
             if($the_query->have_posts()):?>
             <?php while ($the_query->have_posts()): $the_query->the_post(); ?>
         <li class="blog-inner">
+                <?php
+                    // カテゴリーのデータを取得
+                    $cat = get_the_category();
+                    $cat = $cat[0];
+                    $link = get_category_link($catid); // カテゴリURL
+                ?>
                 <div class="p-blogContents__blog-img">
                     <?php if (has_post_thumbnail()) : ?>
                     <?php the_post_thumbnail(thumbnail); ?>
@@ -58,13 +64,7 @@ Template Name: archive-blog
                     <?php echo get_the_title(); ?>
                 </h2>
                 <div class="date-box">
-                <?php
-                // カテゴリーのデータを取得
-                $cat = get_the_category();
-                $cat = $cat[0];
-                $link = get_category_link($catid); // カテゴリURL
-                ?>
-                    <time class="blog-date"><?php echo get_the_date('Y/m/d'); ?></time>
+                    <time class="blog-date"><?php the_time('Y/m/d'); ?></time>
                     <span class="category <?php echo $cat->slug; ?>"><?php echo $cat->cat_name;?></span>
                 </div>
                 <p class="blog-text">
@@ -81,10 +81,10 @@ Template Name: archive-blog
             </div>
         </li>
         <?php endwhile; ?>
-        <?php wp_reset_postdata(); ?>
         <?php else: ?>
         <!-- 投稿が無い場合の処理 -->
         <?php endif; ?>
+        <?php wp_reset_postdata(); ?>
     </ul>
     </section>
 </main>
