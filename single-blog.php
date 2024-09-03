@@ -7,9 +7,9 @@ Template Name: single-blog
 <main>
     <?php
         $cat = get_the_category();
-        $catid = $cat[0]->cat_ID; // ID
         $catname = $cat[0]->name; // カテゴリ名
         $catslug = $cat[0]->category_nicename; // カテゴリスラッグ名
+        $catid = $cat[0]->cat_ID; // ID
         $link = get_category_link($catid); // カテゴリURL
     ?>
     <section id="l-internalTop__blogArea">
@@ -50,10 +50,10 @@ Template Name: single-blog
             <?php endif; ?>
             <div class="paging">
             <?php if (get_previous_post()):?>
-                <div class="prev">前へ<?php previous_post_link('%link','%title',TRUE); ?></div>
+                <div class="prev">一覧へ<?php previous_post_link('%link','%title',TRUE); ?></div>
             <?php endif; ?>
             <?php if (get_next_post()):?>
-                <div class="next"><?php next_post_link('%link','%title',TRUE); ?>次へ</div>
+                <div class="next"><?php next_post_link('%link','%title',TRUE); ?>次のページへ</div>
             <?php endif; ?>
             </div>
         </div>

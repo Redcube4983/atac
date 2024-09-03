@@ -50,7 +50,6 @@ Template Name: archive-blog
                     // カテゴリーのデータを取得
                     $cat = get_the_category();
                     $cat = $cat[0];
-                    $link = get_category_link($catid); // カテゴリURL
                 ?>
                 <div class="p-blogContents__blog-img">
                     <?php if (has_post_thumbnail()) : ?>
