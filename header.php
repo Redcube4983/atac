@@ -16,6 +16,7 @@
 <!--スタイルシート-->
 <link href="<?php echo get_template_directory_uri(); ?>/css/style.css" rel="stylesheet">
 
+
 <!--front-page-->
 <?php if( is_front_page() ): ?>
 <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/css/front-page.css">

@@ -22,7 +22,7 @@ Template Name: single-blog
         <div id="breadcrumb">
             <ul class="breadcrumb_inner">
             <li class="breadcrumb"><a class="breadcrumb_link" href="/">TOP</a></li>
-            <li class="breadcrumb"><a class="breadcrumb_link" href="blog">ブログ一覧</a></li>
+            <li class="breadcrumb"><a class="breadcrumb_link" href="/blog">ブログ一覧</a></li>
             <li class="breadcrumb"><a class="breadcrumb_link" href="<?php echo $link; ?>"><?php echo $catname; ?></a></li>
             <li class="breadcrumb"><?php the_title(); ?></li>
             </ul>
