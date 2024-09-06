@@ -27,19 +27,20 @@ Template Name: single-blog
             <li class="breadcrumb"><?php the_title(); ?></li>
             </ul>
         </div>
-<section id="contents">
-    <div id="contents-inner">
-        <div id="contents-left">
+<section id="p-singleContents">
+  <div class="c-contentsLayout">
+    <div class="p-singleContents__inner">
+        <div class="p-singleContents__left">
             <?php if (have_posts()): ?>
             <?php while (have_posts()) : the_post(); ?>
-            <div id="post" <?php post_class(); ?>>
-                <div id="post_content_area">
-                    <div id="post_title_area">
+            <div class="post" <?php post_class(); ?>>
+                <div class="p-postContent__area">
+                    <div class="p-postTitle__area">
                         <h1><?php the_title(); ?></h1>
                         <time><?php echo get_the_date(); ?></time>
                     </div>
-                    <div id="post_content">
-                    <a class="category" href="<?php echo $link; ?>"><?php echo $catname; ?></a>
+                    <div class="post_content">
+                    <a href="<?php echo $link; ?>" class="category <?php echo $catslug; ?>"><?php echo $catname; ?></a>
                     <?php the_content(); ?>
                     </div>
                 </div>
@@ -50,16 +51,20 @@ Template Name: single-blog
             <?php endif; ?>
             <div class="paging">
             <?php if (get_previous_post()):?>
-                <div class="prev">一覧へ<?php previous_post_link('%link','%title',TRUE); ?></div>
+                <div class="prev">
+                <?php previous_post_link('%link', '前へ'); ?>
+                </div>
             <?php endif; ?>
             <?php if (get_next_post()):?>
-                <div class="next"><?php next_post_link('%link','%title',TRUE); ?>次のページへ</div>
+                <div class="next">
+                <?php next_post_link('%link', '次へ'); ?>
+                </div>
             <?php endif; ?>
             </div>
         </div>
-        <div id="post_archive_area">
-            <div class="archive-list">
-                <div class="archive-list-title">
+        <div id="p-archiveArea__right">
+            <div class="p-archiveArea__list">
+                <div class="p-archiveArea__title">
                     <h3>Archives</h3><span>アーカイブ</span>
                 </div>
                 <ul class="post_archive">
@@ -69,10 +74,10 @@ Template Name: single-blog
                 ) ); ?>
                 </ul>
             </div>
-            <div class="category-list">
-                <div class="category-list-title">
+            <div class="p-categoryList">
+                <div class="p-categoryList__title">
                     <h3>Category</h3><span>カテゴリー</span>
-                    <ul class="post_category">
+                    <ul class="p-categoryList__category">
                     <?php wp_list_categories(array(
                         'show_count=1')); 
                     ?>
@@ -81,6 +86,7 @@ Template Name: single-blog
             </div>
         </div>
     </div>
+  </div>
 </section>
 </main>
 <?php get_footer(); ?>

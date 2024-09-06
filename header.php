@@ -25,6 +25,10 @@
 <link rel="stylesheet" type="text/css" href="<?php echo get_template_directory_uri(); ?>/css/404.css"/>
 <?php elseif( is_post_type_archive('blog') ): ?>
 <link rel="stylesheet" type="text/css" href="<?php echo get_template_directory_uri(); ?>/css/blog.css"/>
+<?php elseif( is_single() ): ?>
+<link rel="stylesheet" type="text/css" href="<?php echo get_template_directory_uri(); ?>/css/blog-single.css"/>
+<?php elseif( is_archive() ): ?>
+  <link rel="stylesheet" type="text/css" href="<?php echo get_template_directory_uri(); ?>/css/archive.css"/>
 <?php else: ?>
 <?php endif; ?>
 

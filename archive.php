@@ -18,7 +18,7 @@ Template Name: archive
     <div id="breadcrumb">
         <ul class="breadcrumb_inner">
             <li class="breadcrumb"><a class="breadcrumb_link" href="/">TOP</a></li>
-            <li class="breadcrumb"><a class="breadcrumb_link" href="blog">ブログ一覧</a></li>
+            <li class="breadcrumb"><a class="breadcrumb_link" href="/blog">ブログ一覧</a></li>
             <li class="breadcrumb">
             <?php if(is_category() || is_tag() || is_tax()): ?>
             <?php echo single_term_title('',false); ?>
