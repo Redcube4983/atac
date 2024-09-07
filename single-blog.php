@@ -48,18 +48,32 @@ Template Name: single-blog
             <?php endwhile; ?>
             <?php else: ?>
             <!-- 投稿が無い場合の処理 -->
+             <p>投稿はまだありません</p>
             <?php endif; ?>
             <div class="paging">
-            <?php if (get_previous_post()):?>
-                <div class="prev">
-                <?php previous_post_link('%link', '前へ'); ?>
-                </div>
-            <?php endif; ?>
-            <?php if (get_next_post()):?>
-                <div class="next">
-                <?php next_post_link('%link', '次へ'); ?>
-                </div>
-            <?php endif; ?>
+                <?php
+                    $prev_post = get_previous_post(); // 前の投稿を取得
+                    $next_post = get_next_post(); // 次の投稿を取得
+                ?>
+                <?php if( $prev_post || $next_post ): //次の記事か前の記事かどちらかあれば ?>
+                <ul class="prev_next_list">
+                    <?php if ($prev_post): // 前の記事 ?>
+                        <li class="prev">
+                        <a href="<?php echo esc_url(get_permalink($prev_post->ID)); ?>">
+                            <span class="eng">前へ</span>
+                        </a>
+                        </li>
+                    <?php endif; ?>
+                    <?php if ($next_post): // 次の記事 ?>
+                    <li class="next">
+                        <a href="<?php echo esc_url(get_permalink($next_post->ID)); ?>">
+                            <span class="eng">次へ</span>
+                        </a>
+                    </li>
+                    <?php endif; ?>
+                </ul>
+                <!-- /.prev_next_list -->
+                <?php endif; ?>
             </div>
         </div>
         <div id="p-archiveArea__right">
