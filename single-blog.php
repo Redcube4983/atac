@@ -40,8 +40,8 @@ Template Name: single-blog
                         <time><?php echo get_the_date(); ?></time>
                     </div>
                     <div class="post_content">
-                    <a href="<?php echo $link; ?>" class="category <?php echo $catslug; ?>"><?php echo $catname; ?></a>
-                    <?php the_content(); ?>
+                        <a href="<?php echo $link; ?>" class="category <?php echo $catslug; ?>"><?php echo $catname; ?></a>
+                        <?php the_content(); ?>
                     </div>
                 </div>
             </div>
@@ -54,20 +54,20 @@ Template Name: single-blog
                 <?php
                     $prev_post = get_previous_post(); // 前の投稿を取得
                     $next_post = get_next_post(); // 次の投稿を取得
+                    if( $prev_post || $next_post ): //次の記事か前の記事かどちらかあれば
                 ?>
-                <?php if( $prev_post || $next_post ): //次の記事か前の記事かどちらかあれば ?>
                 <ul class="prev_next_list">
-                    <?php if ($prev_post): // 前の記事 ?>
+                    <?php if ($prev_post): // 前の記事があれば表示 ?>
                         <li class="prev">
                         <a href="<?php echo esc_url(get_permalink($prev_post->ID)); ?>">
-                            <span class="eng">前へ</span>
+                            <span class="eng">次へ</span>
                         </a>
                         </li>
                     <?php endif; ?>
-                    <?php if ($next_post): // 次の記事 ?>
+                    <?php if ($next_post): // 次の記事があれば表示 ?>
                     <li class="next">
                         <a href="<?php echo esc_url(get_permalink($next_post->ID)); ?>">
-                            <span class="eng">次へ</span>
+                            <span class="eng">前へ</span>
                         </a>
                     </li>
                     <?php endif; ?>
@@ -91,12 +91,13 @@ Template Name: single-blog
             <div class="p-categoryList">
                 <div class="p-categoryList__title">
                     <h3>Category</h3><span>カテゴリー</span>
+                </div>
                     <ul class="p-categoryList__category">
                     <?php wp_list_categories(array(
-                        'show_count=1')); 
+                        'title_li' =>'',//デフォルトで出力されるタイトルを非表示
+                        'show_count=1')); //各カテゴリーに投稿数を表示する
                     ?>
                     </ul>
-                </div>
             </div>
         </div>
     </div>
