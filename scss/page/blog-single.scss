@@ -204,7 +204,6 @@
         flex-flow: wrap;
         align-items: center;
         justify-content: center;
-        padding-bottom: 16px;
         h3 {
           font-size: 1.6rem;
           margin: 0 8px 0 0;
@@ -218,19 +217,29 @@
         display: flex;
         flex-flow: wrap;
         justify-content: space-around;
-        .cat_daily {
-          background: #FF7C9F;
+        margin: 32px 0 0;
+        a {
+          text-decoration: none;
           color: #FFF;
-          font-size: 1.6rem;
         }
-        .cat_products{
-          background: #37AB9D;
-          color: #FFF;
-          font-size: 1.6rem;
+        .cat-item {
+          display: flex;
+          justify-content: center;
+          border-radius: 20px;
+          align-items: center;
+          width: 100px;
+          height: 32px;
         }
-        .cat_notice{
+        .cat-item-2 {
           background: #FF8900;
-          color: #FFF;
+          font-size: 1.6rem;
+        }
+        .cat-item-3 {
+          background: #37AB9D;
+          font-size: 1.6rem;
+        }
+        .cat-item-4{
+          background: #FF7C9F;
           font-size: 1.6rem;
         }
       }

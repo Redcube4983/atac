@@ -2511,7 +2511,6 @@ b {
   flex-flow: wrap;
   align-items: center;
   justify-content: center;
-  padding-bottom: 16px;
 }
 #p-singleContents .p-singleContents__inner .p-categoryList .p-categoryList__title h3 {
   font-size: 1.6rem;
@@ -2525,19 +2524,29 @@ b {
   display: flex;
   flex-flow: wrap;
   justify-content: space-around;
+  margin: 32px 0 0;
 }
-#p-singleContents .p-singleContents__inner .p-categoryList .p-categoryList__category .cat_daily {
-  background: #FF7C9F;
+#p-singleContents .p-singleContents__inner .p-categoryList .p-categoryList__category a {
+  text-decoration: none;
   color: #FFF;
-  font-size: 1.6rem;
 }
-#p-singleContents .p-singleContents__inner .p-categoryList .p-categoryList__category .cat_products {
-  background: #37AB9D;
-  color: #FFF;
-  font-size: 1.6rem;
+#p-singleContents .p-singleContents__inner .p-categoryList .p-categoryList__category .cat-item {
+  display: flex;
+  justify-content: center;
+  border-radius: 20px;
+  align-items: center;
+  width: 100px;
+  height: 32px;
 }
-#p-singleContents .p-singleContents__inner .p-categoryList .p-categoryList__category .cat_notice {
+#p-singleContents .p-singleContents__inner .p-categoryList .p-categoryList__category .cat-item-2 {
   background: #FF8900;
-  color: #FFF;
+  font-size: 1.6rem;
+}
+#p-singleContents .p-singleContents__inner .p-categoryList .p-categoryList__category .cat-item-3 {
+  background: #37AB9D;
+  font-size: 1.6rem;
+}
+#p-singleContents .p-singleContents__inner .p-categoryList .p-categoryList__category .cat-item-4 {
+  background: #FF7C9F;
   font-size: 1.6rem;
 }/*# sourceMappingURL=blog-single.css.map */
