@@ -59,17 +59,17 @@ Template Name: single-blog
                 <ul class="prev_next_list">
                     <?php if ($prev_post): // 前の記事があれば表示 ?>
                         <li class="prev">
-                        <a href="<?php echo esc_url(get_permalink($prev_post->ID)); ?>">
-                            <span class="eng">次へ</span>
-                        </a>
+                            <a href="<?php echo esc_url(get_permalink($prev_post->ID)); ?>">
+                                <span class="eng">次へ</span>
+                            </a>
                         </li>
                     <?php endif; ?>
                     <?php if ($next_post): // 次の記事があれば表示 ?>
-                    <li class="next">
-                        <a href="<?php echo esc_url(get_permalink($next_post->ID)); ?>">
-                            <span class="eng">前へ</span>
-                        </a>
-                    </li>
+                        <li class="next">
+                            <a href="<?php echo esc_url(get_permalink($next_post->ID)); ?>">
+                                <span class="eng">前へ</span>
+                            </a>
+                        </li>
                     <?php endif; ?>
                 </ul>
                 <!-- /.prev_next_list -->
@@ -86,6 +86,7 @@ Template Name: single-blog
                 wp_get_archives( array(
                 'type' => 'yearly'
                 ) ); ?>
+                <?php wp_get_archives($args); ?>
                 </ul>
             </div>
             <div class="p-categoryList">

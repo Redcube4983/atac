@@ -2389,4 +2389,13 @@ b {
   right: 0.4rem;
   top: 45%;
   transform: translateY(-50%);
+}
+
+#contents {
+  padding-bottom: 400px;
+}
+@media screen and (min-width: 1024px) {
+  #contents {
+    padding-bottom: 800px;
+  }
 }/*# sourceMappingURL=archive.css.map */

@@ -84,9 +84,17 @@
 #p-singleContents{
   .p-singleContents__inner{
     padding-bottom: 400px;
+    @include mq(lg){
+      padding-bottom: 600px;
+      display: flex;
+      flex-flow: wrap;
+    }
     .p-singleContents__left{
       width: 100%;
       margin-bottom: 40px;
+      @include mq(lg){
+        width: 70%;
+      }
       .p-postContent__area{
         .p-postTitle__area{
           display: flex;
@@ -97,9 +105,15 @@
             margin: 0 0 10px;
             font-size: 1.6rem;
             font-weight: bold;
+            @include mq(lg){
+              font-size: 2.1rem;
+            }
           }
           time{
             font-size: 1.4rem;
+            @include mq(lg){
+              font-size: 1.6rem;
+            }
           }
         }
         .post_content{
@@ -137,6 +151,9 @@
             margin: 0;
             border-top: 1px solid #707070;
             padding: 10px 0 0;
+            @include mq(lg){
+              font-size: 1.6rem;
+            }
           }
         }
       }
@@ -179,6 +196,12 @@
     }
     #p-archiveArea__right{
       width: 100%;
+      @include mq(lg){
+        width: 20%;
+        margin-left: 96px;
+        border-left: 1px solid #707070;
+        padding-left: 8px;
+      }
       .p-archiveArea__title {
         display: flex;
         flex-flow: wrap;
@@ -186,6 +209,11 @@
         justify-content: center;
         border-bottom: 1px solid #707070;
         padding-bottom: 16px;
+        @include mq(lg){
+          border: 0;
+          margin: 0;
+          justify-content: start;
+        }
         h3 {
           font-size: 1.6rem;
           margin: 0 8px 0 0;
@@ -204,6 +232,9 @@
         flex-flow: wrap;
         align-items: center;
         justify-content: center;
+        @include mq(lg){
+          justify-content: start;
+        }
         h3 {
           font-size: 1.6rem;
           margin: 0 8px 0 0;
@@ -218,6 +249,10 @@
         flex-flow: wrap;
         justify-content: space-around;
         margin: 32px 0 0;
+        @include mq(lg){
+          flex-flow: column;
+          justify-content: start;
+        }
         a {
           text-decoration: none;
           color: #FFF;
@@ -229,6 +264,13 @@
           align-items: center;
           width: 100px;
           height: 32px;
+          @include mq(lg){
+            width: 112px;
+            height: 42px;
+            &:not(:last-child){
+              margin-bottom: 32px;
+            }
+          }
         }
         .cat-item-2 {
           background: #FF8900;

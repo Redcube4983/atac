@@ -80,3 +80,9 @@
         }
       }
   }
+#contents{
+  padding-bottom: 400px;
+  @include mq(lg){
+    padding-bottom: 800px;
+  }
+}

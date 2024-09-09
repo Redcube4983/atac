@@ -50,7 +50,7 @@ Template Name: archive
             <div id="post" <?php post_class(); ?>>
                 <div id="post_content_area">
                     <div id="post_title_area">
-                        <h1><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h1>
+                        <h1><?php the_title(); ?></h1>
                         <time><?php echo get_the_date(); ?></time>
                     </div>
                     <div id="post_content">
@@ -83,6 +83,17 @@ Template Name: archive
                 'type' => 'yearly'
                 ) ); ?>
                 </ul>
+            </div>
+            <div class="p-categoryList">
+                <div class="p-categoryList__title">
+                    <h3>Category</h3><span>カテゴリー</span>
+                </div>
+                    <ul class="p-categoryList__category">
+                    <?php wp_list_categories(array(
+                        'title_li' =>'',//デフォルトで出力されるタイトルを非表示
+                        'show_count=1')); //各カテゴリーに投稿数を表示する
+                    ?>
+                    </ul>
             </div>
         </div>
     </section>
