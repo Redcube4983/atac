@@ -2340,4 +2340,86 @@ b {
   font-size: 1.4rem;
   font-weight: bold;
   text-align: center;
+}
+#c-contactContents .p-contactPage__body {
+  margin-top: 3rem;
+}
+#c-contactContents .p-formIndicator__list {
+  display: flex;
+}
+#c-contactContents .p-formIndicator__list .p-formIndicator__item {
+  padding: 0.8rem;
+  width: calc(25% + 1.5rem);
+  flex-basis: calc(25% + 1.5rem);
+  min-height: 3rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.6rem;
+  font-weight: 700;
+  text-align: center;
+  color: #fff;
+  background-color: #fff;
+  position: relative;
+  -webkit-clip-path: polygon(0 0, calc(100% - 1rem) 0, 100% 50%, calc(100% - 1rem) 100%, 0 100%);
+  clip-path: polygon(0 0, calc(100% - 1rem) 0, 100% 50%, calc(100% - 1rem) 100%, 0 100%);
+}
+#c-contactContents .p-formIndicator__list .p-formIndicator__item:nth-child(1) {
+  z-index: 3;
+}
+#c-contactContents .p-formIndicator__list .p-formIndicator__item:nth-child(1).is-active::after {
+  background-color: #ff0000;
+}
+#c-contactContents .p-formIndicator__list .p-formIndicator__item:nth-child(2) {
+  z-index: 2;
+}
+#c-contactContents .p-formIndicator__list .p-formIndicator__item:nth-child(2).is-active::after {
+  background-color: #c30000;
+}
+#c-contactContents .p-formIndicator__list .p-formIndicator__item:nth-child(3) {
+  z-index: 1;
+}
+#c-contactContents .p-formIndicator__list .p-formIndicator__item:nth-child(3).is-active::after {
+  background-color: #920000;
+}
+#c-contactContents .p-formIndicator__list .p-formIndicator__item:nth-child(4) {
+  z-index: 0;
+  clip-path: none;
+}
+#c-contactContents .p-formIndicator__list .p-formIndicator__item:nth-child(4).is-active::after {
+  background-color: #650000;
+}
+#c-contactContents .p-formIndicator__list .p-formIndicator__item:after {
+  content: "";
+  border: 0;
+  position: absolute;
+  background-color: #666;
+  z-index: -1;
+  inset: 0 0.4rem 0 0;
+  -webkit-clip-path: polygon(0 0, calc(100% - 1rem) 0, 100% 50%, calc(100% - 1rem) 100%, 0 100%);
+  clip-path: polygon(0 0, calc(100% - 1rem) 0, 100% 50%, calc(100% - 1rem) 100%, 0 100%);
+}
+#c-contactContents .p-contactPage__content {
+  margin: 40px 0 0;
+}
+#c-contactContents .p-contactPage__content .p-contactPage__noteParagraph {
+  text-align: left;
+}
+#c-contactContents .p-contactPage__content .p-contactPage__noteParagraph .requireLabel {
+  padding: 6px 12px;
+  display: inline-block;
+  background: #F58906;
+  color: #fff;
+  font-size: 1.2rem;
+  font-weight: 700;
+  letter-spacing: 0.2em;
+  line-height: 1;
+  border-radius: 10px;
+}
+#c-contactContents .p-contactPage__content .p-contactPage__noteParagraph .p-contactPage__noteText {
+  margin-left: 0.5rem;
+  font-size: 1.2rem;
+}
+#c-contactContents #error {
+  display: none;
 }/*# sourceMappingURL=contact.css.map */

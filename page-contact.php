@@ -23,7 +23,7 @@ Template Name: contact
       <div class="l-internalTop__underLine">
         <picture>
           <source srcset="<?php echo get_template_directory_uri(); ?>/images/contact/ornamentLine.webp" type="image/webp">
-          <img src="<?php echo get_template_directory_uri(); ?>/images/contact/ornamentLine.png" alt="当社のご案内">
+          <img src="<?php echo get_template_directory_uri(); ?>/images/contact/ornamentLine.png" alt="ご相談・お問い合わせ">
         </picture>
       </div>
     </h1>
@@ -68,7 +68,6 @@ Template Name: contact
                             </div>
                         </div>
                         <?php endif; ?>
-
 
                         <?php
                         if (!is_page('complete')) :

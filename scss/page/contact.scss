@@ -30,4 +30,93 @@
         font-weight: bold;
         text-align: center;
     }
+    .p-contactPage__body {
+        margin-top: 3rem;
+    }
+    .p-formIndicator__list{
+        display: flex;
+        .p-formIndicator__item {
+            padding: 0.8rem;
+            width: calc(25% + 1.5rem);
+            flex-basis: calc(25% + 1.5rem);
+            min-height: 3rem;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.6rem;
+            font-weight: 700;
+            text-align: center;
+            color: #fff;
+            background-color: #fff;
+            position: relative;
+            -webkit-clip-path: polygon(0 0, calc(100% - 1rem) 0, 100% 50%, calc(100% - 1rem) 100%, 0 100%);
+            clip-path: polygon(0 0, calc(100% - 1rem) 0, 100% 50%, calc(100% - 1rem) 100%, 0 100%);
+            &:nth-child(1) {
+                z-index: 3;
+            
+                &.is-active::after {
+                  background-color: #ff0000;
+                }
+              }
+            
+              &:nth-child(2) {
+                z-index: 2;
+            
+                &.is-active::after {
+                  background-color: #c30000;
+                }
+              }
+            
+              &:nth-child(3) {
+                z-index: 1;
+            
+                &.is-active::after {
+                  background-color: #920000;
+                }
+              }
+            
+              &:nth-child(4) {
+                z-index: 0;
+                clip-path: none;
+            
+                &.is-active::after {
+                  background-color: #650000;
+                }
+              }
+            &:after{
+                content: "";
+                border: 0;
+                position: absolute;
+                background-color: #666;
+                z-index: -1;
+                inset: 0 0.4rem 0 0;
+                -webkit-clip-path: polygon(0 0, calc(100% - 1rem) 0, 100% 50%, calc(100% - 1rem) 100%, 0 100%);
+                clip-path: polygon(0 0, calc(100% - 1rem) 0, 100% 50%, calc(100% - 1rem) 100%, 0 100%);
+            }
+        }
+    }
+    .p-contactPage__content {
+        margin: 40px 0 0;
+        .p-contactPage__noteParagraph {
+            text-align: left;
+            .requireLabel{
+                padding: 6px 12px;
+                display: inline-block;
+                background: #F58906;
+                color: #fff;
+                font-size: 1.2rem;
+                font-weight: 700;
+                letter-spacing: 0.2em;
+                line-height: 1;
+                border-radius: 10px;
+            }
+            .p-contactPage__noteText {
+                margin-left: 0.5rem;
+                font-size: 1.2rem;
+            }
+        }
+    }
+    #error {
+        display: none;
+    }
 }
