@@ -23,7 +23,7 @@ Template Name: contact
       <div class="l-internalTop__underLine">
         <picture>
           <source srcset="<?php echo get_template_directory_uri(); ?>/images/contact/ornamentLine.webp" type="image/webp">
-          <img src="<?php echo get_template_directory_uri(); ?>/images/contact/ornamentLine.png" alt="ご相談・お問い合わせ">
+          <img src="<?php echo get_template_directory_uri(); ?>/images/contact/ornamentLine.png" alt="当社のご案内">
         </picture>
       </div>
     </h1>
@@ -102,5 +102,27 @@ Template Name: contact
         </div>
     </div>
 </section>
+<div id="p-contactContents__phoneArea">
+    <div class="c-contentsLayout p-contactContents__phoneArea">
+        <div class="p-contactContents__phoneArea-title">
+            <h2>お電話でのお問い合わせ</h2>
+        </div>
+        <div class="p-contactContents__phoneArea-inner">
+            <div class="p-phoneArea__number">
+                <picture>
+                    <source srcset="<?php echo get_template_directory_uri(); ?>/images/contact/phone.webp" type="image/webp">
+                    <img src="<?php echo get_template_directory_uri(); ?>/images/contact/phone.png" alt="">
+                </picture>
+                <span>0438-41-6011</span>
+            </div>
+            <div class="p-phoneArea__businessDays">
+                <ul>
+                    <li><span>営業時間</span>9時〜18時</li>
+                    <li><span>定休日</span>日曜・祝日</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
 </main>
 <?php get_footer(); ?>
