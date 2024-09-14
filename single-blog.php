@@ -116,11 +116,28 @@ Template Name: single-blog
                     <h3>Category</h3><span>カテゴリー</span>
                 </div>
                     <ul class="p-categoryList__category">
-                    <?php wp_list_categories(array(
-                        'title_li' =>'',//デフォルトで出力されるタイトルを非表示
-                        'show_count=1')); //各カテゴリーに投稿数を表示する
+                    <?php
+                            $cat = get_the_category();
+                            $catid = $cat[0]->cat_ID; // ID
+                            $catname = $cat[0]->name; // カテゴリ名
+                            $catslug = $cat[0]->category_nicename; // カテゴリスラッグ名
+                            $link = get_category_link($catid); // カテゴリURL
                     ?>
-                    </ul>
+                    <?php
+                    $categories = get_categories(array('parent' => '0')); 
+                    foreach ($categories as $cat) {
+                        if ($cat->cat_name === '未分類') {
+                            continue;
+                        }
+                        if ($cat->cat_name === $current_category) {
+                            $list_item = '<li class="now_page cat">'.$cat->cat_name.'</li>';
+                        } else {
+                            $list_item = '<li class="cat cat-item'.$cat->cat_ID.'"><a href="/blog/'.$cat->slug.'/">'.$cat->cat_name.'</a></li>';
+                        }
+                        echo $list_item;
+                    }
+                    ?>
+                </ul>
             </div>
         </div>
     </div>
