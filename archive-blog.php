@@ -35,13 +35,13 @@ Template Name: archive-blog
     </h2>
     <ul class="blog-list">
     <?php
+    $paged = ( get_query_var( 'paged' ) ) ? get_query_var( 'paged' ) : 1;
     $args = array(
                 'post_type' => 'blog',
                 'post_status' => 'publish',// 公開済の投稿を指定
                 'paged' => $paged, 
                 'posts_per_page' => 10 // 投稿件数の指定
                 );
-            $paged = ( get_query_var( 'paged' ) ) ? get_query_var( 'paged' ) : 1;
             $the_query = new WP_Query($args);
             if($the_query->have_posts()):?>
             <?php while ($the_query->have_posts()): $the_query->the_post(); ?>

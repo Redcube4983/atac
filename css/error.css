@@ -1773,6 +1773,14 @@ b {
   color: #1E313B;
   text-decoration: none;
 }
+.l-globalnav .l-globalnav__inner .l-globalnav__list--pc {
+  display: block;
+  background: #FF8900;
+  border-radius: 0 0 10px 10px;
+  width: 360px;
+  height: auto;
+  margin: 16px auto;
+}
 @media screen and (min-width: 1024px) {
   .l-globalnav .l-globalnav__inner .l-globalnav__list {
     margin: 0;
@@ -2021,18 +2029,36 @@ b {
   border: none;
 }
 .l-globalnav .l-globalnav__blockContact {
-  padding-top: 40px;
+  padding: 20px;
   border-top: solid 4px #ff9c33;
-  margin: 0 20px;
+}
+.l-globalnav .l-globalnav__blockContact p {
+  color: #FFF;
 }
 .l-globalnav .l-globalnav__blockContact-inner {
   display: flex;
   flex-flow: row nowrap;
-  justify-content: center;
+  justify-content: space-around;
   margin-top: 32px;
+  width: 100%;
+}
+.l-globalnav .l-globalnav__blockContact-inner li {
+  background: #FFF;
+  width: 120px;
+  border-radius: 15px;
+  height: 80px;
+  position: relative;
+}
+.l-globalnav .l-globalnav__blockContact-inner img {
+  width: 56px;
+  height: 50px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
 @media screen and (min-width: 1024px) {
-  .l-globalnav .l-globalnav__inner .l-globalnav__list--parent .l-globalnav__child {
+  .l-globalnav .l-globalnav__blockContact .l-globalnav__inner .l-globalnav__list--parent .l-globalnav__child {
     display: none;
     padding: 0;
     background-color: #FF8900;
@@ -2048,13 +2074,13 @@ b {
     transform: translateX(-50%);
     border: 1px solid #FF8900;
   }
-  .l-globalnav .l-globalnav__inner .l-globalnav__list--parent .l-globalnav__child.l-globalnav__child2 {
+  .l-globalnav .l-globalnav__blockContact .l-globalnav__inner .l-globalnav__list--parent .l-globalnav__child.l-globalnav__child2 {
     width: 200px;
   }
-  .l-globalnav .l-globalnav__inner .l-globalnav__list--parent .l-globalnav__child.child_last {
+  .l-globalnav .l-globalnav__blockContact .l-globalnav__inner .l-globalnav__list--parent .l-globalnav__child.child_last {
     width: 180px;
   }
-  .l-globalnav .l-globalnav__inner .l-globalnav__list--parent .l-globalnav__child::before {
+  .l-globalnav .l-globalnav__blockContact .l-globalnav__inner .l-globalnav__list--parent .l-globalnav__child::before {
     border-bottom: 19.2px solid #FF8900;
     border-left: 11.1px solid transparent;
     border-right: 11.1px solid transparent;
@@ -2066,13 +2092,13 @@ b {
     transform: translateY(-50%);
     content: "";
   }
-  .l-globalnav .l-globalnav__inner .l-globalnav__list--parent .l-globalnav__child .l-globalnav__granchild {
+  .l-globalnav .l-globalnav__blockContact .l-globalnav__inner .l-globalnav__list--parent .l-globalnav__child .l-globalnav__granchild {
     width: auto;
     height: 40px;
     border-bottom: 1px solid #fff;
     position: relative;
   }
-  .l-globalnav .l-globalnav__inner .l-globalnav__list--parent .l-globalnav__child .l-globalnav__granchild::before {
+  .l-globalnav .l-globalnav__blockContact .l-globalnav__inner .l-globalnav__list--parent .l-globalnav__child .l-globalnav__granchild::before {
     content: "";
     background-color: #fff;
     width: 100%;
@@ -2084,10 +2110,10 @@ b {
     transform: scale(0, 1) translateZ(0);
     transform-origin: right;
   }
-  .l-globalnav .l-globalnav__inner .l-globalnav__list--parent .l-globalnav__child .l-globalnav__granchild:last-child {
+  .l-globalnav .l-globalnav__blockContact .l-globalnav__inner .l-globalnav__list--parent .l-globalnav__child .l-globalnav__granchild:last-child {
     border-bottom: 0px solid #fff;
   }
-  .l-globalnav .l-globalnav__inner .l-globalnav__list--parent .l-globalnav__child .l-globalnav__granchild:hover::before {
+  .l-globalnav .l-globalnav__blockContact .l-globalnav__inner .l-globalnav__list--parent .l-globalnav__child .l-globalnav__granchild:hover::before {
     content: "";
     background-color: #fff;
     width: 100%;
@@ -2099,7 +2125,7 @@ b {
     transform: scale(1, 1) translateZ(0);
     transform-origin: left;
   }
-  .l-globalnav .l-globalnav__inner .l-globalnav__list--parent .l-globalnav__child .l-globalnav__granchild .l-globalnav__link {
+  .l-globalnav .l-globalnav__blockContact .l-globalnav__inner .l-globalnav__list--parent .l-globalnav__child .l-globalnav__granchild .l-globalnav__link {
     color: #fff;
     padding: 0;
     position: relative;
@@ -2111,10 +2137,10 @@ b {
     align-items: center;
     transition: color 0.3s ease-in-out;
   }
-  .l-globalnav .l-globalnav__inner .l-globalnav__list--parent .l-globalnav__child .l-globalnav__granchild .l-globalnav__link::before {
+  .l-globalnav .l-globalnav__blockContact .l-globalnav__inner .l-globalnav__list--parent .l-globalnav__child .l-globalnav__granchild .l-globalnav__link::before {
     content: none;
   }
-  .l-globalnav .l-globalnav__inner .l-globalnav__list--parent .l-globalnav__child .l-globalnav__granchild .l-globalnav__link::after {
+  .l-globalnav .l-globalnav__blockContact .l-globalnav__inner .l-globalnav__list--parent .l-globalnav__child .l-globalnav__granchild .l-globalnav__link::after {
     position: absolute;
     display: block;
     content: "";
@@ -2127,24 +2153,24 @@ b {
     right: 10px;
     transform-origin: center;
   }
-  .l-globalnav .l-globalnav__inner .l-globalnav__list--parent .l-globalnav__child .l-globalnav__granchild .l-globalnav__link:hover {
+  .l-globalnav .l-globalnav__blockContact .l-globalnav__inner .l-globalnav__list--parent .l-globalnav__child .l-globalnav__granchild .l-globalnav__link:hover {
     color: #FF8900;
     transition: color 0.3s ease-in-out;
   }
-  .l-globalnav .l-globalnav__inner .l-globalnav__list--parent .l-globalnav__child .l-globalnav__granchild .l-globalnav__link:hover::after {
+  .l-globalnav .l-globalnav__blockContact .l-globalnav__inner .l-globalnav__list--parent .l-globalnav__child .l-globalnav__granchild .l-globalnav__link:hover::after {
     border-right: 1px solid #FF8900;
     border-bottom: 1px solid #FF8900;
   }
-  .l-globalnav .l-globalnav__inner .l-globalnav__list--parent .l-globalnav__child .l-globalnav__granchild .great_gran_child {
+  .l-globalnav .l-globalnav__blockContact .l-globalnav__inner .l-globalnav__list--parent .l-globalnav__child .l-globalnav__granchild .great_gran_child {
     display: none !important;
   }
-  .l-globalnav .l-globalnav__inner .l-globalnav__list--parent .l-globalnav__child .l-globalnav__granchild .great_gran_child .great_great_gran_child a {
+  .l-globalnav .l-globalnav__blockContact .l-globalnav__inner .l-globalnav__list--parent .l-globalnav__child .l-globalnav__granchild .great_gran_child .great_great_gran_child a {
     color: #fff;
   }
-  .l-globalnav .l-globalnav__inner .l-globalnav__list.global_nav_contact.white a::before {
+  .l-globalnav .l-globalnav__blockContact .l-globalnav__inner .l-globalnav__list.global_nav_contact.white a::before {
     background-image: url(common/images/mail_ico.png);
   }
-  .l-globalnav .l-globalnav__inner .l-globalnav__list.global_nav_contact a {
+  .l-globalnav .l-globalnav__blockContact .l-globalnav__inner .l-globalnav__list.global_nav_contact a {
     font-size: 1.4rem;
     text-align: left;
     text-decoration: none;
@@ -2152,7 +2178,7 @@ b {
     position: relative;
     padding-left: 2rem;
   }
-  .l-globalnav .l-globalnav__inner .l-globalnav__list.global_nav_contact a::before {
+  .l-globalnav .l-globalnav__blockContact .l-globalnav__inner .l-globalnav__list.global_nav_contact a::before {
     content: "";
     display: block;
     position: absolute;
@@ -2166,7 +2192,7 @@ b {
     left: 0;
     border: none;
   }
-  .l-globalnav .l-globalnav__inner .l-globalnav__child {
+  .l-globalnav .l-globalnav__blockContact .l-globalnav__inner .l-globalnav__child {
     display: block;
     position: absolute;
   }
@@ -2519,12 +2545,12 @@ b {
   height: 40px;
   border-radius: 20px;
   border: 1px solid #707070;
-  padding: 0 16px;
+  padding: 16px;
 }
 @media screen and (min-width: 768px) {
   #c-contactContents #mw_wp_form_mw-wp-form-38 .p-form .p-form__table .row #your-company {
     height: 50px;
-    padding: 0 24px;
+    padding: 24px;
   }
 }
 #c-contactContents #mw_wp_form_mw-wp-form-38 .p-form .p-form__table .row #your-name {
@@ -2532,12 +2558,12 @@ b {
   height: 40px;
   border-radius: 20px;
   border: 1px solid #707070;
-  padding: 0 16px;
+  padding: 16px;
 }
 @media screen and (min-width: 768px) {
   #c-contactContents #mw_wp_form_mw-wp-form-38 .p-form .p-form__table .row #your-name {
     height: 50px;
-    padding: 0 24px;
+    padding: 24px;
   }
 }
 #c-contactContents #mw_wp_form_mw-wp-form-38 .p-form .p-form__table .row #your-name-kana {
@@ -2545,12 +2571,12 @@ b {
   height: 40px;
   border-radius: 20px;
   border: 1px solid #707070;
-  padding: 0 16px;
+  padding: 16px;
 }
 @media screen and (min-width: 768px) {
   #c-contactContents #mw_wp_form_mw-wp-form-38 .p-form .p-form__table .row #your-name-kana {
     height: 50px;
-    padding: 0 24px;
+    padding: 24px;
   }
 }
 #c-contactContents #mw_wp_form_mw-wp-form-38 .p-form .p-form__table .row #your-nickname {
@@ -2558,12 +2584,12 @@ b {
   height: 40px;
   border-radius: 20px;
   border: 1px solid #707070;
-  padding: 0 16px;
+  padding: 16px;
 }
 @media screen and (min-width: 768px) {
   #c-contactContents #mw_wp_form_mw-wp-form-38 .p-form .p-form__table .row #your-nickname {
     height: 50px;
-    padding: 0 24px;
+    padding: 24px;
   }
 }
 #c-contactContents #mw_wp_form_mw-wp-form-38 .p-form .p-form__table .row #tel {
@@ -2571,12 +2597,12 @@ b {
   height: 40px;
   border-radius: 20px;
   border: 1px solid #707070;
-  padding: 0 16px;
+  padding: 16px;
 }
 @media screen and (min-width: 768px) {
   #c-contactContents #mw_wp_form_mw-wp-form-38 .p-form .p-form__table .row #tel {
     height: 50px;
-    padding: 0 24px;
+    padding: 24px;
   }
 }
 #c-contactContents #mw_wp_form_mw-wp-form-38 .p-form .p-form__table .row #email {
@@ -2584,12 +2610,23 @@ b {
   height: 40px;
   border-radius: 20px;
   border: 1px solid #707070;
-  padding: 0 16px;
+  padding: 16px;
 }
 @media screen and (min-width: 768px) {
   #c-contactContents #mw_wp_form_mw-wp-form-38 .p-form .p-form__table .row #email {
     height: 50px;
-    padding: 0 24px;
+    padding: 24px;
+  }
+}
+#c-contactContents #mw_wp_form_mw-wp-form-38 .p-form .p-form__table .row .flex {
+  line-height: 1.8;
+}
+#c-contactContents #mw_wp_form_mw-wp-form-38 .p-form .p-form__table .row .flex .horizontal-item {
+  font-size: 1.4rem;
+}
+@media screen and (min-width: 768px) {
+  #c-contactContents #mw_wp_form_mw-wp-form-38 .p-form .p-form__table .row .flex .horizontal-item {
+    font-size: 1.6rem;
   }
 }
 #c-contactContents #mw_wp_form_mw-wp-form-38 .p-form .p-form__table .row #birth-year {
@@ -2597,30 +2634,52 @@ b {
   height: 40px;
   border-radius: 20px;
   border: 1px solid #707070;
+  padding: 16px;
+}
+@media screen and (min-width: 768px) {
+  #c-contactContents #mw_wp_form_mw-wp-form-38 .p-form .p-form__table .row #birth-year {
+    padding: 24px;
+  }
 }
 #c-contactContents #mw_wp_form_mw-wp-form-38 .p-form .p-form__table .row #birth-months {
   width: 20%;
   height: 40px;
   border-radius: 20px;
   border: 1px solid #707070;
+  padding: 16px;
+}
+@media screen and (min-width: 768px) {
+  #c-contactContents #mw_wp_form_mw-wp-form-38 .p-form .p-form__table .row #birth-months {
+    padding: 24px;
+  }
 }
 #c-contactContents #mw_wp_form_mw-wp-form-38 .p-form .p-form__table .row #birth-day {
   width: 20%;
   height: 40px;
   border-radius: 20px;
   border: 1px solid #707070;
+  padding: 16px;
+}
+@media screen and (min-width: 768px) {
+  #c-contactContents #mw_wp_form_mw-wp-form-38 .p-form .p-form__table .row #birth-day {
+    padding: 24px;
+  }
+}
+#c-contactContents #mw_wp_form_mw-wp-form-38 .p-form .p-form__table .row .namePrepend {
+  font-size: 1.4rem;
+  margin-right: 16px;
 }
 #c-contactContents #mw_wp_form_mw-wp-form-38 .p-form .p-form__table .row #zip-code {
   width: 100%;
   height: 40px;
   border-radius: 20px;
   border: 1px solid #707070;
-  padding: 0 16px;
+  padding: 16px;
 }
 @media screen and (min-width: 768px) {
   #c-contactContents #mw_wp_form_mw-wp-form-38 .p-form .p-form__table .row #zip-code {
     height: 50px;
-    padding: 0 24px;
+    padding: 24px;
   }
 }
 #c-contactContents #mw_wp_form_mw-wp-form-38 .p-form .p-form__table .row #question {

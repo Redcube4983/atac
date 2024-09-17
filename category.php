@@ -33,66 +33,62 @@
                 <ul>
                     <?php if (have_posts()): ?>
                     <?php while (have_posts()) : $the_query->the_post(); ?>
-                    <li class="blog_list">
+                    <li class="blog-inner">
                         <?php
+                            // カテゴリーのデータを取得
                             $cat = get_the_category();
-                            $catid = $cat[0]->cat_ID; // ID
-                            $catname = $cat[0]->name; // カテゴリ名
-                            $catslug = $cat[0]->category_nicename; // カテゴリスラッグ名
-                            $link = get_category_link($catid); // カテゴリURL
+                            $cat = $cat[0];
                         ?>
-                        <?php if( get_field('news_image') ):?>
-                        <?php
-                        $imgId=get_field('news_image');
-                        $img=wp_get_attachment_image_src($imgId, 'large');// (thumbnail, medium, large, full or custom size)
-                        $imgAlt = get_post_meta ( get_post ($imgId) -> ID , '_wp_attachment_image_alt' , true );
-                        ?>
-                        <a href="<?php the_permalink(); ?>" class="news_list_imagearea">
-                        <img class="news_list_image" src="<?php echo $img[0]; ?>" alt="<?php echo $imgAlt; ?>" />
-                        </a>
-                        <?php else:?>
-                        <a href="<?php the_permalink(); ?>" class="news_list_imagearea no_image">
-                            <img class="news_list_image" src="<?php echo get_template_directory_uri(); ?>/images/common/news_noimage.jpg" alt="">
-                        </a>
-                        <?php endif; ?>
-                        <div class="news_list_textarea">
-                        <div class="news_list_inner">
-                        <?php
-                            if ( $cat ) {
-                                echo '<ul class="category-wrap">';
-                                foreach ( $cat as $category ) {
-                                    echo  '<li><a class="category '.$category->slug.'" href="/news-archive/'.$category->slug.'">'.$category->name.'</a></li>';
-                                }
-                                echo '</ul>';
-                            }
-                            ?>
-                            <time><?php the_time('Y/m/d'); ?></time>
+                        <div class="p-blogContents__blog-img">
+                            <?php if (has_post_thumbnail()) : ?>
+                            <?php the_post_thumbnail(thumbnail); ?>
+                            <?php else : ?>
+                            <img src= <?php echo catch_that_image(); ?> alt="" />
+                            <?php endif ; ?>
                         </div>
-                        <a class="news_list_title" href="<?php the_permalink(); ?>"><h3><?php the_title(); ?></h3></a>
-                        <p class="news_list_content"><?php $text = mb_substr(get_field('news_catch_phrase'),0,75,'utf-8'); echo $text.'...';?></p>
+                        <div class="p-blogContents__blog-linkBox">
+                            <h2 class="blog-title">
+                                <?php echo get_the_title(); ?>
+                            </h2>
+                            <div class="date-box">
+                                <time class="blog-date"><?php the_time('Y/m/d'); ?></time>
+                                <span class="category <?php echo $cat->slug; ?>"><?php echo $cat->cat_name;?></span>
+                            </div>
+                            <p class="blog-text">
+                                <?php
+                                    $remove_array = ["\r\n", "\r", "\n", " ", "　"];
+                                    $content = wp_trim_words(strip_shortcodes(get_the_content()), 30, '…' );
+                                    $content = str_replace($remove_array, '', $content);
+                                    echo $content;
+                                ?>
+                            </p>
+                            <div class="p-blogContents__blog-button">
+                                <a href="<?php the_permalink(); ?>" class="blog-archive-link"><span>続きを見る</span></a>
+                            </div>
                         </div>
                     </li>
-                    <?php endwhile; ?>
-                    <?php else: ?>
-                    <!-- 投稿が無い場合の処理 -->
-                    <?php endif; ?>
                 </ul>
             </div>
-            <div class="pager">
-            <nav class="pagination">
-                <?php
-                    $big = 999999999; // need an unlikely integer
-                    echo paginate_links( array(
-                        'base' => str_replace( $big, '%#%', str_replace('page/','?paged=',esc_url( get_pagenum_link( $big ) )) ),
-                        'format' => '?paged=%#%',
-                        'current' => max( 1, get_query_var('paged') ),
-                        'total' => $wp_query->max_num_pages
-                    ) );
-                ?>
-            </nav>
-            </div>
+        <?php endwhile; ?>
+        <?php else: ?>
+        <!-- 投稿が無い場合の処理 -->
+        <?php endif; ?>
+        <?php wp_reset_postdata(); ?>
+    
+        <div class="pager">
+        <nav class="pagination">
+            <?php
+                $big = 999999999; // need an unlikely integer
+                echo paginate_links( array(
+                    'base' => str_replace( $big, '%#%', str_replace('page/','?paged=',esc_url( get_pagenum_link( $big ) )) ),
+                    'format' => '?paged=%#%',
+                    'current' => max( 1, get_query_var('paged') ),
+                    'total' => $wp_query->max_num_pages
+                ) );
+            ?>
+        </nav>
         </div>
-	</div>
-	</div>
+    </div>
+</div>
 </main>
 <?php get_footer(); ?>

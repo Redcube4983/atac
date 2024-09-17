@@ -145,7 +145,7 @@
             <p>ご相談はこちら</p>
             <ul class="l-globalnav__blockContact-inner">
               <li>
-                <a class="l-globalnav__blockContact-link" href="tel:0438416011">
+                <a class="l-globalnav__blockContact-link" href="<?php echo esc_url( home_url('contact') ); ?>">
                   <picture>
                     <source srcset="<?php echo get_template_directory_uri(); ?>/common/images/icon_tel.webp" type="image/webp">
                     <img src="<?php echo get_template_directory_uri(); ?>/common/images/icon_tel.png" alt="電話">
@@ -170,7 +170,7 @@
       <p>ご相談はこちら</p>
         <ul class="l-contactArea__list">
           <li>
-            <a class="l-contactArea__link" href="#">
+            <a class="l-contactArea__link" href="<?php echo esc_url( home_url('contact') ); ?>">
               <picture>
                 <source srcset="<?php echo get_template_directory_uri(); ?>/common/images/icon_tel.webp" type="image/webp">
                 <img src="<?php echo get_template_directory_uri(); ?>/common/images/icon_tel.png" alt="電話">
