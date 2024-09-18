@@ -84,7 +84,7 @@ Template Name: single-blog
                 <ul class="post_archive">
                     <?php
                         // 月別アーカイブリストを表示
-                        // $post_type = 'blog'; // ポストタイプを指定
+                        $post_type = 'blog'; // ポストタイプを指定
                         $args = array(
                             'post_type' => $post_type,
                             'posts_per_page' => -1
