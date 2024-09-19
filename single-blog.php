@@ -115,11 +115,11 @@ Template Name: single-blog
                 </div>
                     <ul class="p-categoryList__category">
                     <?php
-                            $cat = get_the_category();
-                            $catid = $cat[0]->cat_ID; // ID
-                            $catname = $cat[0]->name; // カテゴリ名
-                            $catslug = $cat[0]->category_nicename; // カテゴリスラッグ名
-                            $link = get_category_link($catid); // カテゴリURL
+                        $cat = get_the_category();
+                        $catid = $cat[0]->cat_ID; // ID
+                        $catname = $cat[0]->name; // カテゴリ名
+                        $catslug = $cat[0]->category_nicename; // カテゴリスラッグ名
+                        $link = get_category_link($catid); // カテゴリURL
                     ?>
                     <?php
                     $categories = get_categories(array('parent' => '0')); 
