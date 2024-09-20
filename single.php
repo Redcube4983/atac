@@ -1,6 +1,6 @@
 <?php
 /*
-Template Name: single-blog
+Template Name: single
 */
 ?>
 <?php get_header(); ?>
@@ -82,31 +82,11 @@ Template Name: single-blog
                     <h3>Archives</h3><span>アーカイブ</span>
                 </div>
                 <ul class="post_archive">
-                    <?php
-                        // 月別アーカイブリストを表示
-                        $post_type = 'blog'; // ポストタイプを指定
-                        $args = array(
-                            'post_type' => $post_type,
-                            'posts_per_page' => -1
-                        );
-                        $archive_query = new WP_Query( $args );
-                        while ( $archive_query->have_posts() ) {
-                            $archive_query->the_post();
-                            $archive_list[ get_the_time( 'Y/n', $post->ID ) ][] = $post->post_title;
-                        }
-                        wp_reset_postdata();
-                        if($archive_list):
-                    ?>
-                        <?php
-                        foreach( $archive_list as $year_month => $archive ) :
-                        $year_month_arr = explode( '/', $year_month );
-                        ?>
-                        <li>
-                            <a href="<?php echo home_url( '/', 'http' ).$post_type.'/date/'.$year_month; ?>">
-                            <?php echo $year_month_arr[0].'年'.$year_month_arr[1].'月' ?></a>
-                        </li>
-                        <?php endforeach; ?>
-                    <?php endif; ?>
+                <?php // 年別アーカイブのリストを出力
+                wp_get_archives( array(
+                'type' => 'monthly'
+                ) ); ?>
+                <?php wp_get_archives( 'post_type=blog&type=monthly&show_post_count=1' ); ?>
                 </ul>
             </div>
             <div class="p-categoryList">

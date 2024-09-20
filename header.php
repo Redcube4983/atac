@@ -20,6 +20,9 @@
 <!--front-page-->
 <?php if( is_front_page() ): ?>
 <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/css/front-page.css">
+<!-- home-page -->
+<?php elseif( is_home() ): ?>
+<link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/css/home.css">
 <!--404-->
 <?php elseif( is_404() ): ?>
 <link rel="stylesheet" type="text/css" href="<?php echo get_template_directory_uri(); ?>/css/404.css"/>

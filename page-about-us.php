@@ -350,7 +350,7 @@ Template Name: about-us
 					<h2>BLOG</h2>
 					<div class="p-aboutUsContents__blogArea-whiteBox">
 						<?php $args = array(
-								'post_type' => 'blog',
+								'post_type' => 'post',
 								'post_status' => 'publish',// 公開済の投稿を指定
 								'paged' => $paged, 
 								'posts_per_page' => 1// 投稿件数の指定

@@ -4,7 +4,6 @@ Template Name: archive
 */
 ?>
 <?php get_header(); ?>
-<?php if(is_archive('blog')||is_page(79)||is_page(107)||is_home()||is_singular('blog')||is_category()||is_date()): ?>
 <main>
     <section id="l-internalTop__blogArea">
         <div class="l-internalTop__titleWrap">
