@@ -82,11 +82,7 @@ Template Name: single
                     <h3>Archives</h3><span>アーカイブ</span>
                 </div>
                 <ul class="post_archive">
-                <?php // 年別アーカイブのリストを出力
-                wp_get_archives( array(
-                'type' => 'monthly'
-                ) ); ?>
-                <?php wp_get_archives( 'post_type=blog&type=monthly&show_post_count=1' ); ?>
+                <?php wp_get_archives( 'post_type=post&type=monthly&show_post_count=1' ); ?>
                 </ul>
             </div>
             <div class="p-categoryList">

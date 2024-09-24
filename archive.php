@@ -79,6 +79,44 @@ Template Name: archive
             <!-- 投稿が無い場合の処理 -->
             <?php endif; ?>
         </ul>
+        <div id="p-archiveArea__right">
+            <div class="p-archiveArea__list">
+                <div class="p-archiveArea__title">
+                    <h3>Archives</h3><span>アーカイブ</span>
+                </div>
+                <ul class="post_archive">
+                <?php wp_get_archives( 'post_type=post&type=yearly&show_post_count=1' ); ?>
+                </ul>
+            </div>
+            <div class="p-categoryList">
+                <div class="p-categoryList__title">
+                    <h3>Category</h3><span>カテゴリー</span>
+                </div>
+                    <ul class="p-categoryList__category">
+                    <?php
+                        $cat = get_the_category();
+                        $catid = $cat[0]->cat_ID; // ID
+                        $catname = $cat[0]->name; // カテゴリ名
+                        $catslug = $cat[0]->category_nicename; // カテゴリスラッグ名
+                        $link = get_category_link($catid); // カテゴリURL
+                    ?>
+                    <?php
+                    $categories = get_categories(array('parent' => '0')); 
+                    foreach ($categories as $cat) {
+                        if ($cat->cat_name === '未分類') {
+                            continue;
+                        }
+                        if ($cat->cat_name === $current_category) {
+                            $list_item = '<li class="now_page cat">'.$cat->cat_name.'</li>';
+                        } else {
+                            $list_item = '<li class="cat cat-item'.$cat->cat_ID.'"><a href="/blog/'.$cat->slug.'/">'.$cat->cat_name.'</a></li>';
+                        }
+                        echo $list_item;
+                    }
+                    ?>
+                </ul>
+            </div>
+        </div>
             <div class="pagination">
                 <?php
                     $big = 9999999999;
@@ -91,27 +129,6 @@ Template Name: archive
                     ?>
             </div>
             </div>
-            <div id="post_archive_area">
-                <h3>年別アーカイブ</h3>
-                <ul class="post_archive">
-                <?php // 年別アーカイブのリストを出力
-                wp_get_archives( array(
-                'type' => 'yearly'
-                ) ); ?>
-                </ul>
-            </div>
-            <div class="p-categoryList">
-                <div class="p-categoryList__title">
-                    <h3>Category</h3><span>カテゴリー</span>
-                </div>
-                    <ul class="p-categoryList__category">
-                    <?php wp_list_categories(array(
-                        'title_li' =>'',//デフォルトで出力されるタイトルを非表示
-                        'show_count=1')); //各カテゴリーに投稿数を表示する
-                    ?>
-                    </ul>
-            </div>
-        </div>
     </section>
     </main>
 <?php get_footer(); ?>
