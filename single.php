@@ -40,7 +40,7 @@ Template Name: single
                         <time><?php echo get_the_date(); ?></time>
                     </div>
                     <div class="post_content">
-                        <a href="<?php echo $link; ?>" class="category <?php echo $catslug; ?>"><?php echo $catname; ?></a>
+                        <a href="/blog/'.$cat->slug.'/" class="category <?php echo $catslug; ?>"><?php echo $catname; ?></a>
                         <?php the_content(); ?>
                     </div>
                 </div>
