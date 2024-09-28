@@ -40,7 +40,15 @@ Template Name: single
                         <time><?php echo get_the_date(); ?></time>
                     </div>
                     <div class="post_content">
-                        <a href="/blog/'.$cat->slug.'/" class="category <?php echo $catslug; ?>"><?php echo $catname; ?></a>
+                    <?php
+                        if ( $cat ) {
+                            echo '<ul class="category-wrap">';
+                            foreach ( $cat as $category ) {
+                                echo  '<li><a class="category '.$category->slug.'" href="/blog/'.$category->slug.'">'.$category->name.'</a></li>';
+                            }
+                            echo '</ul>';
+                        }
+                        ?>
                         <?php the_content(); ?>
                     </div>
                 </div>

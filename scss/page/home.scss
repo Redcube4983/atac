@@ -150,6 +150,9 @@
           display: flex;
           flex-flow: column;
           justify-content: flex-start;
+          @include mq(lg){
+            width: calc(100% - 480px);
+          }
           h2.blog-title{
             font-size: 2rem;
             font-weight: bold;

@@ -263,11 +263,9 @@
       }
       .p-categoryList__category {
         display: flex;
-        flex-flow: wrap;
-        justify-content: space-around;
+        flex-flow: column;
         margin: 32px 0 0;
         @include mq(lg){
-          flex-flow: column;
           justify-content: start;
         }
         a {
@@ -279,14 +277,14 @@
           justify-content: center;
           border-radius: 20px;
           align-items: center;
-          width: 100px;
-          height: 32px;
+          width: 112px;
+          height: 42px;
+          margin: 0 auto 32px;
+          &:not(:last-child){
+            margin-bottom: 32px;
+          }
           @include mq(lg){
-            width: 112px;
-            height: 42px;
-            &:not(:last-child){
-              margin-bottom: 32px;
-            }
+            margin: 0 0 32px;
           }
         }
         .cat-item2 {

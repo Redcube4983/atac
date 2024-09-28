@@ -2615,13 +2615,11 @@ b {
 }
 #p-singleContents .p-singleContents__inner #p-archiveArea__right .p-categoryList .p-categoryList__category {
   display: flex;
-  flex-flow: wrap;
-  justify-content: space-around;
+  flex-flow: column;
   margin: 32px 0 0;
 }
 @media screen and (min-width: 1024px) {
   #p-singleContents .p-singleContents__inner #p-archiveArea__right .p-categoryList .p-categoryList__category {
-    flex-flow: column;
     justify-content: start;
   }
 }
@@ -2634,16 +2632,16 @@ b {
   justify-content: center;
   border-radius: 20px;
   align-items: center;
-  width: 100px;
-  height: 32px;
+  width: 112px;
+  height: 42px;
+  margin: 0 auto 32px;
+}
+#p-singleContents .p-singleContents__inner #p-archiveArea__right .p-categoryList .p-categoryList__category .cat:not(:last-child) {
+  margin-bottom: 32px;
 }
 @media screen and (min-width: 1024px) {
   #p-singleContents .p-singleContents__inner #p-archiveArea__right .p-categoryList .p-categoryList__category .cat {
-    width: 112px;
-    height: 42px;
-  }
-  #p-singleContents .p-singleContents__inner #p-archiveArea__right .p-categoryList .p-categoryList__category .cat:not(:last-child) {
-    margin-bottom: 32px;
+    margin: 0 0 32px;
   }
 }
 #p-singleContents .p-singleContents__inner #p-archiveArea__right .p-categoryList .p-categoryList__category .cat-item2 {

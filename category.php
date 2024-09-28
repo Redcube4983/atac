@@ -37,7 +37,7 @@ Template Name: category
     </div>
     </section>
     <section id="contents">
-    <h1><?php single_cat_title(); ?></h1>
+    <h2><?php single_cat_title(); ?></h2>
         <ul class="blog-list">
             <?php if (have_posts()): ?>
             <?php while (have_posts()) : the_post(); ?>

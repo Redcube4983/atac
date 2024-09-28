@@ -2463,6 +2463,11 @@ b {
   flex-flow: column;
   justify-content: flex-start;
 }
+@media screen and (min-width: 1024px) {
+  #contents .blog-list .blog-inner .p-blogContents__blog-linkBox {
+    width: calc(100% - 480px);
+  }
+}
 #contents .blog-list .blog-inner .p-blogContents__blog-linkBox h2.blog-title {
   font-size: 2rem;
   font-weight: bold;
@@ -2591,9 +2596,14 @@ b {
 }
 #contents #p-archiveArea__right .p-categoryList .p-categoryList__category {
   display: flex;
-  flex-flow: wrap;
-  justify-content: space-around;
+  flex-flow: column;
   margin: 32px 0 0;
+}
+@media screen and (min-width: 768px) {
+  #contents #p-archiveArea__right .p-categoryList .p-categoryList__category {
+    flex-flow: wrap;
+    justify-content: space-between;
+  }
 }
 #contents #p-archiveArea__right .p-categoryList .p-categoryList__category a {
   text-decoration: none;
@@ -2604,8 +2614,14 @@ b {
   justify-content: center;
   border-radius: 20px;
   align-items: center;
-  width: 100px;
-  height: 32px;
+  width: 112px;
+  height: 42px;
+  margin: 0 auto 34px;
+}
+@media screen and (min-width: 768px) {
+  #contents #p-archiveArea__right .p-categoryList .p-categoryList__category .cat {
+    margin: 0 auto;
+  }
 }
 #contents #p-archiveArea__right .p-categoryList .p-categoryList__category .cat-item2 {
   background: #FF8900;

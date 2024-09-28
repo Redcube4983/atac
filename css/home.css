@@ -2496,6 +2496,11 @@ b {
   flex-flow: column;
   justify-content: flex-start;
 }
+@media screen and (min-width: 1024px) {
+  #p-blogContents .blog-list .blog-inner .p-blogContents__blog-linkBox {
+    width: calc(100% - 480px);
+  }
+}
 #p-blogContents .blog-list .blog-inner .p-blogContents__blog-linkBox h2.blog-title {
   font-size: 2rem;
   font-weight: bold;
