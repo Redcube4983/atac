@@ -227,4 +227,18 @@
       }
     }
   }
+  .pagination {
+    margin: 80px auto 0;
+    display: flex;
+    justify-content: center;
+    flex-flow: wrap;
+      .page-numbers {
+        font-size: 2rem;
+        display: inline-block;
+        padding: 16px;
+        border-radius: 50%;
+        border: 1px solid #FF8900;
+        margin-right: 16px;
+      }
+  }
 }

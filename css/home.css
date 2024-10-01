@@ -2572,4 +2572,18 @@ b {
 #p-blogContents .blog-list .blog-inner .p-blogContents__blog-linkBox .p-blogContents__blog-button span {
   font-size: 1.8rem;
   color: #FF8900;
+}
+#p-blogContents .pagination {
+  margin: 80px auto 0;
+  display: flex;
+  justify-content: center;
+  flex-flow: wrap;
+}
+#p-blogContents .pagination .page-numbers {
+  font-size: 2rem;
+  display: inline-block;
+  padding: 16px;
+  border-radius: 50%;
+  border: 1px solid #FF8900;
+  margin-right: 16px;
 }/*# sourceMappingURL=home.css.map */

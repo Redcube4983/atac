@@ -80,27 +80,27 @@ Template Name: home
             </div>
         </li>
         <?php endwhile; ?>
-        <!-- ページネーションの作成 -->
-        <div class="pagination">
-        <?php
-        // グローバル変数$wp_queryを宣言
-        global $wp_query;
-
-        // ページネーションを作成し出力
-        echo paginate_links(array(
-            // ページネーションのカスタマイズ
-            'mid_size' => 1, // 現在のページ番号の両端にいくつ数字を表示するか
-            'prev_next' => false, // 「前へ」「次へ」を表示するか
-            'current' => max(1, get_query_var('paged')), // 現在のページ番号
-            'total' => $wp_query -> max_num_pages // 全ページ数
-        ));
-        ?>
-        </div>
         <?php else: ?>
         <!-- 投稿が無い場合の処理 -->
         <?php endif; ?>
         <?php wp_reset_postdata(); ?>
     </ul>
+    <!-- ページネーションの作成 -->
+        <div class="pagination">
+            <?php
+            // グローバル変数$wp_queryを宣言
+            global $wp_query;
+
+            // ページネーションを作成し出力
+            echo paginate_links(array(
+                // ページネーションのカスタマイズ
+                'mid_size' => 1, // 現在のページ番号の両端にいくつ数字を表示するか
+                'prev_next' => false, // 「前へ」「次へ」を表示するか
+                'current' => max(1, get_query_var('paged')), // 現在のページ番号
+                'total' => $wp_query -> max_num_pages // 全ページ数
+            ));
+            ?>
+        </div>
     </section>
 </main>
 <?php get_footer(); ?>
