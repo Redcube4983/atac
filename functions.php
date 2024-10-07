@@ -92,6 +92,10 @@ function catch_that_image() {
 }
 return $first_img;
 }
+//画像アップロード時の画質設定を変更する
+add_filter('wp_editor_set_quality', function () {
+  return 100;
+});
 
 function catch_post_movie() {
 	global $post;

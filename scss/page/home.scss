@@ -144,6 +144,24 @@
             }
           }
         }
+        &-movie{
+          width: 100%;
+          height: auto;
+          @include mq(lg){
+          position: relative;
+        }
+        iframe{
+          width: 100%;
+          @include mq(lg){
+            width: 40%;
+            height: 240px;
+            position: absolute;
+            right: 0;
+            top: 0;
+            transform: translate(0);
+          }
+        }
+      }
       }
       .p-blogContents__blog{
         &-linkBox{
@@ -232,6 +250,9 @@
     display: flex;
     justify-content: center;
     flex-flow: wrap;
+    @include mq(lg){
+      margin-top: 180px;
+    }
       .page-numbers {
         font-size: 2rem;
         display: flex;
@@ -244,11 +265,11 @@
         width: 50px;
         height: 50px;
         text-decoration: none;
-        .current {
-          border: none;
-          color: #fff;
-          background-color: #FFC042;
-        }
+      }
+      .current {
+        border: 0;
+        color: #fff;
+        background-color: #FFC042;
       }
   }
 }

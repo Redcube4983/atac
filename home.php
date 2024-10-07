@@ -55,6 +55,7 @@ Template Name: home
                     <?php if (has_post_thumbnail()) : ?>
                     <?php the_post_thumbnail(thumbnail); ?>
                     <?php else : ?>
+                    <iframe src= <?php echo catch_post_movie(); ?> frameborder="0" allowfullscreen=""></iframe>
                     <img src= <?php echo catch_that_image(); ?> alt="" />
                     <?php endif ; ?>
                 </div>

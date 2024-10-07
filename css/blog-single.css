@@ -2487,6 +2487,10 @@ b {
   color: #FFF;
   font-size: 1.6rem;
 }
+#p-singleContents .p-singleContents__inner .p-singleContents__left .p-postContent__area .post_content iframe {
+  width: 550px;
+  height: 400px;
+}
 #p-singleContents .p-singleContents__inner .p-singleContents__left .p-postContent__area .post_content p {
   text-align: justify;
   font-size: 1.4rem;
