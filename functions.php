@@ -81,9 +81,7 @@ add_action('after_setup_theme', 'setup_theme');
 function catch_that_image() {
   global $post, $posts;
   $first_img = '';
-  // 本来表示されるべき内容を表示せず、バッファという領域に一時的に保存。任意のタイミングで取り出す。
   ob_start();
-  // ob_start()を終了させたい場面で使用。バッファの保存をすべてクリアし、バッファのオフにします。
   ob_end_clean();
   if (preg_match_all('/<img.+src=[\'"]([^\'"]+)[\'"].*>/i', $post->post_content, $matches)){
     $first_img = $matches [1] [0];
@@ -98,31 +96,12 @@ add_filter('wp_editor_set_quality', function () {
 });
 
 function catch_post_movie() {
-	global $post;
-	$first_movie = '';
-	preg_match_all('/<iframe.+src=[\'"]([^\'"]+)[\'"].*>/i', $post->post_content, $matches);
-	if (isset($matches[1])) {
-		$first_movie = $matches[1][0];
+	$youtubePost = esc_attr(get_the_content());
+	preg_match('/www.youtube.[-_\/A-Za-z0-9]*/', $youtubePost, $matches);
+	$youtubeURL = 'https://' . $matches[0] . '?rel=0';
+	if(isset($matches[0])){
+		echo $youtubeURL;
 	}
-	if(empty($first_movie)){
-		$first_movie = '';
-	}
-	return $first_movie;
-}
+  }
 
-// function catch_that_image(){
-//   global $post, $posts;
-//   $first_img = ”;
-//   ob_start();
-//   ob_end_clean();
-//   $output = preg_match_all('/<img.+src=[\'”]([^\'”]+)[\'”].*>/i', $post->post_content, $matches);
-//   if(isset($matches [1] [0])){
-//     $first_img = $matches [1] [0];
-//   }
-//   if(empty($first_img)){
-//   // 記事内で画像がなかったときのためのデフォルト画像を指定
-//   $first_img = get_theme_file_uri('/common/images/icon_ATAC.png');
-//   }
-//   return $first_img;
-//   }
 ?>

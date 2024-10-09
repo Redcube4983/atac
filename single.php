@@ -65,16 +65,16 @@ Template Name: single
                     if( $prev_post || $next_post ): //次の記事か前の記事かどちらかあれば
                 ?>
                 <ul class="prev_next_list">
-                    <?php if ($prev_post): // 前の記事があれば表示 ?>
-                        <li class="prev">
-                            <a href="<?php echo esc_url(get_permalink($prev_post->ID)); ?>">
+                    <?php if ($next_post): // 次の記事があれば表示 ?>
+                        <li class="next">
+                            <a href="<?php echo esc_url(get_permalink($next_post->ID)); ?>">
                                 <span class="eng">次へ</span>
                             </a>
                         </li>
                     <?php endif; ?>
-                    <?php if ($next_post): // 次の記事があれば表示 ?>
-                        <li class="next">
-                            <a href="<?php echo esc_url(get_permalink($next_post->ID)); ?>">
+                    <?php if ($prev_post): // 前の記事があれば表示 ?>
+                        <li class="prev">
+                            <a href="<?php echo esc_url(get_permalink($prev_post->ID)); ?>">
                                 <span class="eng">前へ</span>
                             </a>
                         </li>

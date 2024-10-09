@@ -2491,28 +2491,6 @@ b {
     transform: translate(0);
   }
 }
-#p-blogContents .blog-list .blog-inner .p-blogContents__blog-movie {
-  width: 100%;
-  height: auto;
-}
-@media screen and (min-width: 1024px) {
-  #p-blogContents .blog-list .blog-inner .p-blogContents__blog-movie {
-    position: relative;
-  }
-}
-#p-blogContents .blog-list .blog-inner .p-blogContents__blog-movie iframe {
-  width: 100%;
-}
-@media screen and (min-width: 1024px) {
-  #p-blogContents .blog-list .blog-inner .p-blogContents__blog-movie iframe {
-    width: 40%;
-    height: 240px;
-    position: absolute;
-    right: 0;
-    top: 0;
-    transform: translate(0);
-  }
-}
 #p-blogContents .blog-list .blog-inner .p-blogContents__blog-linkBox {
   display: flex;
   flex-flow: column;

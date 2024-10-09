@@ -144,24 +144,7 @@
             }
           }
         }
-        &-movie{
-          width: 100%;
-          height: auto;
-          @include mq(lg){
-          position: relative;
-        }
-        iframe{
-          width: 100%;
-          @include mq(lg){
-            width: 40%;
-            height: 240px;
-            position: absolute;
-            right: 0;
-            top: 0;
-            transform: translate(0);
-          }
-        }
-      }
+        
       }
       .p-blogContents__blog{
         &-linkBox{

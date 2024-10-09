@@ -55,10 +55,12 @@ Template Name: home
                     <?php if (has_post_thumbnail()) : ?>
                     <?php the_post_thumbnail(thumbnail); ?>
                     <?php else : ?>
-                    <iframe src= <?php echo catch_post_movie(); ?> frameborder="0" allowfullscreen=""></iframe>
                     <img src= <?php echo catch_that_image(); ?> alt="" />
                     <?php endif ; ?>
+
+                    <iframe src="<?php echo catch_post_movie(); ?>" frameborder="0" allowfullscreen=""></iframe>
                 </div>
+                
             <div class="p-blogContents__blog-linkBox">
                 <h2 class="blog-title">
                     <?php echo get_the_title(); ?>
@@ -91,12 +93,14 @@ Template Name: home
             <?php
             // グローバル変数$wp_queryを宣言
             global $wp_query;
-
-            // ページネーションを作成し出力
+            $big = 999999999;
             echo paginate_links(array(
                 // ページネーションのカスタマイズ
+                'base' => str_replace( $big, '%#%', str_replace('page/','?paged=',esc_url( get_pagenum_link( $big ) )) ),
+                'format' => '?paged=%#%',
                 'mid_size' => 1, // 現在のページ番号の両端にいくつ数字を表示するか
                 'prev_next' => false, // 「前へ」「次へ」を表示するか
+                'show_all' => false,
                 'current' => max(1, get_query_var('paged')), // 現在のページ番号
                 'total' => $wp_query -> max_num_pages // 全ページ数
             ));
