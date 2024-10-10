@@ -57,8 +57,6 @@ Template Name: home
                     <?php else : ?>
                     <img src= <?php echo catch_that_image(); ?> alt="" />
                     <?php endif ; ?>
-
-                    <iframe src="<?php echo catch_post_movie(); ?>" frameborder="0" allowfullscreen=""></iframe>
                 </div>
                 
             <div class="p-blogContents__blog-linkBox">

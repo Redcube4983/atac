@@ -49,6 +49,11 @@ Template Name: single
                             echo '</ul>';
                         }
                         ?>
+
+                        
+                        <div class="post_content-movie">
+                         <?php the_field('add_embed'); ?>
+                        </div>
                         <?php the_content(); ?>
                     </div>
                 </div>
