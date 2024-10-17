@@ -2463,6 +2463,9 @@ b {
 #c-contactContents #mw_wp_form_mw-wp-form-38 {
   margin: 16px 0 0;
 }
+#c-contactContents #mw_wp_form_mw-wp-form-38 .p-form .p-form__table table {
+  width: 100%;
+}
 #c-contactContents #mw_wp_form_mw-wp-form-38 .p-form .p-form__table tr {
   display: flex;
   flex-flow: column;
@@ -2484,6 +2487,7 @@ b {
   #c-contactContents #mw_wp_form_mw-wp-form-38 .p-form .p-form__table th {
     width: 30%;
     border: 0;
+    padding: 24px 0;
   }
 }
 #c-contactContents #mw_wp_form_mw-wp-form-38 .p-form .p-form__table td {
@@ -2493,6 +2497,14 @@ b {
   #c-contactContents #mw_wp_form_mw-wp-form-38 .p-form .p-form__table td {
     padding: 24px;
     width: 70%;
+  }
+}
+#c-contactContents #mw_wp_form_mw-wp-form-38 .p-form .p-form__table td .row {
+  font-size: 1.6rem;
+}
+@media screen and (min-width: 768px) {
+  #c-contactContents #mw_wp_form_mw-wp-form-38 .p-form .p-form__table td .row {
+    font-size: 2rem;
   }
 }
 #c-contactContents #mw_wp_form_mw-wp-form-38 .p-form .p-form__table .p-form__label {
@@ -2694,13 +2706,55 @@ b {
     padding: 24px;
   }
 }
-#c-contactContents #mw_wp_form_mw-wp-form-38 .p-form .p-form__btnArea .p-form__submit.c-btn.c-btn--submit.js-submit {
-  width: 300px;
-  height: 70px;
+#c-contactContents #mw_wp_form_mw-wp-form-38 .p-form .p-form__btnArea {
+  display: flex;
+  flex-flow: column;
+  margin-top: 24px;
+  justify-content: center;
+}
+#c-contactContents #mw_wp_form_mw-wp-form-38 .p-form .p-form__btnArea .p-form__back {
+  width: 240px;
+  height: 64px;
+  margin: 0 auto 20px;
+}
+#c-contactContents #mw_wp_form_mw-wp-form-38 .p-form .p-form__btnArea .c-btn--back {
   border-radius: 20px;
-  border: 1px solid #707070;
-  background: #FFF;
-  font-size: 1.4rem;
+  background-color: #707070;
+  border: 0;
+  color: #fff;
+  font-size: 1.8rem;
+}
+#c-contactContents #mw_wp_form_mw-wp-form-38 .p-form .p-form__btnArea .c-btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#c-contactContents #mw_wp_form_mw-wp-form-38 .p-form .p-form__btnArea .p-form__submit {
+  width: 240px;
+  height: 64px;
+  margin: 0 auto;
+}
+#c-contactContents #mw_wp_form_mw-wp-form-38 .p-form .p-form__btnArea .c-btn--submit {
+  border-radius: 20px;
+  background-color: #DF4D4D;
+  border: 0;
+  color: #fff;
+  font-size: 1.8rem;
+}
+#c-contactContents #mw_wp_form_mw-wp-form-38 .p-form .p-form__btnArea .js-submit {
+  width: 240px;
+  height: 64px;
+  border-radius: 20px;
+  font-size: 1.8rem;
+  background-color: #DF4D4D;
+  border: 0;
+  color: #fff;
+}
+#c-contactContents .p-contactPage__btnArea {
+  margin-top: 24px;
+}
+#c-contactContents .p-contactPage__btnArea a {
+  font-size: 1.6rem;
 }
 
 #p-contactContents__phoneArea {
