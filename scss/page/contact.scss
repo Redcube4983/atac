@@ -29,6 +29,9 @@
         font-size: 1.4rem;
         font-weight: bold;
         text-align: center;
+        @include mq(lg){
+            font-size: 2rem;
+        }
     }
     .p-contactPage__body {
         margin-top: 3rem;
@@ -50,6 +53,12 @@
             position: relative;
             -webkit-clip-path: polygon(0 0, calc(100% - 1rem) 0, 100% 50%, calc(100% - 1rem) 100%, 0 100%);
             clip-path: polygon(0 0, calc(100% - 1rem) 0, 100% 50%, calc(100% - 1rem) 100%, 0 100%);
+            @include mq(md){
+                padding: 1.6rem;
+            }
+            @include mq(lg){
+                font-size: 2rem;
+            }
             &:nth-child(1) {
                 z-index: 3;
                 &.is-active::after {
@@ -360,9 +369,9 @@
                 }
                 .c-btn--submit {
                     border-radius: 20px;
-                    background-color: #DF4D4D;
-                    border: 0;
-                    color: #fff;
+                    background-color: #fff;
+                    border: 1px solid #707070;
+                    color: #000;
                     font-size: 1.8rem;
                 }
                 .js-submit {
@@ -370,9 +379,9 @@
                     height: 64px;
                     border-radius: 20px;
                     font-size: 1.8rem;
-                    background-color: #DF4D4D;
-                    border: 0;
-                    color: #fff;
+                    background-color: #fff;
+                    border: 1px solid #707070;
+                    color: #000;
                 }
             }
         }

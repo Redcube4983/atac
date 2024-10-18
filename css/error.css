@@ -2367,6 +2367,11 @@ b {
   font-weight: bold;
   text-align: center;
 }
+@media screen and (min-width: 1024px) {
+  #c-contactContents .p-contactPage__lead {
+    font-size: 2rem;
+  }
+}
 #c-contactContents .p-contactPage__body {
   margin-top: 3rem;
 }
@@ -2388,6 +2393,16 @@ b {
   position: relative;
   -webkit-clip-path: polygon(0 0, calc(100% - 1rem) 0, 100% 50%, calc(100% - 1rem) 100%, 0 100%);
   clip-path: polygon(0 0, calc(100% - 1rem) 0, 100% 50%, calc(100% - 1rem) 100%, 0 100%);
+}
+@media screen and (min-width: 768px) {
+  #c-contactContents .p-formIndicator__list .p-formIndicator__item {
+    padding: 1.6rem;
+  }
+}
+@media screen and (min-width: 1024px) {
+  #c-contactContents .p-formIndicator__list .p-formIndicator__item {
+    font-size: 2rem;
+  }
 }
 #c-contactContents .p-formIndicator__list .p-formIndicator__item:nth-child(1) {
   z-index: 3;
@@ -2736,9 +2751,9 @@ b {
 }
 #c-contactContents #mw_wp_form_mw-wp-form-38 .p-form .p-form__btnArea .c-btn--submit {
   border-radius: 20px;
-  background-color: #DF4D4D;
-  border: 0;
-  color: #fff;
+  background-color: #fff;
+  border: 1px solid #707070;
+  color: #000;
   font-size: 1.8rem;
 }
 #c-contactContents #mw_wp_form_mw-wp-form-38 .p-form .p-form__btnArea .js-submit {
@@ -2746,9 +2761,9 @@ b {
   height: 64px;
   border-radius: 20px;
   font-size: 1.8rem;
-  background-color: #DF4D4D;
-  border: 0;
-  color: #fff;
+  background-color: #fff;
+  border: 1px solid #707070;
+  color: #000;
 }
 #c-contactContents .p-contactPage__btnArea {
   margin-top: 24px;
