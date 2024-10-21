@@ -2739,6 +2739,9 @@ b {
   color: #fff;
   font-size: 1.8rem;
 }
+#c-contactContents #mw_wp_form_mw-wp-form-38 .p-form .p-form__btnArea .c-btn--back:hover {
+  cursor: pointer;
+}
 #c-contactContents #mw_wp_form_mw-wp-form-38 .p-form .p-form__btnArea .c-btn {
   display: flex;
   justify-content: center;
@@ -2756,6 +2759,9 @@ b {
   color: #000;
   font-size: 1.8rem;
 }
+#c-contactContents #mw_wp_form_mw-wp-form-38 .p-form .p-form__btnArea .c-btn--submit:hover {
+  cursor: pointer;
+}
 #c-contactContents #mw_wp_form_mw-wp-form-38 .p-form .p-form__btnArea .js-submit {
   width: 240px;
   height: 64px;
@@ -2764,6 +2770,9 @@ b {
   background-color: #fff;
   border: 1px solid #707070;
   color: #000;
+}
+#c-contactContents #mw_wp_form_mw-wp-form-38 .p-form .p-form__btnArea .js-submit:hover {
+  cursor: pointer;
 }
 #c-contactContents .p-contactPage__btnArea {
   margin-top: 24px;

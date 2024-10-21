@@ -356,6 +356,9 @@
                     border: 0;
                     color: #fff;
                     font-size: 1.8rem;
+                    &:hover{
+                        cursor: pointer;
+                    }
                 }
                 .c-btn {
                     display: flex;
@@ -373,6 +376,9 @@
                     border: 1px solid #707070;
                     color: #000;
                     font-size: 1.8rem;
+                    &:hover{
+                        cursor: pointer;
+                    }
                 }
                 .js-submit {
                     width: 240px;
@@ -382,6 +388,9 @@
                     background-color: #fff;
                     border: 1px solid #707070;
                     color: #000;
+                    &:hover{
+                        cursor: pointer;
+                    }
                 }
             }
         }

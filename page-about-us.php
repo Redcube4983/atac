@@ -202,7 +202,7 @@ Template Name: about-us
 				<div class="p-aboutUsContents__staffArea-boxRight">
 					<dl class="p-aboutUsContents__staffArea-boxRight-item">
 					  <dt class="p-aboutUsContents__staffArea-boxRight-head">担当業務</dt>
-					  <dd class="p-aboutUsContents__staffArea-boxRight-body">営業・新規開拓・更改・事故処理・事業拡大担当・生保推進リーダー</dd>
+					  <dd class="p-aboutUsContents__staffArea-boxRight-body">営業</dd>
 					  <dt class="p-aboutUsContents__staffArea-boxRight-head">資格損保</dt>
 						<dd class="p-aboutUsContents__staffArea-boxRight-body">
 							<ul>
@@ -215,15 +215,18 @@ Template Name: about-us
 								<li>
 									損害サービスアドバイザー資格
 								</li>
+								<li>
+									損害保険トータルプランナー資格
+								</li>
 							</ul>
 						</dd>
 					  <dt class="p-aboutUsContents__staffArea-boxRight-head">生保</dt>
-					  <dd class="p-aboutUsContents__staffArea-boxRight-body">普通資格</dd>
+					  <dd class="p-aboutUsContents__staffArea-boxRight-body">応用資格</dd>
 					  <dt class="p-aboutUsContents__staffArea-boxRight-head">その他</dt>
 					  <dd class="p-aboutUsContents__staffArea-boxRight-body">
 						  <ul>
 							<li>
-							  宅地建物取引主任者
+							宅建士
 							</li>
 							<li>
 							  衛生工学衛生管理者
@@ -234,7 +237,7 @@ Template Name: about-us
 						  </ul>
 					  </dd>
 					  <dt class="p-aboutUsContents__staffArea-boxRight-head">趣味・特技</dt>
-					  <dd class="p-aboutUsContents__staffArea-boxRight-body">ワイン収集、食べ歩き</dd>
+					  <dd class="p-aboutUsContents__staffArea-boxRight-body">ゴルフ、NPB野球観戦（巨人ファン）</dd>
 					</dl>
 				  <div class="p-aboutUsContents__staffArea-boxRight-messageBox">
 							<span>一言メッセージ</span>
@@ -263,8 +266,7 @@ Template Name: about-us
 				<div class="p-aboutUsContents__staffArea-boxRight">
 					<dl class="p-aboutUsContents__staffArea-boxRight-item">
 						<dt class="p-aboutUsContents__staffArea-boxRight-head">担当業務</dt>
-						<dd class="p-aboutUsContents__staffArea-boxRight-body">営業・新規開拓・更改・事故処理・渉外担当・損保推進リーダー
-						・三井住友海上木更津MSA生保推進リーダー</dd>
+						<dd class="p-aboutUsContents__staffArea-boxRight-body">営業</dd>
 						<dt class="p-aboutUsContents__staffArea-boxRight-head">資格損保</dt>
 						<dd class="p-aboutUsContents__staffArea-boxRight-body">
 							<ul>
@@ -314,7 +316,7 @@ Template Name: about-us
 				<div class="p-aboutUsContents__staffArea-boxRight">
 					<dl class="p-aboutUsContents__staffArea-boxRight-item">
 					  <dt class="p-aboutUsContents__staffArea-boxRight-head">担当業務</dt>
-					  <dd class="p-aboutUsContents__staffArea-boxRight-body">契約入力・精算・営業事務・事務リーダー</dd>
+					  <dd class="p-aboutUsContents__staffArea-boxRight-body">営業事務</dd>
 					  <dt class="p-aboutUsContents__staffArea-boxRight-head">資格損保</dt>
 						<dd class="p-aboutUsContents__staffArea-boxRight-body">
 							<ul>
@@ -332,6 +334,7 @@ Template Name: about-us
 					  <dd class="p-aboutUsContents__staffArea-boxRight-body">
 						  <ul>
 							<li>AFP資格</li>
+							<li>社会福祉士</li>
 							<li class="p-aboutUsContents__staffArea-boxRight-bodyBold">FP2級資格</li>
 						  </ul>
 					  </dd>
