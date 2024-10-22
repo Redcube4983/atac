@@ -409,24 +409,31 @@
                             border-bottom: 0px dashed #fff;
                         }
                         .l-footernav__granchild--link {
-                            color: $black;
+                            color: #fff;
                             text-decoration: none;
                             font-size: 1.6rem;
                             padding: 15px 0 15px 15px;
                             display: block;
                             position: relative;
+                            @include mq(md){
+                                color: $black;
+                            }
                             &::before {
                                 position: absolute;
                                 display: block;
                                 content: "";
                                 width: 8px;
                                 height: 8px;
-                                border-right: 1px solid $black;
-                                border-bottom: 1px solid $black;
+                                border-right: 1px solid #fff;
+                                border-bottom: 1px solid #fff;
                                 transform: translateY(-50%) rotate(-45deg);
                                 top: 50%;
                                 left: 0;
                                 transform-origin: center;
+                                @include mq(md){
+                                    border-right: 1px solid $black;
+                                    border-bottom: 1px solid $black;
+                                }
                             }
                         }
                     }
