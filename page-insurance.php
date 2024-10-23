@@ -131,7 +131,7 @@ Template Name: insurance
                 </ul>
                 <ul class="">
                   <li>
-                    <a href="https://www.net.ms-ins.com/servlet/NAB_UII_UG0010" rel="noopener noreferrer" target="_blank">
+                    <a href="/tenso/" rel="noopener noreferrer" target="_blank">
                       <picture>
                           <source srcset="<?php echo get_template_directory_uri(); ?>/images/insurance/abroad.webp" type="image/webp">
                           <img src="<?php echo get_template_directory_uri(); ?>/images/insurance/abroad.png" alt="">
@@ -156,7 +156,7 @@ Template Name: insurance
               </ul>
               <ul>
                   <li>
-                    <a href="https://net2.ms-ins.com/servlet/sgl/SGL_UII_GLS0010" rel="noopener noreferrer" target="_blank">
+                    <a href="/tenso3/" rel="noopener noreferrer" target="_blank">
                       <picture>
                           <source srcset="<?php echo get_template_directory_uri(); ?>/images/insurance/golf.webp" type="image/webp">
                           <img src="<?php echo get_template_directory_uri(); ?>/images/insurance/golf.png" alt="">
@@ -186,7 +186,7 @@ Template Name: insurance
               </ul>
               <ul>
                   <li>
-                    <a href="https://net2.ms-ins.com/servlet/sgl/SGL_UII_GLS0010" rel="noopener noreferrer" target="_blank">
+                    <a href="/tenso2/" rel="noopener noreferrer" target="_blank">
                       <picture>
                           <source srcset="<?php echo get_template_directory_uri(); ?>/images/insurance/bicycle.webp" type="image/webp">
                           <img src="<?php echo get_template_directory_uri(); ?>/images/insurance/bicycle.png" alt="">
@@ -201,3 +201,4 @@ Template Name: insurance
   </section>
 </main>
 <?php get_footer(); ?>
+
