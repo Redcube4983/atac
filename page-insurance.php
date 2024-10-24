@@ -201,4 +201,3 @@ Template Name: insurance
   </section>
 </main>
 <?php get_footer(); ?>
-
