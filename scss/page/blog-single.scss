@@ -165,6 +165,19 @@
             @include mq(md){
               font-size: 1.6rem;
             }
+            .size-medium{
+              width: 100%;
+            }
+            @include mq(md){
+              .size-medium {
+                width: 80%;
+              }
+            }
+            @include mq(lg){
+              .size-medium {
+                width: 500px;
+              }
+            }
           }
         }
       }
@@ -213,6 +226,7 @@
         margin: 0 0 0 96px;
         border-left: 1px solid #707070;
         padding-left: 8px;
+        height: 400px;
       }
       .p-archiveArea__title {
         display: flex;
