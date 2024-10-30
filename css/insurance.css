@@ -2362,7 +2362,7 @@ b {
 }
 @media screen and (min-width: 1024px) {
   #l-internalTop .l-internalTop__ornamentLeft {
-    left: 0;
+    left: 150px;
   }
 }
 #l-internalTop .l-internalTop__ornamentLeft img {
@@ -2389,7 +2389,7 @@ b {
 }
 @media screen and (min-width: 1024px) {
   #l-internalTop .l-internalTop__ornamentRight {
-    right: 0;
+    right: 150px;
   }
 }
 #l-internalTop .l-internalTop__ornamentRight img {
@@ -2401,7 +2401,7 @@ b {
 }
 @media screen and (min-width: 1024px) {
   #l-internalTop .l-internalTop__ornamentRight img {
-    width: 190px;
+    width: 170px;
     height: 200px;
   }
 }

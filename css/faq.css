@@ -2362,7 +2362,7 @@ b {
 }
 @media screen and (min-width: 1024px) {
   #l-internalTop .l-internalTop__ornamentLeft {
-    left: 0;
+    left: 100px;
   }
 }
 #l-internalTop .l-internalTop__ornamentLeft img {
@@ -2397,7 +2397,7 @@ b {
 }
 @media screen and (min-width: 1024px) {
   #l-internalTop .l-internalTop__ornamentRight {
-    right: 0;
+    right: 100px;
   }
 }
 #l-internalTop .l-internalTop__ornamentRight img {
@@ -2431,7 +2431,7 @@ b {
 }
 @media screen and (min-width: 1024px) {
   #l-internalTop .l-internalTop__ornamentRight2 {
-    right: 0;
+    right: 50px;
   }
 }
 #l-internalTop .l-internalTop__ornamentRight2 img {

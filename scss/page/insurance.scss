@@ -12,7 +12,7 @@
             left: 48px;
         }
         @include mq(lg){
-            left: 0;
+            left: 150px;
         }
         img{
             width: auto;
@@ -33,7 +33,7 @@
             right: 48px;
         }
         @include mq(lg){
-            right: 0;
+            right: 150px;
         }
         img{
             box-sizing: border-box;
@@ -42,7 +42,7 @@
             width: 100px;
             height: 110px;
             @include mq(lg){
-                width: 190px;
+                width: 170px;
                 height: 200px;
             }
         }
