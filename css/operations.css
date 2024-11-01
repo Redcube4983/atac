@@ -1232,6 +1232,8 @@ b {
 .l-footer .l-footer__top--link li:nth-child(n+3) {
   border: solid #4DC0B2;
   border-width: 5px 2px 2px 2px;
+  display: flex;
+  flex-flow: column;
 }
 .l-footer .l-footer__top--link li:nth-child(n+3) b {
   font-size: 1.3rem;

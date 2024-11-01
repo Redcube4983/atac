@@ -217,6 +217,8 @@
                 &:nth-child(n+3) {
                     border:solid $green;
                     border-width:5px 2px 2px 2px;
+                    display: flex;
+                    flex-flow: column;
                     b {
                         @include fontSize_p;
                         width: 100%;

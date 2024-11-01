@@ -36,35 +36,37 @@
           </div>
           <ul class="l-footer__top--link">
             <li>
-              <a href="">
+              <a href="/blog/">
                 <b>Blog</b>
                 <p><span>ATAC通信</span>　保険のアフレコ配信中！</p>
               </a>
             </li>
             <li>
-              <a href="">
+              <a href="https://www.facebook.com/atac6011" target="_blank">
                 <b>Face book</b>
                 <p><span>ATAC通信</span>　青木の日常ブログ</p>
               </a>
             </li>
             <li>
-              <a href="">
                 <b>取扱保険会社</b>
                 <ul class="l-footer__top--companyLogo">
                   <li>
+                  <a href="https://www.ms-ins.com/" target="_blank">
                     <picture>
                       <source srcset="<?php echo get_template_directory_uri(); ?>/images/common/aioiseimei.webp" type="image/webp">
                       <img src="<?php echo get_template_directory_uri(); ?>/images/common/aioiseimei.png" alt="">
+                    </a>
                     </picture>
                   </li>
                   <li>
+                  <a href=" http://www.msa-life.co.jp/" target="_blank">
                     <picture>
                       <source srcset="<?php echo get_template_directory_uri(); ?>/images/common/sumitomokaijyo.webp" type="image/webp">
                       <img src="<?php echo get_template_directory_uri(); ?>/images/common/sumitomokaijyo.png" alt="">
+                    </a>
                     </picture>
                   </li>
                 </ul>
-              </a>
             </li>
           </ul>
         </div>
