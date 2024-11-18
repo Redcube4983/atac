@@ -2224,7 +2224,7 @@ b {
     padding-bottom: 640px;
   }
 }
-@media screen and (min-width: 1280px) {
+@media screen and (min-width: 1400px) {
   #p-frontContents {
     background-image: url(../images/front-page/main_background_pc2.png);
     background-size: contain;

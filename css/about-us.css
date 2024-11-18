@@ -2866,6 +2866,11 @@ b {
     padding-bottom: 640px;
   }
 }
+@media screen and (min-width: 1400px) {
+  .p-aboutUsContents__staffArea {
+    padding-bottom: 720px;
+  }
+}
 .p-aboutUsContents__staffArea-title {
   width: 30vw;
   max-width: 185px;

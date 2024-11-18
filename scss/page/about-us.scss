@@ -448,6 +448,9 @@
     @include mq(lg){
         padding-bottom: 640px;
     }
+    @include mq(xxl){
+        padding-bottom: 720px;
+    }
     &-title{
         width: 30vw;
         max-width: 185px;
