@@ -206,18 +206,12 @@ Template Name: about-us
 					  <dt class="p-aboutUsContents__staffArea-boxRight-head">資格損保</dt>
 						<dd class="p-aboutUsContents__staffArea-boxRight-body">
 							<ul>
-								<li>
-									損害保険大学課程専門コース資格
-								</li>
+								<li>損害保険トータルプランナー資格</li>
+								<li>損害保険大学課程専門コース資格</li>
 								<li class="p-aboutUsContents__staffArea-boxRight-bodyBold">
 									特級（一般）資格
 								</li>
-								<li>
-									損害サービスアドバイザー資格
-								</li>
-								<li>
-									損害保険トータルプランナー資格
-								</li>
+								<li>損害サービスアドバイザー資格</li>
 							</ul>
 						</dd>
 					  <dt class="p-aboutUsContents__staffArea-boxRight-head">生保</dt>
@@ -225,15 +219,9 @@ Template Name: about-us
 					  <dt class="p-aboutUsContents__staffArea-boxRight-head">その他</dt>
 					  <dd class="p-aboutUsContents__staffArea-boxRight-body">
 						  <ul>
-							<li>
-							宅建士
-							</li>
-							<li>
-							  衛生工学衛生管理者
-							</li>
-							<li>
-							  第1種衛生管理者
-							</li>
+							<li>宅建士</li>
+							<li>防災士</li>
+							<li>衛生工学衛生管理者</li>
 						  </ul>
 					  </dd>
 					  <dt class="p-aboutUsContents__staffArea-boxRight-head">趣味・特技</dt>
@@ -320,9 +308,7 @@ Template Name: about-us
 					  <dt class="p-aboutUsContents__staffArea-boxRight-head">資格損保</dt>
 						<dd class="p-aboutUsContents__staffArea-boxRight-body">
 							<ul>
-								<li>
-									損害保険大学課程専門コース資格
-								</li>
+								<li>損害保険大学課程専門コース資格</li>
 								<li class="p-aboutUsContents__staffArea-boxRight-bodyBold">
 									特級（一般）資格
 								</li>
@@ -333,9 +319,8 @@ Template Name: about-us
 					  <dt class="p-aboutUsContents__staffArea-boxRight-head">その他</dt>
 					  <dd class="p-aboutUsContents__staffArea-boxRight-body">
 						  <ul>
-							<li>AFP資格</li>
+							<li>AFP資格（FP2級資格）</li>
 							<li>社会福祉士</li>
-							<li class="p-aboutUsContents__staffArea-boxRight-bodyBold">FP2級資格</li>
 						  </ul>
 					  </dd>
 					  <dt class="p-aboutUsContents__staffArea-boxRight-head">趣味・特技</dt>
