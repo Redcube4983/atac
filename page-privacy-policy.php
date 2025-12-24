@@ -226,7 +226,7 @@ Template Name: privacy-policy
         </div>
         <div class="p-privacyContents__numberList">
             <div class="p-privacyContents__numberList-title">
-                <h3>7. 個人番号及び特定個人情報の取扱い</h3>
+                <h3>6. 個人番号及び特定個人情報の取扱い</h3>
             </div>
             <div class="p-privacyContents__numberList-inner">
                 <p>
@@ -237,7 +237,7 @@ Template Name: privacy-policy
         </div>
         <div class="p-privacyContents__numberList">
             <div class="p-privacyContents__numberList-title">
-                <h3>6. 個人情報保護法に基づく保有個人データの開示、<br class="sp">訂正、利用停止など</h3>
+                <h3>7. 個人情報保護法に基づく保有個人データの開示、<br class="sp">訂正、利用停止など</h3>
             </div>
             <div class="p-privacyContents__numberList-inner">
                 <p>
@@ -247,7 +247,7 @@ Template Name: privacy-policy
         </div>
         <div class="p-privacyContents__numberList">
             <div class="p-privacyContents__numberList-title">
-                <h3>7. 当代理店に対するご照会</h3>
+                <h3>8. 当代理店に対するご照会</h3>
             </div>
             <div class="p-privacyContents__numberList-inner">
                 <p>
